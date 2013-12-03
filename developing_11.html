@@ -1,0 +1,900 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>UI上的Data Binding</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="css/templete.css" type="text/css" media="all" />
+    <meta charset="UTF-8">
+</head>
+<body class="level-2">
+    <div class="wrapper">
+        <!--Begin header-->
+        <div class="header">
+            <div class="grid-container clearfix">
+                <div class="header-left">
+                    <img alt="Microsoft" src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-lg-1x.png" width="94" height="20">
+                    <h1>X-Platform</h1>
+                </div>
+                <div id="mscom-search" class="mscom-search" style="margin-top: 37px;">
+                    <div class="search-form">
+                        <form action="" id="search-form">
+                            <div class="input-wrapper">
+                                <label class="screen-reader-text" for="search-input">搜索 Microsoft.com</label>
+                                <input id="search-input" type="text" class="input-area" autocomplete="off">
+                            </div>
+                            <button class="search-submit" id="search-btn" type="submit">
+                                <img width="16" height="16" alt="Submit" src="http://i.s-microsoft.com/global/imagestore/PublishingImages/sprites/search-button-blue.png"></button>
+                        </form>
+                    </div>
+                    <div class="search-results-box" id="results">
+                        <div class="search-scope">
+                            <ul>
+                                <li class=""><a class="checked" search="microsoft" role="search">搜索 Microsoft.com</a></li>
+                                <li class=""><a search="internet" role="search">搜索互联网</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End header-->
+        <br />
+        <!--Begin Content-->
+        <div class="content">
+            <div class="wrapper">
+                <div class="wrapper-header">
+                    <div>
+                        <a href="index.html">
+                            <img src="./assets/image/banner_1.jpg"></a>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="nav">
+                        <div class="block article-nav-block">
+                            <h2>移动应用开发生命周期</h2>
+                            <div class="menu">
+                                <h3><a href="idea.html">计划<span>Idea/Planning</span></a></h3>
+                                <ul>
+                                    <li><a href="idea_01.html">平台总览</a></li>
+                                    <li><a href="idea_02.html">开发工具、开发环境和模拟器</a></li>
+                                    <li><a href="idea_03.html">应用结构和生命周期</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="design.html">设计<span>Design</span></a></h3>
+                                <ul>
+                                    <li><a href="design_01.html">UI Layout的设计</a></li>
+                                    <li><a href="design_02.html">UI的控件</a></li>
+                                    <li><a href="design_03.html">UI页面的控制和导航</a></li>
+                                    <li><a href="design_04.html">不同屏幕尺寸和分辨率的适配</a></li>
+                                    <li><a href="design_05.html">第三方SDK</a></li>
+                                    <li><a href="design_06.html">游戏开发</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu active">
+                                <h3><a href="developing.html">开发<span>Developing</span></a></h3>
+                                <ul>
+                                    <li><a href="developing_01.html">开发语言</a></li>
+                                    <li><a href="developing_02.html">Audio、Video Player应用的开发</a></li>
+                                    <li><a href="developing_03.html">General APIs Mapping</a></li>
+                                    <li><a href="developing_04.html">IAP应用内支付</a></li>
+                                    <li><a href="developing_05.html">LBS应用</a></li>
+                                    <li><a href="developing_06.html">LBS、镜头和传感器应用接口使用</a></li>
+                                    <li><a href="developing_07.html">Native Code（C和C++）支持</a></li>
+                                    <li><a href="developing_08.html">Push Notification</a></li>
+                                    <li><a href="developing_09.html">Sharing in Social Network</a></li>
+                                    <li><a href="developing_10.html">Source Code Control</a></li>
+                                    <li><a href="developing_11.html">UI上的Data Binding</a></li>
+                                    <li><a href="developing_12.html">Windows 8.1和WP 8 Sharing应用分享功能实现</a></li>
+                                    <li><a href="developing_13.html">多媒体</a></li>
+                                    <li><a href="developing_14.html">后台任务和多任务处理</a></li>
+                                    <li><a href="developing_15.html">获取后台服务器数据</a></li>
+                                    <li><a href="developing_16.html">浏览器控件WebView</a></li>
+                                    <li><a href="developing_17.html">数据库（SQLite）</a></li>
+                                    <li><a href="developing_18.html">数据网络和数据通讯</a></li>
+                                    <li><a href="developing_19.html">通话和短信功能</a></li>
+                                    <li><a href="developing_20.html">图形处理(Drawing & Animation)</a></li>
+                                    <li><a href="developing_21.html">文件系统和应用设置</a></li>
+                                    <li><a href="developing_22.html">应用间通信</a></li>
+                                    <li><a href="developing_23.html">支付方式</a></li>
+                                    <li><a href="developing_24.html">Windows 8.1应用外设开发</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="testing.html">测试<span>Testing</span></a></h3>
+                                <ul>
+                                    <li><a href="testing_01.html">Windows 8 and WP 8开发FAQ</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu last">
+                                <h3><a href="distribute.html">发布<span>Distribute</span></a></h3>
+                                <ul>
+                                    <li><a href="distribute_01.html">应用商店(发布和更新应用)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="block success-story-nav-block">
+                            <h2>成功案例</h2>
+                        </div>
+                        <div class="block others">
+                            <a href="sample_code.html" class="left">示例代码</a>
+                            <a href="http://msdn.microsoft.com/zh-cn/dn473954" class="right">教学视频</a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3 class="title">Data Binding in UI<span><a href="index.html">返回首页&gt;</a></span></h3>
+                        <div class="article-content">
+                            <div class="WordSection1">
+                                <p class="MsoToc1"><a href="#_Toc372295583">概述</a></p>
+                                <p class="MsoToc3"><a href="#_Toc372295584">IOS</a></p>
+                                <p class="MsoToc3"><a href="#_Toc372295585">Android</a></p>
+                                <p class="MsoToc3">
+                                    <a href="#_Toc372295586">Windows
+Phone&amp;Windows8</a>
+                                </p>
+                                <p class="MsoToc2"><a href="#_Toc372295587">数据流方向</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372295588">更改通知</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372295589">更新数据源</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372295590">绑定到集合</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372295591">数据验证</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372295592">数据转换</a></p>
+                                <p class="MsoToc1"><a href="#_Toc372295593">MVC和MVVM</a></p>
+                                <p class="MsoToc1"><a href="#_Toc372295594">更新UI 11</a></p>
+                                <p class="MsoToc2">
+                                    <a href="#_Toc372295595">Windows Phone &amp;
+Windows应用商店应用</a>
+                                </p>
+                                <p class="MsoToc3"><a href="#_Toc372295596">将控件绑定到单个项目</a></p>
+                                <p class="MsoToc3"><a href="#_Toc372295597">将控件绑定到对象的集合</a></p>
+                                <p class="MsoToc3"><a href="#_Toc372295598">使用数据模版显示控件中的项目</a></p>
+                                <p class="MsoToc3"><a href="#_Toc372295599">详细信息视图</a></p>
+                                <p class="MsoToc3"><a href="#_Toc372295600">绑定转换器</a></p>
+                                <p class="MsoToc1"><a href="#_Toc372295601">另请参见</a></p>
+                                <br />
+                            </div>
+                            <div class="WordSection2">
+                                <h1><a name="_Toc372295583">概述</a></h1>
+                                <p>IOS和Android并没有与Windows商店应用类似的数据绑定的机制，他们的UI更新通常用以下方法实现：</p>
+                                <h3><a name="_Toc372295584">IOS</a></h3>
+                                <p>IOS通常在ViewController中直接操作UI控件，需要注意的是在非主线程操作UI时，可以用<b>performSelectorOnMainThread来实现。</b></p>
+                                <h3><a name="_Toc372295585">Android</a></h3>
+                                <p>Android的UI更新方法主要有下面4种：</p>
+                                <p style='margin-left: 72.0pt;'>
+                                    1.
+如果只是单纯的想要更新UI而不涉及到多线程的话，使用View.post()就可以了;
+                                </p>
+                                <p style='margin-left: 72.0pt;'>
+                                    2.
+需要另开线程处理数据以免阻塞UI线程，像是IO操作或者是循环，可以使用Activity.runOnUiThread();
+                                </p>
+                                <p style='margin-left: 72.0pt;'>
+                                    3.
+如果需要传递状态值等信息，像是蓝牙编程中的socket连接，就需要利用状态值来提示连接状态以及做相应的处理，就需要使用Handler + Thread的方式;
+                                </p>
+                                <p style='margin-left: 72.0pt;'>
+                                    4.
+如果是后台任务，像是下载任务等，就需要使用AsyncTask。
+                                </p>
+                                <br />
+                                <h3><a name="_Toc372295586">Windows
+Phone&amp;Windows8</a></h3>
+                                <p>数据绑定为 Windows Phone 的应用提供了一种显示数据并与数据进行交互的简便方法。数据的显示方式独立于数据的管理。UI 和数据对象之间的连接或绑定使数据得以在这二者之间流动。绑定建立后，如果数据更改，则绑定到该数据的 UI 元素可以自动反映更改。同样，用户对 UI 元素所做的更改也可以在数据对象中反映出来。例如，如果用户编辑 TextBox 中的值，则基础数据值会自动更新以反映该更改。</p>
+                                <p>常用的一些绑定方案包括将 ListBox 绑定到标题列表，将输入窗体的 TextBox 绑定到客户数据对象，或者将 Image 绑定到当前用户的照片。</p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>要将数据绑定到UI元素，必须为每个绑定都指定源和目标。下图演示绑定的基本概念。</p>
+                                <p class="imgp">
+                                    <img width="455"
+                                        height="190" id="图片 1" src="images/developing_11/image001.png"
+                                        alt="Explain Binding Details">
+                                </p>
+                                <p>源可以是任意 CLR 对象，包括目标元素自身或其他 UI 元素。如果目标处于某一数据模板中，则源可以是该模板应用于的 UI 元素。</p>
+                                <p>
+                                    目标可以是&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.frameworkelement(v=vs.105).aspx">FrameworkElement</a>&nbsp;的任一&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.dependencyproperty(v=vs.105).aspx">DependencyProperty</a>。
+                                </p>
+                                <p>
+                                    在以下情况下目标还可以是&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.dependencyobject(v=vs.105).aspx">DependencyObject</a>&nbsp;的&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.dependencyproperty(v=vs.105).aspx">DependencyProperty</a>：
+                                </p>
+                                <ul style='margin-top: 0cm' type="disc">
+                                    <li><a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.dependencyobject(v=vs.105).aspx">DependencyObject</a>&nbsp;是&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.frameworkelement(v=vs.105).aspx">FrameworkElement</a>&nbsp;的某个属性的值。</li>
+                                    <li><a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.dependencyobject(v=vs.105).aspx">DependencyObject</a>&nbsp;在一个作为&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.frameworkelement(v=vs.105).aspx">FrameworkElement</a>&nbsp;属性的值的集合中（例如，<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.frameworkelement.resources(v=vs.105).aspx">Resources</a>&nbsp;属性）。</li>
+                                    <li><a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.dependencyobject(v=vs.105).aspx">DependencyObject</a>&nbsp;在&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/ee652772(v=vs.105).aspx">DependencyObjectCollection&lt;T&gt;</a>&nbsp;中。</li>
+                                </ul>
+                                <p>
+                                    从
+Windows&nbsp;Phone&nbsp;8 开始，目标还可以是&nbsp;<a
+    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.style(v=vs.105).aspx">Style</a>&nbsp;中&nbsp;<a
+        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.setter(v=vs.105).aspx">Setter</a>&nbsp;的&nbsp;<a
+            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.setter.value(v=vs.105).aspx">Value</a>&nbsp;属性。有关示例，请参见&nbsp;<a
+                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.style(v=vs.105).aspx">Style</a>&nbsp;类的概述。
+                                </p>
+                                <p>
+                                    绑定引擎从&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.binding(v=vs.105).aspx">Binding</a>&nbsp;对象获取以下方面的信息：
+                                </p>
+                                <ul style='margin-top: 0cm' type="disc">
+                                    <li>源对象和目标对象。</li>
+                                    <li>数据流的方向。通过设置&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.binding.mode(v=vs.105).aspx">Binding.Mode</a>&nbsp;属性指定方向。</li>
+                                    <li>值转换器（如果存在）。通过将&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.binding.converter(v=vs.105).aspx">Binding.Converter</a>&nbsp;属性设置为实现&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.ivalueconverter(v=vs.105).aspx">IValueConverter</a>&nbsp;的类的实例，可指定值转换器。</li>
+                                    <li>其他设置，例如&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.bindingbase.stringformat(v=vs.105).aspx">StringFormat</a>、<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.bindingbase.fallbackvalue(v=vs.105).aspx">FallbackValue</a>&nbsp;和&nbsp;<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.bindingbase.targetnullvalue(v=vs.105).aspx">TargetNullValue</a>。有关属性的完整列表，请参见<a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.binding(v=vs.105).aspx">Binding</a>&nbsp;类。</li>
+                                </ul>
+                                <h2><a name="_Toc372295587">数据流方向</a></h2>
+                                <p style='margin: 0cm; margin-bottom: .0001pt; text-align: justify; text-justify: inter-ideograph;'>
+                                    每个绑定都有一个&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.binding.mode(v=vs.105).aspx">Mode</a>&nbsp;属性，该属性决定数据流动的方式和时间。在
+Windows&nbsp;Phone 中，您可以使用三种类型的绑定：
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 36.0pt; margin-bottom: .0001pt;'>
+                                    ●
+创建&nbsp;<a
+    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.bindingmode(v=vs.105).aspx">OneTime</a>&nbsp;绑定时，该绑定使用源数据更新目标。
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 36.0pt; margin-bottom: .0001pt;'>
+                                    ●
+创建&nbsp;<a
+    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.bindingmode(v=vs.105).aspx">OneWay</a>&nbsp;绑定时以及每当源数据发生变化时，该绑定使用源数据更新目标。这是默认模式。
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 36.0pt; margin-bottom: .0001pt;'>
+                                    ●
+当目标和源有一个发生变化时，<a
+    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.bindingmode(v=vs.105).aspx">TwoWay</a>&nbsp;绑定既更新目标也更新源。或者，您可以禁用自动源更新，只在您选择的时间对源进行更新。
+                                </p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt; text-align: justify; text-justify: inter-ideograph;'>
+                                    为了能够发生自动目标更新，源对象必须实现&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.componentmodel.inotifypropertychanged(v=vs.105).aspx">INotifyPropertyChanged</a>&nbsp;接口，如下一部分所述。
+                                </p>
+                                <h2><a name="_Toc372295588">更改通知</a></h2>
+                                <p>
+                                    为了使源对象的更改能够传播到目标，源必须实现&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.componentmodel.inotifypropertychanged(v=vs.105).aspx">INotifyPropertyChanged</a>&nbsp;接口。<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.componentmodel.inotifypropertychanged(v=vs.105).aspx">INotifyPropertyChanged</a>具有&nbsp;<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.componentmodel.inotifypropertychanged.propertychanged(v=vs.105).aspx">PropertyChanged</a>&nbsp;事件，该事件通知绑定引擎源已更改，以便绑定引擎可以更新目标值。
+                                </p>
+                                <p>
+                                    若要获取绑定到&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.itemscontrol(v=vs.105).aspx">ItemsControl</a>&nbsp;的集合的更改通知，除了实现&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.componentmodel.inotifypropertychanged(v=vs.105).aspx">INotifyPropertyChanged</a>&nbsp;外，还要实现<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.collections.specialized.inotifycollectionchanged(v=vs.105).aspx">INotifyCollectionChanged</a>。如果实现&nbsp;<a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.collections.specialized.inotifycollectionchanged(v=vs.105).aspx">INotifyCollectionChanged</a>，对集合的更改（例如添加或移除对象）将传播到目标。若要获取集合中对象的属性更改通知，这些对象必须实现&nbsp;<a
+                                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.componentmodel.inotifypropertychanged(v=vs.105).aspx">INotifyPropertyChanged</a>。
+                                </p>
+                                <p>
+                                    在实现您自己的集合之前，应考虑使用&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/ms668604(v=vs.105).aspx">ObservableCollection&lt;T&gt;</a>&nbsp;类，该类具有&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.collections.specialized.inotifycollectionchanged(v=vs.105).aspx">INotifyCollectionChanged</a>和&nbsp;<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.componentmodel.inotifypropertychanged(v=vs.105).aspx">INotifyPropertyChanged</a>&nbsp;的内置实现。
+                                </p>
+                                <h2><a name="_Toc372295589">更新数据源</a></h2>
+                                <p>
+                                    在&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.bindingmode(v=vs.105).aspx">TwoWay</a>&nbsp;绑定中，对目标的更改会自动更新源，但绑定到&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.textbox(v=vs.105).aspx">TextBox</a>&nbsp;的&nbsp;<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.textbox.text(v=vs.105).aspx">Text</a>&nbsp;属性时除外。这种情况下，更新仅在&nbsp;<a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.textbox(v=vs.105).aspx">TextBox</a>&nbsp;失去焦点时发生。
+                                </p>
+                                <p>您可以禁用自动源更新，只在您选择的时间对源进行更新。例如，您可以这样做，以便在更新绑定数据源之前验证来自多个控件的用户输入。</p>
+                                <p>
+                                    若要禁用自动源更新，请将&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.binding.updatesourcetrigger(v=vs.105).aspx">UpdateSourceTrigger</a>&nbsp;属性设置为&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.updatesourcetrigger(v=vs.105).aspx">Explicit</a>。此设置影响使用相同&nbsp;<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.binding(v=vs.105).aspx">Binding</a>&nbsp;对象的所有绑定（例如，在使用继承的数据上下文时）。但是，您必须为每个绑定单独更新源。若要更新某一绑定，请首先调用目标元素的&nbsp;<a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.frameworkelement.getbindingexpression(v=vs.105).aspx">FrameworkElement.GetBindingExpression</a>&nbsp;方法，并且传递到目标<a
+                                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.dependencyproperty(v=vs.105).aspx">DependencyProperty</a>&nbsp;中。然后，可以使用返回值调用&nbsp;<a
+                                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.bindingexpression.updatesource(v=vs.105).aspx">BindingExpression.UpdateSource</a>&nbsp;方法。
+                                </p>
+                                <h2><a name="_Toc372295590">绑定到集合</a></h2>
+                                <p>
+                                    可以将绑定源对象视为一个对象（其属性包含数据），也可以将它视为一个对象集合。例如，您可能希望显示项的列表，如每月的信用卡帐单。为此，请使用&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.itemscontrol(v=vs.105).aspx">ItemsControl</a>&nbsp;并使用&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.datatemplate(v=vs.105).aspx">DataTemplate</a>&nbsp;以显示集合中的每一项。
+                                </p>
+                                <p style='vertical-align: baseline'>
+                                    XAML
+                                </p><textarea>XAML
+
+<Grid.Resources>
+  <DataTemplate x:Name="dataTemplate">
+    <Grid>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition />
+        <ColumnDefinition />
+      </Grid.ColumnDefinitions>
+
+      <TextBlock Grid.Column="0" 
+          Text="{Binding Month, Converter={StaticResource Converter1}}"/>
+      <TextBlock Grid.Column="1" Text="{Binding Total}"/>    
+    </Grid>
+  </DataTemplate>
+</Grid.Resources>
+
+<ItemsControl x:Name="IC1" ItemsSource="{Binding}" 
+  ItemTemplate="{StaticResource dataTemplate}"/></textarea>
+                                <p>
+                                    可以枚举实现&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.collections.ienumerable(v=vs.105).aspx">IEnumerable</a>&nbsp;的任何集合。如果希望目标在集合更改时更新&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.itemscontrol.itemssource(v=vs.105).aspx">ItemsSource</a>，请实现<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.collections.specialized.inotifycollectionchanged(v=vs.105).aspx">INotifyCollectionChanged</a>。有关更改通知的更多信息，请参见本主题前面介绍的&quot;更改通知&quot;部分。
+                                </p>
+                                <p>
+                                    还可以绑定到&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.collectionviewsource(v=vs.105).aspx">CollectionViewSource</a>&nbsp;类的实例，该类提供对其他数据源的排序、分组、筛选和货币支持。<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.collectionviewsource(v=vs.105).aspx">CollectionViewSource</a>&nbsp;使您可以显示多个数据视图，这些视图保持与用户选择更改同步。
+                                </p>
+                                <p>
+                                    您还可以使用&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.collectionviewsource(v=vs.105).aspx">CollectionViewSource</a>&nbsp;将多个控件绑定到在层次结构上相关的数据。
+                                </p>
+                                <h2><a name="_Toc372295591">数据验证</a></h2>
+                                <p>
+                                    Windows&nbsp;Phone 支持在&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.bindingmode(v=vs.105).aspx">TwoWay</a>&nbsp;绑定中对从目标到源的更新进行简单数据验证。
+                                </p>
+                                <p>
+                                    只要绑定的&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.validation.errors(v=vs.105).aspx">Validation.Errors</a>&nbsp;附加属性包含错误，Windows&nbsp;Phone
+就会报告验证错误。在以下情况下，将向此集合中添加错误：
+                                </p>
+                                <ul style='margin-top: 0cm' type="disc">
+                                    <li>从绑定引擎的类型转换器中引发了异常。</li>
+                                    <li>在绑定对象的&nbsp;<b>set</b>&nbsp;访问器中引发了异常。</li>
+                                    <li>在应用到数据对象或成员的验证属性中引发了异常。</li>
+                                    <li>此绑定对象实现&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.componentmodel.idataerrorinfo(v=vs.105).aspx">IDataErrorInfo</a>，并且其&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.componentmodel.idataerrorinfo.item(v=vs.105).aspx">Item</a>&nbsp;属性返回不是&nbsp;<b>null</b>&nbsp;或&nbsp;<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.string.empty(v=vs.105).aspx">Empty</a>&nbsp;的值。</li>
+                                    <li>此绑定对象实现&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.componentmodel.inotifydataerrorinfo(v=vs.105).aspx">INotifyDataErrorInfo</a>，并且其&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.componentmodel.inotifydataerrorinfo.geterrors(v=vs.105).aspx">GetErrors</a>&nbsp;方法返回不是&nbsp;<b>null</b>&nbsp;的值。<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.componentmodel.inotifydataerrorinfo.geterrors(v=vs.105).aspx">GetErrors</a>&nbsp;返回值可能会因为完成了异步验证操作而发生变化。</li>
+                                </ul>
+                                <p>
+                                    在发生以下情况时，Windows&nbsp;Phone
+会为验证错误提供直观的反馈：
+                                </p>
+                                <ul style='margin-top: 0cm' type="disc">
+                                    <li><a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.binding.validatesonexceptions(v=vs.105).aspx">ValidatesOnExceptions</a>&nbsp;属性值为&nbsp;<b>true</b>。</li>
+                                    <li><a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.binding.validatesondataerrors(v=vs.105).aspx">ValidatesOnDataErrors</a>&nbsp;属性值为&nbsp;<b>true</b>。然而，如果&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.binding.validatesonexceptions(v=vs.105).aspx">ValidatesOnExceptions</a>&nbsp;属性值为&nbsp;<b>true</b>，则将忽略源属性的&nbsp;<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.binding.validatesondataerrors(v=vs.105).aspx">ValidatesOnDataErrors</a>&nbsp;属性，并且源属性 setter 引发异常。</li>
+                                    <li><a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.binding.validatesonnotifydataerrors(v=vs.105).aspx">ValidatesOnNotifyDataErrors</a>&nbsp;属性为&nbsp;<b>true</b>。此属性可以与&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.binding.validatesonexceptions(v=vs.105).aspx">ValidatesOnExceptions</a>&nbsp;和<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.binding.validatesondataerrors(v=vs.105).aspx">ValidatesOnDataErrors</a>&nbsp;属性配合使用。</li>
+                                </ul>
+                                <p>该可视反馈指示包含错误的控件并显示附近的错误消息。</p>
+                                <p>
+                                    为了收到发生了验证错误或者错误已解决这一通知，还必须在绑定对象上将&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.binding.notifyonvalidationerror(v=vs.105).aspx">NotifyOnValidationError</a>&nbsp;属性设置为&nbsp;<b>true</b>。这指示绑定引擎在验证错误添加到&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.validation.errors(v=vs.105).aspx">Validation.Errors</a>&nbsp;集合或者从该集合中删除时引发<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.frameworkelement.bindingvalidationerror(v=vs.105).aspx">BindingValidationError</a>&nbsp;事件。例如，您可以处理错误事件，以便记录错误或提供其他可视反馈。
+                                </p>
+                                <p>
+                                    若要处理&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.frameworkelement.bindingvalidationerror(v=vs.105).aspx">BindingValidationError</a>&nbsp;事件，请在目标对象或其任一父级上创建一个事件处理程序。<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.frameworkelement.bindingvalidationerror(v=vs.105).aspx">BindingValidationError</a>&nbsp;事件为路由事件，因此如果不在引发该事件的元素上予以处理，它将不断向上冒泡，直到得到处理。
+                                </p>
+                                <h2><a name="_Toc372295592">数据转换</a></h2>
+                                <p>可能需要以不同于数据存储方式的格式来显示数据。下面是一些示例：</p>
+                                <p>将某种颜色存储为一个 RGBA 值，但将它显示为一个字符串名称。</p>
+                                <p>将某个数字存储为一个浮点值，但将它显示为一个货币值。</p>
+                                <p>
+                                    将某个日期存储为&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.datetime(v=vs.105).aspx">DateTime</a>，但将它显示在日历中。
+                                </p>
+                                <p>存储一个&nbsp;null&nbsp;值，但显示一个友好的默认值。</p>
+                                <p>
+                                    可以通过设置&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.bindingbase.stringformat(v=vs.105).aspx">StringFormat</a>&nbsp;属性来格式化用于显示的任何&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.string(v=vs.105).aspx">String</a>&nbsp;值。
+                                </p>
+                                <p>
+                                    还可以通过设置&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.bindingbase.targetnullvalue(v=vs.105).aspx">TargetNullValue</a>&nbsp;属性显示用于&nbsp;null&nbsp;后备值的友好默认值。
+                                </p>
+                                <p>
+                                    还可以对任何绑定设置转换器。通过创建一个类和实现&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.ivalueconverter(v=vs.105).aspx">IValueConverter</a>&nbsp;接口来针对每个具体的应用场景自定义该转换器。下面的示例演示如何实现&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.ivalueconverter(v=vs.105).aspx">IValueConverter</a>。
+                                </p>
+                                <p style='vertical-align: baseline'>
+                                    C#
+                                </p>
+                                <p style='vertical-align: baseline'>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/cc278072(v=vs.105).aspx?cs-save-lang=1&amp;cs-lang=vb#code-snippet-10">VB</a>
+                                </p><pre><code>// Custom class implements the IValueConverter interface.
+public class DateToStringConverter : IValueConverter
+{
+
+    #region IValueConverter Members
+
+    // Define the Convert method to change a DateTime object to 
+    // a month string.
+    public object Convert(object value, Type targetType, 
+        object parameter, 
+System.Globalization.CultureInfo culture)
+    {
+        // value is the data from the source object.
+        DateTime thisdate = (DateTime)value;
+        int monthnum = thisdate.Month;
+        string month;
+        switch (monthnum)
+        {
+            case 1:
+                month = "January";
+                break;
+            case 2:
+                month = "February";
+                break;
+            default:
+                month = "Month not found";
+                break;
+        }
+        // Return the value to pass to the target.
+        return month;
+
+    }
+
+    // ConvertBack is not implemented for a OneWay binding.
+    public object ConvertBack(object value, Type targetType, 
+        object parameter, System.Globalization.CultureInfo culture)
+    {
+        throw new NotImplementedException();
+    }
+
+    #endregion
+}</code></pre>
+                                <p>
+                                    如果为绑定定义了&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.binding.converter(v=vs.105).aspx">Converter</a>&nbsp;参数，则绑定引擎会调用&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.ivalueconverter.convert(v=vs.105).aspx">Convert</a>&nbsp;和&nbsp;<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.ivalueconverter.convertback(v=vs.105).aspx">ConvertBack</a>&nbsp;方法。从源传递数据时，绑定引擎调用&nbsp;<a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.ivalueconverter.convert(v=vs.105).aspx">Convert</a>&nbsp;并将返回的数据传递给目标。从目标传递数据时，绑定引擎调用&nbsp;<a
+                                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.ivalueconverter.convertback(v=vs.105).aspx">ConvertBack</a>&nbsp;并将返回的数据传递给源。下面的示例演示如何设置&nbsp;<a
+                                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.binding.converter(v=vs.105).aspx">Converter</a>&nbsp;参数。
+                                </p>
+                                <p style='vertical-align: baseline'>
+                                    XAML
+                                </p><textarea><phone:PhoneApplicationPage.Resources>
+  <local:DateToStringConverter x:Key="Converter1"/>
+</phone:PhoneApplicationPage.Resources>
+
+
+...
+
+
+<TextBlock Grid.Column="0" 
+    Text="{Binding Month, Converter={StaticResource Converter1}}"/></textarea>
+                                <p>
+                                    转换器还具有可选参数：<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.binding.converterculture(v=vs.105).aspx">ConverterCulture</a>&nbsp;和&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.binding.converterparameter(v=vs.105).aspx">ConverterParameter</a>，通过前者可以指定转换中使用的区域性，通过后者可以为转换逻辑传递一个参数。有关使用这些参数的示例，请参见&nbsp;<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.ivalueconverter(v=vs.105).aspx">IValueConverter</a>。
+                                </p>
+                                <p>
+                                    如果转换时发生错误，将不会引发异常，而是返回&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.dependencyproperty.unsetvalue(v=vs.105).aspx">DependencyProperty.UnsetValue</a>，它将停止数据传输。
+                                </p>
+                                <p>
+                                    若要显示当无法解析绑定源时就会出现的默认值，请设置&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.bindingbase.fallbackvalue(v=vs.105).aspx">FallbackValue</a>&nbsp;属性。这用于处理转换和格式化错误。还可用于绑定到可能在绑定集合中的所有对象上都不存在的源属性。
+                                </p>
+                                <h1><a name="_Toc372295593">MVC和MVVM</a></h1>
+                                <p>MVC 全名是Model View Controller，是模型(model)－视图(view)－控制器(controller)的缩写，一种软件设计典范，用于组织代码用一种业务逻辑和数据显示分离的方法，这个方法的假设前提是如果业务逻辑被聚集到一个部件里面，而且界面和用户围绕数据的交互能被改进和个性化定制而不需要重新编写业务逻辑。MVC被独特的发展起来用于映射传统的输入、处理和输出功能在一个逻辑的图形化用户界面的结构中。</p>
+                                <p>完全理解MVC并不是很容易。使用MVC需要精心的计划，由于它的内部原理比较复杂，所以需要花费一些时间去思考。同时由于模型和视图要严格的分离，这样也给调试应用程序带来了一定的困难。每个构件在使用之前都需要经过彻底的测试。</p>
+                                <p>模型-视图-视图模型 (MVVM)&nbsp;是一种用来分离 UI 和非 UI 代码的应用设计模式。是MVC模式的一种变体，使用 MVVM，可以按声明方式定义 UI（例如，使用 XAML），并使用数据绑定标记将 UI 链接到包含数据和用户命令的其他层。数据绑定基础结构提供了一种松散的耦合，这种耦合使 UI 和链接数据保持同步并将所有的用户输入路由到相应的命令。</p>
+                                <p>
+                                    MVVM
+模式对你的代码进行组织，以便你可以在更改代码的一部分时不影响其他部分。这有许多优点，其中包括：
+                                </p>
+                                <p style='margin-left: 21.0pt;'>
+                                    ——启用交互式探索性编码样式。
+                                </p>
+                                <p style='margin-left: 21.0pt;'>
+                                    ——简化单元测试。
+                                </p>
+                                <p style='margin-left: 21.0pt;'>
+                                    ——更好地利用设计工具（如 Expression Blend）。
+                                </p>
+                                <p style='margin-left: 21.0pt;'>
+                                    ——支持团队协作。
+                                </p>
+                                <p>MVVM模式由于层与层之间是严格的分离，与MVC模式有很多优点，主要优势是它向每一层分配明确界定的职责。&nbsp;模型是数据来源；视图向用户显示内容并接受用户的输入。&nbsp;对于控制器，它有些类似乐队指挥，负责协调应用程序的操作和响应。&nbsp;例如，控制器经常负责协调根据用户输入显示数据、启动和停止动画播放等操作。</p>
+                                <p>更多内容，请参见：</p>
+                                <p>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/jj883732.aspx">使用模型-视图-视图模型 (MVVM)
+模式</a>
+                                </p>
+                                <p>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/magazine/jj651572.aspx">在 Windows 8 中使用 MVVM 模式</a>
+                                </p>
+                                <p>&nbsp;</p>
+                                <h1><a name="_Toc372295594">更新UI</a></h1>
+                                <h2><a name="_Toc372295595">Windows Phone &amp; Windows应用商店应用</a></h2>
+                                <h3><a name="_Toc372295596">将控件绑定到单个项目</a></h3>
+                                <p>
+                                    数据绑定包含目标和源。绑定的目标通常是控件属性。目标必须是&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.dependencyproperty(v=vs.105).aspx">DependencyProperty</a>。
+                                </p>
+                                <p>
+                                    下面演示了将控件绑定到单个项目的示例。目标是&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.textbox(v=vs.105).aspx">TextBox</a>&nbsp;控件的&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.textbox.text(v=vs.105).aspx">Text</a>&nbsp;属性。源是简单的音乐记录类。
+                                </p>
+                                <p style='vertical-align: baseline'>
+                                    XAML
+                                </p><textarea><Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+    <TextBox VerticalAlignment="Top" IsReadOnly="True" Margin="5"
+       TextWrapping="Wrap" Height="120" Width="400"
+       Text="{Binding}" x:Name="textBox1" />
+</Grid></textarea>
+                                <p style='vertical-align: baseline'>
+                                    C#
+                                </p><pre><code>VB
+
+// Constructor
+public MainPage()
+{
+   InitializeComponent();
+   // Set the data context to a new Recording.
+   textBox1.DataContext = new Recording("Chris Sells", "Chris Sells Live",
+      new DateTime(2008, 2, 5));
+}
+
+// A simple business object
+public class Recording
+{
+   public Recording() { }
+   public Recording(string artistName, string cdName, DateTime release)
+   {
+      Artist = artistName;
+      Name = cdName;
+      ReleaseDate = release;
+   }
+   public string Artist { get; set; }
+   public string Name { get; set; }
+   public DateTime ReleaseDate { get; set; }
+   // Override the ToString method.
+   public override string ToString()
+   {
+      return Name + " by " + Artist + ", Released: " + ReleaseDate.ToShortDateString();
+   }
+}</code></pre>
+                                <p>在Windows Phone中运行应用时，它看起来像下面这样：</p>
+                                <p class="imgp">
+                                    <img border="0"
+                                        width="225" height="375" id="图片 4" src="images/developing_11/image002.png"
+                                        alt="Binding To Controls">
+                                </p>
+                                <p>&nbsp;</p>
+                                <p>
+                                    要在&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.textbox(v=vs.105).aspx">TextBox</a>&nbsp;中显示音乐记录，使用标记扩展将控件的&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.textbox.text(v=vs.105).aspx">Text</a>&nbsp;属性设置为&nbsp;<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.binding(v=vs.105).aspx">Binding</a>。在本示例中，默认情况下绑定代码为&nbsp;<a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.bindingmode(v=vs.105).aspx">OneWay</a>，这意味着数据是从源检索的，但更改不会回传给源。
+                                </p>
+                                <p>
+                                    “记录”类拥有三个公共属性和一种&nbsp;<b>ToString</b>&nbsp;重写方法。这些属性为：<b>艺术家</b>、<b>名称</b>和<b>发布日期</b>。<b>ToString</b>&nbsp;方法很重要，这是因为如果没有指定格式，将对绑定对象调用<b>ToString</b>&nbsp;方法以用于显示目的。绑定的&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.binding.source(v=vs.105).aspx">Source</a>&nbsp;属性不是直接设置的；而是将&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.textbox(v=vs.105).aspx">TextBox</a>&nbsp;控件的&nbsp;<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.frameworkelement.datacontext(v=vs.105).aspx">DataContext</a>&nbsp;属性设置到新的记录对象。
+                                </p>
+                                <h3><a name="_Toc372295597">将控件绑定到对象的集合</a></h3>
+                                <p>
+                                    上面的示例演示了您所使用的将数据绑定到控件的语法，但它并不是非常切合实际。常见的方案是绑定到业务对象的集合。常见的&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/ms668604(v=vs.105).aspx">ObservableCollection&lt;T&gt;</a>&nbsp;类是用于数据绑定的理想集合选择，因为它可以实现<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.componentmodel.inotifypropertychanged(v=vs.105).aspx">INotifyPropertyChanged</a>&nbsp;和&nbsp;<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.collections.specialized.inotifycollectionchanged(v=vs.105).aspx">INotifyCollectionChanged</a>&nbsp;接口。当列表中的项目发生更改时或列表本身的属性发生更改时，这些接口会向绑定控件提供更改通知。如果您想要您的绑定对象随集合中对象属性的更改进行更新，业务对象还应该实现&nbsp;<a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.componentmodel.inotifypropertychanged(v=vs.105).aspx">INotifyPropertyChanged</a>。
+                                </p>
+                                <p>
+                                    下面的示例将音乐“记录”对象的集合绑定到&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.listbox(v=vs.105).aspx">ListBox</a>。
+                                </p>
+                                <p style='vertical-align: baseline'>
+                                    XAML
+                                </p><textarea><Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+   <ListBox x:Name="ListBox1" ItemsSource="{Binding}"
+      Height="200" Width="400"/>
+</Grid></textarea>
+                                <p style='vertical-align: baseline'>
+                                    C#
+                                </p><pre><code>VB
+
+public ObservableCollection<Recording> MyMusic = new ObservableCollection<Recording>();
+
+public MainPage()
+{
+   InitializeComponent();
+   // Add items to the collection.
+   MyMusic.Add(new Recording("Chris Sells", "Chris Sells Live",
+   new DateTime(2008, 2, 5)));
+   MyMusic.Add(new Recording("Luka Abrus",
+      "The Road to Redmond", new DateTime(2007, 4, 3)));
+   MyMusic.Add(new Recording("Jim Hance",
+      "The Best of Jim Hance", new DateTime(2007, 2, 6)));
+   // Set the data context for the list box.
+   ListBox1.DataContext = MyMusic;
+}</code></pre>
+                                <p class="imgp">
+                                    <img border="0" width="225" height="375"
+                                        id="图片 7" src="images/developing_11/image003.png"
+                                        alt="Binding to controls collection">
+                                </p>
+                                <p>
+                                    为显示&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.listbox(v=vs.105).aspx">ListBox</a>&nbsp;中的音乐记录，该控件的&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.itemscontrol.itemssource(v=vs.105).aspx">ItemsSource</a>&nbsp;属性已设置为&nbsp;<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.binding(v=vs.105).aspx">Binding</a>，且&nbsp;<a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.listbox(v=vs.105).aspx">ListBox</a>&nbsp;控件的<a
+                                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.frameworkelement.datacontext(v=vs.105).aspx">DataContext</a>&nbsp;属性被设置为<b>记录</b>对象的集合（该集合提供用于绑定的源）。已为集合中每个项目创建了<a
+                                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.listboxitem(v=vs.105).aspx">ListBoxItem</a>。将对每个<b>记录</b>对象自动调用&nbsp;<a
+                                                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.type.tostring(v=vs.105).aspx">ToString</a>，以将其显示在列表框项目中。
+                                </p>
+                                <h3><a name="_Toc372295598">使用数据模版显示控件中的项目</a></h3>
+                                <p>
+                                    您可以使用项目的&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.type.tostring(v=vs.105).aspx">ToString</a>&nbsp;方法显示列表中的项目。然而，更为常见的方案是使用允许您自定义列表项目在控件中的显示方式的&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.datatemplate(v=vs.105).aspx">DataTemplate</a>，来提供数据绑定项目的自定义显示。通常，您会使用内容控件的<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.contentcontrol.contenttemplate(v=vs.105).aspx">ContentTemplate</a>&nbsp;属性或项目控件的&nbsp;<a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.itemscontrol.itemtemplate(v=vs.105).aspx">ItemTemplate</a>&nbsp;属性来设置数据模板。
+                                </p>
+                                <p>
+                                    以下示例演示了使用数据模板将同一列表中的记录绑定到列表框的示例。列表框是一个&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.itemscontrol(v=vs.105).aspx">ItemsControl</a>，这意味着您通过将其&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.itemscontrol.itemtemplate(v=vs.105).aspx">ItemTemplate</a>&nbsp;属性设置到数据模板来为每个项目建立数据模板。
+                                </p>
+                                <p style='vertical-align: baseline'>
+                                    XAML
+                                </p><textarea><ListBox x:Name="ListBox1" Margin="5"
+   Width="450" Height="200" HorizontalAlignment="Left"
+   ItemsSource="{Binding}" >
+   <ListBox.ItemTemplate>
+      <DataTemplate>
+         <StackPanel Orientation="Horizontal" Margin="2">
+            <TextBlock Text="Artist:" Margin="2" />
+            <TextBlock Text="{Binding Artist}" Margin="2" />
+            <TextBlock Text="CD:" Margin="10,2,0,2" />
+            <TextBlock Text="{Binding Name}" Margin="2" />
+         </StackPanel>
+      </DataTemplate>
+   </ListBox.ItemTemplate>
+</ListBox></textarea>
+                                <p>
+                                    在 XAML 中，您可以查看数据模板定义。数据模板包含一个附带四个&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.textblock(v=vs.105).aspx">TextBlock</a>&nbsp;控件的&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.stackpanel(v=vs.105).aspx">StackPanel</a>。堆栈面板为水平方向，因此四个文本块控件将并排显示。<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.textblock(v=vs.105).aspx">TextBlock</a>&nbsp;的两个控件被绑定到记录对象的艺术家和名称属性。其他两个&nbsp;<a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.textblock(v=vs.105).aspx">TextBlock</a>&nbsp;控件将显示静态文本。对于每个绑定的项目，绑定将提供记录对象的属性的路径。与前面的示例一样，此绑定依赖于要设置到记录列表的数据上下文。
+                                </p>
+                                <h3><a name="_Toc372295599">详细信息视图</a></h3>
+                                <p>
+                                    从集合中选择某个项目时，要显示该项目的详细信息，您需要创建相应的 UI 并将 UI 绑定到要显示的数据。此外，您必须将&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.collectionviewsource(v=vs.105).aspx">CollectionViewSource</a>&nbsp;用作数据上下文，以启用要绑定到当前项的详细信息视图。
+                                </p>
+                                <p>
+                                    下面的示例演示了同一列表中的记录，但这次该列表是&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.collectionviewsource(v=vs.105).aspx">CollectionViewSource</a>&nbsp;实例的数据源。布局根的数据上下文已设置为集合视图源，并且列表框和详细信息视图继承自布局根的数据上下文。这将启用列表框以显示同样的项目列表，同时详细信息视图将显示当前项目的信息。
+                                </p>
+                                <p style='vertical-align: baseline'>
+                                    XAML
+                                </p><textarea>XAML
+
+<!--The UI for the details view-->
+<StackPanel x:Name="RecordingDetails">
+   <TextBlock FontWeight="Bold" Text="{Binding Artist}" Margin="5,0,0,0"/>
+   <TextBlock FontStyle="Italic" Text="{Binding Name}" Margin="5,0,0,0"/>
+   <TextBlock Text="{Binding ReleaseDate}" Margin="5,0,0,0" />
+</StackPanel></textarea>
+                                <p style='vertical-align: baseline'>
+                                    C#
+                                </p><pre><code>//ListBox1.DataContext = MyMusic;
+LayoutRoot.DataContext = new CollectionViewSource { Source = MyMusic };</code></pre>
+                                <p class="imgp">
+                                    <img border="0" width="225" height="375"
+                                        id="图片 9" src="images/developing_11/image005.png"
+                                        alt="Binding to control details">
+                                </p>
+                                <p>
+                                    在本例中，添加了包含三个文本块的&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.stackpanel(v=vs.105).aspx">StackPanel</a>&nbsp;，以显示记录详细信息。每个文本块的&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.textblock.text(v=vs.105).aspx">Text</a>&nbsp;属性都被绑定到记录对象上的属性。
+                                </p>
+                                <h3><a name="_Toc372295600">绑定转换器</a></h3>
+                                <p>
+                                    如果您想要格式化并显示控件中的非字符串类型，如&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.textbox(v=vs.105).aspx">TextBox</a>，您可以使用转换器。例如，您可以显示标签和带有格式的日期，而不是只显示日期。（请注意，如果您想要日期自动进行格式化，可以使用&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.bindingbase.stringformat(v=vs.105).aspx">StringFormat</a>。）下面的示例演示了记录列表中发布版本的转换器实现。
+                                </p>
+                                <p style='vertical-align: baseline'>
+                                    XAML
+                                </p><textarea><phone:PhoneApplicationPage
+   x:Class="PhoneApp1.MainPage"
+
+
+      ...
+   xmlns:local="clr-namespace:PhoneApp1"
+      ...
+   >
+
+<phone:PhoneApplicationPage.Resources>
+   <local:StringFormatter x:Key="StringConverter"/>
+</phone:PhoneApplicationPage.Resources>
+
+   ...
+
+   <!--ContentPanel - place content here-->
+   <StackPanel x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+      <ListBox x:Name="ListBox1" Margin="5"
+         Width="450" Height="200" HorizontalAlignment="Left"
+         ItemsSource="{Binding}" >
+         <ListBox.ItemTemplate>
+            <DataTemplate>
+               <StackPanel Orientation="Horizontal" Margin="2">
+                  <TextBlock Text="Artist:" Margin="2" />
+                  <TextBlock Text="{Binding Artist}" Margin="2" />
+                  <TextBlock Text="CD:" Margin="10,2,0,2" />
+                  <TextBlock Text="{Binding Name}" Margin="2" />
+               </StackPanel>
+            </DataTemplate>
+         </ListBox.ItemTemplate>
+      </ListBox>
+      <!--The UI for the details view-->
+      <StackPanel x:Name="RecordingDetails">
+         <TextBlock Text="{Binding Artist}" />
+         <TextBlock Text="{Binding Name}" />
+         <TextBlock Text="{Binding ReleaseDate,
+            Converter={StaticResource StringConverter},
+            ConverterParameter=Released: \{0:D\}}" />
+      </StackPanel>
+   </StackPanel></textarea>
+                                <p style='vertical-align: baseline'>
+                                    C#
+                                </p><pre><code>VB
+
+public class StringFormatter : IValueConverter
+{
+   // This converts the value object to the string to display.
+   // This will work with most simple types.
+   public object Convert(object value, Type targetType,
+   object parameter, System.Globalization.CultureInfo culture)
+   {
+      // Retrieve the format string and use it to format the value.
+      string formatString = parameter as string;
+      if (!string.IsNullOrEmpty(formatString))
+      {
+         return string.Format(culture, formatString, value);
+      }
+      // If the format string is null or empty, simply
+      // call ToString() on the value.
+      return value.ToString();
+   }
+
+   // No need to implement converting back on a one-way binding
+   public object ConvertBack(object value, Type targetType,
+   object parameter, System.Globalization.CultureInfo culture)
+   {
+      throw new NotImplementedException();
+   }
+}</code></pre>
+                                <p>
+                                    转换器是派生自&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.ivalueconverter(v=vs.105).aspx">IValueConverter</a>&nbsp;接口的类，它包括两种方法：<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.ivalueconverter.convert(v=vs.105).aspx">Convert</a>&nbsp;和&nbsp;<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.ivalueconverter.convertback(v=vs.105).aspx">ConvertBack</a>。要获取从数据源到绑定目标的单向绑定，您只需要实现&nbsp;<a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.data.ivalueconverter.convert(v=vs.105).aspx">Convert</a>&nbsp;方法。此示例中的转换器相当常见。您可以将所需的字符串格式传递为参数，然后转换器将使用“格式”方法执行转换。如果没有传递任何格式字符串，转换器会返回在对象上调用ToString&nbsp;的结果。
+                                </p>
+                                <p>
+                                    实现转换器后，您可以创建转换器类的实例，并指示绑定使用此实例。在本示例中，将在
+XAML 中执行此操作。将作为静态源创建转换器的实例，并指定一个键。在绑定上设置转换器属性时，将使用该键。此示例中的转换器相当常见。您可以将所需的字符串格式传递为参数，然后转换器将使用&nbsp;<a
+    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.string.format(v=vs.105).aspx">Format</a>&nbsp;方法执行转换。如果没有传递任何格式字符串，转换器会返回在对象上调用&nbsp;ToString&nbsp;的结果。
+                                </p>
+                                <p>&nbsp;</p>
+                                <p><b>注：</b></p>
+                                <p>由于在数据绑定上Windows应用商店应用与Windows Phone并没有多大的区别，这里不再赘述。</p>
+                                <h1><a name="_Toc372295601">另请参见</a></h1>
+                                <p>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/cc278072(v=vs.105).aspx">Windows Phone的数据绑定</a>
+                                </p>
+                                <p>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/jj207023(v=vs.105).aspx">快速入门：Windows
+Phone数据绑定到控件</a>
+                                </p>
+                                <p>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/cc838207(v=vs.105).aspx">如何为Windows Phone创建数据绑定</a>
+                                </p>
+                                <p>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-CN/library/windows/apps/hh758320.aspx">数据绑定概述（使用
+C#/VB/C++ 和 XAML 的 Windows 应用商店应用）</a>
+                                </p>
+                                <p>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-CN/library/windows/apps/hh464965.aspx">快速入门：到控件的数据绑定（使用
+C#/VB/C++ 和 XAML 的 Windows 应用商店应用）</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <!--End Content-->
+        <div style="text-align: right" class="gotoTop"><a href="javascript:scroll(0,0)"></a></div>
+        <!--Begin ProudctLinks-->
+        <div class="ms-pro-links">
+            <div class="grid-container clearfix">
+                <div class="cam-links">
+                    其它微软站点
+		<a href="http://www.microsoft.com/zh-cn/default.aspx">微软中国官方网站</a>
+                    <a href="http://www.microsoft.com/zh-cn/download/default.aspx?WT.mc_id=MSCOM_zh-cn_HP_Footer_downloads" target="_blank">微软中国下载中心</a>
+                    <a href="http://www.microsoftstore.com.cn?WT.mc_id=MSCOM_003" target="_blank">微软中国官方商城</a>
+                    <a href="http://www.microsoft.com/china/newsletter/" target="_blank">订阅电子期刊</a>
+                    <a href="https://sales.liveperson.net/hc/21661174/?cmd=file&file=visitorWantsToChat&site=21661174&byhref=1&SESSIONVAR!skill=APGC.PRC.ZH.CS.CON.PRESLS.GENERAL" target="_blank">联系微软销售代表</a>
+                    <a href="http://www.microsoft.com/zh-cn/sitemap.aspx" target="_blank">网站地图</a>
+                </div>
+            </div>
+        </div>
+        <!--End ProudctLinks-->
+        <!--Begin footer-->
+        <div class="footer">
+            <div class="grid-container">
+                <img src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-type-1x.png" alt="microsoft" class="logo">
+                <ul>
+                    <li><a href="http://www.miibeian.gov.cn/" title="">京ICP备09042378号-6</a></li>
+                    <li><a href="https://profile.microsoft.com/RegSysProfileCenter/default.aspx?lcid=2052" title="">个人信息中心</a></li>
+                    <li><a href="http://support.microsoft.com/contactus/?ws=support" title="">与我们联系</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkId=248681" title="">隐私权声明</a></li>
+                    <li><a href="http://go.microsoft.com/?linkid=4412892" title="">使用条款</a></li>
+                    <li><a href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Trademarks/EN-US.aspx" title="">商标</a></li>
+                    <li>&copy; 2013 Microsoft</li>
+                </ul>
+            </div>
+        </div>
+        <!--End footer-->
+        <!-- Begin MDA WEDCS -->
+        <script type="text/JavaScript">
+            var varSegmentation = 0;
+            var varClickTracking = 1;
+            var varCustomerTracking = 1;
+            var varAutoFirePV = 1;
+            var Route = "#";
+            var Ctrl = "#"
+            //document.write("<script type='text/javascript' src='" + window.location.protocol + "//c.microsoft.com/ms.js'><"+"/script>");
+        </script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="./assets/js/script.js"></script>
+        <script type="text/javascript" src="./js/siteSearch.js"></script>
+        <noscript>
+            <img alt="" width="1" height="1" src="http://c.microsoft.com/trans_pixel.aspx/" />
+        </noscript>
+        <!-- Begin MDA WEDCS -->
+    </div>
+</body>
+</html>

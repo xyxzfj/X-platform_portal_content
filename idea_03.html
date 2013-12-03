@@ -1,0 +1,789 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>应用结构和生命周期</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="css/templete.css" type="text/css" media="all" />
+    <meta charset="UTF-8">
+</head>
+<body class="level-2">
+    <div class="wrapper">
+        <!--Begin header-->
+        <div class="header">
+            <div class="grid-container clearfix">
+                <div class="header-left">
+                    <img alt="Microsoft" src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-lg-1x.png" width="94" height="20">
+                    <h1>X-Platform</h1>
+                </div>
+                <div id="mscom-search" class="mscom-search" style="margin-top: 37px;">
+                    <div class="search-form">
+                        <form action="" id="search-form">
+                            <div class="input-wrapper">
+                                <label class="screen-reader-text" for="search-input">搜索 Microsoft.com</label>
+                                <input id="search-input" type="text" class="input-area" autocomplete="off">
+                            </div>
+                            <button class="search-submit" id="search-btn" type="submit">
+                                <img width="16" height="16" alt="Submit" src="http://i.s-microsoft.com/global/imagestore/PublishingImages/sprites/search-button-blue.png"></button>
+                        </form>
+                    </div>
+                    <div class="search-results-box" id="results">
+                        <div class="search-scope">
+                            <ul>
+                                <li class=""><a class="checked" search="microsoft" role="search">搜索 Microsoft.com</a></li>
+                                <li class=""><a search="internet" role="search">搜索互联网</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End header-->
+        <br />
+        <!--Begin Content-->
+        <div class="content">
+            <div class="wrapper">
+                <div class="wrapper-header">
+                    <div>
+                        <a href="index.html">
+                            <img src="./assets/image/banner_1.jpg"></a>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="nav">
+                        <div class="block article-nav-block">
+                            <h2>移动应用开发生命周期</h2>
+                            <div class="menu active">
+                                <h3><a href="idea.html">计划<span>Idea/Planning</span></a></h3>
+                                <ul>
+                                    <li><a href="idea_01.html">平台总览</a></li>
+                                    <li><a href="idea_02.html">开发工具、开发环境和模拟器</a></li>
+                                    <li><a href="idea_03.html">应用结构和生命周期</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="design.html">设计<span>Design</span></a></h3>
+                                <ul>
+                                    <li><a href="design_01.html">UI Layout的设计</a></li>
+                                    <li><a href="design_02.html">UI的控件</a></li>
+                                    <li><a href="design_03.html">UI页面的控制和导航</a></li>
+                                    <li><a href="design_04.html">不同屏幕尺寸和分辨率的适配</a></li>
+                                    <li><a href="design_05.html">第三方SDK</a></li>
+                                    <li><a href="design_06.html">游戏开发</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="developing.html">开发<span>Developing</span></a></h3>
+                                <ul>
+                                    <li><a href="developing_01.html">开发语言</a></li>
+                                    <li><a href="developing_02.html">Audio、Video Player应用的开发</a></li>
+                                    <li><a href="developing_03.html">General APIs Mapping</a></li>
+                                    <li><a href="developing_04.html">IAP应用内支付</a></li>
+                                    <li><a href="developing_05.html">LBS应用</a></li>
+                                    <li><a href="developing_06.html">LBS、镜头和传感器应用接口使用</a></li>
+                                    <li><a href="developing_07.html">Native Code（C和C++）支持</a></li>
+                                    <li><a href="developing_08.html">Push Notification</a></li>
+                                    <li><a href="developing_09.html">Sharing in Social Network</a></li>
+                                    <li><a href="developing_10.html">Source Code Control</a></li>
+                                    <li><a href="developing_11.html">UI上的Data Binding</a></li>
+                                    <li><a href="developing_12.html">Windows 8.1和WP 8 Sharing应用分享功能实现</a></li>
+                                    <li><a href="developing_13.html">多媒体</a></li>
+                                    <li><a href="developing_14.html">后台任务和多任务处理</a></li>
+                                    <li><a href="developing_15.html">获取后台服务器数据</a></li>
+                                    <li><a href="developing_16.html">浏览器控件WebView</a></li>
+                                    <li><a href="developing_17.html">数据库（SQLite）</a></li>
+                                    <li><a href="developing_18.html">数据网络和数据通讯</a></li>
+                                    <li><a href="developing_19.html">通话和短信功能</a></li>
+                                    <li><a href="developing_20.html">图形处理(Drawing & Animation)</a></li>
+                                    <li><a href="developing_21.html">文件系统和应用设置</a></li>
+                                    <li><a href="developing_22.html">应用间通信</a></li>
+                                    <li><a href="developing_23.html">支付方式</a></li>
+                                    <li><a href="developing_24.html">Windows 8.1应用外设开发</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="testing.html">测试<span>Testing</span></a></h3>
+                                <ul>
+                                    <li><a href="testing_01.html">Windows 8 and WP 8开发FAQ</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu last">
+                                <h3><a href="distribute.html">发布<span>Distribute</span></a></h3>
+                                <ul>
+                                    <li><a href="distribute_01.html">应用商店(发布和更新应用)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="block success-story-nav-block">
+                            <h2>成功案例</h2>
+                        </div>
+                        <div class="block others">
+                            <a href="sample_code.html" class="left">示例代码</a>
+                            <a href="http://msdn.microsoft.com/zh-cn/dn473954" class="right">教学视频</a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3 class="title">Structure &amp; Lifecycle<span><a href="index.html">返回首页&gt;</a></span></h3>
+                        <div class="article-content">
+                            <div class="WordSection1">
+                                <p class="MsoToc1"><a href="#_Toc372285723">一、应用程序结构</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372285724">应用程序清单文件</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372285725">资源文件</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372285726">App.xaml</a></p>
+                                <p class="MsoToc1"><a href="#_Toc372285727">二、应用程序生命周期</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372285728">应用程序状态</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372285729">应用程序生命周期事件</a></p>
+                                <p class="MsoToc3"><a href="#_Toc372285730">Windows phone</a></p>
+                                <p class="MsoToc3"><a href="#_Toc372285731">Windows phone与ios</a></p>
+                                <p class="MsoToc3"><a href="#_Toc372285732">Windows 8</a></p>
+                                <p class="MsoToc3"><a href="#_Toc372285733">Windows 8与IOS比较</a></p>
+                                <p class="MsoToc3"><a href="#_Toc372285734">Windows Phone 与Windows 8应用程序</a></p>
+                                <p class="MsoToc3"><a href="#_Toc372285735">Android</a></p>
+                                <p class="MsoToc1"><a href="#_Toc372285736">三、另请参见</a></p>
+                            </div>
+                            <br />
+                            <div class="WordSection2">
+                                <h1><a name="_Toc372285723"></a><a name="_Toc371171087"></a><a
+                                    name="_Toc371170268">一、应用程序结构</a></h1>
+                                <p>Windows phone 8应用程序目录包括Properties文件夹、References文件夹、Assets文件夹、Resources文件夹、App.xaml、LocalizedStrings.cs、MainPage.xaml。 Properties文件夹中包含关于设置工程属性的文件，其中比较重要的是WMAppManifest.xml；References文件夹中包含工程引用的类库；Assets文件夹用于存放工程显示所必须的文件，其中ApplicationIcon.png是应用程序在程序列表中显示的图标，Tiles文件夹中存放应用程序磁贴显示所需的图片文件，在发布应用或将应用程序提交到商店之前，你可以把这些文件替换成自定义的图；Resources文件夹用于存放工程资源文件。</p>
+                                <p><b>说明</b>：默认文件列表所包含的文件与创建工程时所选的模版有关，根据所选模版的不同，默认文件列表也会有所变化</p>
+                                <p>与Windows phone 8类似，windows 8应用程序目录也包含一些文件，比较重要的有App.xaml文件及其代码隐藏文件App.xaml.cs文件、StandardStyles.xaml文件、Package.appxmanifest文件。</p>
+                                <p>其他平台，如Android和IOS应用程序也包含一些目录文件，如Android的src、gen、res目录以及AndroidManifest.xml文件，IOS的AppName.app、Documents、Library/Preferences、Library/Caches、tmp目录，以下将对其中部分重要文件进行详细介绍。</p>
+                                <h2><a name="_Toc372285724"></a><a name="_Toc371171088"></a><a
+                                    name="_Toc371170269">应用程序清单文件</a></h2>
+                                <p>每个 Windows&nbsp;Phone 应用程序都有一个包含应用程序的详细信息及该应用程序所使用功能的名为WMAppManifest.xml的清单文件，当您将应用程序提交到 Windows&nbsp;Phone 商城时，清单文件中的信息将用于认证过程，以在 Windows&nbsp;Phone 商城 中正确筛选您的应用程序，并在物理设备上部署和运行这些应用程序</p>
+                                <p>
+                                    WMAppManifest.xml文件有可视化和XML代码两种查看方式，双击WMAppManifest.xml文件即可进入可视化界面，如下图所示，通过该视图可以方便的修改应用程序关于UI显示、所支持的功能、对硬件设备的要求以及打包的相关信息。
+                                </p>
+                                <p class="imgp">
+                                    <img width="553" height="460" id="图片 6"
+                                        src="images/idea_03/image001.png">
+                                </p>
+                                <p class="MsoListParagraph" align="center" style='text-align: center;'>
+                                    图1-3
+                                </p>
+                                <p class="MsoListParagraph">右击WMAppManifest.xml文件，打开方式选择为XML(文本)编辑器即可看到该文件的xml形式，以下为xml代码示例：</p>
+                                <textarea><?xml version="1.0" encoding="utf-8"?>
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
+  <DefaultLanguage xmlns="" code="zh-CN"/>
+  <App xmlns="" ProductID="{adf6e172-6d97-44bd-b008-943697fbe4b3}" Title="HelloWorld" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="HelloWorld author" Description="Sample description" Publisher="HelloWorld" PublisherID="{32d4cb23-1e43-4313-bcc4-5fd7268582b5}">
+    <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
+    <Capabilities>
+      <Capability Name="ID_CAP_NETWORKING"/>
+      <Capability Name="ID_CAP_MEDIALIB_AUDIO"/>
+      <Capability Name="ID_CAP_MEDIALIB_PLAYBACK"/>
+      <Capability Name="ID_CAP_SENSORS"/>
+      <Capability Name="ID_CAP_WEBBROWSERCOMPONENT"/>
+    </Capabilities>
+    <Tasks>
+      <DefaultTask Name="_default" NavigationPage="MainPage.xaml"/>
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="HelloWorldToken" TaskName="_default">
+        <TemplateFlip>
+          <SmallImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileSmall.png</SmallImageURI>
+          <Count>0</Count>
+          <BackgroundImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMedium.png</BackgroundImageURI>
+          <Title>HelloWorld</Title>
+          <BackContent></BackContent>
+          <BackBackgroundImageURI></BackBackgroundImageURI>
+          <BackTitle></BackTitle>
+          <DeviceLockImageURI></DeviceLockImageURI>
+          <HasLarge></HasLarge>
+        </TemplateFlip>
+      </PrimaryToken>
+    </Tokens>
+    <ScreenResolutions>
+      <ScreenResolution Name="ID_RESOLUTION_WVGA"/>
+      <ScreenResolution Name="ID_RESOLUTION_WXGA"/>
+      <ScreenResolution Name="ID_RESOLUTION_HD720P"/>
+    </ScreenResolutions>
+  </App>
+</Deployment></textarea><br />
+                                <p>
+                                    WMAppManifest.xml文件包含DEPLOYMENT 元素、APP 元素、ICONPATH 元素、CAPABILITIES 元素、TASKS 元素、TOKENS 元素等，更多关于这些元素含义和功能的信息请参见<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/ff769509(v=vs.105).aspx">Windows Phone 的应用清单文件</a>
+                                </p>
+                                <p>
+                                    对于windows 8应用，应用程序清单文件为Package.appxmanifest，用于向windows运行时提供该应用程序的相关信息，通过该文件可以设置应用程序名称、导航起始页、支持的功能等。Package.appxmanifest是XML文件，但vs提供了一种可视化的界面使得配置应用程序更加直观和方便。界面如下图所示。关于Package.appxmanifest更多信息请参见<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/br230259.aspx">使用清单设计器（Windows 应用商店应用程序）</a>。
+                                </p>
+                                <p class="imgp">
+                                    <img border="0" width="554" height="497" id="图片 2"
+                                        src="images/idea_03/image002.png">
+                                </p>
+                                <p>其他平台也包含功能类似的文件，如Android应用程序中的AndroidManifest.xml&nbsp;功能清单文件列出了应用程序所提供的功能，在这个文件中，你可以指定应用程序使用到的服务。Ios应用程序包中的.plist文件包含了项目自身的特性，比如说项目名称，默认加载的nib file，版本等。</p>
+                                <h2><a name="_Toc372285725"></a><a name="_Toc371171089"></a><a
+                                    name="_Toc371170270">资源文件</a></h2>
+                                <p>
+                                    AppResources.resx和LocalizedStrings.cs为windows phone8应用程序提供了应用程序本地化的框架，在AppResources.resx中定义本地化字符串键值对，然后在程序要使用本地化字符串时通过绑定到AppResources.resx的键值，指明要绑定的本地化字符串。类似地，Windows
+    8中，StandardStyles.xaml文件定义了一些style和templatest资源，通过使用这些资源可以很容易的控制应用程序拥有一致的外观。通过在这些文件中定义资源，实现了资源统一管理和共享。Android应用中res目录和IOS应用程序包中的Resources目录下的文件功能与其类似。
+                                </p>
+                                <p>
+                                    更多关于应用程序本地化的信息参见<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/ff637520(v=vs.105).aspx">如何生成 Windows Phone 的本地化应用</a><b>、</b>&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/ff967552(v=vs.105).aspx">执行 Windows Phone 本地化的最佳做法</a>、<a
+                                                href="design.htmlwindowsapps/Application-resources-and-cd0c6eaa/sourcecode?fileId=43558&amp;pathId=36046862">Application resources and localization sample</a>
+                                </p>
+                                <h2><a name="_Toc372285726"></a><a name="_Toc371171090"></a><a
+                                    name="_Toc371170271"></a><a name="_Toc369096184">App.xaml</a></h2>
+                                <p>Windows phone 8和Windows 8应用程序的App.xaml和App.xaml.cs文件功能基本相同，App.xaml一般用于存放应用程序级别的资源，使得这些资源可以应用于该应用程序的任何一个页面。App.xaml.cs文件包含控制应用程序启动的关键代码，除非应用程序有特殊要求，否则你不应该修改这些代码。另外，它还包括一些空的应用程序生命周期事件——Launching, Activated, Deactivated和Closing，这些事件在应用程序状态切换时被触发，关于他们的作用和常规操作将在应用程序生命周期部分进行说明。</p>
+                                <h1><a name="_Toc372285727"></a><a name="_Toc371171091"></a><a
+                                    name="_Toc371170272"></a><a name="_Toc369096186">二、应用程序生命周期</a></h1>
+                                <h2><a name="_Toc372285728"></a><a name="_Toc371171092"></a><a
+                                    name="_Toc371170273">应用程序状态</a></h2>
+                                <p>
+                                    Windows phone应用程序从创建到终止会经历四种状态：Not
+    Running、Running、Dormant、Tombstone，在这四种状态之间切换时会触发相应的应用程序生命周期事件，状态切换图以及事件触发顺序如下图所示：
+                                </p>
+                                <p class="imgp">
+                                    <img border="0" width="325" height="368" id="图片 26"
+                                        src="images/idea_03/image003.png">
+                                </p>
+                                <p>与windows phone应用程序相似，Windows 应用商店应用程序具有四个状态： 未运行、正在运行、已挂起和已终止。在您启动某一应用程序时，该应用程序将运行。之后，根据用户或系统活动，该应用程序可在正在运行状态和已挂起状态之间转换。图2-1展示了四种状态之间的切换。</p>
+                                <p class="imgp">
+                                    <img border="0" width="554" height="120"
+                                        id="图片 1" src="images/idea_03/image004.png">
+                                </p>
+                                <p style='text-align: center;'>图2-1</p>
+                                <p>为了使应用程序具有良好的用户体验，当应用程序在不同状态之间切换时必须恰当的保存和恢复应用程序数据。很幸运，应用程序事件提供了进行这种数据保存和恢复的机会。</p>
+                                <p>由于Android应用程序与windows8和windows phone不同，Android应用程序由组件构成，程序的状态和优先级由当前运行组件决定，程序的终止由系统执行，系统选择优先级低的程序撤销，稍后将介绍系统选择哪些程序进行撤销的方法。而IOS具有与windows相似的应用程序状态，从启动到消亡一共经历五种状态：</p>
+                                <p>
+                                    ●Not
+    running ：未运行，程序没启动
+                                </p>
+                                <p style='text-align: justify; text-justify: inter-ideograph;'>
+                                    ●Inactive：未激活，程序在前台运行，不过没有接收到事件。在没有事件处理情况下程序通常停留在这个状态
+                                </p>
+                                <p>
+                                    ●Active：激活，程序在前台运行而且接收到了事件。这也是前台的一个正常的模式
+                                </p>
+                                <p>
+                                    ●Backgroud：程序在后台而且能执行代码，大多数程序进入这个状态后会在在这个状态上停留一会。时间到之后会进入挂起状态(Suspended)。有的程序经过特殊的请求后可以长期处于Backgroud状态
+                                </p>
+                                <p>
+                                    ●Suspended：挂起，程序在后台不能执行代码。系统会自动把程序变成这个状态而且不会发出通知。当挂起时，程序还是停留在内存中的，当系统内存低时，系统就把挂起的程序清除掉，为前台程序提供更多的内存
+                                </p>
+                                <p class="imgp">
+                                    <img border="0" width="366" height="434" id="图片 3"
+                                        src="images/idea_03/image005.png">
+                                </p>
+                                <h2><a name="_Toc372285729"></a><a name="_Toc371171093"></a><a
+                                    name="_Toc371170274">应用程序生命周期事件</a><a
+                                        name="_Toc369096187"></a></h2>
+                                <h3><a name="_Toc372285730"></a><a name="_Toc371171094"></a><a
+                                    name="_Toc371170275">Windows phone</a></h3>
+                                <p>
+                                    Windows
+    phone应用程序在不同状态之间进行切换及其触发的事件如下：
+                                </p>
+                                <p class="MsoListParagraph">Not Running —〉Running</p>
+                                <p>当用户通过应用程序列表图标或主磁贴等方式启动新的应用程序实例时，应用程序状态从Not Running切换到Running，同时触发Launching事件，为了帮助确保应用程序快速加载，应在该事件的处理程序中执行尽可能少的代码。特别是，避免文件和网络操作等资源密集型任务。您应在应用程序加载之后，在后台线程中执行这些任务以便实现最佳的用户体验</p>
+                                <p class="MsoListParagraph">
+                                    Running—〉Dormant
+                                </p>
+                                <p>对于处于运行状态的应用程序，当用户向前导航出该应用程序或按开始按钮返回到开始屏幕时，应用程序会从Running进入Dormant状态，同时触发Deactivated事件。</p>
+                                <p class="MsoListParagraph">Dormant —〉Running</p>
+                                <p>当用户导航离开应用时，该应用通常会置于休眠状态。在休眠状态下，应用代码不再执行，但是该应用仍会保留在内存中。当用户按“返回”按键返回到休眠的应用时，该应用将恢复运行并且触发Activated事件，其状态会自动还原。因为应用被保留在内存中，所有应用可以快速恢复至用户导航离开时的状态。称为快速应用恢复。</p>
+                                <p class="MsoListParagraph">
+                                    Dormant—〉Tombstone
+                                </p>
+                                <p>处于Dormant状态的应用程序的应用程序实例仍然存在于内存中，但是当内存资源不足时，系统会选择处于Dormant状态的应用程序实例并将其撤销，使得应用程序从Dormant状态进入Tombstone状态，所以为防止应用程序从Tombstone状态恢复时丢失信息，在&nbsp;Deactivated&nbsp;事件中应保存应用程序的任何应用程序状态。 </p>
+                                <p>另外，在调用&nbsp;Deactivated&nbsp;后，应用程序有可能会被完全终止。当应用程序终止时，其状态将不保留。因此，还应在&nbsp;Deactivated&nbsp;事件期间，将应用程序实例间应保留的所有未保存状态存储到独立存储中。</p>
+                                <p class="MsoListParagraph">
+                                    Tombstone—〉Running
+                                </p>
+                                <p>处于Tombstone状态的应用程序已终止，但该应用程序的导航状态相关信息和&nbsp;Deactivated&nbsp;期间保存的状态字典仍然可用。如果在应用程序进入Tombstone状态之后，用户重新进入该应用程序，则应用程序将会重新启动并使用保留的数据还原状态。应用程序从Tombstone状态重新进入Running状态，同时触发Activated事件，在该事件中通过IsApplicationInstancePreserved属性判断是否是从Tombstone状态恢复，若是则完成从之前保存的状态还原数据的操作</p>
+                                <p class="MsoListParagraph">
+                                    Running—〉Not Running
+                                </p>
+                                <p>当用户通过向后导航退出应用程序时，应用程序从Running状态进入Not Running状态，同时触发Closing事件。在这种情况下，应用程序将终止，并且不会保存状态。在&nbsp;Closing&nbsp;事件处理程序中，您的应用程序可以保存应跨实例保留的数据。</p>
+                                <p><b>快速恢复处理逻辑：</b></p>
+                                <p>一旦启用了“快速恢复”，当应用恢复时，对于应用如何管理之前所访问的页面的后退堆栈，有几个不同的选项。</p>
+                                <p>实现“快速恢复”时，您应确定从手机上可用的不同入口点启动时，您的应用的最佳用户体验是什么。</p>
+                                <p>
+                                    ● 主要入口点将用户带到应用的主页。主要启动点包括“开始”屏幕上应用的主要磁贴、应用列表中的应用名称或游戏中心。
+                                </p>
+                                <p>
+                                    ● 深层链接将用户导航至应用内的其他页。深层链接包括次要图块、Toast 通知、可扩展性点（如搜索）或照片中心。
+                                </p>
+                                <p>对于 Windows&nbsp;Phone 应用，系统保持用户在应用内已访问的页面历史记录，这让用户可以使用“后退”按钮向后导航堆栈至之前访问的页面。通过“快速恢复”，当应用恢复时，系统为启动点目标创建新的页面实例，而且该页面放置在应用现有后退堆栈的顶部。在这种情况下，应用可以选择清除现有后退堆栈，而仅保留堆栈上新建的页面。在这种情况下，用户体验将如同“全新”的应用启动。如果他们从已恢复的应用向后导航，而历史记录中并无页面，那么他们将返回“开始”屏幕或之前的应用。处理“快速恢复”的另一种方式是取消导航至新建页面。在这种情况下，用户将到达他们最后浏览的应用页面，之前会话的后退堆栈将保持完整。看起来如同仅是他们之前的应用会话恢复了。</p>
+                                <p>
+                                    Windows&nbsp;Phone为用户提供了一种机制，他们可以通过这种机制以一种将参数传递到已启动的应用程序的方式来启动应用程序。例如，<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.shell.shelltoast(v=vs.105).aspx">ShellToast</a>、<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.scheduler.reminder(v=vs.105).aspx">Reminder</a>&nbsp;和&nbsp;<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.shell.shelltile(v=vs.105).aspx">ShellTile</a>&nbsp;都公开了&nbsp;<i>NavigationUri</i>&nbsp;参数，在该参数中可以传递查询字符串，并且&nbsp;<a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.devices.mediahistoryitem(v=vs.105).aspx">MediaHistoryItem</a>&nbsp;类中包含可传递上下文信息的&nbsp;<a
+                                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.devices.mediahistoryitem.playercontext(v=vs.105).aspx">PlayerContext</a>&nbsp;属性。当使用这些机制之一来启动应用程序时，应用程序应显示上下文的相应内容。
+                                </p>
+                                <h3><a name="_Toc372285731"></a><a name="_Toc371171095"></a><a
+                                    name="_Toc371170276">Windows phone与IOS</a></h3>
+                                <p>类似地，IOS应用程序也有一些处理应用程序状态切换的生命周期事件，下表将IOS与<b>Windows&nbsp;phone</b><b>进行比较：</b></p>
+                                <div>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <p>
+                                                    <b>iOS
+            Event</b>
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    <b>Windows&nbsp;phone
+            App</b>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p><strong>applicationDidFinishLaunchingWighOptions</strong></p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    <a
+                                                        href="http://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.application.onlaunched.aspx"><strong>Application.OnLaunched</strong></a><strong>&nbsp;or&nbsp;</strong>
+                                                </p>
+                                                <p>
+                                                    <a
+                                                        href="http://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.application.onactivated.aspx"><strong>Application.OnActivated</strong></a>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p><strong>applicationDidBecomeActive</strong></p>
+                                            </td>
+                                            <td>
+                                                <p><strong>Application&shy;_Launching</strong></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p><strong>applicationWillResignActive</strong></p>
+                                            </td>
+                                            <td>
+                                                <p><strong>-</strong></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p><strong>applicationDidEnterBackground</strong></p>
+                                            </td>
+                                            <td>
+                                                <pre><strong>Application_Deactivated</strong></pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p><strong>applicationWillEnterForeground</strong></p>
+                                            </td>
+                                            <td>
+                                                <p><strong>Application_Activated</strong></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p><strong>applicationWillterminate</strong></p>
+                                            </td>
+                                            <td>
+                                                <p><strong>Application_Closing</strong></p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <p>
+                                    为提供无缝的用户体验，在应用程序生命周期事件中应及时保存和恢复应用程序状态信息，关于每个事件应该执行的操作的简短摘要以及应用程序生命周期相关内容请参见<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/ff817008(v=vs.92).aspx"
+                                        title="Windows Phone 执行模型概述">Windows Phone 执行模型</a>
+                                </p>
+                                <p>
+                                    关于应用程序执行模型和生命周期的示例可以在<a
+                                        href="http://code.msdn.microsoft.com/wpapps/Execution-Model-Sample-f6f66b81">Windows Phone 执行模型示例</a>下载。
+                                </p>
+                                <h3><a name="_Toc372285732"></a><a name="_Toc371171096"></a><a
+                                    name="_Toc371170277">Windows 8</a></h3>
+                                <p>Windows 8应用程序状态切换及其触发的生命周期事件如下：</p>
+                                <p class="MsoListParagraph">
+                                    <a
+                                        name="_Toc369245462"></a><a name="_Toc369245336"></a><a name="_Toc369245255"></a><a
+                                            name="_Toc369245208">●应用程序激活</a>
+                                </p>
+                                <p>
+                                    当进入应用程序时，应用程序被激活，触发Activated事件，<strong>activated</strong>&nbsp;事件参数包括一个&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.applicationmodel.activation.iactivatedeventargs.previousexecutionstate.aspx"><b>PreviousExecutionState</b></a>&nbsp;属性，该属性告诉你应用在激活之前处于哪种状态，此属性是&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.applicationmodel.activation.applicationexecutionstate.aspx"><b>ApplicationExecutionState</b></a>&nbsp;枚举值之一，下表列出了PreviousExecutionState&nbsp;属性几种可能的取值以及导致该值得原因和应采取的操作：
+                                </p>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p><b>终止原因</b></p>
+                                        </td>
+                                        <td>
+                                            <p><b>PreviousExecutionState </b><b>属性的值</b></p>
+                                        </td>
+                                        <td>
+                                            <p><b>采取的操作</b></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>已由系统终止</p>
+                                        </td>
+                                        <td>
+                                            <p>Terminated</p>
+                                        </td>
+                                        <td>
+                                            <p>还原会话数据</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>被用户关闭</p>
+                                        </td>
+                                        <td>
+                                            <p>ClosedByUser</p>
+                                        </td>
+                                        <td>
+                                            <p>使用默认数据启动</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>意外终止，或者应用自从用户的会话开始以来未运行</p>
+                                        </td>
+                                        <td>
+                                            <p>NotRunning</p>
+                                        </td>
+                                        <td>
+                                            <p>使用默认数据启动</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <p class="MsoListParagraph">
+                                    <a
+                                        name="_Toc369245463"></a><a name="_Toc369245337"></a><a name="_Toc369245256"></a><a
+                                            name="_Toc369245209">●应用程序挂起</a>
+                                </p>
+                                <p>在某个用户切换到不同应用程序时，或者在设备休眠或进入睡眠状态时，Windows 将停止应用程序代码运行，进入挂起状态并触发suspending事件，但将该应用程序保持在内存中。您应该始终保存挂起事件中的用户信息和应用程序数据，因为 Windows 不会在它终止应用程序前进行通知。因此，代码应进行防备并且假定应用程序将终止。这意味着您应该每次都将应用程序数据保存到 sessionState。如果 处于Tombstone状态的应用程序已Windows 确实终止了该应用程序，则数据将被保存下来并且可供重新填充</p>
+                                <p class="MsoListParagraph">
+                                    <a
+                                        name="_Toc369245464"></a><a name="_Toc369245338"></a><a name="_Toc369245257"></a><a
+                                            name="_Toc369245210">●应用程序恢复</a>
+                                </p>
+                                <p>恢复将在 Windows 将应用程序从挂起状态唤醒时发生并触发Resuming事件。大多数情况下，Windows 只是在用户切换回您的应用程序或重新启动它时恢复您的应用程序，并且您无需执行任何操作。在挂起期间，应用程序只是处于内存中并且保持不变，因此，应用程序内容保持不变并且无需执行任何操作。</p>
+                                <p>尽管大多数应用程序不需要在从已挂起状态还原时执行任何工作，但包含经常变化的数据（例如 RSS 源、股票或社交网络）的应用程序应使用恢复事件进行数据更新。、</p>
+                                <h3><a name="_Toc372285733"></a><a name="_Toc371171097"></a><a
+                                    name="_Toc371170278">Windows 8与IOS比较</a></h3>
+                                <p>下表将IOS 与Windows 8生命周期事件进行比较，以便于开发者更好的理解两种平台应用程序生命周期事件：</p>
+                                <div>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <p>
+                                                    <b>iOS
+            Event</b>
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    <b>Windows&nbsp;8
+            App </b>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p><strong>application:didFinishLaunchingWithOptions</strong></p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    <a
+                                                        href="http://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.application.onlaunched.aspx"><strong>Application.OnLaunched</strong></a><strong>&nbsp;or&nbsp;</strong>
+                                                </p>
+                                                <p>
+                                                    <a
+                                                        href="http://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.application.onactivated.aspx"><strong>Application.OnActivated</strong></a>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p><strong>applicationDidBecomeActive</strong></p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    <a
+                                                        href="http://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.application.onlaunched.aspx"><strong>Application.OnLaunched</strong></a>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p><strong>applicationWillEnterForeground</strong></p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    <a
+                                                        href="http://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.application.resuming.aspx"><strong>Application.OnResuming</strong></a>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p><strong>applicationDidEnterBackground</strong></p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    <a
+                                                        href="http://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.application.suspending.aspx"><strong>Application.OnSuspending</strong></a>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p><strong>applicationWillEnterBackground</strong></p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    <a
+                                                        href="http://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.application.suspending.aspx"><strong>Application.OnSuspending</strong></a>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p><strong>applicationWillResignActive</strong></p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    <a
+                                                        href="http://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.application.suspending.aspx"><strong>Application.OnSuspending</strong></a>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p><strong>applicationWillTerminate</strong></p>
+                                            </td>
+                                            <td>
+                                                <p>-</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <h3><a name="_Toc371171098"></a><a name="_Toc371170279"></a><a
+                                    name="_Toc372285734">Windows Phone 与Windows 8应用程序</a></h3>
+                                <p>
+                                    Windows Phone 与Windows
+    8应用程序生命周期比较类似，但是仍有一些不同的地方，Windows 8应用程序有一个特殊的<b>应用可见性</b>属性，在用户将其转入后台的时候，
+    当用户从你的应用切换到其他应用时，你的应用将不再可见，但仍保持运行状态，直到 Windows 可以挂起它为止（大约持续 10 秒）。如果用户离开你的应用，但在 Windows 挂起它之前又激活或返回到该应用，它会保持运行状态。
+                                </p>
+                                <p>
+                                    当应用程序可见性更改时，你的应用不会收到激活事件，因为它仍在运行中。Windows 只需根据需要来回切换应用即可。如果你的应用需要在用户离开和返回时执行某些操作，可使用&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.core.visibilitychangedeventargs.aspx">VisibilityChanged</a>&nbsp;|&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh441213.aspx">msvisibilitychange</a>&nbsp;事件。
+                                </p>
+                                <h3><a name="_Toc372285735">Android</a></h3>
+                                <p>Android应用程序的生命周期比较特殊，每个Android应用程序都运行在一个独立的进程中。当应用程序的某些代码需要运行时，这个进程就被创建并一直运行下去，直到系统认为该进程不再有用为止。然后系统将回收进程占用的内存以便分配给其它的应用程序，即应用程序的消亡是有系统决定的，而非程序自身控制的。Android应用程序可包含多个组件，如Activity、Service、BroadcastReceive等，系统根据应用程序的组件以及组件当前运行状态将所有的进程按重要性程度从高到低划分成如下五个等级，当系统内存不足时，会选择优先级低的进程撤销。</p>
+                                <p class="imgp">
+                                    <img
+                                        border="0" width="268" height="234" id="图片 5" src="images/idea_03/image006.png">
+                                </p>
+                                <p class="MsoListParagraph">
+                                    前台进程就是在屏幕最前端显示并和用户交互的Activity进程或者该进程的一个BroadcastReceiver正在运行。这样的进程重要性最高，在系统中也 只有少数这样的进程。除非在系统内存非常低，万不得已的情况下才会被中止，否则系统不会选择中止前台进程。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    可见进程是指那些对于用户可见，但是不显示在屏幕的最前端的进程。可见进程的重要程度也是很高的，通常不会被系统所中止，除非处于舍车保帅的情况，&nbsp; 为了保持所有的前台进程的正常运行而不得不中止可见进程
+                                </p>
+                                <p class="MsoListParagraph">
+                                    服务进程是拥有Service的进程，该Service是有startService()方法启动的，这些进程通常运行在后台，并且对用户是不可见的。但是，这些进程所作的工作却也是比较重要的，如在后台进行播放音乐的工作。所以，除非在保证前两种高级别的进程能正常工作的情况下，否则系统一般不会中止服务进程的
+                                </p>
+                                <p class="MsoListParagraph">
+                                    后台进程运行着对用户不可见的activity(调用过onStop()方法)，这些进程对用户体验没有直接的影响，可以在上述进程需要内存资源的时候，从后台进程这回收
+                                </p>
+                                <p class="MsoListParagraph">
+                                    空进程中无任何的应用程序组件，而这种进程存在的唯一理由是提供一种缓存机制，使得缩短应用程序下次启动所需的时间。系统会经常的中止空进程，从而达到调节程序缓存和系统缓存的平衡。
+                                </p>
+                                <p><b>Android</b><b>应用程序和Windows Phone 应用程序生命周期事件对比</b></p>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p>Android应用事件</p>
+                                        </td>
+                                        <td>
+                                            <p>Windows Phone应用事件</p>
+                                        </td>
+                                        <td>
+                                            <p>Windows Phone页面方法</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>onCreat()</p>
+                                        </td>
+                                        <td>
+                                            <p>Application_Launching</p>
+                                        </td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>onStart()</p>
+                                        </td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>onResume()</p>
+                                        </td>
+                                        <td>&nbsp;</td>
+                                        <td>
+                                            <p>NavigatedTo</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                onPause(),
+          onSaveInstanceState
+                                            </p>
+                                        </td>
+                                        <td>&nbsp;</td>
+                                        <td>
+                                            <p>NavigatedFrom</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                onStop(),
+          onSaveInstanceState
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>Application_Deactivated</p>
+                                        </td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>onRestart()</p>
+                                        </td>
+                                        <td>
+                                            <p>Application_Activated</p>
+                                        </td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>onDestroy()</p>
+                                        </td>
+                                        <td>
+                                            <p>Application_Closing</p>
+                                        </td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                </table>
+                                <h1><a name="_Toc372285736"></a><a name="_Toc371171099"></a><a
+                                    name="_Toc369245465"></a><a name="_Toc369245339"></a><a name="_Toc369245258"></a><a
+                                        name="_Toc369245211">三、另请参见</a></h1>
+                                <p>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/ff817008(v=vs.105).aspx">Windows Phone 的应用激活和取消激活</a>。
+                                </p>
+                                <p>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/jj735579(v=vs.105).aspx"
+                                        title="Windows Phone 8 的快速应用回收">Windows Phone 8 的快速应用回收</a>
+                                </p>
+                                <p>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/ff967548(v=vs.92).aspx">如何保留和还原 Windows Phone 页面状态</a>
+                                </p>
+                                <p>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/ff967547(v=vs.92).aspx">如何保留和还原 Windows Phone 应用程序状态</a>
+                                </p>
+                                <p>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh464925.aspx">应用程序生命周期（Windows 应用商店应用）</a><a name="_Toc369245110"></a>
+                                </p>
+                                <p>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh465088.aspx">应用的挂起和恢复指南（Windows 应用商店应用）</a><a name="_Toc369245111"></a>
+                                </p>
+                                <p>
+                                    <a
+                                        href="http://msdn.microsoft.com/library/windows/apps/hh770837.aspx">启动、恢复以及执行多任务（使用 C#/VB/C++ 和 XAML 的 Windows 应用商店应用）</a><a name="_Toc369245112"></a>
+                                </p>
+                                <p>
+                                    <a
+                                        href="http://windowsphone.interoperabilitybridges.com/articles/chapter-6-application-lifecycle-differences-between-windows-phone-7-and-the-iphone">Windows phone 和
+    ios生命周期比较</a>
+                                </p>
+                                <p>
+                                    <a
+                                        href="http://msdn.microsoft.com/en-us/library/windows/apps/dn263207.aspx">Windows8与IOS生命周期比较</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <!--End Content-->
+        <div style="text-align: right" class="gotoTop"><a href="javascript:scroll(0,0)"></a></div>
+        <!--Begin ProudctLinks-->
+        <div class="ms-pro-links">
+            <div class="grid-container clearfix">
+                <div class="cam-links">
+                    其它微软站点
+                    <a href="http://www.microsoft.com/zh-cn/default.aspx">微软中国官方网站</a>
+                    <a href="http://www.microsoft.com/zh-cn/download/default.aspx?WT.mc_id=MSCOM_zh-cn_HP_Footer_downloads" target="_blank">微软中国下载中心</a>
+                    <a href="http://www.microsoftstore.com.cn?WT.mc_id=MSCOM_003" target="_blank">微软中国官方商城</a>
+                    <a href="http://www.microsoft.com/china/newsletter/" target="_blank">订阅电子期刊</a>
+                    <a href="https://sales.liveperson.net/hc/21661174/?cmd=file&file=visitorWantsToChat&site=21661174&byhref=1&SESSIONVAR!skill=APGC.PRC.ZH.CS.CON.PRESLS.GENERAL" target="_blank">联系微软销售代表</a>
+                    <a href="http://www.microsoft.com/zh-cn/sitemap.aspx" target="_blank">网站地图</a>
+                </div>
+            </div>
+        </div>
+        <!--End ProudctLinks-->
+        <!--Begin footer-->
+        <div class="footer">
+            <div class="grid-container">
+                <img src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-type-1x.png" alt="microsoft" class="logo">
+                <ul>
+                    <li><a href="http://www.miibeian.gov.cn/" title="">京ICP备09042378号-6</a></li>
+                    <li><a href="https://profile.microsoft.com/RegSysProfileCenter/default.aspx?lcid=2052" title="">个人信息中心</a></li>
+                    <li><a href="http://support.microsoft.com/contactus/?ws=support" title="">与我们联系</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkId=248681" title="">隐私权声明</a></li>
+                    <li><a href="http://go.microsoft.com/?linkid=4412892" title="">使用条款</a></li>
+                    <li><a href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Trademarks/EN-US.aspx" title="">商标</a></li>
+                    <li>&copy; 2013 Microsoft</li>
+                </ul>
+            </div>
+        </div>
+        <!--End footer-->
+        <!-- Begin MDA WEDCS -->
+        <script type="text/JavaScript">
+            var varSegmentation = 0;
+            var varClickTracking = 1;
+            var varCustomerTracking = 1;
+            var varAutoFirePV = 1;
+            var Route = "#";
+            var Ctrl = "#"
+            //document.write("<script type='text/javascript' src='" + window.location.protocol + "//c.microsoft.com/ms.js'><"+"/script>");
+        </script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="./assets/js/script.js"></script>
+        <script type="text/javascript" src="./js/siteSearch.js"></script>
+        <noscript>
+            <img alt="" width="1" height="1" src="http://c.microsoft.com/trans_pixel.aspx/" />
+        </noscript>
+        <!-- Begin MDA WEDCS -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,1497 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>应用间通信</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="css/templete.css" type="text/css" media="all" />
+    <meta charset="UTF-8">
+</head>
+<body class="level-2">
+    <div class="wrapper">
+        <!--Begin header-->
+        <div class="header">
+            <div class="grid-container clearfix">
+                <div class="header-left">
+                    <img alt="Microsoft" src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-lg-1x.png" width="94" height="20">
+                    <h1>X-Platform</h1>
+                </div>
+                <div id="mscom-search" class="mscom-search" style="margin-top: 37px;">
+                    <div class="search-form">
+                        <form action="" id="search-form">
+                            <div class="input-wrapper">
+                                <label class="screen-reader-text" for="search-input">搜索 Microsoft.com</label>
+                                <input id="search-input" type="text" class="input-area" autocomplete="off">
+                            </div>
+                            <button class="search-submit" id="search-btn" type="submit">
+                                <img width="16" height="16" alt="Submit" src="http://i.s-microsoft.com/global/imagestore/PublishingImages/sprites/search-button-blue.png"></button>
+                        </form>
+                    </div>
+                    <div class="search-results-box" id="results">
+                        <div class="search-scope">
+                            <ul>
+                                <li class=""><a class="checked" search="microsoft" role="search">搜索 Microsoft.com</a></li>
+                                <li class=""><a search="internet" role="search">搜索互联网</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End header-->
+        <br />
+        <!--Begin Content-->
+        <div class="content">
+            <div class="wrapper">
+                <div class="wrapper-header">
+                    <div>
+                        <a href="index.html">
+                            <img src="./assets/image/banner_1.jpg"></a>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="nav">
+                        <div class="block article-nav-block">
+                            <h2>移动应用开发生命周期</h2>
+                            <div class="menu">
+                                <h3><a href="idea.html">计划<span>Idea/Planning</span></a></h3>
+                                <ul>
+                                    <li><a href="idea_01.html">平台总览</a></li>
+                                    <li><a href="idea_02.html">开发工具、开发环境和模拟器</a></li>
+                                    <li><a href="idea_03.html">应用结构和生命周期</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="design.html">设计<span>Design</span></a></h3>
+                                <ul>
+                                    <li><a href="design_01.html">UI Layout的设计</a></li>
+                                    <li><a href="design_02.html">UI的控件</a></li>
+                                    <li><a href="design_03.html">UI页面的控制和导航</a></li>
+                                    <li><a href="design_04.html">不同屏幕尺寸和分辨率的适配</a></li>
+                                    <li><a href="design_05.html">第三方SDK</a></li>
+                                    <li><a href="design_06.html">游戏开发</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu active">
+                                <h3><a href="developing.html">开发<span>Developing</span></a></h3>
+                                <ul>
+                                    <li><a href="developing_01.html">开发语言</a></li>
+                                    <li><a href="developing_02.html">Audio、Video Player应用的开发</a></li>
+                                    <li><a href="developing_03.html">General APIs Mapping</a></li>
+                                    <li><a href="developing_04.html">IAP应用内支付</a></li>
+                                    <li><a href="developing_05.html">LBS应用</a></li>
+                                    <li><a href="developing_06.html">LBS、镜头和传感器应用接口使用</a></li>
+                                    <li><a href="developing_07.html">Native Code（C和C++）支持</a></li>
+                                    <li><a href="developing_08.html">Push Notification</a></li>
+                                    <li><a href="developing_09.html">Sharing in Social Network</a></li>
+                                    <li><a href="developing_10.html">Source Code Control</a></li>
+                                    <li><a href="developing_11.html">UI上的Data Binding</a></li>
+                                    <li><a href="developing_12.html">Windows 8.1和WP 8 Sharing应用分享功能实现</a></li>
+                                    <li><a href="developing_13.html">多媒体</a></li>
+                                    <li><a href="developing_14.html">后台任务和多任务处理</a></li>
+                                    <li><a href="developing_15.html">获取后台服务器数据</a></li>
+                                    <li><a href="developing_16.html">浏览器控件WebView</a></li>
+                                    <li><a href="developing_17.html">数据库（SQLite）</a></li>
+                                    <li><a href="developing_18.html">数据网络和数据通讯</a></li>
+                                    <li><a href="developing_19.html">通话和短信功能</a></li>
+                                    <li><a href="developing_20.html">图形处理(Drawing & Animation)</a></li>
+                                    <li><a href="developing_21.html">文件系统和应用设置</a></li>
+                                    <li><a href="developing_22.html">应用间通信</a></li>
+                                    <li><a href="developing_23.html">支付方式</a></li>
+                                    <li><a href="developing_24.html">Windows 8.1应用外设开发</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="testing.html">测试<span>Testing</span></a></h3>
+                                <ul>
+                                    <li><a href="testing_01.html">Windows 8 and WP 8开发FAQ</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu last">
+                                <h3><a href="distribute.html">发布<span>Distribute</span></a></h3>
+                                <ul>
+                                    <li><a href="distribute_01.html">应用商店(发布和更新应用)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="block success-story-nav-block">
+                            <h2>成功案例</h2>
+                        </div>
+                        <div class="block others">
+                            <a href="sample_code.html" class="left">示例代码</a>
+                            <a href="http://msdn.microsoft.com/zh-cn/dn473954" class="right">教学视频</a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3 class="title">Apps interaction<span><a href="index.html">返回首页&gt;</a></span></h3>
+                        <div class="article-content">
+                            <div class="WordSection1">
+                                <p class="MsoToc1"><a href="#_Toc372740627">一、通过URI启动应用程序</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372740628">1、说明</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372740631">2、默认启动</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372740632">3、有警示对话框的启动</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372740633">4、需要推荐应用反馈的启动</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372740634">5、以所需的其余视图启动</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372740635">6、启动系统应用</a></p>
+                                <p class="MsoToc1"><a href="#_Toc372740636">二、应用之间使用URI传递参数</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372740637">1、注册 URI 关联</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372740638">2、侦听 URI 9</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372740639">3、启动 URI 11</a></p>
+                                <p class="MsoToc1"><a href="#_Toc372740640">三、通过文件关联启动应用程序</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372740641">1、注册文件关联</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372740642">2、侦听文件启动</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372740643">3、检索文件</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372740644">4、启动文件</a></p>
+                                <p class="MsoToc1"><a href="#_Toc372740645">四、启动器与选择器</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372740646">1、启动器</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372740647">2、选择器</a></p>
+                                <p class="MsoToc1"><a href="#_Toc372740648">五、Windows 8 Share 机制</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372740649">1、沙盒机制</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372740650">2、Share介绍</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372740651">2、共享文件</a></p>
+                                <p class="MsoToc3"><a href="#_Toc372740652">2.1、添加 DataTransfer 命名空间</a></p>
+                                <p class="MsoToc3"><a href="#_Toc372740653">2.2、获取 DataTransferManager 对象</a></p>
+                                <p class="MsoToc3"><a href="#_Toc372740654">2.3、为 DataRequested 事件添加事件处理程序</a></p>
+                                <p class="MsoToc3"><a href="#_Toc372740655">2.4、获取 DataRequest 对象</a></p>
+                                <p class="MsoToc3"><a href="#_Toc372740656">2.5、设置标题和描述属性。</a></p>
+                                <p class="MsoToc3"><a href="#_Toc372740657">2.6、向 DataPackage 中添加文件。</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372740658">3、接收共享的文件</a></p>
+                                <p class="MsoToc3"><a href="#_Toc372740659">3.1、支持“共享目标”合约</a></p>
+                                <p class="MsoToc3"><a href="#_Toc372740660">3.2、指定你的应用支持的文件类型。</a></p>
+                                <p class="MsoToc3"><a href="#_Toc372740661">3.3、添加要用来检测应用在何时激活的事件处理程序。</a></p>
+                                <p class="MsoToc3"><a href="#_Toc372740662">3.4、获取 ShareOperation 对象。</a></p>
+                                <p class="MsoToc3"><a href="#_Toc372740663">3.5、从已激活的事件处理程序返回。</a></p>
+                                <p class="MsoToc3"><a href="#_Toc372740664">3.6、查明 DataPackageView 是否包含存储项。</a></p>
+                                <p class="MsoToc3"><a href="#_Toc372740665">3.7、处理文件。</a></p>
+                                <p class="MsoToc3"><a href="#_Toc372740666">3.8、调用 reportCompleted。</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372740667">4、其他相关主题</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372740668">5、常见问题</a></p>
+                                <p class="MsoToc1"><a href="#_Toc372740669">六、备注</a></p>
+                                </br/>
+                            </div>
+                            <div class="WordSection3">
+                                <p>了解如何启动 URI 的默认应用。使用 URI，你可以在系统上启动其他应用以执行特定任务。例如，如果你要允许用户向应用中的联系人发送邮件，你可以使用 mailto: URI 启动用户的默认电子邮件应用。在Android平台上，一个应用也可以基于不同的action，把用户推送到其他的应用程序中去，称为创建一个intent，然后通过这个intent来完成一个特定的action，并通过它来启动一个activity并在其他应用中实现该action。。</p>
+                                <p>以下步骤指示你如何使用 Windows.System.Launcher API 为 URI 启动默认处理程序。</p>
+                                <h1><a name="_Toc372740627">一、通过URI启动应用程序</a></h1>
+                                <h2><a name="_Toc372740628">1、说明</a></h2>
+                                <h3><a name="_Toc372740629">步骤 1: 创建 URI</a></h3>
+                                <p>
+                                    创建<b>
+                                    </b><a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/system.uri"><strong>System.Uri</strong></a>（C# 和 Visual Basic）或 <a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.foundation.uri.uri"><strong>Windows.Foundation.Uri</strong></a> (C++) 对象以供 URI 启动。此 URI 使用 http 方案名称。
+                                </p>
+                                <pre><code>// The URI to launch
+string uriToLaunch = @"http://www.bing.com";
+var uri = new Uri(uriToLaunch);</code></pre>
+                                <p>在Android系统中，创建的是一个隐式的intent，不需要声明启动的组件类名，而是声明要执行的一个动作（action），这个action描述了你要做的事情，也可能不包含任何数据。例如创建一个intent来打电话</p>
+                                <pre><code>Uri number = Uri.parse(“tel:5551234”);
+	Intent callIntent = new Intetn(Intent.ACTION_DIAL, number);</code></pre>
+                                <h3><a name="_Toc372740630">步骤 2: 启动 URI</a></h3>
+                                <p>
+                                    Windows
+提供了用于为 URI 启动默认处理程序的多个不同选项。以下图表和以下部分中介绍了这些选项。
+                                </p>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p>选项</p>
+                                        </td>
+                                        <td>
+                                            <p>方法</p>
+                                        </td>
+                                        <td>
+                                            <p>描述</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>默认启动</p>
+                                        </td>
+                                        <td>
+                                            <p>LaunchUriAsync(Uri)</p>
+                                        </td>
+                                        <td>
+                                            <p>使用默认处理程序启动指定的 URI。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>启动警告对话框</p>
+                                        </td>
+                                        <td>
+                                            <p>LaunchUriAsync（Uri、LauncherOptions）</p>
+                                        </td>
+                                        <td>
+                                            <p>Windows 将先显示警告对话框，然后启动指定 URI。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>使用推荐的应用反馈启动</p>
+                                        </td>
+                                        <td>
+                                            <p>LaunchUriAsync（Uri、LauncherOptions）</p>
+                                        </td>
+                                        <td>
+                                            <p>使用默认处理程序启动指定的 URI。如果系统上未安装处理程序，则向用户推荐 Windows 应用商店中的应用。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>以所需的其余视图启动</p>
+                                        </td>
+                                        <td>
+                                            <p>LaunchUriAsync（Uri、LauncherOptions）</p>
+                                        </td>
+                                        <td>
+                                            <p>使用默认处理程序启动指定的 URI。指定首选项以便在启动后停留于屏幕上，然后请求特定的窗口尺寸。</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <p>
+                                    这些示例使用 <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.system.launcher.launchuriasync"><strong>Windows.System.Launcher.LaunchUriAsync</strong></a> 方法启动 URI。这是重载的方法。
+                                </p>
+                                <h2><a name="_Toc372740631">2、默认启动</a></h2>
+                                <p>
+                                    调用 <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh701480"><strong>LaunchUriAsync(Uri)</strong></a><strong> </strong>来启动通过使用
+http 协议的默认应用在步骤 1 中创建的 URI。
+                                </p>
+                                <pre><code>async void DefaultLaunch()
+{
+   // Launch the URI
+   var success = await Windows.System.Launcher.LaunchUriAsync(uri);
+
+   if (success)
+   {
+      // URI launched
+   }
+   else
+   {
+      // URI launch failed
+   }
+}</code></pre>
+                                <p>在Android系统中，创建了intent并设置附加信息之后，调用startActivity()将其发送给系统，如果系统检测到不止一个应用可以处理此intent，则会显示一个对话框供您选择：</p>
+                                <pre><code>// Build the intent
+Uri location = Uri.parse("geo:0,0?q=1600+Amphitheatre+Parkway,+Mountain+View,+California");
+Intent mapIntent = new Intent(Intent.ACTION_VIEW, location);
+
+// Verify it resolves
+PackageManager packageManager = getPackageManager();
+List<ResolveInfo> activities = packageManager.queryIntentActivities(mapIntent, 0);
+boolean isIntentSafe = activities.size() > 0;
+
+// Start an activity if it's safe
+if (isIntentSafe) {
+    startActivity(mapIntent);
+}</code></pre>
+                                <h2><a name="_Toc372740632">3、有警示对话框的启动</a></h2>
+                                <p>
+                                    调用
+                            <a
+                                href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh701484"><strong>launchUriAsync(Uri,
+LauncherOptions)</strong></a> 以启动在步骤 1 中创建的 URI 并发出一个警告。<a
+    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.system.launcheroptions.treatasuntrusted"><strong>TreatAsUntrusted</strong></a> 属性指示系统应显示一个警告。
+                                </p>
+                                <pre><code>async void DefaultLaunch()
+{
+   // Set the option to show a warning
+   var options = new Windows.System.LauncherOptions();
+   options.TreatAsUntrusted = true;
+
+   // Launch the URI with a warning prompt
+   var success = await Windows.System.Launcher.LaunchUriAsync(uri, options);
+
+   if (success)
+   {
+      // URI launched
+   }
+   else
+   {
+      // URI launch failed
+   }
+}</code></pre>
+                                <p>在Android系统中，可以使用createChooser()来显示一个列表来匹配你的intent应用列表并将其传递给startActivity()，通过这个弹出的对话框来选择相应的操作。</p>
+                                <pre><code>Intent intent = new Intent(Intent.ACTION_SEND);
+...
+// Always use string resources for UI text.
+// This says something like "Share this photo with"
+String title = getResources().getString(R.string.chooser_title);
+// Create and start the chooser
+Intent chooser = Intent.createChooser(intent, title);
+startActivity(chooser);</code></pre>
+                                <h2><a name="_Toc372740633">4、需要推荐应用反馈的启动</a></h2>
+                                <p>
+                                    在某些情况下，用户可能未安装用以处理所启动 URI 的应用。默认情况下，为处理此类情况，Windows 会向用户提供一个链接，帮助其在应用商店中搜索相应的应用。如果你希望为用户提供具体的建议，告知他们在此情况下应获取何种应用，则可以随所启用的 URI 传递该建议。为此，调用 <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh701465"><strong>Windows.System.Launcher.launchFileAsync(IStorageFile,
+LauncherOptions)</strong></a> 方法，将<b> </b><a
+    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.system.launcheroptions.preferredapplicationpackagefamilyname"><strong>LauncherOptions.preferredApplicationPackageFamilyName</strong></a> 设置为应用商店中要推荐的应用的程序包系列名称。 然后，将 <a
+        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.system.launcheroptions.preferredapplicationdisplayname"><strong>LauncherOptions.preferredApplicationDisplayName</strong><strong> </strong></a>设置为该应用的名称。Windows 会使用此信息将在应用商店中搜索应用这一常规选项替换为从应用商店中获取推荐的应用这一具体选项。
+                                </p>
+                                <p class="note"><b>注意</b>&nbsp;必须设置这些选项才能推荐应用。设置一个而不设置另一个将导致出现故障。</p>
+                                <pre><code>async void DefaultLaunch()
+{
+   // Set the recommended app
+   var options = new Windows.System.LauncherOptions();
+   options.PreferredApplicationPackageFamilyName = "Contoso.URIApp_8wknc82po1e";
+   options.PreferredApplicationDisplayName = "Contoso URI Ap";
+
+   // Launch the URI and pass in the recommended app 
+   // in case the user has no apps installed to handle the protocol
+   var success = await Windows.System.Launcher.LaunchUriAsync(uri, options);
+   if (success)
+   {
+      // URI launched
+   }
+   else
+   {
+      // URI launch failed
+   }
+}</code></pre>
+                                <p>
+                                    尽管Android平台确保特定的intent会被解析到一个内建的应用程序（比如电话、短信、日历），你仍需要在使用intent前进行一下确认，如果你发起了一个在设备上无法被任何应用程序处理的intent，那么你的应用程序就会崩溃。为了确认有一个activity能够响应intent，可以使用queryIntentActivities()来获取一个能处理该intent的activity列表，如果返回列表非空，那么你就可以安全的使用这个intent了，例如：
+                                </p>
+                                <pre><code>PackageManager packageManager = getPackageManager();
+List<ResolveInfo> activities = packageManager.queryIntentActivities(intent, 0);
+boolean isIntentSafe = activities.size() > 0;</code></pre>
+                                <p>如果isIntentSafe为真，那么至少有一个程序会响应该intent，反之则没有。你应该在程序一开始时就进行该项检查，从而在用户尝试使用intent之前移除这个功能，如果你知道一个特定的应用程序可以处理这个intent，那么你也可以提供一个链接来让用户下载该应用程序。</p>
+                                <br />
+                                <h2><a name="_Toc372740634">5、以所需的其余视图启动</a></h2>
+                                <p>
+                                    调用
+                            <a
+                                href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.system.launcher.launchuriasync"><strong>LaunchUriAsync</strong></a> 的源应用可请求在 URI 启动后停留于屏幕上。默认情况下，Windows 会尝试在负责处理该 URI 的源应用和目标应用之间平等地共享可用空间。源应用可借助<b>
+                                </b><a
+                                    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.system.launcheroptions.desiredremainingview"><strong>DesiredRemainingView</strong></a><b> </b>属性向系统指示希望其应用占用较多或较少的可用空间。此外，还可使用 DesiredRemainingView
+以指示源应用在 URI 启动后无需停留于屏幕上，并可由目标应用完全替代。
+                                </p>
+                                <p class="note">
+                                    <b>注意</b>&nbsp;Windows 在确定目标应用的最终窗口尺寸时会考虑多个不同因素；例如，源应用的首选项、屏幕上的应用数量以及屏幕的方向。设置
+                            <a
+                                href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.system.launcheroptions.desiredremainingview"><strong>DesiredRemainingView</strong></a><b> </b>并不保证为目标应用设定具体的窗口化行为。
+                                </p>
+                                <pre><code>async void DefaultLaunch()
+{
+   // Set the desired remaining view.
+   var options = new Windows.System.LauncherOptions();
+   options.DesiredRemainingView = Windows.UI.ViewManagement.ViewSizePreference.UseLess;
+
+   // Launch the URI 
+   var success = await Windows.System.Launcher.LaunchUriAsync(uri, options);
+
+   if (success)
+   {
+      // URI launched
+   }
+   else
+   {
+      // URI launch failed
+   }
+}</code></pre>
+                                <h2><a name="_Toc372740635">6、启动系统应用</a></h2>
+                                <p>
+                                    许多内置于 Windows&nbsp;Phone 的应用，都可以通过调用<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/hh701480.aspx">LaunchUriAsync(Uri)</a>&nbsp;和传入一个使用与要启动应用相关的方案的 URI，从您的应用启动。例如，以下调用可以启动蓝牙设置应用。
+                                </p>
+                                <pre><code>Windows.System.Launcher.LaunchUriAsync(new Uri(“ms-settings-bluetooth:”));</code></pre>
+                                <p>&nbsp;</p>
+                                <p>下表列出了用于启动内置应用的 URI 方案。</p>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                <b>URI </b><b>方案</b>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                <b>说明</b>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                http:[URL]
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                启动 Web
+  浏览器并导航到特定的 URL。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                mailto:[email
+  address]
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                启动电子邮件应用并使用“收件人”一行上特定的电子邮件地址创建新邮件。请注意，电子邮件不会发送直到用户点按发送。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                ms-settings-accounts：
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                启动帐户设置应用。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                ms-settings-airplanemode：
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                启动飞行模式设置应用。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                ms-settings-bluetooth：
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                启动蓝牙设置应用。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                ms-settings-cellular：
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                启动手机网络设置应用。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                ms-settings-emailandaccounts：
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                启动电子邮件和帐户设置应用。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                ms-settings-location：
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                启动位置设置应用。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                ms-settings-lock：
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                启动锁屏设置应用。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                ms-settings-wifi：
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                启动
+  Wi-Fi 设置应用。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                zune:navigate?appid=[app
+  ID]
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                启动
+  Windows Phone 商店 并显示特定应用的详细信息页面。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                zune:reviewapp
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                启动 商店 并显示调用应用的查看页面。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                zune:reviewapp?appid=app[app
+  ID]
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                启动 商店 并显示特定应用的查看页面。请注意，您必须在指定应用的 ID 前面加上“app”。例如，检查 ID 为 fdf05477-814e-41d4-86cd-25d5a50ab2d8
+  的应用时，URI 为zune:reviewapp?appid=appfdf05477-814e-41d4-86cd-25d5a50ab2d8
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                zune:search?keyword=[search
+  keyword]&amp;publisher=[publisher name]&amp;contenttype=app
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                启动 商店 并搜索特定的内容。所有参数都是可选的。指定“contenttype=app”会将搜索限制为针对应用。省略此参数将搜索所有内容。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                zune:search?keyword=[search
+  keyword]&amp;contenttype=app
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                启动 商店 并按关键字搜索应用。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                zune:search?publisher=[publisher
+  name]
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                启动 商店 并按发布者名称搜索项目。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <p>&nbsp;</p>
+                                <br />
+                                <h1><a name="_Toc372740636">二、应用之间使用URI传递参数</a></h1>
+                                <p>
+                                    URI 关联允许应用在另一个应用启动了特殊的 URI 时自动启动。URI 的特别之处在于，它以应用注册的&nbsp;<i>URI 方案名</i>为开头。URI 方案名是 URI 的一部分，它位于冒号 (‘:’) 之前。<i>URI 方案</i>包括
+URI 方案名以及跟随在冒号后的所有 URI。例如，在下面的
+URI 方案中，contoso&nbsp;为 URI 方案名。
+                                </p>
+                                <pre><code>contoso:ShowProducts?CategoryID=aea6ae1f-9894-404e-8bca-ec47ec5b9c6c</code></pre>
+                                <p>不论您是否愿意，冒号之后的其余 URI 始终将公开以允许使用 URI 关联。您的应用启动后，它可以检查 URI 并根据 URI 的内容呈现不同的行为。在本示例中，接收应用用于显示特定类别中所有的产品。</p>
+                                <h2><a name="_Toc372740637">1、注册 URI 关联</a></h2>
+                                <p style='margin: 0cm; margin-bottom: .0001pt; text-align: justify; text-justify: inter-ideograph;'>
+                                    要处理 URI 关联，请在应用清单文件 WMAppManifest.xml 中指定相应的 URI 方案名。您的 URI 方案名可以是字母和数字的任意组合；但是任何由内置应用保留的方案名都将被忽略。有关更多信息，请参见&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/jj207065(v=vs.105).aspx">Windows Phone 8 的保留文件和
+URI 关联</a>。
+                                </p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt; text-align: justify; text-justify: inter-ideograph;'>
+                                    要注册 URI 关联，您必须使用&nbsp;<b>XML（文本）编辑器</b>编辑
+WMAppManifest.xml。在<b>“解决方案资源管理器”</b>中，右键单击 WMAppManifest.xml 文件，然后单击<b>“打开方式”</b>。在<b>“打开方式”</b>窗口中，选择<b>“XML（文本）编辑器”</b>，然后单击<b>“确定”</b>。
+                                </p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt; text-align: justify; text-justify: inter-ideograph;'>
+                                    在应用清单文件的&nbsp;Extensions&nbsp;元素中，URI 关联是使用&nbsp;Protocol&nbsp;元素所指定的。请注意，Extensions&nbsp;元素必须紧跟在&nbsp;Tokens&nbsp;元素之后。每个应用中最多可以注册 10 个 URI 关联。下面的示例演示了能够处理&nbsp;contoso&nbsp;URI 方案名的假想应用的 URI 关联。
+                                </p>
+                                <textarea><Extensions>
+  <Protocol Name="contoso" NavUriFragment="encodedLaunchUri=%s" TaskID="_default" />
+</Extensions></textarea>
+                                <p style='margin: 0cm; margin-bottom: .0001pt'>Protocol&nbsp;元素由以下特性组成。</p>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                <b>特性</b>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                <b>说明</b>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                名称
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                自定义的 URI 方案的前缀。包含数字、小写字母、句点 (‘.’) 或连字符 (‘-’) 且长度介于 2 和
+  39 个字符的字符串。它不包含冒号 (‘:’)或任何紧跟其后的 URI 中的内容。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                NavUriFragment
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                必须始终等于&nbsp;encodedLaunchUri=%s
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                TaskID
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                必须始终等于&nbsp;_default
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <h2><a name="_Toc372740638">2、侦听 URI</a></h2>
+                                <p style='margin: 0cm; margin-bottom: .0001pt; text-align: justify; text-justify: inter-ideograph'>
+                                    当您的应用自动启动以处理某个 URI 关联时，深层链接 URI 用于将用户带到您的应用。在 URI 中，Protocol&nbsp;字符串指定 URI 的源为 URI 关联。名为&nbsp;encodedLaunchuri&nbsp;的 URI 参数等于从源应用发送的整个 URI
+方案的 URI 编码版本。例如，以下代码演示了当假想应用作为&nbsp;contoso&nbsp;URI 关联的结果被启动后，该应用将显示的启动 URI。
+                                </p>
+                                <pre><code>/Protocol?encodedLaunchUri=contoso%3AShowProducts%3FCategoryID%3Daea6ae1f-9894-404e-8bca-ec47ec5b9c6c</code></pre>
+                                <p>应用启动时，将传入的深层链接 URI 映射到能够处理 URI 关联的应用页面。以下示例演示了使用 ShowProducts.xaml 页面映射 Contoso“显示产品”请求的自定义 URI 映射器。如果没有使用 Contoso URI 方案名，完整的 URI 将被发送到 MainPage.xaml 页面。</p>
+                                <pre><code>using System;
+using System.Windows.Navigation;
+namespace sdkAutoLaunch
+{
+    class AssociationUriMapper : UriMapperBase
+    {
+        private string tempUri;
+        public override Uri MapUri(Uri uri)
+        {
+            tempUri = System.Net.HttpUtility.UrlDecode(uri.ToString());
+            // URI association launch for contoso.
+            if (tempUri.Contains("contoso:ShowProducts?CategoryID="))
+            {
+                // Get the category ID (after "CategoryID=").
+                int categoryIdIndex = tempUri.IndexOf("CategoryID=") + 11;
+                string categoryId = tempUri.Substring(categoryIdIndex);
+                // Map the show products request to ShowProducts.xaml
+                return new Uri("/ShowProducts.xaml?CategoryID=" + categoryId, UriKind.Relative);
+            }
+            // Otherwise perform normal launch.
+            return uri;
+            }
+        }
+}</code></pre>
+                                <p>在此类情况下，若要在您的应用中使用 URI 映射器类，请将其分配到该应用在 App.xaml.cs 文件中所对应的框架。在&nbsp;InitializePhoneApplication&nbsp;方法中，在&nbsp;RootFrame.Navigated&nbsp;已分配后，紧接着将&nbsp;RootFrame.UriMapper&nbsp;属性分配给您的 URI 映射器类。在下列示例中，AssociationUriMapper类被分配给框架的&nbsp;UriMapper&nbsp;属性。</p>
+                                <pre><code>private void InitializePhoneApplication()
+{
+    if (phoneApplicationInitialized)
+        return;
+    // Create the frame but don't set it as RootVisual yet; this allows the splash
+    // screen to remain active until the application is ready to render.
+    RootFrame = new PhoneApplicationFrame();
+    RootFrame.Navigated += CompleteInitializePhoneApplication;
+    // Assign the URI-mapper class to the application frame.
+    RootFrame.UriMapper = new AssociationUriMapper();
+    // Handle navigation failures
+    RootFrame.NavigationFailed += RootFrame_NavigationFailed;
+    // Ensure we don't initialize again
+    phoneApplicationInitialized = true;
+}</code></pre>
+                                <p style='margin: 0cm; margin-bottom: .0001pt; text-align: justify; text-justify: inter-ideograph'>
+                                    启动应用后，它将在初始化期间分配 URI 映射器。在启动任何页面之前，应用将调用 URI 映射器的<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.navigation.urimapper.mapuri(v=vs.105).aspx">MapUri</a>&nbsp;方法确定要启动的页面。URI
+映射器返回的 URI 即应用所启动的页面。
+                                </p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt; text-align: justify; text-justify: inter-ideograph;'>
+                                    启动页面时，通过使用页面的&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.page.navigationcontext(v=vs.105).aspx">NavigationContext</a>&nbsp;对象的&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.navigation.navigationcontext.querystring(v=vs.105).aspx">QueryString</a>&nbsp;属性，页面可以访问 URI（启动了该页面）中的所有参数。例如，以下代码将所有的 URI 参数和值都放置在 IDictionary 对象中。
+                                </p>
+                                <pre><code>// Get a dictionary of URI parameters and values.
+IDictionary<string, string> queryStrings = this.NavigationContext.QueryString;</code></pre>
+                                <h2><a name="_Toc372740639">3、启动 URI</a></h2>
+                                <p style='margin: 0cm; margin-bottom: .0001pt; text-align: justify; text-justify: inter-ideograph;'>
+                                    通过使用关联启动 API，您的应用可以通过启动自定义的 URI 自动启动另一个应用。为此，请使用 Windows.System 命名空间的启动器对象的&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/hh701480.aspx">Launcher.LaunchUriAsync(Uri)</a>&nbsp;方法。例如，以下代码启动了一个假想 Contoso 应用以显示新产品。
+                                </p>
+                                <pre><code>private async void LaunchContosoNewProductsButton_Click(object sender, RoutedEventArgs rea)
+{
+    // Launch URI.
+    Windows.System.Launcher.LaunchUriAsync(new System.Uri("contoso:NewProducts"));
+}</code></pre>
+                                <p>当您的URI被传递到附带URI关联的接收应用，已启动 URI 中所有的保留字符都将自动进行百分比编码。例如，一个应用启动 URI“contoso:NewProducts”后，会导致另一个应用接收深层链接 URI“/Protocol?encodedLaunchUri=contoso%3ANewProducts”。</p>
+                                <p>如果特定URI关联在手机上只注册了一个应用，当用户要打开它时，该应用将自动启动。如果用户在手机上拥有多个为URI关联注册的应用，每次用户打开文件时，系统都会询问要使用哪个应用。</p>
+                                <h1><a name="_Toc372740640">三、通过文件关联启动应用程序</a></h1>
+                                <p>您可以使用 Windows&nbsp;Phone&nbsp;8 中的文件关联自动启动您的应用。启动后，您可以使用关联启动 API 以相同的方式启动另一个应用。当用户想要打开某个特定文件时，文件关联允许您的应用自动启动。该文件可能来自不同的来源，这包括但不限于以下来源：</p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 36.0pt; margin-bottom: .0001pt;'>
+                                    ●
+电子邮件附件
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 36.0pt; margin-bottom: .0001pt;'>
+                                    ●
+Internet Explorer 中的网站
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 36.0pt; margin-bottom: .0001pt;'>
+                                    ●
+近距离无线通信 (NFC) 标记
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 36.0pt; margin-bottom: .0001pt;'>
+                                    ●
+商店 中的其他应用
+                                </p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>
+                                    文件关联还可以用来确定，通过使用外部存储 API，应用可以从 SD 卡读取哪些文件类型。有关这些 API 的更多信息，请参见&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/ff402541(v=vs.105).aspx">Windows Phone 的数据</a>。
+                                </p>
+                                <h2><a name="_Toc372740641">1、注册文件关联</a></h2>
+                                <p>
+                                    要处理特定的文件类型，请在应用清单文件中注册文件关联。应用能够指定任何可处理的文件关联。但是，任何由内置应用保留的文件关联将被忽略。有关更多信息，请参见&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/jj207065(v=vs.105).aspx">Windows
+Phone 8 的保留文件和 URI 关联</a>。
+                                </p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt; text-align: justify; text-justify: inter-ideograph;'>
+                                    要向在内置应用中显示的自定义文件类型提供“集成”外观，您可以选择是否提供在文件旁边显示的徽标（图像文件）。例如，如果文件（您自定义的类型）被附加到电子邮件，下载附件后，附件的旁边将显示一个小型的徽标。
+                                </p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt; text-align: justify; text-justify: inter-ideograph;'>
+                                    文件类型徽标显示在白色背景前，请确保在测试应用时，检查您的徽标在手机上的显示方式。还请注意，如果不止一个应用注册了相同的文件类型，那么您将看不到您的徽标。在这种情况下，则使用常规徽标。
+                                </p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt; text-align: justify; text-justify: inter-ideograph;'>
+                                    要注册文件关联，您必须使用&nbsp;<b>XML（文本）编辑器</b>编辑
+WMAppManifest.xml。在<b>“解决方案资源管理器”</b>中，右键单击 WMAppManifest.xml 文件，然后单击<b>“打开方式”</b>。在<b>“打开方式”</b>窗口中，选择<b>“XML（文本）编辑器”</b>，然后单击<b>“确定”</b>。
+                                </p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt; text-align: justify; text-justify: inter-ideograph'>
+                                    在应用清单文件的&nbsp;Extensions&nbsp;元素中，文件关联是使用&nbsp;FileTypeAssociation&nbsp;元素所指定的。请注意，Extensions&nbsp;元素必须紧跟在&nbsp;Tokens&nbsp;元素之后。下面的示例演示了称为“Windows Phone SDK 测试文件类型”的假想文件类型的文件关联，该关联能够处理两种不同文件扩展名：“.sdkTest1”和“.sdkTest2”。
+                                </p>
+                                <textarea><Extensions>
+   <FileTypeAssociation Name="Windows Phone SDK test file type" TaskID="_default" NavUriFragment="fileToken=%s">
+       <Logos>
+           <Logo Size="small" IsRelative="true">Assets/sdk-small-33x33.png</Logo>
+           <Logo Size="medium" IsRelative="true">Assets/sdk-medium-69x69.png</Logo>
+           <Logo Size="large" IsRelative="true">Assets/sdk-large-176x176.png</Logo>
+       </Logos>
+       <SupportedFileTypes>
+         <FileType ContentType="application/sdk">.sdkTest1</FileType>
+         <FileType ContentType="application/sdk">.sdkTest2</FileType>
+
+       </SupportedFileTypes>
+   </FileTypeAssociation>
+</Extensions></textarea>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                <b>元素</b>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                <b>父元素</b>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                <b>说明</b>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                Extensions
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                App
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                必须跟在&nbsp;Tokens&nbsp;元素之后。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                FileTypeAssociation
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                Extensions
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                描述文件关联。您最多可以注册 20 个文件关联，但是每个文件关联只能列出一次。必须提供&nbsp;Name特性，但您可以选择自己的友好名称。根据指示指定&nbsp;TaskID&nbsp;和&nbsp;NavUriFragment&nbsp;元素。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                Logos
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                FileTypeAssociation
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                列出文件关联的所有徽标。如果没有指定任何徽标，这是可选的。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                Logo
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                Logos
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                可选项。列出要显示在文件旁边的图像文件。若要提供大小，您必须提供所有大小（小、中等和大）。IsRelative&nbsp;特性必须存在并等于&nbsp;true。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                SupportedFileTypes
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                FileTypeAssociation
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                列出与文件类型相关联的所有文件扩展名。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                FileType
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                SupportedFileTypes
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                列出与文件类型相关的文件扩展名，包括句点 (‘.’)。每个文件关联最多可以关联 20 个文件扩展名，但是每个扩展名只能使用一次。若您的应用从 SD 卡读取文件，您还必须指定&nbsp;ContentType&nbsp;特性以描述文件的类型。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <h2><a name="_Toc372740642">2、侦听文件启动</a></h2>
+                                <p style='margin: 0cm; margin-bottom: .0001pt; text-align: justify; text-justify: inter-ideograph;'>
+                                    当您的应用启动以处理某个特定的文件类型时，深层链接 URI 用于将用户带到您的应用。在 URI 中，FileTypeAssociation&nbsp;字符串指定 URI 的源为文件关联且&nbsp;fileToken&nbsp;参数包含文件标记。例如，以下代码显示了文件关联的深层链接 URI。
+                                </p>
+                                <pre>/FileTypeAssociation?fileToken=89819279-4fe0-4531-9f57-d633f0949a19</pre>
+                                <p style='margin: 0cm; margin-bottom: .0001pt; text-align: justify; text-justify: inter-ideograph;'>
+                                    启动时，将传入的深层链接
+URI 映射到能够处理该文件的应用页面。如果您拥有用于处理多个文件类型的多个页面，请在映射 URI 之前使用自定义的 URI 映射器和 GetSharedFileName 方法检查文件类型。例如，以下代码演示了用于分析深层链接 URI 并根据文件的类型映射不同页面的 URI 映射器。如果映射器不是从文件关联启动的，它会在保持 URI 不变的情况下，将完整的 URI 字符串发回到&nbsp;App对象。
+                                </p>
+                                <pre><code>using System;
+using System.IO;
+using System.Windows.Navigation;
+using Windows.Phone.Storage.SharedAccess;
+
+namespace sdkAutoLaunch
+{
+    class AssociationUriMapper : UriMapperBase
+    {
+        private string tempUri;
+
+        public override Uri MapUri(Uri uri)
+        {
+            tempUri = uri.ToString();
+
+            // File association launch
+            if (tempUri.Contains("/FileTypeAssociation"))
+            {
+                // Get the file ID (after "fileToken=").
+                int fileIDIndex = tempUri.IndexOf("fileToken=") + 10;
+                string fileID = tempUri.Substring(fileIDIndex);
+
+                // Get the file name.
+                string incomingFileName =
+                    SharedStorageAccessManager.GetSharedFileName(fileID);
+
+                // Get the file extension.
+                string incomingFileType = Path.GetExtension(incomingFileName);
+
+                // Map the .sdkTest1 and .sdkTest2 files to different pages.
+                switch (incomingFileType)
+                {
+                    case ".sdkTest1":
+                        return new Uri("/sdkTest1Page.xaml?fileToken=" + fileID, UriKind.Relative);
+                    case ".sdkTest2":
+                        return new Uri("/sdkTest2Page.xaml?fileToken=" + fileID, UriKind.Relative);
+                    default:
+                        return new Uri("/MainPage.xaml", UriKind.Relative);
+                }
+            }
+            // Otherwise perform normal launch.
+            return uri;
+        }
+    }
+}</code></pre>
+                                <p style='margin: 0cm; margin-bottom: .0001pt; text-align: justify; text-justify: inter-ideograph;'>
+                                    在此类情况下，若要在您的应用中使用 URI 映射器类，请将其分配到该应用在 App.xaml.cs 文件中所对应的框架。在&nbsp;InitializePhoneApplication&nbsp;方法中，在&nbsp;RootFrame.Navigated&nbsp;已被分配后，紧接着将&nbsp;RootFrame.UriMapper&nbsp;属性设置为与您的 URI 映射器类相等。在下列示例中，AssociationUriMapper&nbsp;类被分配给框架的&nbsp;UriMapper&nbsp;属性。
+                                </p>
+                                <pre><code>private void InitializePhoneApplication()
+{
+    if (phoneApplicationInitialized)
+        return;
+
+    // Create the frame but don't set it as RootVisual yet; this allows the splash
+    // screen to remain active until the application is ready to render.
+    RootFrame = new PhoneApplicationFrame();
+    RootFrame.Navigated += CompleteInitializePhoneApplication;
+
+    // Assign the URI-mapper class to the application frame.
+    RootFrame.UriMapper = new AssociationUriMapper();
+
+    // Handle navigation failures
+    RootFrame.NavigationFailed += RootFrame_NavigationFailed;
+
+    // Ensure we don't initialize again
+    phoneApplicationInitialized = true;
+}</code></pre>
+                                <p style='margin: 0cm; margin-bottom: .0001pt; text-align: justify; text-justify: inter-ideograph;'>
+                                    启动应用后，它将在初始化期间分配 URI 映射器。在启动任何页面之前，应用将调用 URI 映射器的<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.navigation.urimapper.mapuri(v=vs.105).aspx">MapUri</a>&nbsp;方法确定要启动的页面。URI
+映射器返回的 URI 即应用所启动的页面。
+                                </p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt; text-align: justify; text-justify: inter-ideograph;'>
+                                    启动页面时，通过使用页面的&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.page.navigationcontext(v=vs.105).aspx">NavigationContext</a>&nbsp;对象的&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.navigation.navigationcontext.querystring(v=vs.105).aspx">QueryString</a>&nbsp;属性，页面可以访问 URI（启动了该页面）中的所有参数。例如，以下代码将所有的 URI 参数和值都放置在 IDictionary 对象中。
+                                </p>
+                                <pre><code>// Get a dictionary of URI parameters and values.
+IDictionary<string, string> queryStrings = this.NavigationContext.QueryString;</code></pre>
+                                <h2><a name="_Toc372740643">3、检索文件</a></h2>
+                                <p style='margin: 0cm; margin-bottom: .0001pt; text-align: justify; text-justify: inter-ideograph'>
+                                    当您获得了深层链接 URI 的文件标记后，使用&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/windows.phone.storage.sharedaccess(v=vs.105).aspx">Windows.Phone.Storage.SharedAccess</a>命名空间中的&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/windows.phone.storage.sharedaccess.sharedstorageaccessmanager(v=vs.105).aspx">SharedStorageAccessManager</a>&nbsp;静态类访问该文件。<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/windows.phone.storage.sharedaccess.sharedstorageaccessmanager(v=vs.105).aspx">SharedStorageAccessManager</a>&nbsp;提供了以下方法。
+                                </p>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                <b>方法</b>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                <b>返回类型</b>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                <b>说明</b>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                <a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/windows.phone.storage.sharedaccess.sharedstorageaccessmanager.getsharedfilename(v=vs.105).aspx">GetSharedFileName</a>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                System.String
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                返回文件名（包括文件扩展名）。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                <a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/windows.phone.storage.sharedaccess.sharedstorageaccessmanager.copysharedfileasync(v=vs.105).aspx">CopySharedFileAsync</a>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                Windows.Storage.StorageFile
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                将文件复制到特定的位置并返回副本。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <h2><a name="_Toc372740644">4、启动文件</a></h2>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>
+                                    如前所述，您的应用也可以启动文件，以便另一个应用能够打开它。为此，请使用 Windows.System
+命名空间的启动器对象的&nbsp;<a
+    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/hh701471.aspx">LaunchFileAsync</a>&nbsp;方法。例如，下列代码从本地存储启动了一个假想 Contoso Bug 查询文件。
+                                </p>
+                                <pre><code>private async void LaunchFileButton_Click(object sender, RoutedEventArgs rea)
+{
+    // Access isolated storage.
+    StorageFolder local = Windows.Storage.ApplicationData.Current.LocalFolder;
+    // Access the bug query file.
+    StorageFile bqfile = await local.GetFileAsync("file1.bqy");
+    // Launch the bug query file.
+    Windows.System.Launcher.LaunchFileAsync(bqfile);
+}</code></pre>
+                                <h1><a name="_Toc372740645">四、启动器与选择器</a></h1>
+                                <h2><a name="_Toc372740646">1、启动器</a></h2>
+                                <p>“启动器”是一种启动某个内置应用程序（如“联系人”应用程序或 Web 浏览器）的 API，用户可通过它完成任务。当出现新应用程序时，用户可以选择完成或取消任务。当用户关闭新应用程序时，通常会重新激活正在调用的应用程序。启动器任务的示例包括撰写电子邮件、在社交网络上共享链接，以及在浏览器中打开特定网站。</p>
+                                <p>
+                                    有关更多信息，请参见&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/ff769550(v=vs.105).aspx">Windows
+Phone 启动器</a>。
+                                </p>
+                                <h2><a name="_Toc372740647">2、选择器</a></h2>
+                                <p>“选择器”是一种启动某个内置应用程序（如“联系人”应用程序或相机）的 API，用户可通过它完成任务。当出现新应用程序时，用户可以选择完成或取消任务。当用户关闭新应用程序时，通常会重新激活正在调用的应用程序并向其提供数据和状态。选择器任务的示例包括选择联系人电子邮件地址、选择手机中的照片，以及保存新的铃声。</p>
+                                <p>
+                                    有关更多信息，请参见&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-CN/library/windowsphone/develop/ff769543(v=vs.105).aspx">Windows
+Phone 选择器</a>。
+                                </p>
+                                <h1><a name="_Toc372740648">五、Windows 8 Share 机制</a></h1>
+                                <h2><a name="_Toc372740649">1、沙盒机制</a></h2>
+                                <p>沙盒机制（SandBox）是一种安全体系，它规定了应用程序只能在为该应用创建的文件夹内读取文件，不可以访问其他地方的内容。所有的非代码文件都保存在这个地方，比如图片、声音、属性列表和文本文件等。</p>
+                                <p>1.每个应用程序都在自己的沙盒内</p>
+                                <p>2.不能随意跨越自己的沙盒去访问别的应用程序沙盒的内容</p>
+                                <p>3.应用程序向外请求或接收数据都需要经过权限认证</p>
+                                <p>与杀毒软件中主动防御技术原理截然不同。主动防御是发现程序有可疑行为时立即拦截并终止运行。“沙盒”技术则是发现可疑行为后让程序继续运行，当发现的确是病毒时才会终止。“沙盒”技术的实践运用流程是：让疑似病毒文件的可疑行为在虚拟的“沙盒”里充分表演，“沙盒”会记下它的每一个动作；当疑似病毒充分暴露了其病毒属性后，“沙盒”就会执行“回滚”机制：将病毒的痕迹和动作抹去，恢复系统到正常状态。如果您还不懂，那说的再简单一些。想象一下，在一个装满了平整细沙的盒子里，我们可以尽情随意地在上面作画、涂写，无论画的好坏，最后轻轻一抹，沙盒又回到了原来的平整状态。沙盒的魅力就在于他允许你出错，还可以给你改正的机会。这种技术也称之为“沙箱技术”。</p>
+                                <h2><a name="_Toc372740650">2、Share介绍</a></h2>
+                                <p>当用户从屏幕的一侧轻扫并点击“共享”超级按钮时，将显示“共享”窗格，在其中列出用户可用于共享内容的应用列表。此列表包括作为特定数据格式的“共享目标”的任何应用。</p>
+                                <p>如果你的应用有要共享的内容，你的应用便是一个共享源。如果你的应用可以从其他应用接收内容，则它是一个共享目标。当用户选择共享内容时，源应用将以可共享的格式提供请求的内容，并以内容预览的形式显示元数据。所选目标应用将启动，读取共享内容并显示相应的 UI。当目标应用报告共享操作已完成时，目标应用可能会返回一个 QuickLink 显示在共享窗口中。</p>
+                                <p>许多共享操作可能会花费一些时间才能完成。用户可以开始共享大量内容，然后在进行该操作时，切换到其他应用并通过重新打开共享窗口来查看共享进度。如果某个共享操作失败，Windows 将显示来自目标应用的一条信息性消息，如果可能，该消息将包含用于更正问题的步骤。</p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>我们希望大多数（最好是所有）Windows 应用商店应用都能支持一些共享任务。 在你的应用中实现共享时，请使用以下最佳做法。</p>
+                                <h2><a name="_Toc372740651">2、共享文件</a></h2>
+                                <p>
+                                    支持共享文件等功能时，你需要考虑你的应用何时可以将文件准备就绪。大多数情况下，你的应用可能会将文件准备就绪。如果是这种情况，则应执行本主题中的步骤。如果在文件准备就绪之前你的应用需要进行其他工作（例如，将文件从一种格式转换为另一种格式），则你应该查看主题<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh871375.aspx">如何支持拉操作</a>。本主题介绍如何使用委托函数，以使目标应用可以从你的应用拉取正在共享的内容，而不是要求你的应用推送该内容。
+                                </p>
+                                <h3><a name="_Toc372740652">2.1、添加 DataTransfer 命名空间</a></h3>
+                                <p style='margin: 0cm; margin-bottom: .0001pt; text-align: justify; text-justify: inter-ideograph;'>
+                                    你需要做的是向你的应用中添加合适的命名空间，以便创建并处理与共享相关的对象。至少应该添加<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.applicationmodel.datatransfer.aspx"><strong>Windows.ApplicationModel.DataTransfer</strong></a>&nbsp;命名空间：
+                                </p>
+                                <pre><code>using Windows.ApplicationModel.DataTransfer;</code></pre>
+                                <p style='margin: 0cm; margin-bottom: .0001pt; text-align: justify; text-justify: inter-ideograph;'>
+                                    此命名空间中包含基本共享所需的所有内容。然而，请牢记，如果你希望共享图像或文件等内容，则还需要添加相应的命名空间。下面列出了你可能需要的命名空间：
+                                </p>
+                                <p style='margin-left: 21.0pt; layout-grid-mode: char'>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.storage.aspx"><strong>Windows.Storage</strong></a>.使用&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.storage.storagefile.aspx"><strong>StorageFile</strong></a>&nbsp;和其他对象时需要。
+                                </p>
+                                <p style='margin-left: 21.0pt; layout-grid-mode: char'>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.storage.pickers.aspx"><strong>Windows.Storage.Pickers</strong></a><b>.</b>用于打开文件选取器，以便用户选择图像和文件。
+                                </p>
+                                <p style='margin-left: 21.0pt; layout-grid-mode: char'>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.storage.streams.aspx"><strong>Windows.Storage.Streams</strong></a><b>.</b>通常在共享图像、文件和自定义格式的数据时使用。
+                                </p>
+                                <p style='margin-left: 21.0pt; layout-grid-mode: char'>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.graphics.imaging.aspx"><strong>Windows.Graphics.Imaging</strong></a><b>.</b>当在共享图像之前需要对图像进行修改时有用。
+                                </p>
+                                <h3><a name="_Toc372740653">2.2、获取 DataTransferManager 对象</a></h3>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.applicationmodel.datatransfer.datatransfermanager.aspx"><strong>DataTransferManager</strong></a>&nbsp;对象是任何共享操作的起点。
+                                </p>
+                                <pre><code>DataTransferManager dataTransferManager = DataTransferManager.GetForCurrentView();</code></pre>
+                                <h3><a name="_Toc372740654">2.3、为 DataRequested 事件添加事件处理程序</a></h3>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>
+                                    当用户点击“共享”超级按钮时，会发生&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.applicationmodel.datatransfer.datatransfermanager.datarequested.aspx"><strong>DataRequested</strong></a>&nbsp;事件。
+                                </p>
+                                <pre><code>dataTransferManager.DataRequested += new TypedEventHandler<DataTransferManager, 
+    DataRequestedEventArgs>(this.ShareStorageItemsTextHandler);</code></pre>
+                                <h3><a name="_Toc372740655">2.4、获取 DataRequest 对象</a></h3>
+                                <p style='margin: 0cm; margin-bottom: .0001pt; text-align: justify; text-justify: inter-ideograph;'>
+                                    当发生&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.applicationmodel.datatransfer.datatransfermanager.datarequested.aspx"><strong>DataRequested</strong></a>&nbsp;事件时，你的应用会收到&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.applicationmodel.datatransfer.datarequest.aspx"><strong>DataRequest</strong></a>&nbsp;对象。该对象包含的&nbsp;<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.applicationmodel.datatransfer.datapackage.aspx"><strong>DataPackage</strong></a>&nbsp;可用来提供用户要共享的内容。
+                                </p>
+                                <pre><code>DataRequest request = e.Request;</code></pre>
+                                <h3><a name="_Toc372740656">2.5、设置标题和描述属性。</a></h3>
+                                <pre><code>request.Data.Properties.Title = "Share StorageItems Example";
+	request.Data.Properties.Description = "Demonstrates how to share files.";</code></pre>
+                                <h3><a name="_Toc372740657">2.6、向 DataPackage 中添加文件。</a></h3>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>
+                                    要向&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.applicationmodel.datatransfer.datapackage.aspx"><strong>DataPackage</strong></a>&nbsp;添加文件，请使用&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.applicationmodel.datatransfer.datapackage.setstorageitems.aspx"><strong>SetStorageItems</strong></a>&nbsp;方法。
+                                </p>
+                                <pre><code>request.Data.SetStorageItems(storageItems);</code></pre>
+                                <h2><a name="_Toc372740658">3、接收共享的文件</a></h2>
+                                <p>
+                                    如果你认为你的应用需要时间来处理用户希望共享的文件，请确保在开始处理这些文件之前调用&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.applicationmodel.datatransfer.sharetarget.shareoperation.reportstarted.aspx"><strong>reportStarted</strong></a>。此方法确保系统使你的应用保持活动状态，直到你的应用完成处理为止。在你的应用完成其处理之后，请调用&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.applicationmodel.datatransfer.sharetarget.shareoperation.reportcompleted.aspx"><strong>reportCompleted</strong></a>&nbsp;来完成共享操作。要了解详细信息，请参阅<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh465255.aspx">快速入门：接收共享内容</a>中的&quot;报告扩展共享状态&quot;。
+                                </p>
+                                <h3><a name="_Toc372740659">3.1、支持“共享目标”合约</a></h3>
+                                <p style='margin: 0cm; margin-bottom: .0001pt; text-align: justify; text-justify: inter-ideograph;'>
+                                    你必须首先声明你的应用支持“共享目标”合约，然后你的应用才能接收共享内容。此合约让系统知道你的应用可用于接收内容。如果你要使用 Microsoft Visual Studio 模板来创建你的应用，以下是你支持“共享目标”合约的方法：
+                                </p>
+                                <p>
+                                    1、打开清单文件 (<strong>package.appxmanifest</strong>)。
+                                </p>
+                                <p>
+                                    2、打开“声明”选项卡。&nbsp;
+                                </p>
+                                <p>
+                                    3、从“可用声明”列表中选择“共享目标”。
+                                </p>
+                                <p>
+                                    4、单击“添加”在你的应用中添加对“共享目标”合约的支持。
+                                </p>
+                                <h3><a name="_Toc372740660">3.2、指定你的应用支持的文件类型。</a></h3>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>你可以通过在应用清单中指定你的应用的扩展来指定你的应用支持的文件类型：</p>
+                                <p style='margin-left: 18.0pt;'>
+                                    1.
+打开清单文件。
+                                </p>
+                                <p style='margin-left: 18.0pt;'>
+                                    2.
+在“数据格式”部分中，单击“添加新”。
+                                </p>
+                                <p style='margin-left: 18.0pt;'>
+                                    3.
+键入文件名扩展名，如“.txt”（不包含引号）。
+                                </p>
+                                <p style='margin-left: 18.0pt;'>
+                                    4.
+对于任何其他文件类型，请重复上一步骤。
+                                </p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>前面的步骤将以下部分添加到清单中：</p>
+                                <textarea><Extensions>
+  <Extension Category="windows.shareTarget">
+    <ShareTarget>
+      <SupportedFileTypes>
+        <FileType>.txt</FileType>
+    </ShareTarget>
+  </Extension>
+</Extensions></textarea>
+                                <p class="note" style='margin: 0cm; margin-bottom: .0001pt; text-align: justify; text-justify: inter-ideograph;'>
+                                    <strong>注意</strong>&nbsp; 你不需要在“数据格式”部分中指定存储项。对存储项的支持是从清单中的
+SupportedFileTypes 部分推断出来的。如果你的应用支持任何文件类型，那么你可以通过选中<strong>支持任何文件类型</strong>在清单中指定它们。
+                                </p>
+                                <p class="note" style='margin: 0cm; margin-bottom: .0001pt; text-align: justify; text-justify: inter-ideograph;'>
+                                    <strong>注意</strong>&nbsp;当为“共享目标”合约激活你的应用时，你可以指定一个不同的输入点。若要完成此操作，请在程序包清单中的“共享目标”声明的“应用设置”部分中修改“开始页面”条目。强烈建议你还使用一个单独的 JavaScript 文件来处理此页面的激活。例如，检查<a
+                                        href="http://go.microsoft.com/fwlink/p/?linkid=231519">共享内容目标应用示例</a>。
+                                </p>
+                                <h3><a name="_Toc372740661">3.3、添加要用来检测应用在何时激活的事件处理程序。</a></h3>
+                                <p style='margin: 0cm; margin-bottom: .0001pt; text-align: justify; text-justify: inter-ideograph;'>
+                                    当用户选择你的应用来共享内容时，Windows&nbsp;会激活你的应用。由于 Windows&nbsp;可通过许多方式来激活你的应用，因此你需要添加用来检测激活原因的代码。这可通过检查&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.applicationmodel.activation.sharetargetactivatedeventargs.kind.aspx"><strong>kind</strong></a>&nbsp;属性的值来完成。
+                                </p>
+                                <pre><code>app.onactivated = function (args) {
+    if (args.detail.kind === activation.ActivationKind.launch) {
+        // The application has been launched. Initialize as appropriate.
+    } else if (args.detail.kind === Windows.ApplicationModel.Activation.ActivationKind.shareTarget) {
+        ...
+    }
+};</code></pre>
+                                <h3><a name="_Toc372740662">3.4、获取 ShareOperation 对象。</a></h3>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.applicationmodel.datatransfer.sharetarget.shareoperation.aspx"><strong>ShareOperation</strong></a>&nbsp;对象包含你的应用为了获取用户要共享的内容而所需的全部数据。
+                                </p>
+                                <pre><code>shareOperation = args.detail.shareOperation;</code></pre>
+                                <h3><a name="_Toc372740663">3.5、从已激活的事件处理程序返回。</a></h3>
+                                <p style='margin: 0cm; margin-bottom: .0001pt; text-align: justify; text-justify: inter-ideograph;'>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.webui.activatedeventhandler.aspx"><strong>activated</strong></a>&nbsp;事件处理程序必须快速返回。将&nbsp;<strong>activated</strong>&nbsp;事件处理程序中的某个异步事件排入队列，这样共享数据处理会在已激活事件返回后发生。
+                                </p>
+                                <pre><code>WinJS.Application.addEventListener("shareready", shareReady, false);
+WinJS.Application.queueEvent({ type: "shareready" });</code></pre>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>剩下的步骤将实现&nbsp;<code>shareReady</code>&nbsp;函数。</p>
+                                <h3><a name="_Toc372740664">3.6、查明 DataPackageView 是否包含存储项。</a></h3>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.applicationmodel.datatransfer.sharetarget.shareoperation.aspx"><strong>ShareOperation</strong></a>&nbsp;对象包含一个&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.applicationmodel.datatransfer.datapackageview.aspx"><strong>DataPackageView</strong></a>&nbsp;对象。DataPackageView 对象是源应用在创建数据时所使用的<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.applicationmodel.datatransfer.datapackage.aspx"><strong>DataPackage</strong></a>&nbsp;对象的只读版本。使用此对象来查明正在共享的内容是否包含存储项。
+                                </p>
+                                <pre><code>if (shareOperation.data.contains(Windows.ApplicationModel.DataTransfer.StandardDataFormats.storageItems)) {
+    // Data being shared contains one or more StorageItem. Code to process the StorageItems goes here.
+}</code></pre>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>
+                                    检查&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.applicationmodel.datatransfer.datapackage.aspx"><strong>DataPackage</strong></a>&nbsp;是否包含你感兴趣的数据格式是很好的做法，即使你的应用仅支持一种格式也是如此。 这更便于在以后支持其他数据格式。
+                                </p>
+                                <h3><a name="_Toc372740665">3.7、处理文件。</a></h3>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>
+                                    要获取文件，请调用&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.applicationmodel.datatransfer.datapackageview.getstorageitemsasync.aspx"><strong>DataPackageView.GetStorageItemsAsync</strong></a>&nbsp;方法。
+                                </p>
+                                <pre><code>shareOperation.data.getStorageItemsAsync().then(function (storageItems) {
+    var fileList = "";
+    for (var i = 0; i < storageItems.size; i++) {
+        fileList += storageItems.getAt(i).name;
+        if (i < storageItems.size - 1) {
+            fileList += ", ";
+        }
+    }
+    // In this example, we only display the file names. To do this, you need 
+    // a <div> element with an id of "output" in your HTML page.
+    // In your app, replace this with whatever is appropriate for your scenario.
+    document.getElementById("output").innerText = "Files: " + fileList;
+});</code></pre>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>
+                                    处理文件可能会需要时间。重要的是，你不要强制用户等待你的应用完成加载和处理数据。相反，要调用<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.applicationmodel.datatransfer.sharetarget.shareoperation.reportstarted.aspx"><strong>reportStarted</strong></a>&nbsp;方法。此方法让系统知道你的应用已开始处理正在共享的内容。即使用户关闭你的应用以返回到源应用，系统也会使你的应用保持活动状态，直到你调用&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.applicationmodel.datatransfer.sharetarget.shareoperation.reportcompleted.aspx"><strong>reportCompleted</strong></a>— 为止。要了解详细信息，请参阅<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh465255.aspx">快速入门：接收共享内容</a>中的“报告扩展共享状态”。
+                                </p>
+                                <h3><a name="_Toc372740666">3.8、调用 reportCompleted。</a></h3>
+                                <p style='margin: 0cm; margin-bottom: .0001pt; text-align: justify; text-justify: inter-ideograph;'>
+                                    在你的应用成功完成共享内容之后，请调用&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.applicationmodel.datatransfer.sharetarget.shareoperation.reportcompleted.aspx"><strong>reportCompleted</strong></a>。在你调用此方法之后，Windows 会关闭你的应用。
+                                </p>
+                                <pre>&nbsp; shareOperation.reportCompleted();</pre>
+                                <h2><a name="_Toc372740667">4、其他相关主题</a></h2>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p style='margin: 0cm; margin-bottom: .0001pt;'>
+                                                <a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh758313.aspx">如何共享文本</a>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin: 0cm; margin-bottom: .0001pt;'>
+                                                <a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh758304.aspx">如何接收文本</a>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin: 0cm; margin-bottom: .0001pt;'>
+                                                <a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh758312.aspx">如何共享链接</a>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin: 0cm; margin-bottom: .0001pt;'>
+                                                <a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh758301.aspx">如何接收链接</a>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin: 0cm; margin-bottom: .0001pt;'>
+                                                <a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh758310.aspx">如何共享HTML</a>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin: 0cm; margin-bottom: .0001pt;'>
+                                                <a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh758303.aspx">如何接收HTML</a>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin: 0cm; margin-bottom: .0001pt;'>
+                                                <a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh758305.aspx">如何共享图像</a>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin: 0cm; margin-bottom: .0001pt;'>
+                                                <a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh758300.aspx">如何接收图像</a>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin: 0cm; margin-bottom: .0001pt;'>
+                                                <a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh770848.aspx">如何支持拉操作</a>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin: 0cm; margin-bottom: .0001pt;'>
+                                                <a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh758299.aspx">如何创建QuickLink</a>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <h2><a name="_Toc372740668">5、常见问题</a></h2>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>目标应用中未处理的异常会导致应用立即终止，并替换为一条错误消息。目标应用应该适当地处理从用户发起的所有预期错误（如无效的输入数据），并将错误报告给用户。</p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>
+                                    如果目标应用花费了太长时间来响应某个激活事件，那么系统将认为该应用选择不响应，并将显示一个错误。只要有可能，就应该将正在处理的数据移动到激活处理程序之外，通常通过存储某个&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-CN/library/windows/apps/windows.applicationmodel.datatransfer.sharetarget.shareoperation"><strong>ShareOperation</strong></a>&nbsp;对象并以异步方式处理它。
+                                </p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>当调用次数太多或调用的顺序错误时，共享 API 的调用可能会引发异常。实施某个长时间运行的共享时，请确保按以下顺序调用共享方法，而不在一行中调用任何单个方法两次。</p>
+                                <p style='margin-left: 21.0pt;'>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-CN/library/windows/apps/windows.applicationmodel.datatransfer.sharetarget.shareoperation.reportstarted"><strong>ReportStarted</strong></a>
+                                </p>
+                                <p style='margin-left: 21.0pt;'>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-CN/library/windows/apps/windows.applicationmodel.datatransfer.sharetarget.shareoperation.reportdataretrieved"><strong>ReportDataRetrieved</strong></a>
+                                </p>
+                                <p style='margin-left: 21.0pt;'>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-CN/library/windows/apps/windows.applicationmodel.datatransfer.sharetarget.shareoperation.reportsubmittedbackgroundtask"><strong>ReportSubmittedBackgroundTask</strong></a>
+                                </p>
+                                <p>
+                                    你可以随时调用&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-CN/library/windows/apps/windows.applicationmodel.datatransfer.sharetarget.shareoperation.reporterror"><strong>ReportError</strong></a>&nbsp;或&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-CN/library/windows/apps/windows.applicationmodel.datatransfer.sharetarget.shareoperation.reportcompleted"><strong>ReportCompleted</strong></a>&nbsp;来完成共享操作。
+                                </p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>要了解关于共享 API 的更多信息，请参阅</p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-CN/library/windows/apps/windows.applicationmodel.datatransfer.sharetarget"><strong>Windows.ApplicationModel.DataTransfer.ShareTarget
+namespace</strong></a>
+                                </p>
+                                <h1><a name="_Toc372740669">六、备注</a></h1>
+                                <p>应用不能选择启动的应用。用户确定启动哪个应用。用户可以选择任何 Windows 应用商店应用或桌面应用。</p>
+                                <p>启动 URI 时，你的应用必须是前台应用，即对于用户必须是可见的。此要求有助于确保用户保持控制。为满足此要求，请确保将 URI 的所有启动都直接连结到应用的 UI 中。 无论何种情况下，用户都必须采取某种操作来发起 URI 启动。 如果尝试启动 URI 并且你的应用不位于前景中，则启动将失败，且会调用错误回调。</p>
+                                <p>
+                                    必须指定
+                            <a
+                                href="http://msdn.microsoft.com/zh-cn/library/windows/apps/br211423"><strong>privateNetworkClientServer</strong></a> 功能才能启动 Intranet URI。 使用此方法无法启动本地区域中的 URI。例如，应用无法使用 file:/// protocol 来访问本地计算机上的文件。你必须改为使用<b>
+                                </b><a
+                                    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.storage"><strong>Storage
+APIs</strong></a> 才能访问这些文件。如果尝试启动 intranet URI 并且没有正确的功能或本地区域 URI，则启动将失败，且会调用错误回调。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <!--End Content-->
+        <div style="text-align: right" class="gotoTop"><a href="javascript:scroll(0,0)"></a></div>
+        <!--Begin ProudctLinks-->
+        <div class="ms-pro-links">
+            <div class="grid-container clearfix">
+                <div class="cam-links">
+                    其它微软站点
+		<a href="http://www.microsoft.com/zh-cn/default.aspx">微软中国官方网站</a>
+                    <a href="http://www.microsoft.com/zh-cn/download/default.aspx?WT.mc_id=MSCOM_zh-cn_HP_Footer_downloads" target="_blank">微软中国下载中心</a>
+                    <a href="http://www.microsoftstore.com.cn?WT.mc_id=MSCOM_003" target="_blank">微软中国官方商城</a>
+                    <a href="http://www.microsoft.com/china/newsletter/" target="_blank">订阅电子期刊</a>
+                    <a href="https://sales.liveperson.net/hc/21661174/?cmd=file&file=visitorWantsToChat&site=21661174&byhref=1&SESSIONVAR!skill=APGC.PRC.ZH.CS.CON.PRESLS.GENERAL" target="_blank">联系微软销售代表</a>
+                    <a href="http://www.microsoft.com/zh-cn/sitemap.aspx" target="_blank">网站地图</a>
+                </div>
+            </div>
+        </div>
+        <!--End ProudctLinks-->
+        <!--Begin footer-->
+        <div class="footer">
+            <div class="grid-container">
+                <img src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-type-1x.png" alt="microsoft" class="logo">
+                <ul>
+                    <li><a href="http://www.miibeian.gov.cn/" title="">京ICP备09042378号-6</a></li>
+                    <li><a href="https://profile.microsoft.com/RegSysProfileCenter/default.aspx?lcid=2052" title="">个人信息中心</a></li>
+                    <li><a href="http://support.microsoft.com/contactus/?ws=support" title="">与我们联系</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkId=248681" title="">隐私权声明</a></li>
+                    <li><a href="http://go.microsoft.com/?linkid=4412892" title="">使用条款</a></li>
+                    <li><a href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Trademarks/EN-US.aspx" title="">商标</a></li>
+                    <li>&copy; 2013 Microsoft</li>
+                </ul>
+            </div>
+        </div>
+        <!--End footer-->
+        <!-- Begin MDA WEDCS -->
+        <script type="text/JavaScript">
+            var varSegmentation = 0;
+            var varClickTracking = 1;
+            var varCustomerTracking = 1;
+            var varAutoFirePV = 1;
+            var Route = "#";
+            var Ctrl = "#"
+            //document.write("<script type='text/javascript' src='" + window.location.protocol + "//c.microsoft.com/ms.js'><"+"/script>");
+        </script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="./assets/js/script.js"></script>
+        <script type="text/javascript" src="./js/siteSearch.js"></script>
+        <noscript>
+            <img alt="" width="1" height="1" src="http://c.microsoft.com/trans_pixel.aspx/" />
+        </noscript>
+        <!-- Begin MDA WEDCS -->
+    </div>
+</body>
+</html>

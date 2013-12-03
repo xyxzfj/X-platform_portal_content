@@ -1,0 +1,160 @@
+/**
+ * 字体中文用雅黑、Segoe UI
+ */
+a, a:link, a:visited, a:hover {
+	text-decoration: none;
+	color: #0013A4;
+	outline: none;
+	font-family: "微软雅黑", "Microsoft YaHei";
+	font-size: 14px;
+}
+
+h2, h3 {
+	font-weight: normal;
+	font-size: 24px;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: 微软雅黑,"Microsoft YaHei";
+	font-size: 100%;
+	line-height: 24px;
+}
+
+.header {
+	background: transparent url('../image/bg_right.jpg') no-repeat right top;
+}
+.wrapper {
+	margin: 0 auto;
+	width: 1240px;
+}
+
+.main {
+	margin: 10px 90px;
+	padding: 0;
+}
+.main .nav {
+	margin-right: 40px;
+	float: left;
+	width: 360px;
+}
+.main .content {
+	float: left;
+	width: 650px;
+}
+.clear {
+	clear: both;
+}
+
+/** nav **/
+.nav h2 {
+	line-height: 43px;
+	height: 43px;
+	text-indent: -3000px;
+	margin: 0;
+	padding: 0;
+}
+.nav .article-nav-block {
+	background: transparent url('../image/article_nav_bg.jpg') no-repeat left top;
+}
+.nav .success-story-nav-block {
+	background: transparent url('../image/success_story_nav_bg.jpg') no-repeat left top;
+}
+
+.nav .article-nav-block h3 {
+	line-height: 60px;
+	height: 60px;
+	text-align: vertical;
+	color: #022866;
+	font-size: 24px;
+	font-weight: normal;
+	text-indent: 50px;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid #022866;
+	background: transparent url('../image/nav_menu_inactive_bg.jpg') no-repeat 300px 50%;
+}
+.index .nav .article-nav-block h3 a {
+	display: block;
+}
+.nav .article-nav-block .last h3{
+	border-bottom: none;
+}
+.nav .article-nav-block h3 span {
+	text-indent: 0;
+	font-weight: normal;
+	font-size: 14px;
+	display: inline-block;
+	margin-left: 10px;
+	color: #666;
+	font-style: italic;
+}
+
+.nav .article-nav-block ul {
+	display: none;
+	padding: 0;
+	list-style: none;
+	margin-left: 50px;
+	line-height: 32px;
+	font-size: 14px;
+	margin-bottom: 0;
+}
+
+.level-2 .content .title, .index .content h3 {
+	height: 38px;
+	line-height: 38px;
+	border-bottom: 1px solid #022866;
+	margin-bottom: 0;
+}
+.index .content .first h3 {
+	margin-top: 0;
+}
+.level-2 .content .overview h4, .index .content h4 {
+	font-weight: normal;
+	font-size: 14px;
+	margin-top: 10px;
+}
+.level-2 .content .overview p, .index .content .content-block p {
+	font-size: 12px;
+}
+.index .content .content-block ul {
+	list-style: none;
+	font-size: 14px;
+	padding: 0;
+}
+.index .more {
+	text-align: right;
+}
+.nav .others {
+	margin-top: 10px;
+	background: transparent url('../image/others_nav_bg.jpg') no-repeat left top;
+}
+.nav .others a {
+	text-indent: -10000px;
+	display: inline-block;
+	width: 49%;
+	line-height: 43px;
+	height: 43px;
+}
+
+/** level-2 **/
+.level-2 .nav .article-nav-block .active ul {
+	display: block;
+}
+.level-2 .nav .article-nav-block .active h3 {
+	background-image: url('../image/nav_menu_active_bg.jpg');
+}
+.level-2 .content .title {
+	margin-top: 0;
+}
+.level-2 .content .title span {
+	font-size: 12px;
+	float:right;
+}
+
+/** */
+.level-2 .nav .last ul {
+	margin-top: 0;
+	margin-bottom: 20px;
+}

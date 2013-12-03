@@ -1,0 +1,741 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>UI Layout的设计</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="css/templete.css" type="text/css" media="all" />
+    <meta charset="UTF-8">
+</head>
+<body class="level-2">
+    <div class="wrapper">
+        <!--Begin header-->
+        <div class="header">
+            <div class="grid-container clearfix">
+                <div class="header-left">
+                    <img alt="Microsoft" src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-lg-1x.png" width="94" height="20">
+                    <h1>X-Platform</h1>
+                </div>
+                <div id="mscom-search" class="mscom-search" style="margin-top: 37px;">
+                    <div class="search-form">
+                        <form action="" id="search-form">
+                            <div class="input-wrapper">
+                                <label class="screen-reader-text" for="search-input">搜索 Microsoft.com</label>
+                                <input id="search-input" type="text" class="input-area" autocomplete="off">
+                            </div>
+                            <button class="search-submit" id="search-btn" type="submit">
+                                <img width="16" height="16" alt="Submit" src="http://i.s-microsoft.com/global/imagestore/PublishingImages/sprites/search-button-blue.png"></button>
+                        </form>
+                    </div>
+                    <div class="search-results-box" id="results">
+                        <div class="search-scope">
+                            <ul>
+                                <li class=""><a class="checked" search="microsoft" role="search">搜索 Microsoft.com</a></li>
+                                <li class=""><a search="internet" role="search">搜索互联网</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End header-->
+        <br />
+        <!--Begin Content-->
+        <div class="content">
+            <div class="wrapper">
+                <div class="wrapper-header">
+                    <div>
+                        <a href="index.html">
+                            <img src="./assets/image/banner_1.jpg"></a>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="nav">
+                        <div class="block article-nav-block">
+                            <h2>移动应用开发生命周期</h2>
+                            <div class="menu">
+                                <h3><a href="idea.html">计划<span>Idea/Planning</span></a></h3>
+                                <ul>
+                                    <li><a href="idea_01.html">平台总览</a></li>
+                                    <li><a href="idea_02.html">开发工具、开发环境和模拟器</a></li>
+                                    <li><a href="idea_03.html">应用结构和生命周期</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu active">
+                                <h3><a href="design.html">设计<span>Design</span></a></h3>
+                                <ul>
+                                    <li><a href="design_01.html">UI Layout的设计</a></li>
+                                    <li><a href="design_02.html">UI的控件</a></li>
+                                    <li><a href="design_03.html">UI页面的控制和导航</a></li>
+                                    <li><a href="design_04.html">不同屏幕尺寸和分辨率的适配</a></li>
+                                    <li><a href="design_05.html">第三方SDK</a></li>
+                                    <li><a href="design_06.html">游戏开发</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="developing.html">开发<span>Developing</span></a></h3>
+                                <ul>
+                                    <li><a href="developing_01.html">开发语言</a></li>
+                                    <li><a href="developing_02.html">Audio、Video Player应用的开发</a></li>
+                                    <li><a href="developing_03.html">General APIs Mapping</a></li>
+                                    <li><a href="developing_04.html">IAP应用内支付</a></li>
+                                    <li><a href="developing_05.html">LBS应用</a></li>
+                                    <li><a href="developing_06.html">LBS、镜头和传感器应用接口使用</a></li>
+                                    <li><a href="developing_07.html">Native Code（C和C++）支持</a></li>
+                                    <li><a href="developing_08.html">Push Notification</a></li>
+                                    <li><a href="developing_09.html">Sharing in Social Network</a></li>
+                                    <li><a href="developing_10.html">Source Code Control</a></li>
+                                    <li><a href="developing_11.html">UI上的Data Binding</a></li>
+                                    <li><a href="developing_12.html">Windows 8.1和WP 8 Sharing应用分享功能实现</a></li>
+                                    <li><a href="developing_13.html">多媒体</a></li>
+                                    <li><a href="developing_14.html">后台任务和多任务处理</a></li>
+                                    <li><a href="developing_15.html">获取后台服务器数据</a></li>
+                                    <li><a href="developing_16.html">浏览器控件WebView</a></li>
+                                    <li><a href="developing_17.html">数据库（SQLite）</a></li>
+                                    <li><a href="developing_18.html">数据网络和数据通讯</a></li>
+                                    <li><a href="developing_19.html">通话和短信功能</a></li>
+                                    <li><a href="developing_20.html">图形处理(Drawing & Animation)</a></li>
+                                    <li><a href="developing_21.html">文件系统和应用设置</a></li>
+                                    <li><a href="developing_22.html">应用间通信</a></li>
+                                    <li><a href="developing_23.html">支付方式</a></li>
+                                    <li><a href="developing_24.html">Windows 8.1应用外设开发</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="testing.html">测试<span>Testing</span></a></h3>
+                                <ul>
+                                    <li><a href="testing_01.html">Windows 8 and WP 8开发FAQ</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu last">
+                                <h3><a href="distribute.html">发布<span>Distribute</span></a></h3>
+                                <ul>
+                                    <li><a href="distribute_01.html">应用商店(发布和更新应用)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="block success-story-nav-block">
+                            <h2>成功案例</h2>
+                        </div>
+                        <div class="block others">
+                            <a href="sample_code.html" class="left">示例代码</a>
+                            <a href="http://msdn.microsoft.com/zh-cn/dn473954" class="right">教学视频</a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3 class="title"><span><a href="index.html">返回首页&gt;</a></span></h3>
+                        <div class="article-content">
+                            <div class="WordSection1">
+                                <p class="MsoToc1"><a href="#_Toc371504028">WP8和Win8 UI布局之XAML</a></p>
+                                <p class="MsoToc2"><a href="#_Toc371504029">XAML示例</a></p>
+                                <p class="MsoToc2"><a href="#_Toc371504030">XAML和可视树</a></p>
+                                <p class="MsoToc2"><a href="#_Toc371504031">不仅仅是静态UI 9</a></p>
+                                <p class="MsoToc1"><a href="#_Toc371504032">Android UI布局之XML</a></p>
+                                <p class="MsoToc2"><a href="#_Toc371504033">示例</a></p>
+                                <p class="MsoToc1"><a href="#_Toc371504034">Xaml优点</a></p>
+                                <p class="MsoToc1"><a href="#_Toc371504035">IOS UI布局之Xib</a></p>
+                                <p class="MsoToc1"><a href="#_Toc371504036">Windows Phone的布局</a></p>
+                                <p class="MsoToc2"><a href="#_Toc371504037">布局概述</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371504038">绝对布局</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371504039">Android绝对布局</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371504040">动态布局</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371504041">Android动态布局</a></p>
+                                <p class="MsoToc2"><a href="#_Toc371504042">屏幕方向</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371504043">Windows&nbsp;Phone</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371504044">Android中屏幕方向改变处理</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371504045">IOS屏幕方向</a></p>
+                                <p class="MsoToc2"><a href="#_Toc371504046">分辨率</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371504047">Windows&nbsp;Phone</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371504048">Android</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371504049">IOS</a></p>
+                                <p class="MsoToc1"><a href="#_Toc371504050">Windows应用商店应用的布局</a></p>
+                                <p class="MsoToc2"><a href="#_Toc371504051">应用页面或画布</a></p>
+                                <p class="MsoToc2"><a href="#_Toc371504052">调整大小</a></p>
+                                <p class="MsoToc2"><a href="#_Toc371504053">触摸键盘和手写面板</a></p>
+                                <p class="MsoToc2"><a href="#_Toc371504054">应用栏</a></p>
+                                <p class="MsoToc2"><a href="#_Toc371504055">超级按钮</a></p>
+                                <p class="MsoToc1"><a href="#_Toc371504056">另请参见</a></p>
+                                <br />
+                                <h1><a name="_Toc371504028">WP8和Win8 UI布局之XAML</a></h1>
+                                <p>
+                                    XAML是eXtensible Application Markup Language的英文缩写，相应的中文名称为可扩展应用程序标记语言，它是微软公司为构建应用程序用户界面而创建的一种新的描述性语言。XAML提供了一种便于扩展和定位的语法来定义和程序逻辑分离的用户界面，而这种实现方式和ASP.NET中的&quot;代码后置&quot;模型非常类似。XAML是一种解析性的语言，尽管它也可以被编译。它的优点是简化编程式上的用户创建过程，应用时要添加代码等。
+                                </p>
+                                <h2><a name="_Toc371504029">XAML示例</a></h2>
+                                <p>下面是创建按钮的简单 XAML 示例。</p>
+                                <p style='vertical-align: baseline'>
+                                    XAML
+                                </p>
+                                <textarea><Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+   <Button Height="72" Width="160" Content="Click Me" />
+</Grid></textarea><br />
+                                <p>运行应用时，它看起来像下面这样：</p>
+                                <p class="imgp">
+                                    <img width="225" height="435" id="图片 9"
+                                        src="images/design_01/image001.png"
+                                        alt="Windows Phone emulater image with button control">
+                                </p>
+                                <p>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.button(v=vs.105).aspx">Button</a>&nbsp;控件是由&nbsp;&lt;Button&gt;&nbsp;元素指定的。<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.frameworkelement.width(v=vs.105).aspx">Width</a>&nbsp;和&nbsp;<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.frameworkelement.height(v=vs.105).aspx">Height</a>&nbsp;特性指定按钮的大小。当您在 Visual Studio 中创建新的 Windows&nbsp;Phone 应用时，将生成&nbsp;&lt;Grid&gt;&nbsp;且它将被用来放置对象。若要了解关于屏幕布局的更多信息，请参见<a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/jj207042(v=vs.105).aspx">Windows Phone 的布局</a>。
+                                </p>
+                                <p>可以使用 Visual Studio 生成 XAML。例如，您可以将按钮从<b>“工具箱”</b>拖到设计图面。下面演示了 Visual Studio 可能会生成的 XAML。（XAML 的外观将有所不同。）</p>
+                                <p style='vertical-align: baseline'>
+                                    XAML
+                                </p>
+                                <textarea><Grid x:Name="ContentGrid" Grid.Row="1">
+   <Button Content="Button" Height="72" HorizontalAlignment="Left" Margin="152,273,0,0" Name="button1" VerticalAlignment="Top" Width="160" />
+</Grid></textarea><br />
+                                <p>请注意，Visual Studio 添加了某些其他的特性（例&nbsp;HorizontalAlignment&nbsp;和&nbsp;Margin）来放置按钮。如果您的需要非常明确，额外的“管道铺设”可能不适合。当然，您也可以使用&nbsp;<b>Visual Studio UI</b>&nbsp;更改这些特性；但在某些情况中，您可能希望直接编辑 XAML。</p>
+                                <p>使用声明性语言（如 XAML）的最大好处之一是：可以明确划分构成 UI 的标记和用于指示应用执行操作的代码。例如，您团队中的设计人员可以设计 UI 体验，然后将 XAML 交给开发人员来添加程序代码。即使设计人员和开发人员是同一个人（经常是这种情况），您可以使用 XAML 文件 (.xaml) 保存您的 UI 并使用代码隐藏文件（ .cs 和 .vb）保存程序代码。</p>
+                                <p>注意：XAML元素与程序代码创建UI是等效的，只是XAML更加简单。当需要动态创建UI时只能在程序代码中实现了。</p>
+                                <h2><a name="_Toc371504030">XAML和可视树</a></h2>
+                                <p>
+                                    在 XAML 中，您拥有能够将其他元素（节点）置于其下方（子元素）的元素（例如，&lt;Button
+    /&gt;&nbsp;和&lt;Grid&gt;）。此父/子关系可以指定诸如如何在屏幕上放置对象以及它们如何响应用户启动事件等内容。请看下面的示例。
+                                </p>
+                                <p>运行应用时，它看起来像下面这样：</p>
+                                <p class="imgp">
+                                    <img border="0" width="225" height="435"
+                                        id="图片 12" src="images/design_01/image002.png"
+                                        alt="Stack panel control showing element placement">
+                                </p>
+                                <p style='vertical-align: baseline'>
+                                    XAML
+                                </p>
+                                <textarea><Grid x:Name="ContentPanel" Background="Red" Grid.Row="1" Margin="12,0,12,0">
+   <StackPanel Margin="20" Background="Blue" >
+      <TextBlock Name="firstTextBlock" FontSize="30">First TextBlock</TextBlock>
+      <TextBlock Name="secondTextBlock" FontSize="30">Second TextBlock</TextBlock>
+      <TextBlock Name="thirdTextBlock" FontSize="30">Third TextBlock</TextBlock>
+   </StackPanel>
+</Grid></textarea><br />
+                                <p>
+                                    蓝色&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.stackpanel(v=vs.105).aspx">StackPanel</a>&nbsp;包含在红色&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.grid(v=vs.105).aspx">Grid</a>&nbsp;中。<b>TextBlock</b>&nbsp;元素包含在&nbsp;<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.stackpanel(v=vs.105).aspx">StackPanel</a>&nbsp;中（<a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.textblock(v=vs.105).aspx">TextBlock</a>&nbsp;元素是&nbsp;<a
+                                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.stackpanel(v=vs.105).aspx">StackPanel</a>的子元素）。此外，<a
+                                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.textblock(v=vs.105).aspx">TextBlock</a>&nbsp;元素彼此堆叠，以便它们能够在 XAML 中声明。
+                                </p>
+                                <p>下面的树示意图演示了元素之间的关系。</p>
+                                <p class="imgp">
+                                    <img border="0" width="408" height="293"
+                                        id="图片 11" src="images/design_01/image003.png"
+                                        alt="Tree diagram depicting relationships among UI elem">
+                                </p>
+                                <p>
+                                    除了能够确定内容的呈现方式，可视树还能够影响事件的处理方式。许多典型事件（称为“路由事件”）会在树中向上“冒泡”事件。例如，您可以将事件处理程序附加到能够处理单击鼠标左键时出现的情况（<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.uielement.mouseleftbuttondown(v=vs.105).aspx">MouseLeftButtonDown</a>&nbsp;事件）的&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.stackpanel(v=vs.105).aspx">StackPanel</a>。下面的 XAML 演示了如何将名为&nbsp;commonMouseHandler的&nbsp;<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.uielement.mouseleftbuttondown(v=vs.105).aspx">MouseLeftButtonDown</a>&nbsp;事件处理程序添加到&nbsp;<a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.stackpanel(v=vs.105).aspx">StackPanel</a>。
+                                </p>
+                                <p style='vertical-align: baseline'>
+                                    XAML
+                                </p>
+                                <textarea><Grid Background="Red" x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+   <StackPanel Margin="20" Background="Blue" MouseLeftButtonDown="commonMouseHandler">
+      <TextBlock Name="firstTextBlock" FontSize="30" >First TextBlock</TextBlock>
+      <TextBlock Name="secondTextBlock" FontSize="30" >Second TextBlock</TextBlock>
+      <TextBlock Name="thirdTextBlock" FontSize="30" >Third TextBlock</TextBlock>
+   </StackPanel>
+</Grid></textarea><br />
+                                <pre>&lt;/Grid&gt;</pre>
+                                <p>下面的代码演示了用于处理事件的程序代码。</p>
+                                <p style='vertical-align: baseline'>C#</p>
+                                <p style='vertical-align: baseline'>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/jj207025(v=vs.105).aspx?cs-save-lang=1&amp;cs-lang=vb#code-snippet-10">VB</a>
+                                </p>
+                                <pre><code>private void commonMouseHandler(object sender, RoutedEventArgs e){
+   FrameworkElement feSource = e.OriginalSource as FrameworkElement;
+   switch (feSource.Name)
+   {        
+      case "firstTextBlock":
+         firstTextBlock.Text = firstTextBlock.Text + " Click!";
+         break;
+      case "secondTextBlock":
+         secondTextBlock.Text = secondTextBlock.Text + " Click!";
+         break;
+      case "thirdTextBlock":
+         thirdTextBlock.Text = thirdTextBlock.Text + " Click!";
+         break;  
+   }
+}</code></pre>
+                                <p>下图演示了事件如何在树中向上冒泡。</p>
+                                <p class="imgp">
+                                    <img border="0" width="464" height="294"
+                                        id="图片 10" src="images/design_01/image004.png"
+                                        alt="Tree diagram depicting event hierarchy">
+                                </p>
+                                <p>
+                                    例如，我们假设用户单击了&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.textblock(v=vs.105).aspx">TextBlock</a>。
+                                </p>
+                                <p>
+                                    1. <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.uielement.mouseleftbuttondown(v=vs.105).aspx">MouseLeftButtonDown</a>&nbsp;事件将向上冒泡到父&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.stackpanel(v=vs.105).aspx">StackPanel</a>。
+                                </p>
+                                <p>
+                                    2. 接下来，<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.uielement.mouseleftbuttondown(v=vs.105).aspx">MouseLeftButtonDown</a>&nbsp;事件将在树中向上冒泡到&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.grid(v=vs.105).aspx">Grid</a>。
+                                </p>
+                                <p>
+                                    由于事件继续在树中向上移动，您也可以“侦听”&nbsp;Grid&nbsp;元素中的&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.uielement.mouseleftbuttondown(v=vs.105).aspx">MouseLeftButtonDown</a>&nbsp;事件
+                                </p>
+                                <h2><a name="_Toc371504031">不仅仅是静态UI</a></h2>
+                                <p>使用 XAML，您可以做比显示静态 UI 更多的事情。您可以创建动画、嵌入视频和仅使用标记绑定到数据。下面是使用 XAML 创建的简单动画的示例。</p>
+                                <p style='vertical-align: baseline'>
+                                    XAML
+                                </p>
+                                <textarea><StackPanel Background="#FDF5E6">
+   <StackPanel.Resources>
+      <Storyboard x:Name="myStoryboard">
+         <DoubleAnimationUsingKeyFrames
+         Storyboard.TargetName="myRectangle"
+         Storyboard.TargetProperty="Height">
+         <!-- This key frame resets the animation to its starting
+               value (30) at the beginning of the animation. -->
+         <LinearDoubleKeyFrame Value="30" KeyTime="0:0:0" />
+         <!-- Spline animations are used to create acceleration. This
+               SplineDoubleKeyFrame creates an animation that starts out slow
+               and then speeds up. The rectangle "falls". -->
+         <SplineDoubleKeyFrame KeySpline="0,0 1,0" Value="300" KeyTime="0:0:0.8" />
+         <!-- This spline animation creates the "bounce" at the end where
+               the rectangle shortens its length quickly at first and then
+               slows down and stops. -->
+         <SplineDoubleKeyFrame KeySpline="0.10, 0.21 0.00, 1.0" Value="250"
+            KeyTime="0:0:1.5" />
+         </DoubleAnimationUsingKeyFrames>
+      </Storyboard>
+   </StackPanel.Resources>
+   <Rectangle x:Name="myRectangle" MouseLeftButtonDown="Mouse_Clicked" Fill="Blue" 
+      Width="200" Height="30" />
+</StackPanel></textarea><br />
+                                <p style='vertical-align: baseline'>C#</p>
+                                <p style='vertical-align: baseline'>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/jj207025(v=vs.105).aspx?cs-save-lang=1&amp;cs-lang=vb#code-snippet-12">VB</a>
+                                </p>
+                                <pre><code>// When the user clicks the rectangle, the animation begins.
+private void Mouse_Clicked(object sender, MouseEventArgs e){
+   myStoryboard.Begin();
+}</code></pre>
+                                <p>
+                                    这是使用 XAML 指定内容的行为（而不是指定布局或其他静态 UI）的示例。<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.media.animation.storyboard(v=vs.105).aspx">Storyboard</a>&nbsp;元素可定义一些动画的常见属性，例如，什么对象要进行动画处理。<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.media.animation.storyboard(v=vs.105).aspx">Storyboard</a>&nbsp;的子元素（例如，<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.media.animation.lineardoublekeyframe(v=vs.105).aspx">LinearDoubleKeyFrame</a>）指定动画的执行方式。
+                                </p>
+                                <h1><a name="_Toc371504032">Android UI布局之XML</a></h1>
+                                <p>Android利用xml安排UI布局 ，xml文件是树型组织的，控制页面的布局。</p>
+                                <h2><a name="_Toc371504033">示例</a></h2>
+                                <p>下面是一个按钮控件的xml文件：</p>
+                                <textarea><?xml version="1.0" encoding="utf-8"?>
+　　<Button xmlns:android="http://schemas.android.com/apk/res/android"
+　　android:id="@+id/button"
+　　android:text=""
+　　android:layout_width="fill_parent"
+　　android:layout_height="fill_parent"/></textarea><br />
+                                类名字Button 是xml元素的名字。<br>
+                                android:text 定义了控件的内容。<br>
+                                android:layout_width 和android:layout_height是大小。<br>
+                                如果在     java程序代码中引用控件，那么需要一个android:id。通过在activity 的onCreator()方法中加入代码：setContentView(R.layout.main);可以把xml文件中定义的元素显示出来。
+                        </p>
+                        <h1><a name="_Toc371504034">Xaml优点</a></h1>
+                                <p>
+                                    xml（eXtensible&nbsp;Markup&nbsp;Language，简称:&nbsp;XML）是一种<a
+                                        href="http://zh.wikipedia.org/wiki/%E6%A0%87%E8%AE%B0%E8%AF%AD%E8%A8%80"
+                                        title="标记语言">标记语言</a>，用于标记电子文件使其具有结构性的标记语言，可以用来标记数据、定义数据类型，是一种允许用户对自己的标记语言进行定义的源语言。尽管xml具有语法简明、易用等优点，但是与xaml相比，xml有很多不足。XAML简化了.Net
+    Framework 3.0编程模式上的用户界面创建过程，使用XAML开发人员可以对程序的所有用户界面元素(例如文本、按钮、图像和列表框等)进行详细的定置，同时还可以对整个界面进行合理化的布局，这与使用HTML非常相似。但是由于XAML是基于XML的，所以它本身就是一个组织良好的XML文档，而且相对于HTML，它的语法更严谨、更明确。预计以后大部分的XAML都可由相应的软件自动生成，就如同我们现在制作一个静态页面时，几乎不用编写任何HTML代码就可以直接通过Dreamweaver软件生成一个美观的页面。但是最初通过手动编写XAML代码将是一次绝佳的学习体验，虽然实现的过程繁杂了些，但是将加深您对XAML语法和各个元素的理解。
+                                </p>
+                                <h1><a name="_Toc371504035">IOS UI布局之Xib</a></h1>
+                                <p>Xib文件是描述应用外观的视觉元素，包含了窗口、视图、控制和其他，它也可以描述非视觉元素，如你应用中管理窗口和视图的对象。Xib是以XML编码的文件，即 Xib文件的本质是用一份XML的脚本描述了程序员在Xcode中对文件中View及其子类等的设置，ViewController读取xib文件以控制界面布局。</p>
+                                <h1><a name="_Toc371504036">Windows Phone的布局</a></h1>
+                                <h2><a name="_Toc371504037">布局概述</a></h2>
+                                <p>布局指在 Windows Phone 应用中调整对象大小和定位对象的过程。若要定位可视对象，则必须将它们置于源自 Panel 的容器控件或其他容器对象中。Windows Phone 提供各种不同的 Panel 控件，如 Canvas、StackPanel 和 Grid，它们相当于容器，让您可以定位和排列控件。</p>
+                                <p>
+                                    Windows
+    Phone 布局系统既支持绝对布局，也支持动态布局。在绝对布局中，使用显式 x/y 坐标定位控件（例如，通过使用 Canvas）。在动态布局中，用户界面根据不同的屏幕分辨率自动调整大小（例如，通过使用 StackPanel 或 Grid）。
+                                </p>
+                                <h3><a name="_Toc371504038">绝对布局</a></h3>
+                                <p>在绝对布局中，通过指定子元素相对于其父元素的准确位置，在布局面板内排列子元素。绝对定位不考虑屏幕大小。如果应用要求 UI 元素为绝对定位，您可以针对不同的屏幕分辨率设计不同的页面，或者使用缩放。</p>
+                                <p>
+                                    Windows
+    Phone 提供 Canvas 控件以支持绝对定位。在默认情况下，当您创建新的 Windows Phone 应用项目时，根布局面板是 Grid，它在绝对定位的基础上创建布局，您必须用 Canvas 替换 Grid。
+                                </p>
+                                <p>若要在画布上定位控件，则在控件上设置以下附加属性。当您在 Visual Studio 中使用设计器时，这些属性会在您将控件拖至设计图面时更新。</p>
+                                <p>
+                                    ● <a
+                                        href="http://msdn.microsoft.com/zh-CN/library/windowsphone/develop/system.windows.controls.canvas.left(v=vs.105).aspx">Canvas.Left</a>
+                                </p>
+                                <p>
+                                    ● <a
+                                        href="http://msdn.microsoft.com/zh-CN/library/windowsphone/develop/system.windows.controls.canvas.top(v=vs.105).aspx">Canvas.Top</a>
+                                </p>
+                                <h3><a name="_Toc371504039">Android绝对布局</a></h3>
+                                <p>Android中使用AbsoluteLayout实现绝对布局，可以让子元素指定准确的x/y坐标值，并显示在屏幕上。(0, 0)为左上角，当向下或向右移动时，坐标值将变大。AbsoluteLayout 没有页边框，允许元素之间互相重叠(尽管不推荐)。由于Android设备有着各自不同的分辨率，采用绝对布局不能适应这些不同的分辨率设备。Google官方的文档中也注明其已经过期，所以一般情况下都不再使用该种布局方式。</p>
+                                <h3><a name="_Toc371504040">动态布局</a></h3>
+                                <p>
+                                    在动态布局中，用户界面会根据不同的屏幕分辨率正确显示。通过指定子元素相对于其父元素应该如何排列以及应该如何换行来排列子元素。例如，您可以在面板上排列控件并指定它们应水平换行。若要使用自动或成比例调整大小，则必须向&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-CN/library/windowsphone/develop/system.windows.controls.rowdefinition.height(v=vs.105).aspx">Height</a>&nbsp;和&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-CN/library/windowsphone/develop/system.windows.controls.columndefinition.width(v=vs.105).aspx">Width</a>&nbsp;属性分配特殊的值。以下是针对动态布局的建议设置：
+                                </p>
+                                <p>
+                                    ● 将控件或布局的高度和宽度设置为&nbsp;Auto。当这些值用于&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-CN/library/windowsphone/develop/system.windows.controls.grid(v=vs.105).aspx">Grid</a>&nbsp;布局中的控件时，控件填充其所在的单元格。控件以及&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-CN/library/windowsphone/develop/system.windows.controls.grid(v=vs.105).aspx">Grid</a>&nbsp;和&nbsp;<a
+                                                href="http://msdn.microsoft.com/zh-CN/library/windowsphone/develop/system.windows.controls.stackpanel(v=vs.105).aspx">StackPanel</a>&nbsp;布局支持自动调整大小。
+                                </p>
+                                <p>
+                                    ● 对于包含文本的控件，移除&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-CN/library/windowsphone/develop/system.windows.controls.rowdefinition.height(v=vs.105).aspx">Height</a>&nbsp;和&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-CN/library/windowsphone/develop/system.windows.controls.columndefinition.width(v=vs.105).aspx">Width</a>&nbsp;属性，设置&nbsp;<a
+                                                href="http://msdn.microsoft.com/zh-CN/library/windowsphone/develop/system.windows.controls.columndefinition.minwidth(v=vs.105).aspx">MinWidth</a>&nbsp;或&nbsp;<a
+                                                    href="http://msdn.microsoft.com/zh-CN/library/windowsphone/develop/system.windows.controls.rowdefinition.minheight(v=vs.105).aspx">MinHeight</a>&nbsp;属性。这可以防止文本缩小至不可读的大小。
+                                </p>
+                                <p>
+                                    ● 若要在&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-CN/library/windowsphone/develop/system.windows.controls.grid(v=vs.105).aspx">Grid</a>&nbsp;布局中，为&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-CN/library/windowsphone/develop/system.windows.controls.rowdefinition(v=vs.105).aspx">RowDefinition</a>&nbsp;和&nbsp;<a
+                                                href="http://msdn.microsoft.com/zh-CN/library/windowsphone/develop/system.windows.controls.columndefinition(v=vs.105).aspx">ColumnDefinition</a>&nbsp;元素设置成比例值，则使用相对的<a
+                                                    href="http://msdn.microsoft.com/zh-CN/library/windowsphone/develop/system.windows.controls.rowdefinition.height(v=vs.105).aspx">Height</a>&nbsp;和宽度值。例如，若要指定一列比另一列宽 5 倍，则在&nbsp;<a
+                                                        href="http://msdn.microsoft.com/zh-CN/library/windowsphone/develop/system.windows.controls.columndefinition(v=vs.105).aspx">ColumnDefinition</a>&nbsp;元素中，对&nbsp;<a
+                                                            href="http://msdn.microsoft.com/zh-CN/library/windowsphone/develop/system.windows.controls.columndefinition.width(v=vs.105).aspx">Width</a>&nbsp;使用“*”和“5*”。
+                                </p>
+                                <h3><a name="_Toc371504041">Android动态布局</a></h3>
+                                <p>Android 中除了AbsoluteLayout（绝对布局）之外还有四种布局，分别是LinearLayout（线性布局）、FrameLayout（单帧布局）、RelativeLayout（相对布局）、和TableLayout（表格布局）。这是种布局可以根据不同的屏幕分辨率和控件大小自动调整并正确显示。</p>
+                                <p>LinearLayout按照垂直或者水平的顺序依次排列子元素，每一个子元素都位于前一个元素之后。如果是垂直排列，那么将是一个N行单列的结构，每一行只会有一个元素，而不论这个元素的宽度为多少；如果是水平排列，那么将是一个单行N列的结构。如果搭建两行两列的结构，通常的方式是先垂直排列两个元素，每一个元素里再包含一个LinearLayout进行水平排列。FrameLayout布局中，整个界面被当成一块空白备用区域，所有的子元素都不能被指定放置的位置，它们统统放于这块区域的左上角，并且后面的子元素直接覆盖在前面的子元素之上，将前面的子元素部分和全部遮挡。RelativeLayout按照各子元素之间的位置关系完成布局。在此布局中的子元素里与位置相关的属性将生效。例如android：layout_below, android:layout_above等。子元素就通过这些属性和各自的ID配合指定位置关系。TableLayout顾名思义，此布局为表格布局，适用于N行N列的布局格式。一个TableLayout由许多TableRow组成，一个TableRow就代表TableLayout中的一行。TableRow是LinearLayout的子类，它的android:orientation属性值恒为horizontal，并且它的android:layout_width和android:layout_height属性值恒为MATCH_PARENT和WRAP_CONTENT。所以它的子元素都是横向排列，并且宽高一致的。这样的设计使得每个TableRow里的子元素都相当于表格中的单元格一样。在TableRow中，单元格可以为空，但是不能跨列。</p>
+                                <h2><a name="_Toc371504042">屏幕方向</a></h2>
+                                <h3><a name="_Toc371504043">Windows&nbsp;Phone</a></h3>
+                                <p>Windows&nbsp;Phone 支持以下屏幕方向：</p>
+                                <p>● 纵向</p>
+                                <p>● 向左横向</p>
+                                <p>● 向右横向</p>
+                                <p>用户可以通过旋转设备轻松启动从一个方向到另一个方向的更改。在模拟器中测试您的应用时，您可以通过单击模拟器工具栏中的按钮，切换屏幕方向。方向按钮包含带箭头的矩形，它们指示方向的更改。</p>
+                                <p class="imgp">
+                                    <img
+                                        border="0" width="151" height="196" id="图片 1" src="images/design_01/image005.png"
+                                        alt="Screen Orientation - Emulator">
+                                </p>
+                                <p>在纵向方向中，页面按垂直方向显示，以使页面的高度要大于其宽度。</p>
+                                <p>在两种横向方向的任一方向中，<b>“状态栏”</b>和<b>“应用程序栏”</b>各自位于具有<b>“电源”</b>和<b>“启动”</b>按钮的屏幕的一侧。横向左视图的<b>“状态栏”</b>在左侧，横向右视图的<b>“状态栏”</b>在右侧。</p>
+                                <p>
+                                    应用的默认方向为纵向，并且您必须添加附加代码以支持横向。您不能只指定向左横向或向右横向方向。如果要支持横向方向，您必须同时支持向左和向右两个方向。要指定应用支持纵向和横向，您必须在 XAML 或代码中将<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.controls.phoneapplicationpage.supportedorientations(v=vs.105).aspx">SupportedOrientations</a>&nbsp;属性设置为&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.controls.supportedpageorientation(v=vs.105).aspx">PortraitOrLandscape</a>。
+                                </p>
+                                <p>可以使用不同的方法，以纵向或横向方向显示内容。其中两种方法是滚动和网格布局。</p>
+                                <p class="MsoListParagraph">1.&nbsp; 滚动</p>
+                                <p>
+                                    滚动方法使用放置在&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.scrollviewer(v=vs.105).aspx">ScrollViewer</a>&nbsp;控件内的&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.stackpanel(v=vs.105).aspx">StackPanel</a>&nbsp;控件。如果要显示列表中的内容或者如果您在页面上拥有一个接着一个显示的不同控件，请使用此方法。<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.stackpanel(v=vs.105).aspx">StackPanel</a>&nbsp;允许您在应用中一个接一个地对子元素进行排序，且当您从纵向切换到横向时，如果屏幕上容纳不下 UI 元素，<a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.scrollviewer(v=vs.105).aspx">ScrollViewer</a>&nbsp;控件允许您滚动浏览<a
+                                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.stackpanel(v=vs.105).aspx">StackPanel</a>。
+                                </p>
+                                <p>要使用滚动方法，通常您会执行以下步骤。</p>
+                                <p>
+                                    ● 将页面的&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.controls.phoneapplicationpage.supportedorientations(v=vs.105).aspx">SupportedOrientations</a>&nbsp;属性更改为&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.controls.supportedpageorientation(v=vs.105).aspx">PortraitOrLandscape</a>。
+                                </p>
+                                <p>
+                                    ● 将<b>“内容面板”</b>区域中的默认&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.grid(v=vs.105).aspx">Grid</a>&nbsp;替换为&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.scrollviewer(v=vs.105).aspx">ScrollViewer</a>&nbsp;和&nbsp;<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.stackpanel(v=vs.105).aspx">StackPanel</a>。
+                                </p>
+                                <p class="MsoListParagraph">2.&nbsp; 网格布局</p>
+                                <p>
+                                    网格布局方法将 UI 元素放置在&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.grid(v=vs.105).aspx">Grid</a>&nbsp;中。当发生方向更改时，您可以采用编程方式重新将元素放置在&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.grid(v=vs.105).aspx">Grid</a>&nbsp;的不同单元格中。
+                                </p>
+                                <p>要使用网格布局方法，通常您会执行以下步骤。</p>
+                                <p>
+                                    1. 将页面的&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.controls.phoneapplicationpage.supportedorientations(v=vs.105).aspx">SupportedOrientations</a>&nbsp;属性更改为&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.controls.supportedpageorientation(v=vs.105).aspx">PortraitOrLandscape</a>。
+                                </p>
+                                <p>
+                                    2. 将&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.grid(v=vs.105).aspx">Grid</a>&nbsp;用于内容面板。
+                                </p>
+                                <p>
+                                    3. 创建一个&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.controls.phoneapplicationpage.orientationchanged(v=vs.105).aspx">OrientationChanged</a>&nbsp;事件处理程序并添加代码以重新将元素放置在&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.grid(v=vs.105).aspx">Grid</a>&nbsp;中。
+                                </p>
+                                <h3><a name="_Toc371504044">Android中屏幕方向改变处理</a></h3>
+                                <p>Android支持纵向和横向两种屏幕方向，默认为纵向。当屏幕方向发生变化时，所有用户界面上的东西都需要进行更新，以适应新的屏幕方向。因为 Activity 是与用户交互的最主要的机制，它包含了处理配置改变的专门支持。除非你特殊指定，否则当屏幕方向发生改变时，你当前的 activity 都将被销毁，这销毁是通过一个正常的 activity 生命周期过程（ onFreeze(Bundle) , onPause() , onStop() , 和 onDestroy() ）进行的。如果 activity 之前正在前景画面，当这个实例的 onDestroy() 调用完成后将会启动这个 activity 的一个新的实例，并将前面那个实例中 onFreeze(Bundle) 所保存的内容传递给新的实例。因为任何的应用资源（包括 layout 文件）都有可能由于任何配置值而改变。因此处理配置改变的唯一安全的方法就是重新获取所有的资源，包括 layout 、绘图资源（原文 drawables ）、字符串资源。由于 activity 已经如何保存自己的状态并从这些状态中重建自身，所以 activity 重新启动自身来获得新的配置将是一个非常便利的途径。</p>
+                                <h3><a name="_Toc371504045">IOS屏幕方向</a></h3>
+                                <p>
+                                    IOS支持Portrait、PortraitUpsideDown、LandscapeLeft、LandscapeRight四种屏幕方向。利用UIViewController控制屏幕旋转，通过依次调用ViewController的<a
+                                        href="https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIViewController_Class/Reference/Reference.html#//apple_ref/occ/instm/UIViewController/willRotateToInterfaceOrientation:duration:"
+                                        target="_blank">willRotateToInterfaceOrientation:duration</a>、<a
+                                            href="https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIViewController_Class/Reference/Reference.html#//apple_ref/occ/instm/UIViewController/viewWillLayoutSubviews"
+                                            target="_blank">viewWillLayoutSubviews</a>、<a
+                                                href="https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIViewController_Class/Reference/Reference.html#//apple_ref/occ/instm/UIViewController/willAnimateRotationToInterfaceOrientation:duration:"
+                                                target="_blank">willAnimateRotationToInterfaceOrientation:duration</a>、<a
+                                                    href="https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIViewController_Class/Reference/Reference.html#//apple_ref/occ/instm/UIViewController/didRotateFromInterfaceOrientation:"
+                                                    target="_blank">didRotateFromInterfaceOrientation</a>方法实现。
+                                </p>
+                                <p>
+                                    更多相关内容参见<a
+                                        href="https://developer.apple.com/library/ios/featuredarticles/ViewControllerPGforiPhoneOS/RespondingtoDeviceOrientationChanges/RespondingtoDeviceOrientationChanges.html#//apple_ref/doc/uid/TP40007457-CH7-SW1">IOS屏幕旋转</a>
+                                </p>
+                                <h2><a name="_Toc371504046">分辨率</a></h2>
+                                <p>Windows&nbsp;Phone&nbsp;8 支持具有 WVGA、WXGA 和 720p 分辨率的手机。这与仅支持 WVGA 分辨率的 Windows&nbsp;Phone OS&nbsp;7.1 不同。本主题将介绍 Windows&nbsp;Phone&nbsp;8 支持的分辨率，以及如何使用不同的分辨率开发面向手机的应用。</p>
+                                <h3><a name="_Toc371504047">Windows&nbsp;Phone</a></h3>
+                                <p>下表描述了 Windows&nbsp;Phone&nbsp;8 中支持的分辨率和纵横比。</p>
+                                <p class="imgp">
+                                    <img border="0" width="553"
+                                        height="235" id="图片 13" src="images/design_01/image006.png">
+                                </p>
+                                <p>下图所示为同一屏幕显示在具有不同分辨率的手机中。</p>
+                                <p class="imgp">
+                                    <img border="0" width="554" height="319"
+                                        id="图片 14" src="images/design_01/image007.png">
+                                </p>
+                                <p>
+                                    由于所有 Windows&nbsp;Phone
+    OS&nbsp;7.1 手机均具有相同的分辨率，您可以布局内容以使之在 Windows&nbsp;Phone
+    OS&nbsp;7.1 手机上显示良好，并确定它将在所有 Windows&nbsp;Phone
+    OS&nbsp;7.1 手机上显示良好。您无需考虑每个控件如何伸展和流动等内部问题。
+                                </p>
+                                <p>在 Windows&nbsp;Phone&nbsp;8 中，您需要布局控件和其他 UI 元素，以使之在每种支持的纵横比中显示良好。因为 Windows&nbsp;Phone&nbsp;8 手机具有两种纵横比（15:9 或 16:9），针对一种纵横比布局的控件可能在另一种纵横比下出现意外布局。</p>
+                                <p>若要使页面能在分辨率为 WVGA、WXGA 、720p和1080p 的手机上正确显示，则不要硬编码控件的长和宽或边距。从工具箱中拖放控件后，请删除或仔细测试自动添加的边距。</p>
+                                <p>若要创建可适应布局，您可以使用像网格控件之类的容器。不是对控件的高和宽进行硬编码，而是将控件放置在网格中，并使用&nbsp;<b>*</b>&nbsp;和&nbsp;<b>Auto</b>&nbsp;值设置其行和列的高和宽。如此一来，应用可以拉伸或缩放控件以使之适合用户手机的高和宽。如果您对控件的高和宽进行硬编码，布局不适应其他分辨率。</p>
+                                <p>若要显示所有分辨率的初始屏幕，则使用分辨率为 768 × 1280 的名为 SplashScreenImage.jpg 的单个图像文件。手机会自动将图像缩放至适当大小。</p>
+                                <p>如果想要提供各种像素的像素完美的初始屏幕，可以使用以下文件名添加图像：</p>
+                                <p>● SplashScreenImage.Screen-WVGA.jpg</p>
+                                <p>● SplashScreenImage.Screen-WXGA.jpg</p>
+                                <p>● SplashScreenImage.Screen-720p.jpg</p>
+                                <p>1080p将自动使用SplashScreenImage.Screen-720p.jpg文件显示初始屏幕</p>
+                                <p>所有初始屏幕图像必须包含在应用项目的根文件夹中。</p>
+                                <h3><a name="_Toc371504048">Android </a></h3>
+                                <p>
+                                    1.5及更早版本的Android系统，在设计的时候假定系统只会运行在一种分辨率的设备上——HVGA（320×480）分辨率，尺寸为3.2寸。由于系统只能工作在一种屏幕上，开发人员就可以针对那个屏幕来编写自己的程序，而无需去考虑程序在其他屏幕上的显示问题。<br>
+                                    但自从     Android 1.6以来，系统引入了对多种尺寸、多种分辨率屏幕的支持，以此满足拥有各种配置的新平台的运行需求。这就意味着开发人员在针对Android 1.6或更新版系统开发程序的时候，需要为自己的程序在多种分辨率的屏幕上良好显示作出额外的设计。<br>
+                                    为了简化程序员面在对各种分辨率时的困扰，也为了具备各种分辨率的平台都可以直接运行这些程序，     Android平台将所有的屏幕以密度和分辨率为分类方式，各自分成了三类：
+                                </p>
+                                <p>
+                                    三种主要的尺寸：大，正常，小；<br>
+                                    三种不同的密度：高（     hdpi），中（mdpi）和低（ldpi）。
+                                </p>
+                                <p>如果需要的话，程序可以为各种尺寸的屏幕提供不同的资源（主要是布局），也可以为各种密度的屏幕提供不同的资源（主要是位图）。除此以外，程序不需要针对屏幕的尺寸或者密度作出任何额外的处理。在执行的时候，平台会根据屏幕本身的尺寸与密度特性，自动载入对应的资源，并把它们从逻辑像素（DIP，用于定义界面布局）转换成屏幕上的物理像素。</p>
+                                <h3><a name="_Toc371504049">IOS </a></h3>
+                                <p>
+                                    iOS设备的碎片化问题显然被控制得很好，这大大减少了游戏开发者的重复劳动。目前，iOS 设备的分辨率有：
+                                </p>
+                                <p class="MsoListParagraph">
+                                    iPhone 1、3G、3GS，iPod Touch 1、2、3：320*480（普通屏）
+                                </p>
+                                <p class="MsoListParagraph">
+                                    iPhone 4、4S，iPod Touch 4：640*960（3：2 Retina屏）
+                                </p>
+                                <p class="MsoListParagraph">
+                                    iPhone 5，iPod Touch 5：640*1136（16：9 Retina屏）
+                                </p>
+                                <p class="MsoListParagraph">
+                                    iPad 1，iPad2，iPad mini：768*1024（普通屏）
+                                </p>
+                                <p class="MsoListParagraph">
+                                    New iPad，iPad 4：1536*2048（Retina屏）
+                                </p>
+                                <h1><a name="_Toc371504050">Windows应用商店应用的布局</a></h1>
+                                <p>了解 Windows 应用商店应用的布局以及它们与传统桌面应用的不同之处。你可以在 Windows 应用商店应用中使用各种界面，如应用窗口、浮出控件、对话框和应用栏。能否根据适当的情况选择合适的界面，将决定应用是易于使用还是难以使用。</p>
+                                <h2><a name="_Toc371504051">应用页面或画布</a></h2>
+                                <p>应用页面（有时称为画布）是 UI 的基础。画布容纳所有内容和控件。你应该尽可能地将 UI 元素集成到这一基础界面中。例如，你可以通过窗口内置的动画来流畅地显示、隐藏或切换错误消息，而不是使用浮出控件来显示错误。显示嵌入式 UI 可以让用户完全沉浸于应用并保持关联感。</p>
+                                <p class="imgp">
+                                    <img
+                                        border="0" width="316" height="203" id="图片 3" src="images/design_01/image008.png"
+                                        alt="应用页面（或画布）">
+                                </p>
+                                <p>
+                                    你可以创建所需数量的应用页面，以便支持你的用户方案。请参阅<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh465427.aspx">规划 Windows 应用商店应用</a>和<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh761500.aspx">导航设计</a>，以了解关于设置应用页面的布局以支持用户方案的详细信息。
+                                </p>
+                                <h2><a name="_Toc371504052">调整大小</a></h2>
+                                <p>人们可以调整你的应用的大小以便他们可以使用另一个应用，或者调整另一个应用的大小以便他们可以使用你的应用。你可以设计你的应用，以便内容流在用户调整你的应用的大小时动态地优化用户体验。</p>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p class="imgp">
+                                                <img border="0" width="193" height="136"
+                                                    id="图片 6" src="images/design_01/image009.png" alt="全屏">
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p><strong>全屏</strong></p>
+                                            <p>应用填满整个屏幕。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="imgp">
+                                                <img border="0"
+                                                    width="193" height="136" id="图片 5" src="images/design_01/image010.png" alt="已调整大小">
+                                            </p>
+                                            <p class="imgp">
+                                                <img border="0"
+                                                    width="193" height="136" id="图片 4" src="images/design_01/image011.png" alt="填充视图状态">
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p><strong>已调整大小</strong></p>
+                                            <p>应用贴靠到整个屏幕的一个狭窄区域。</p>
+                                            <p>其他应用将填满处于贴靠状态的应用未占据的剩余屏幕区域。</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <p>
+                                    有关详细信息，请参阅<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh465371.aspx">调整大小指南</a>。
+                                </p>
+                                <h2><a name="_Toc371504053">触摸键盘和手写面板</a></h2>
+                                <p>触摸键盘和手写面板提供用于输入文本的一个辅助命令 UI。当用户在 Windows 应用商店应用中触摸可编辑输入字段时，或者当用户单击桌面任务栏中的键盘图标时，将显示此面板。当输入字段失去焦点时，此面板将消失。</p>
+                                <p>触摸键盘能够为没有硬件键盘或其他外围键盘设备的外形规格支持文本输入和编辑。手写面板能够为手写外形规格支持文本输入和编辑。</p>
+                                <p>与前面提到的视图状态相似，你可以设计你的应用，以便在显示触摸键盘和手写面板时，内容流能够动态地优化用户体验。</p>
+                                <p>
+                                    有关支持这些文本输入模式的详细信息，请参阅<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh972345.aspx">触摸键盘和手写面板指南</a>。
+                                </p>
+                                <h2><a name="_Toc371504054">应用栏</a></h2>
+                                <p>应用栏位于应用页面之外，是应用的主命令界面。使用应用栏可以向用户显示一些导航选项、命令和工具。默认情况下，应用栏会被隐藏，当用户使用手指从屏幕的顶部或底部边缘轻扫时，会显示应用栏。应用栏会覆盖应用内容，用户可以通过从边缘轻扫或与应用交互来取消应用栏。</p>
+                                <p class="imgp">
+                                    <img
+                                        border="0" width="382" height="220" id="图片 7" src="images/design_01/image012.png"
+                                        alt="位于屏幕底部边缘的应用栏">
+                                </p>
+                                <p>
+                                    请参阅<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh761499.aspx">命令设计</a>了解关于设计你的命令的详细信息，请参阅<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh465302.aspx">应用栏指南</a>了解用户体验指南
+                                </p>
+                                <p><b>应用栏在</b><b>Android</b><b>和</b><b>IOS</b><b>中的实现</b></p>
+                                <p>在 Android 应用中可使用“操作栏”，其功能与Windows 应用商店应用的应用栏相似。操作栏是活动页首（如使用拆分操作栏，则同时在页首和底部显示）的一组栏，包含控件，用户可与之交互以进行上下文相关操作或在活动之间导航。</p>
+                                <p>IOS中&nbsp;利用<b>UIToolbar</b>&nbsp;实现工具栏，功能与Windows 应用商店应用的AppBar功能类似，工具栏位于屏幕页首或底部，用于托管上下文相关菜单项和操作。</p>
+                                <h2><a name="_Toc371504055">超级按钮</a></h2>
+                                <p>超级按钮是每个应用中的用户都会用到的一组特定而一致的按钮：“搜索”、“共享”、“连接”、“设置”和“开始”。我们认为，这些是每个用户在他们所用的几乎每个应用中都需要执行的核心操作。</p>
+                                <p>
+                                    ● <strong>搜索</strong>用户可以搜索你的应用或其他应用中的内容，并且可以从其他应用中搜索你的应用中的内容。
+                                </p>
+                                <p>
+                                    ● <strong>共享</strong>用户可以与他人或服务共享你的应用中的内容。
+                                </p>
+                                <p>
+                                    ● <strong>设备</strong>用户可以连接到设备并发送内容、流式传输媒体以及进行打印。
+                                </p>
+                                <p>
+                                    ● <strong>设置</strong>用户可以根据他们的偏好来配置应用并访问用户帮助。
+                                </p>
+                                <p>
+                                    ● <strong>开始</strong>用户可以直接进入“开始”屏幕。
+                                </p>
+                                <p class="imgp">
+                                    <img
+                                        border="0" width="329" height="237" id="图片 8" src="images/design_01/image013.png"
+                                        alt="具有超级按钮的应用">
+                                </p>
+                                <p>
+                                    有关详细信息，请参阅以下指南：<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh465233.aspx">搜索</a>、<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh465251.aspx">共享</a>、<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh770544.aspx">应用设置</a>和<a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh465049.aspx">应用帮助</a>
+                                </p>
+                                <p>在 iOS 上最相似的等效控件是&nbsp;<b>UIActivityViewController</b></p>
+                                <h1><a name="_Toc371504056">另请参见</a></h1>
+                                <p>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/jj207025(v=vs.105).aspx">快速入门：使用
+    XAML 为 Windows Phone 创建用户界面。</a>
+                                </p>
+                                <p>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-CN/library/windowsphone/develop/jj207042(v=vs.105).aspx">Windows Phone的布局</a>
+                                </p>
+                                <p>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/jj207002(v=vs.105).aspx">快速入门：Windows
+    Phone 的屏幕方向</a>
+                                </p>
+                                <p>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/jj206974(v=vs.105).aspx">Windows Phone 8 的多分辨率应用</a>
+                                </p>
+                                <p>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh465330.aspx">设置 UI 的布局（使用
+    C#/VB/C++ 和 XAML 的 Windows 应用商店应用）</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <!--End Content-->
+        <div style="text-align: right" class="gotoTop"><a href="javascript:scroll(0,0)"></a></div>
+        <!--Begin ProudctLinks-->
+        <div class="ms-pro-links">
+            <div class="grid-container clearfix">
+                <div class="cam-links">
+                    其它微软站点
+		<a href="http://www.microsoft.com/zh-cn/default.aspx">微软中国官方网站</a>
+                    <a href="http://www.microsoft.com/zh-cn/download/default.aspx?WT.mc_id=MSCOM_zh-cn_HP_Footer_downloads" target="_blank">微软中国下载中心</a>
+                    <a href="http://www.microsoftstore.com.cn?WT.mc_id=MSCOM_003" target="_blank">微软中国官方商城</a>
+                    <a href="http://www.microsoft.com/china/newsletter/" target="_blank">订阅电子期刊</a>
+                    <a href="https://sales.liveperson.net/hc/21661174/?cmd=file&file=visitorWantsToChat&site=21661174&byhref=1&SESSIONVAR!skill=APGC.PRC.ZH.CS.CON.PRESLS.GENERAL" target="_blank">联系微软销售代表</a>
+                    <a href="http://www.microsoft.com/zh-cn/sitemap.aspx" target="_blank">网站地图</a>
+                </div>
+            </div>
+        </div>
+        <!--End ProudctLinks-->
+        <!--Begin footer-->
+        <div class="footer">
+            <div class="grid-container">
+                <img src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-type-1x.png" alt="microsoft" class="logo">
+                <ul>
+                    <li><a href="http://www.miibeian.gov.cn/" title="">京ICP备09042378号-6</a></li>
+                    <li><a href="https://profile.microsoft.com/RegSysProfileCenter/default.aspx?lcid=2052" title="">个人信息中心</a></li>
+                    <li><a href="http://support.microsoft.com/contactus/?ws=support" title="">与我们联系</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkId=248681" title="">隐私权声明</a></li>
+                    <li><a href="http://go.microsoft.com/?linkid=4412892" title="">使用条款</a></li>
+                    <li><a href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Trademarks/EN-US.aspx" title="">商标</a></li>
+                    <li>&copy; 2013 Microsoft</li>
+                </ul>
+            </div>
+        </div>
+        <!--End footer-->
+        <!-- Begin MDA WEDCS -->
+        <script type="text/JavaScript">
+            var varSegmentation = 0;
+            var varClickTracking = 1;
+            var varCustomerTracking = 1;
+            var varAutoFirePV = 1;
+            var Route = "#";
+            var Ctrl = "#"
+            //document.write("<script type='text/javascript' src='" + window.location.protocol + "//c.microsoft.com/ms.js'" + "'><"+"/script>");
+        </script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="./assets/js/script.js"></script>
+        <script type="text/javascript" src="./js/siteSearch.js"></script>
+        <noscript>
+            <img alt="" width="1" height="1" src="http://c.microsoft.com/trans_pixel.aspx/" /></noscript>
+        <!-- Begin MDA WEDCS -->
+    </div>
+</body>
+</html>

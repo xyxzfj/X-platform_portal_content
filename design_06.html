@@ -1,0 +1,1276 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>游戏开发: 多平台游戏渲染开发</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="css/templete.css" type="text/css" media="all" />
+    <meta charset="UTF-8">
+</head>
+<body class="level-2">
+    <div class="wrapper">
+        <!--Begin header-->
+        <div class="header">
+            <div class="grid-container clearfix">
+                <div class="header-left">
+                    <img alt="Microsoft" src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-lg-1x.png" width="94" height="20">
+                    <h1>X-Platform</h1>
+                </div>
+                <div id="mscom-search" class="mscom-search" style="margin-top: 37px;">
+                    <div class="search-form">
+                        <form action="" id="search-form">
+                            <div class="input-wrapper">
+                                <label class="screen-reader-text" for="search-input">搜索 Microsoft.com</label>
+                                <input id="search-input" type="text" class="input-area" autocomplete="off">
+                            </div>
+                            <button class="search-submit" id="search-btn" type="submit">
+                                <img width="16" height="16" alt="Submit" src="http://i.s-microsoft.com/global/imagestore/PublishingImages/sprites/search-button-blue.png"></button>
+                        </form>
+                    </div>
+                    <div class="search-results-box" id="results">
+                        <div class="search-scope">
+                            <ul>
+                                <li class=""><a class="checked" search="microsoft" role="search">搜索 Microsoft.com</a></li>
+                                <li class=""><a search="internet" role="search">搜索互联网</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End header-->
+        <br />
+        <!--Begin Content-->
+        <div class="content">
+            <div class="wrapper">
+                <div class="wrapper-header">
+                    <div>
+                        <a href="index.html">
+                            <img src="./assets/image/banner_1.jpg"></a>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="nav">
+                        <div class="block article-nav-block">
+                            <h2>移动应用开发生命周期</h2>
+                            <div class="menu">
+                                <h3><a href="idea.html">计划<span>Idea/Planning</span></a></h3>
+                                <ul>
+                                    <li><a href="idea_01.html">平台总览</a></li>
+                                    <li><a href="idea_02.html">开发工具、开发环境和模拟器</a></li>
+                                    <li><a href="idea_03.html">应用结构和生命周期</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu active">
+                                <h3><a href="design.html">设计<span>Design</span></a></h3>
+                                <ul>
+                                    <li><a href="design_01.html">UI Layout的设计</a></li>
+                                    <li><a href="design_02.html">UI的控件</a></li>
+                                    <li><a href="design_03.html">UI页面的控制和导航</a></li>
+                                    <li><a href="design_04.html">不同屏幕尺寸和分辨率的适配</a></li>
+                                    <li><a href="design_05.html">第三方SDK</a></li>
+                                    <li><a href="design_06.html">游戏开发</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="developing.html">开发<span>Developing</span></a></h3>
+                                <ul>
+                                    <li><a href="developing_01.html">开发语言</a></li>
+                                    <li><a href="developing_02.html">Audio、Video Player应用的开发</a></li>
+                                    <li><a href="developing_03.html">General APIs Mapping</a></li>
+                                    <li><a href="developing_04.html">IAP应用内支付</a></li>
+                                    <li><a href="developing_05.html">LBS应用</a></li>
+                                    <li><a href="developing_06.html">LBS、镜头和传感器应用接口使用</a></li>
+                                    <li><a href="developing_07.html">Native Code（C和C++）支持</a></li>
+                                    <li><a href="developing_08.html">Push Notification</a></li>
+                                    <li><a href="developing_09.html">Sharing in Social Network</a></li>
+                                    <li><a href="developing_10.html">Source Code Control</a></li>
+                                    <li><a href="developing_11.html">UI上的Data Binding</a></li>
+                                    <li><a href="developing_12.html">Windows 8.1和WP 8 Sharing应用分享功能实现</a></li>
+                                    <li><a href="developing_13.html">多媒体</a></li>
+                                    <li><a href="developing_14.html">后台任务和多任务处理</a></li>
+                                    <li><a href="developing_15.html">获取后台服务器数据</a></li>
+                                    <li><a href="developing_16.html">浏览器控件WebView</a></li>
+                                    <li><a href="developing_17.html">数据库（SQLite）</a></li>
+                                    <li><a href="developing_18.html">数据网络和数据通讯</a></li>
+                                    <li><a href="developing_19.html">通话和短信功能</a></li>
+                                    <li><a href="developing_20.html">图形处理(Drawing & Animation)</a></li>
+                                    <li><a href="developing_21.html">文件系统和应用设置</a></li>
+                                    <li><a href="developing_22.html">应用间通信</a></li>
+                                    <li><a href="developing_23.html">支付方式</a></li>
+                                    <li><a href="developing_24.html">Windows 8.1应用外设开发</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="testing.html">测试<span>Testing</span></a></h3>
+                                <ul>
+                                    <li><a href="testing_01.html">Windows 8 and WP 8开发FAQ</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu last">
+                                <h3><a href="distribute.html">发布<span>Distribute</span></a></h3>
+                                <ul>
+                                    <li><a href="distribute_01.html">应用商店(发布和更新应用)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="block success-story-nav-block">
+                            <h2>成功案例</h2>
+                        </div>
+                        <div class="block others">
+                            <a href="sample_code.html" class="left">示例代码</a>
+                            <a href="http://msdn.microsoft.com/zh-cn/dn473954" class="right">教学视频</a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="textlist">
+                            游戏开发<br />
+                            <ul>
+                                <li><a href="design_06.html">●多平台游戏渲染开发</a>
+                                <li><a href="design_061.html">如何在WP8上搭建cocos2d-x的游戏开发环境</a>
+                                <li><a href="design_062.html">游戏开发框架</a>
+                            </ul>
+                        </div>
+                        <h3 class="title">多平台游戏渲染开发<span><a href="index.html">返回首页&gt;</a></span></h3>
+                        <div class="article-content">
+                            <div class="WordSection1">
+                                <p class="MsoTitle">跨平台移动应用开发的渲染解决方案综述</p>
+                                <p>
+                                    在移动设备上做应用/游戏开发，实现跨平台是主流。对于应用/游戏的逻辑功能和核心算法部分，如果是用C++进行开发的，因为iOS/Android/Windows Phone 8/Windows Store均支持Native的C++开发，所以可以轻松的移植到各个平台，应用/游戏的Backend也有如Photon这样的跨平台解决方案。对于一部分图形要求很高的应用，如游戏和一些UI定制化需求很多的应用，渲染部分往往需要花更多的精力实现移植。对于渲染部分，跨平台开发者有以下三种选择：
+                                </p>
+                                <p class="MsoListParagraphCxSpFirst">
+                                    <span
+                                        lang="EN-US">1）&nbsp; </span>使用已有的一些跨平台图形解决方案，如cocos2D-x,
+Unity 3D等游戏引擎以及HTML5。
+                                </p>
+                                <p class="MsoListParagraphCxSpMiddle">
+                                    <span
+                                        lang="EN-US">2）&nbsp; </span>将渲染部分在程序设计时独立，针对不同的平台分别实现渲染。在Windows
+Phone / Windows Store应用中，DirectX和XAML可以结合使用，从而方便的与第三方SDK结合使用。
+                                </p>
+                                <p class="MsoListParagraphCxSpLast">
+                                    <span lang="EN-US">3）&nbsp; </span>将现有的渲染代码通过工具映射到其他平台。如开源的Angle
+project可以将OpenGL
+ES自动映射到DirectX。
+                                </p>
+                                <p>
+                                    本文将分别对这三种选择依次作介绍，为开发者顺利完成应用/游戏在渲染部分的移植作一个参考。因时间和能力有限，谬误之处请不吝指教。
+                                </p>
+                                <p><b>&nbsp;</b></p>
+                                <h2>（1） 使用游戏引擎/HTML5等现有的跨平台解决方案</h2>
+                                <p>
+                                    <b>cocos2d-x</b>：cocos2d-x是一个开源免费、易学易用的2D跨平台游戏引擎，支持Windows
+Phone, Windows 8, iOS和Android多个平台。目前是国内最流行的2D游戏引擎。其下载地址为：
+                                </p>
+                                <p><span lang="EN-US"><a href="http://www.cocos2d-x.org/news/143">http://www.cocos2d-x.org/news/143</a></span></p>
+                                <p>
+                                    <b>Unity 3D</b>： Unity 3D是一个非常强大的商用跨平台开发工具，支持Windows Store, Windows Phone, iOS, Android, Wii等多个平台。Unity
+3D是移动平台上3D引擎的领头羊，同时Unity 3D也能很好的支持2D图形开发。下载地址：
+                                </p>
+                                <p>
+                                    <span lang="EN-US"><a
+                                        href="http://unity3d.com/unity/whats-new/unity-4.3">http://unity3d.com/unity/whats-new/unity-4.3</a></span>
+                                </p>
+                                <p><b>&nbsp;</b></p>
+                                <p>
+                                    <b>XNA</b>：XNA可支持Windows, Xbox 360和Window Phone，以前使用XNA开发的针对Window Phone 7.x的游戏仍然可以在Windows Phone 8上运行。但不支持创建新的目标设备为WP8的游戏。请参考：
+                                </p>
+                                <p>
+                                    <span lang="EN-US"><a
+                                        href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/jj207003(v=vs.105).aspx">http://msdn.microsoft.com/en-us/library/windowsphone/develop/jj207003(v=vs.105).aspx</a></span>
+                                </p>
+                                <p>
+                                    <span lang="EN-US"><a
+                                        href="http://msdn.microsoft.com/en-us/library/bb200104.aspx">http://msdn.microsoft.com/en-us/library/bb200104.aspx</a></span>
+                                </p>
+                                <p>
+                                    &nbsp;
+                                </p>
+                                <p>
+                                    <b>MonoGame</b><b>：</b>MonoGame旨在帮助XNA开发者在Windows
+Phone 8，
+Windows 8，iOS， Android，Mac，Linux等多个平台实现跨平台开发。官方主页：<span
+    lang="EN-US" style='font-size: 10.5pt; line-height: 110%; "Arial","sans-serif"; color: black; background: white'><br>
+</span><span lang="EN-US"><a href="http://www.monogame.net/">http://www.monogame.net/</a></span>
+                                </p>
+                                <p>
+                                    在开源平台codeplex上的页面：<span lang="EN-US"><a
+                                        href="http://monogame.codeplex.com/">http://monogame.codeplex.com/</a></span>
+                                </p>
+                                <p>
+                                    &nbsp;
+                                </p>
+                                <p>
+                                    <b>Marmalade</b>：Marmalade是一个非常有特色的跨平台游戏引擎，它支持在Windows上将应用Deploy至iOS。支持将OpenGL的程序直接转换成DirectX11的以移植到Windows Phone平台上。请参考：
+                                </p>
+                                <p><span lang="EN-US"><a href="https://www.madewithmarmalade.com/">https://www.madewithmarmalade.com/</a></span></p>
+                                <p>
+                                    <span lang="EN-US"><a
+                                        href="http://www.madewithmarmalade.com/windows-phone-8">http://www.madewithmarmalade.com/windows-phone-8</a></span>
+                                </p>
+                                <p>
+                                    <b>HTML5</b>: 除了游戏引擎，还可以使用HTML5实现跨平台。对Windows Store游戏，可使用HTML5 和 JavaScript。如果熟悉HTML5 和 JavaScript （WinJS） 的开发，同时游戏不需要复杂的动画效果，并且对于游戏的实时性能没有非常高的要求，可以考虑这种游戏开发模式。
+                                </p>
+                                <p>
+                                    推荐使用的情景：充分利用HTML5 和 JavaScript（WinJS）的开发经验。 方便页游的迁移，缩短开发周期
+                                </p>
+                                <p>
+                                    不推荐使用的情景：如果你的游戏有大量的图像处理，或者对性能要求很高，使用HTML5 和 JavaScript 开发模式就不太适合你的游戏。
+                                    最好使用DirectX 和 C++ 结合。
+                                </p>
+                                <p>
+                                    请参考：<span lang="EN-US"><a
+                                        href="http://msdn.microsoft.com/en-us/library/windows/apps/hh465158.aspx">http://msdn.microsoft.com/en-us/library/windows/apps/hh465158.aspx</a></span>
+                                </p>
+                                <p>
+                                    开发例子：<span lang="EN-US"><a
+                                        href="design.htmlwindowsapps/JavaScript-and-HTML5-touch-d96f6031">design.htmlwindowsapps/JavaScript-and-HTML5-touch-d96f6031</a></span>
+                                </p>
+                                <h2>（2）针对不同平台分别用OpenGL / OpenGL ES或者DirectX实现渲染</h2>
+                                <p><b>&nbsp;</b></p>
+                                <p>
+                                    在跨平台应用程序设计的时候，我们可以将渲染部分独立，最简单的设计是创建
+                                    Renderer类，分别针对Windows Phone, iOS和Android实现。众所周知，OpenGL ES主要用于Android和iOS平台的开发。而WP8和Windows
+Store使用DirectX11
+API。接下来我们重点比较OpenGL和DirectX的异同，供开发者在切换平台时参考。
+                                </p>
+                                <p><b>&nbsp;</b></p>
+                                <p>
+                                    <b>OpenGL ES / OpenGL</b><b>与</b><b>DirectX</b><b>性能比较</b>
+                                </p>
+                                <p>
+                                    这是一个在OpenGL和DirectX诞生以来很多人比较热衷于讨论的问题，所以在这里简要的提一下。其实一款显卡在设计的时候就会考虑要支持OpenGL和DirectX两种标准的所有feature，而不管是GLSL还是HLSL的shader，在经过驱动编译后都是在同样的硬件中同样的并行计算模块上运算，纹理等resource也是存储在同样的显存上。OpenGL和DirectX实现的应用程序其性能更多取决于驱动的优化程度而非OpenGL / DirectX API的优劣。OpenGL或者DirectX的API的选择对游戏的性能的影响主要局限于CPU部分而不是GPU。例如AMD最近发布的Mantle API其主要优化也是集中于减少CPU的开销，且仅适用于AMD显卡。而OpenGL和DirectX的API对CPU部分开销的比较至今没有一个定论，也即没有一方是明显优于另一方。OpenGL ES在设计时是参考OpenGL的，可以说是OpenGL的一个子集，其API也没有优于DirectX的说法。
+                                </p>
+                                <p>
+                                    开发者如果对游戏性能有所顾虑，可以更多的可考虑一些平台相关的特性而非API本身。例如在iOS使用pvr格式的纹理(PowerVR的有损压缩格式)，而在Windows平台使用DDS格式的纹理。在下文中有关于手机纹理的详细说明：
+                                </p>
+                                <p>
+                                    <span lang="EN-US"><a
+                                        href="http://wiki.c3.91.com/index.php?title=%E6%89%8B%E6%8C%81%E5%B9%B3%E5%8F%B0%E7%BA%B9%E7%90%86%E6%A0%BC%E5%BC%8F%E8%AF%B4%E6%98%8E">手持平台纹理格式说明</a></span>
+                                </p>
+                                <p>
+                                    <b>硬件对</b><b>OpenGL ES</b><b>和</b><b>DirectX</b><b>的支持</b>
+                                </p>
+                                <p>
+                                    在写这篇文档的时候(2013年10月)，智能手机普遍可以支持OpenGL ES 2.0或以上了。下面的表格列出了OpenGL ES与DirectX的比较。OpenGL ES 2.0相当于DirectX 3D的feature level 9。OpenGL ES 2.0所支持的GLSL对应于DirectX的HLSL。<span lang="EN-US"><br>
+                                        <br>
+                                    </span>
+                                </p>
+                                <p>
+                                    OpenGL ES版本列表
+                                </p>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                OpenGL ES版本号
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                对应OpenGL版本
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                对应的DX版本
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                版本特性
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                1.0
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                OpenGL 1.3
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                低于DX9
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                Fixed function rendering
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                1.1
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                OpenGL 1.5
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                低于DX9
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                Fixed function rendering。虽然OpenGL 1.5中引入了ARB shader，但是OpenGL ES 1.1中仍然是不支持的。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                2.0
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                OpenGL 2.0
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                DX9
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                支持GLSL
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                3.0
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                OpenGL 3.0
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                DX10与DX9之间
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                兼容OpenGL ES
+  2.0，但不支持DX10中才有的Geometry Shader, OpenGL自3.2版本开始支持Geometry Shader.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <p>
+                                    OpenGL和OpenGL ES详细信息可参考Spec或Wiki中的介绍。可参考下面的链接:
+                                </p>
+                                <p><span lang="EN-US"><a href="http://www.khronos.org/opengles/">http://www.khronos.org/opengles/</a></span></p>
+                                <p>
+                                    <span lang="EN-US"><a
+                                        href="http://en.wikipedia.org/wiki/OpenGL">http://en.wikipedia.org/wiki/OpenGL</a></span>
+                                </p>
+                                <p>
+                                    <span lang="EN-US"><a
+                                        href="http://en.wikipedia.org/wiki/OpenGL_ES">http://en.wikipedia.org/wiki/OpenGL_ES</a></span>
+                                </p>
+                                <p>
+                                    DirectX 版本（忽略DirectX9以前版本，因为不论WP还是Win8的硬件最低要求都是支持DX 9.1）
+                                </p>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                DX版本
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                与OpenGL ES对应关系
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                支持的 Shader
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                9.x
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                功能上相当于OpenGL
+  ES 2.0
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                Vertex Shader, Pixel Shader
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                10.x
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                包含OpenGL ES
+  3.0的feature
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                增加了 Geometry
+  Shader
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                11.x
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                包含DX10且包含OpenGL ES 3.0
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                增加了 Hull
+  Shader和 Domain
+  Shader
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <p>
+                                    各应用平台对OpenGL ES、DirectX以及OpenGL(非ES)的支持
+                                </p>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                Android
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                iOS
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                Windows Phone / Windows Store
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                根据下面的讨论，在2010年，已经有超过75%的Android设备可以通过NDK支持OpenGL ES 2.0. 估计目前绝大多数Android设备均可使用至少OpenGL ES 2.0。
+                                            </p>
+                                            <p>
+                                                <span lang="EN-US"><a
+                                                    href="https://groups.google.com/forum/#!topic/android-developers/HBddHFyxYeo">https://groups.google.com/forum/#!topic/android-developers/HBddHFyxYeo</a></span>
+                                            </p>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                            <p>
+                                                需要Android 4.3或以上才能支持OpenGL ES 3.0
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                从iPhone 3GS开始支持OpenGL ES 2.0.
+                                            </p>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                            <p>
+                                                从iPhone 5S开始支持OpenGL ES 3.0
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                从Windows Phone
+  8开始支持DirectX 11的API，其feature level是DX 9.3。开发必须使用DirectX 11的API。
+                                            </p>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                            <p>
+                                                Surface RT要求必须能运行DX 9.1的feature。
+                                            </p>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                            <p>
+                                                在Windows Store中针对x86和x64平台可使用DX10和DX11的feature。如无法支持DX9，需要在程序启动后显示说明。
+                                            </p>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                            <p>
+                                                在WP8之前的WP，可使用XNA开发，相当于DX9的feature level。
+                                            </p>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                            <p>
+                                                在Windows Store应用中，可使用OpenGL(非ES)开发。参考如下：
+                                            </p>
+                                            <p>
+                                                <span lang="EN-US"><a href="http://opengl.codeplex.com/">http://opengl.codeplex.com/</a></span>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <p>
+                                    OpenGL ES 2.0是目前在iOS和Android平台上通常使用的图形解决方案，常用的游戏引擎中的渲染部分是对OpenGL ES的封装。OpenGL ES 2.0所对应的DirectX 版本是DirectX 9，。而WP8和Windows
+8对硬件的最低硬件要求即DX9，这使得基于OpenGL或者游戏引擎的应用向WP/Windows 8移植变成很自然的事情。
+                                </p>
+                                <p>
+                                    WP8和Windows 8应用商店的应用需要使用DX11的API进行编程，我们只需要将DX11的Feature level设置为DX9即可（参考下面的代码片断）对应于OpenGL ES 2.0。对于Windows Store中的应用，我们还可以使用DX10和DX11中的feature, 实现比OpenGL ES 2.0更加强大的渲染功能和更好的性能。
+                                </p>
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; D3D_FEATURE_LEVEL
+featureLevels[] = 
+                                </p>
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {
+                                </p>
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; D3D_FEATURE_LEVEL_11_1,
+                                </p>
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; D3D_FEATURE_LEVEL_11_0,
+                                </p>
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; D3D_FEATURE_LEVEL_10_1,
+                                </p>
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; D3D_FEATURE_LEVEL_10_0,
+                                </p>
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; D3D_FEATURE_LEVEL_9_3,
+                                </p>
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; D3D_FEATURE_LEVEL_9_2,
+                                </p>
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; D3D_FEATURE_LEVEL_9_1
+                                </p>
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+                                </p>
+                                <p>
+                                    &nbsp;
+                                </p>
+                                <p>
+                                    <span lang="EN-US" style='font-size: 9.5pt; line-height: 110%;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>D3D_FEATURE_LEVEL
+APP_MIN_FEATURE_LEVEL = D3D_FEATURE_LEVEL_9_1</b>;</span>
+                                </p>
+                                <p>
+                                    如前所述，其实OpenGL ES 2.0是OpenGL 2.0的子集，对应于DirectX的Feature level 9所能够实现的功能是相当的。所以能够使用OpenGL实现的效果，通常也可以使用DirectX实现。Visual Studio支持两种DirectX的模板，一种是仅使用DirectX而不使用XAML，另外一种是将DirectX和XAML结合。我们比较推荐的是DirectX和XAML结合。因为XAML中定义的丰富的界面元素，交互的实现更加简单。第三方的SDK如微博，支付相关SDK都需要XAML的支持。在微软设计DirectX和XAML结合的时候，已经针对不同情景尽可能减少结合时对性能的影响。
+                                </p>
+                                <p>
+                                    XAML与DirectX结合使用的相关文档请参考：
+                                </p>
+                                <p>
+                                    <span lang="EN-US"><a
+                                        href="http://channel9.msdn.com/Events/Windows-Camp/Developing-Windows-8-Metro-style-apps-in-Cpp/Building-Apps-with-Cpp-XAML-and-DirectX">http://channel9.msdn.com/Events/Windows-Camp/Developing-Windows-8-Metro-style-apps-in-Cpp/Building-Apps-with-Cpp-XAML-and-DirectX</a></span>
+                                </p>
+                                <p>
+                                    <span lang="EN-US"><a
+                                        href="http://blogs.msdn.com/b/windowsappdev/archive/2012/03/15/combining-xaml-and-directx.aspx">http://blogs.msdn.com/b/windowsappdev/archive/2012/03/15/combining-xaml-and-directx.aspx</a></span>
+                                </p>
+                                <p>
+                                    <span lang="EN-US"><a
+                                        href="http://mobile.dzone.com/articles/directx-and-xaml-windows-phone">http://mobile.dzone.com/articles/directx-and-xaml-windows-phone</a></span>
+                                </p>
+                                <p>
+                                    不管是OpenGL和DirectX，渲染时都需要维护所谓的Context。在Context中保存了一些渲染时的状态信息，例如是否使用了光照，是否启用了雾效，当前使用的纹理是什么等等。一般创建Context的过程都是由平台的模板自动生成，开发者只需要对Context进行适当的设置，并调用OpenGL或者DX的API进行渲染即可。OpenGL ES和DX11创建Context以渲染的过程分别如下（谨供参考，一般移动应用的程序员不需要关心细节）:
+                                </p>
+                                <p class="imgp">
+                                    <img border="0" width="625" height="166"
+                                        id="Diagram 1" src="images/design_061/image001.png">
+                                </p>
+                                <p class="imgp">
+                                    <img border="0" width="628" height="140"
+                                        id="Diagram 3" src="images/design_061/image002.png">
+                                </p>
+                                <p>
+                                    最常见的渲染过程是设定vertex buffer(VB)、index buffer(IB)、纹理、shader、调用绘制函数，最后显示缓冲中的渲染图像。下面的表格将主要从这几个方面对OpenGL ES和DX作比较。
+                                </p>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                OpenGL ES
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                DirectX 11
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                Vertex buffer 和 Index buffer（通常称VB和IB）
+                                            </p>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                            <p>
+                                                在显存/内存中的存储方式和二者没有区别，均按顺序线性存放数据。但使用VB和IB的API略不同
+                                            </p>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                VB和IB中定义的模型通过draw函数绘制。
+                                            </p>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                            <p>
+                                                通常使用glDrawElements函数
+                                            </p>
+                                            <p>
+                                                偶尔使用glDrawArrays函数(不需要IB)
+                                            </p>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                            <p>
+                                                glBegin, glEnd, glVertex3f等OpenGL函数在OpenGL ES中因为效率的考虑已经移除。
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                            <p>
+                                                Draw通常使用DrawIndexed绘制VB/IB中的内容
+                                            </p>
+                                            <p>
+                                                也有DrawInstanced,
+  DrawAuto等函数可供选择
+                                            </p>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                            <p>
+                                                注意Instancing在DX9中已经支持，在OpenGL 3.0才支持。
+                                            </p>
+                                            <p>
+                                                在DX 10以后还可通过Geometry shader实现Instancing
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                VB中顶点的属性(Attribute) 如normal, color, texture坐标, position等等
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                使用glVertexAttribPointer函数分别指定顶点的各个属性
+                                            </p>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                            <p>
+                                                与DX的比较可参考下文：
+                                            </p>
+                                            <p>
+                                                <span lang="EN-US"><a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/dn166871.aspx">将 OpenGL ES 2.0 缓冲区、uniform 和顶点属性与 Direct3D 进行比较</a></span>
+                                            </p>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                DX的API中没有Attribute这个概念，仅使用结构体 D3D11_INPUT_ELEMENT_DESC描述VB中每个顶点的数据格式
+                                            </p>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                            <p>
+                                                m_d3dDevice-&gt;CreateInputLayout
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                Shader / Program
+                                            </p>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                OpenGL中Shader又叫Program
+                                            </p>
+                                            <p>
+                                                支持运行时编译，即GLSL文本在运行时编译。
+                                            </p>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                            <p>
+                                                分Vertex
+  Program和Fragment
+  Program
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                对于Windows
+  Store和WP8需要在编译时将HLSL编译成生成伪汇编代码。如Shader编译出错则无法生成可执行文件。
+                                            </p>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                            <p>
+                                                在DX feature
+  level 9中
+                                            </p>
+                                            <p>
+                                                分Vertext
+  Shader和Pixel Shader分别对应于GLSL中的Vertex Program 和Fragment Program
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                Shader的常数设置
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                API中包含Uniform，如：
+                                            </p>
+                                            <p>
+                                                <span lang="EN-US" style='"Courier New"; color: black'>glGetUniformLocation<br>
+                                                    glUniform4fv</span>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                使用Constant
+  Buffer相关函数，如：
+                                            </p>
+                                            <p>
+                                                m_d3dDevice-&gt;CreateBuffer
+                                            </p>
+                                            <p>
+                                                m_d3dContext-&gt;UpdateSubresource
+                                            </p>
+                                            <p>
+                                                m_d3dContext-&gt;VSSetConstantBuffers
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                资源管理，如纹理和buffer
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                使用glCreateShader,
+  glBufferData, glGenBuffers, glTexImage2D, eglBindTexImage等等API管理资源
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                使用ID3D11Device管理资源。一般会有一个ID3D11Device指针，用以调资源管理的DX API ，如函数CreateTexture2D()。在Windows Store的应用可以使用一些已经封装好的Loader类加载纹理资源。微软的Sample中常使用BasicLoader类，程序员可在其基础上进一步修改增强。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                Context管理, 用于配置渲染管线
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                glAttachShader, glGetUniform*等等API
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                一般创建ID3D11DeviceContext类的指针，再使用context指针调用Context配置的API
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                显示缓冲区内容
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                使用SwapChain函数
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                使用Present函数
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                坐标系
+                                            </p>
+                                            <p>
+                                                X正方向为右，Y正方向为上。
+                                            </p>
+                                            <p>
+                                                详细的异同可参考下面：
+                                            </p>
+                                            <p>
+                                                <span lang="EN-US"><a
+                                                    href="http://msdn.microsoft.com/en-us/library/windows/desktop/bb204853(v=vs.85).aspx">Coordinate Systems (Direct3D 9)</a></span>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                OpenGL使用右手坐标系，所以Z的正方向指向屏幕外。
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                DX使用左手坐标系。所以移植时三角形的顶点顺序要反向，Z的方向也要反向。
+                                            </p>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                            <p>
+                                                可以使用函数&nbsp;<span
+                                                    lang="EN-US"><a
+                                                        href="http://msdn.microsoft.com/en-us/library/windows/desktop/bb205355(v=vs.85).aspx">D3DXMatrixPerspectiveRH</a></span> 和<span lang="EN-US"><a
+                                                            href="http://msdn.microsoft.com/en-us/library/windows/desktop/bb205349(v=vs.85).aspx">D3DXMatrixOrthoRH</a></span>来做右手坐标系的投影映射。详细请参考最左边的链接
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <p>
+                                    从OpenGL
+API映射到DirectX 3D的API
+                                </p>
+                                <p>======================================</p>
+                                <p>
+                                    仍在更新的关于OpenGL到DX映射的文档
+                                </p>
+                                <p>
+                                    <span lang="EN-US"><a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/dn166866.aspx">http://msdn.microsoft.com/zh-cn/library/windows/apps/dn166866.aspx</a></span>
+                                </p>
+                                <p>
+                                    常用的EGL
+API Mapping参考<br>
+                                    <span lang="EN-US"><a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/dn166867.aspx">http://msdn.microsoft.com/zh-cn/library/windows/apps/dn166867.aspx</a></span>
+                                </p>
+                                <p>
+                                    最后需要指出，DirectX在Windows Phone和Windows Store的应用开发中略有区别，可参考如下：
+                                </p>
+                                <p>
+                                    <span lang="EN-US"><a
+                                        href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/jj662930%28v=vs.105%29.aspx">http://msdn.microsoft.com/en-us/library/windowsphone/develop/jj662930%28v=vs.105%29.aspx</a></span>
+                                </p>
+                                <p>
+                                    以下是DirectX版本中渲染一个旋转的立方体的Render函数实现，结合前面描述的OpenGL与DirectX的比较，读者可与前面Angle Project中RotatingCube的Sample做个比较。
+                                </p>
+                                <pre><code>void Sample3DSceneRenderer::Render()
+{
+	// Loading is asynchronous. Only draw geometry after it's loaded.
+	if (!m_loadingComplete)
+	{
+		return;
+	}
+	auto context = m_deviceResources->GetD3DDeviceContext();
+	// Set render targets to the screen.
+	ID3D11RenderTargetView *const targets[1] = { m_deviceResources->GetBackBufferRenderTargetView() };
+	context->OMSetRenderTargets(1, targets, m_deviceResources->GetDepthStencilView());
+	// Prepare the constant buffer to send it to the graphics device.
+	context->UpdateSubresource(
+		m_constantBuffer.Get(),
+		0,
+		NULL,
+		&m_constantBufferData,
+		0,
+		0
+		);
+	// Each vertex is one instance of the VertexPositionColor struct.
+	UINT stride = sizeof(VertexPositionColor);
+	UINT offset = 0;
+	context->IASetVertexBuffers(
+		0,
+		1,
+		m_vertexBuffer.GetAddressOf(),
+		&stride,
+		&offset
+		);
+	context->IASetIndexBuffer(
+		m_indexBuffer.Get(),
+		DXGI_FORMAT_R16_UINT, // Each index is one 16-bit unsigned integer (short).
+		0
+		);
+	context->IASetPrimitiveTopology(D3D11_PRIMITIVE_TOPOLOGY_TRIANGLELIST);
+	context->IASetInputLayout(m_inputLayout.Get());
+	// Attach our vertex shader.
+	context->VSSetShader(
+		m_vertexShader.Get(),
+		nullptr,
+		0
+		);
+	// Send the constant buffer to the graphics device.
+	context->VSSetConstantBuffers(
+		0,
+		1,
+		m_constantBuffer.GetAddressOf()
+		);
+	// Attach our pixel shader.
+	context->PSSetShader(
+		m_pixelShader.Get(),
+		nullptr,
+		0
+		);
+	// Draw the objects.
+	context->DrawIndexed(
+		m_indexCount,
+		0,
+		0
+		);
+}</code></pre>
+                                <p>
+                                    方便开发者使用DirectX进行开发的工具和模板
+                                </p>
+                                <p>=====================================</p>
+                                <p class="MsoListParagraphCxSpFirst">
+                                    <span
+                                        lang="EN-US">1.&nbsp;&nbsp;&nbsp; </span>BasicLoader类：是微软开发的一个用于加载纹理的类，可同步也可异步加载。支持各种图像格式，也支持DDS格式的纹理。因为该类使用到Wic解码器用于图像解码，而Wic解码器仅限于PC，在WP上没有Wic解码器的支持，所以在WP上推荐使用DDS纹理。
+                                </p>
+                                <p class="MsoListParagraphCxSpMiddle">
+                                    <span
+                                        lang="EN-US">2.&nbsp;&nbsp;&nbsp; </span>在Visual studio中集成了DDS纹理查看器，可直接打开DDS文件。也可提供一些常用的编辑功能。可以选择不规则区域并编辑。
+                                </p>
+                                <p class="MsoListParagraphCxSpMiddle">
+                                    <span
+                                        lang="EN-US">3.&nbsp;&nbsp;&nbsp; </span>3D游戏中常用的FBX文件也可以在Visual Studio中打开并编辑。
+                                </p>
+                                <p class="MsoListParagraphCxSpMiddle">
+                                    <span
+                                        lang="EN-US">4.&nbsp;&nbsp;&nbsp; </span>DirectX的Debugging在调试时可以打开debugging模式。也可使用DirectX SDK中的工具PIX抓取一段，以单步跟踪D3D的API
+call。
+                                </p>
+                                <p class="MsoListParagraphCxSpMiddle">
+                                    <span
+                                        class="MsoHyperlink"><b><span lang="EN-US" style='color: windowtext; text-decoration: none'>5.&nbsp;&nbsp;&nbsp; </span></b></span>Codeplex上开源的<span
+                                            lang="EN-US">ToolKit<br>
+                                        </span><span lang="EN-US"><a
+                                            href="http://directxtk.codeplex.com/wikipage?title=Samples">http://directxtk.codeplex.com/wikipage?title=Samples</a></span>
+                                </p>
+                                <p class="MsoListParagraphCxSpLast">
+                                    <b><span
+                                        lang="EN-US">6.&nbsp;&nbsp;&nbsp; </span></b>开发者从头开始开发的选择。新建一个WP 8/Windows
+Store应用的时候，可支持多种模板，有仅使用DX的模板，也有用XAML与D3D混编的模板。比较推荐的方式是使用XAML和DirectX混编的方式以充分结合两者的强大功能。下图是在新建一个Windows
+Phone应用时的模版，其中高亮的是Windows Phone Direct3D with XAML App，而Windows Store里的模版名为DirectX App，因为Windows Store的模版不仅集成了DirectX 3D，还集成了DirectX 2D和DirectX Write。
+                                </p>
+                                <p class="imgp">
+                                    <img border="0" width="623" height="320"
+                                        id="Picture 2" src="images/design_061/image003.jpg">
+                                </p>
+                                <p class="imgp">
+                                    <img border="0" width="624" height="259"
+                                        id="Picture 4" src="images/design_061/image004.jpg">
+                                </p>
+                                <p>
+                                    在应用开发的框架中，已经将常规的操作完成，如Buffer Chain，刷新，场景坐标系统设置等等。开发者需要做的是完成渲染和应用的逻辑。
+                                </p>
+                                <p>
+                                    对于Windows
+Store开发，在Shooting
+Game的Sample中开发者可学习一个现成的DirectX和XAML结合的游戏框架，包括关卡设计、应用内购买、交互、渲染和音效等等技术：
+                                </p>
+                                <p>
+                                    <span lang="EN-US"><a
+                                        href="http://msdn.microsoft.com/en-us/library/windows/apps/hh780560.aspx">http://msdn.microsoft.com/en-us/library/windows/apps/hh780560.aspx</a></span>
+                                </p>
+                                <h2>对于Windows Phone中的游戏开发，下面的Marble Maze这个Sample很不错：</h2>
+                                <p>
+                                    <span lang="EN-US"><a
+                                        href="http://code.msdn.microsoft.com/wpapps/Marble-Maze-sample-for-c9f3706b">http://code.msdn.microsoft.com/wpapps/Marble-Maze-sample-for-c9f3706b</a></span>
+                                </p>
+                                <h2><b>C++/CX</b></h2>
+                                <p>
+                                    <span lang="EN-US">==============<br>
+                                    </span>因为使用DirectX必须使用native code，所以必须使用C++/CX。这是微软定义的一个C++ Extension，是兼容标准C++的。所以移植C++代码是非常方便的。C++/CX中有一些非常方便的新特性，掌握起来也不难，可提高使用编程效率。如多线程、Lamda表达示等。对于C++程序员来说，快速掌握C++/CX可参考下面的文档：
+                                </p>
+                                <p>
+                                    多线程编程<br>
+                                    <span lang="EN-US"><a
+                                        href="http://channel9.msdn.com/events/BUILD/BUILD2011/PLAT-203T">http://channel9.msdn.com/events/BUILD/BUILD2011/PLAT-203T</a></span>
+                                </p>
+                                <p>C++/CX介绍及参考：</p>
+                                <p>
+                                    <span lang="EN-US"><a
+                                        href="http://blogs.msdn.com/b/vcblog/archive/2012/08/29/cxxcxpart00anintroduction.aspx">http://blogs.msdn.com/b/vcblog/archive/2012/08/29/cxxcxpart00anintroduction.aspx</a></span>
+                                </p>
+                                <h2>3）使用AngleProject将现有的OpenGL ES代码转换</h2>
+                                <p>
+                                    Angle是一个开源的项目，用于将OpenGL ES转成DirectX以在Windows平台中使用。Angle目前是Chrome浏览器中使用的渲染跨平台解决方案。<span
+                                        lang="EN-US"><br>
+                                    </span><span lang="EN-US"><a href="https://code.google.com/p/angleproject/">https://code.google.com/p/angleproject/</a></span>
+                                </p>
+                                <p>
+                                    AngleProject编译方法<br>
+                                    <span lang="EN-US"><a
+                                        href="https://code.google.com/p/angleproject/wiki/DevSetup">https://code.google.com/p/angleproject/wiki/DevSetup</a></span>
+                                </p>
+                                <p>
+                                    直接使用Angle
+Project移植OpenGL
+ES会遇到下面的问题
+                                </p>
+                                <p>
+                                    <span lang="EN-US">====================================================<br>
+                                        1. Angle</span>使用DirectX
+11的部分是针对feature
+level 10的。而WP8/Surface
+RT仅支持到feature
+level 9.
+                                </p>
+                                <p>
+                                    2. Angle是动态在Runtime将GLSL转成HLSL，而我们需要在编译时即把GLSH转成HLSL. WP8不支持Runtime的shader编译. 
+                                </p>
+                                <p>
+                                    Angle Project中对Windows Phone 8 / Windows 8 RT的适配
+                                </p>
+                                <p>====================================================</p>
+                                <p>
+                                    Angle Project针对Windonws Phone 8/ Windows 8 RT进行了如下适配，并在cocos2d-x中使用
+                                </p>
+                                <p>
+                                    1. 支持编译时将GLSL转成HLSL并编译成.cso。<b><i>.cso</i></b>文件是在Windows Store和Windows Phone平台上HLSL编译后的文件。CSO文件应该是伪汇编程序，在经过驱动进一步编译后可以在显卡上运行。
+                                </p>
+                                <p>
+                                    2.将DX10的feature去除，因为WP8只支持到DX 9.3.
+                                </p>
+                                <p>
+                                    使用了Angle
+Project且支持WP8的cocos2D-x 2.2下载地址为：
+                                </p>
+                                <p>
+                                    <span lang="EN-US"><a href="http://www.cocos2d-x.org/news/143">http://www.cocos2d-x.org/news/143</a></span>
+                                </p>
+                                <p>
+                                    在Angle
+Project的source
+code tree中有一个RotatingCube的例子，开发者可参考用于OpenGL ES向WP / Windows Store的移植。
+                                </p>
+                                <p>
+                                    <span lang="EN-US"><a
+                                        href="https://github.com/stammen/angleproject/tree/dev/samples/RotatingCube">https://github.com/stammen/angleproject/tree/dev/samples/RotatingCube</a></span>
+                                </p>
+                                <p>
+                                    Anglge project关于WP8的说明如下。简而言之，Angle对WP8是支持的，对Windows Store 8目前支持有限制，但是如果应用是target到Windows 8.1是支持的。
+                                </p>
+                                <p>
+                                    <span lang="EN-US"><a
+                                        href="https://github.com/stammen/angleproject">https://github.com/stammen/angleproject</a></span>
+                                </p>
+                                <p>
+                                    Angle
+Project (<span lang="EN-US"><a
+    href="https://code.google.com/p/angleproject/">https://code.google.com/p/angleproject/</a></span>) with support for Windows Store Apps (WinRT)
+and Windows Phone Apps (WP8). This version supports developing Windows Store
+Apps using Visual Studio 2013 and Windows 8.1. It is also ossible to develop a
+Windows Store App using Visual Studio 2012 and Windows 8.0 but this version
+will not be accepted in the Windows App Store. &nbsp; 
+                                </p>
+                                <p>
+                                    Angle Project的RotatingCube这个Sample其 Render()函数如下。可以看到在例子中绘制使用的API是OpenGL
+ES的API。存储顶点数据可以使用directxmath.h中定义的数据结构。
+                                </p>
+                                <pre><code>void CubeRenderer::Render()
+{
+XMFLOAT4X4 mvp;
+XMStoreFloat4x4(&mvp, (XMMatrixMultiply(XMMatrixMultiply(m_modelMatrix, m_viewMatrix), m_projectionMatrix)));
+glClearColor(0.098f, 0.098f, 0.439f, 1.000f);
+glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+glUseProgram(m_colorProgram);
+glUniformMatrix4fv(u_mvpColor, 1, GL_FALSE, &mvp.m[0][0]);
+VertexPositionColor cubeVertices[] = 
+	{
+		{XMFLOAT3(-0.5f, -0.5f, -0.5f), XMFLOAT3(0.0f, 0.0f, 0.0f)},
+		{XMFLOAT3(-0.5f, -0.5f,  0.5f), XMFLOAT3(0.0f, 0.0f, 1.0f)},
+		{XMFLOAT3(-0.5f,  0.5f, -0.5f), XMFLOAT3(0.0f, 1.0f, 0.0f)},
+		{XMFLOAT3(-0.5f,  0.5f,  0.5f), XMFLOAT3(0.0f, 1.0f, 1.0f)},
+		{XMFLOAT3( 0.5f, -0.5f, -0.5f), XMFLOAT3(1.0f, 0.0f, 0.0f)},
+		{XMFLOAT3( 0.5f, -0.5f,  0.5f), XMFLOAT3(1.0f, 0.0f, 1.0f)},
+		{XMFLOAT3( 0.5f,  0.5f, -0.5f), XMFLOAT3(1.0f, 1.0f, 0.0f)},
+		{XMFLOAT3( 0.5f,  0.5f,  0.5f), XMFLOAT3(1.0f, 1.0f, 1.0f)},
+	};
+unsigned short cubeIndices[] = 
+{
+        0,2,1, // -x
+        1,2,3,
+        4,5,6, // +x
+        5,7,6,
+        0,1,5, // -y
+        0,5,4,
+        2,6,7, // +y
+        2,7,3,
+        0,4,6, // -z
+        0,6,2,
+        1,3,7, // +z
+        1,7,5,
+};
+glEnableVertexAttribArray(a_positionColor);
+glEnableVertexAttribArray(a_colorColor);
+glVertexAttribPointer(a_positionColor, 3, GL_FLOAT, GL_FALSE, sizeof(VertexPositionColor), cubeVertices);
+glVertexAttribPointer(a_colorColor, 3, GL_FLOAT, GL_FALSE, sizeof(VertexPositionColor), reinterpret_cast<char*>(cubeVertices) + sizeof(XMFLOAT3));
+glDrawElements(GL_TRIANGLES, ARRAYSIZE(cubeIndices), GL_UNSIGNED_SHORT, cubeIndices);
+glDisableVertexAttribArray(a_positionColor);
+glDisableVertexAttribArray(a_colorColor);
+}</code></pre>
+                                <p>
+                                    Android平台上OpenGL ES函数调用时，使用GLES20.来调用，OpenGL ES的函数名是不变的。所以渲染部分如使用Angle Project迁移时需要对代码稍作调整，但并不复杂。
+                                </p>
+                                <div style='border: solid #DDDDDD 1.0pt; padding: 12.0pt 12.0pt 12.0pt 12.0pt; background: #F7F7F7'>
+                                    <pre><code>//sample: Android 的 Draw()函数
+public void draw() {
+    // Add program to OpenGL ES environment
+    GLES20.glUseProgram(mProgram);
+    // get handle to vertex shader's vPosition member
+    mPositionHandle = GLES20.glGetAttribLocation(mProgram, "vPosition");
+    // Enable a handle to the triangle vertices
+    GLES20.glEnableVertexAttribArray(mPositionHandle);
+    // Prepare the triangle coordinate data
+    GLES20.glVertexAttribPointer(mPositionHandle, COORDS_PER_VERTEX,
+                                 GLES20.GL_FLOAT, false,
+                                 vertexStride, vertexBuffer);
+    // get handle to fragment shader's vColor member
+    mColorHandle = GLES20.glGetUniformLocation(mProgram, "vColor");
+    // Set color for drawing the triangle
+    GLES20.glUniform4fv(mColorHandle, 1, color, 0);
+    // Draw the triangle
+    GLES20.glDrawArrays(GLES20.GL_TRIANGLES, 0, vertexCount);
+    // Disable vertex array
+    GLES20.glDisableVertexAttribArray(mPositionHandle);
+}</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="textlist">
+                            另两篇文章：<br />
+                            <ul>
+                                <li><a href="design_061.html">如何在WP8上搭建cocos2d-x的游戏开发环境</a>
+                                <li><a href="design_062.html">游戏开发框架</a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <!--End Content-->
+        <div style="text-align: right" class="gotoTop"><a href="javascript:scroll(0,0)"></a></div>
+        <!--Begin ProudctLinks-->
+        <div class="ms-pro-links">
+            <div class="grid-container clearfix">
+                <div class="cam-links">
+                    其它微软站点
+                    <a href="http://www.microsoft.com/zh-cn/default.aspx">微软中国官方网站</a>
+                    <a href="http://www.microsoft.com/zh-cn/download/default.aspx?WT.mc_id=MSCOM_zh-cn_HP_Footer_downloads" target="_blank">微软中国下载中心</a>
+                    <a href="http://www.microsoftstore.com.cn?WT.mc_id=MSCOM_003" target="_blank">微软中国官方商城</a>
+                    <a href="http://www.microsoft.com/china/newsletter/" target="_blank">订阅电子期刊</a>
+                    <a href="https://sales.liveperson.net/hc/21661174/?cmd=file&file=visitorWantsToChat&site=21661174&byhref=1&SESSIONVAR!skill=APGC.PRC.ZH.CS.CON.PRESLS.GENERAL" target="_blank">联系微软销售代表</a>
+                    <a href="http://www.microsoft.com/zh-cn/sitemap.aspx" target="_blank">网站地图</a>
+                </div>
+            </div>
+        </div>
+        <!--End ProudctLinks-->
+        <!--Begin footer-->
+        <div class="footer">
+            <div class="grid-container">
+                <img src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-type-1x.png" alt="microsoft" class="logo">
+                <ul>
+                    <li><a href="http://www.miibeian.gov.cn/" title="">京ICP备09042378号-6</a></li>
+                    <li><a href="https://profile.microsoft.com/RegSysProfileCenter/default.aspx?lcid=2052" title="">个人信息中心</a></li>
+                    <li><a href="http://support.microsoft.com/contactus/?ws=support" title="">与我们联系</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkId=248681" title="">隐私权声明</a></li>
+                    <li><a href="http://go.microsoft.com/?linkid=4412892" title="">使用条款</a></li>
+                    <li><a href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Trademarks/EN-US.aspx" title="">商标</a></li>
+                    <li>&copy; 2013 Microsoft</li>
+                </ul>
+            </div>
+        </div>
+        <!--End footer-->
+        <!-- Begin MDA WEDCS -->
+        <script type="text/JavaScript">
+            var varSegmentation = 0;
+            var varClickTracking = 1;
+            var varCustomerTracking = 1;
+            var varAutoFirePV = 1;
+            var Route = "#";
+            var Ctrl = "#"
+            //document.write("<script type='text/javascript' src='" + window.location.protocol + "//c.microsoft.com/ms.js'><"+"/script>");
+        </script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="./assets/js/script.js"></script>
+        <script type="text/javascript" src="./js/siteSearch.js"></script>
+        <noscript>
+            <img alt="" width="1" height="1" src="http://c.microsoft.com/trans_pixel.aspx/" />
+        </noscript>
+        <!-- Begin MDA WEDCS -->
+    </div>
+</body>
+</html>

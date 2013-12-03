@@ -1,0 +1,533 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Windows 8.1应用外设开发</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="css/templete.css" type="text/css" media="all" />
+    <meta charset="UTF-8">
+</head>
+<body class="level-2">
+    <div class="wrapper">
+        <!--Begin header-->
+        <div class="header">
+            <div class="grid-container clearfix">
+                <div class="header-left">
+                    <img alt="Microsoft" src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-lg-1x.png" width="94" height="20">
+                    <h1>X-Platform</h1>
+                </div>
+                <div id="mscom-search" class="mscom-search" style="margin-top: 37px;">
+                    <div class="search-form">
+                        <form action="" id="search-form">
+                            <div class="input-wrapper">
+                                <label class="screen-reader-text" for="search-input">搜索 Microsoft.com</label>
+                                <input id="search-input" type="text" class="input-area" autocomplete="off">
+                            </div>
+                            <button class="search-submit" id="search-btn" type="submit">
+                                <img width="16" height="16" alt="Submit" src="http://i.s-microsoft.com/global/imagestore/PublishingImages/sprites/search-button-blue.png"></button>
+                        </form>
+                    </div>
+                    <div class="search-results-box" id="results">
+                        <div class="search-scope">
+                            <ul>
+                                <li class=""><a class="checked" search="microsoft" role="search">搜索 Microsoft.com</a></li>
+                                <li class=""><a search="internet" role="search">搜索互联网</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End header-->
+        <br />
+        <!--Begin Content-->
+        <div class="content">
+            <div class="wrapper">
+                <div class="wrapper-header">
+                    <div>
+                        <a href="index.html">
+                            <img src="./assets/image/banner_1.jpg"></a>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="nav">
+                        <div class="block article-nav-block">
+                            <h2>移动应用开发生命周期</h2>
+                            <div class="menu">
+                                <h3><a href="idea.html">计划<span>Idea/Planning</span></a></h3>
+                                <ul>
+                                    <li><a href="idea_01.html">平台总览</a></li>
+                                    <li><a href="idea_02.html">开发工具、开发环境和模拟器</a></li>
+                                    <li><a href="idea_03.html">应用结构和生命周期</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="design.html">设计<span>Design</span></a></h3>
+                                <ul>
+                                    <li><a href="design_01.html">UI Layout的设计</a></li>
+                                    <li><a href="design_02.html">UI的控件</a></li>
+                                    <li><a href="design_03.html">UI页面的控制和导航</a></li>
+                                    <li><a href="design_04.html">不同屏幕尺寸和分辨率的适配</a></li>
+                                    <li><a href="design_05.html">第三方SDK</a></li>
+                                    <li><a href="design_06.html">游戏开发</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu active">
+                                <h3><a href="developing.html">开发<span>Developing</span></a></h3>
+                                <ul>
+                                    <li><a href="developing_01.html">开发语言</a></li>
+                                    <li><a href="developing_02.html">Audio、Video Player应用的开发</a></li>
+                                    <li><a href="developing_03.html">General APIs Mapping</a></li>
+                                    <li><a href="developing_04.html">IAP应用内支付</a></li>
+                                    <li><a href="developing_05.html">LBS应用</a></li>
+                                    <li><a href="developing_06.html">LBS、镜头和传感器应用接口使用</a></li>
+                                    <li><a href="developing_07.html">Native Code（C和C++）支持</a></li>
+                                    <li><a href="developing_08.html">Push Notification</a></li>
+                                    <li><a href="developing_09.html">Sharing in Social Network</a></li>
+                                    <li><a href="developing_10.html">Source Code Control</a></li>
+                                    <li><a href="developing_11.html">UI上的Data Binding</a></li>
+                                    <li><a href="developing_12.html">Windows 8.1和WP 8 Sharing应用分享功能实现</a></li>
+                                    <li><a href="developing_13.html">多媒体</a></li>
+                                    <li><a href="developing_14.html">后台任务和多任务处理</a></li>
+                                    <li><a href="developing_15.html">获取后台服务器数据</a></li>
+                                    <li><a href="developing_16.html">浏览器控件WebView</a></li>
+                                    <li><a href="developing_17.html">数据库（SQLite）</a></li>
+                                    <li><a href="developing_18.html">数据网络和数据通讯</a></li>
+                                    <li><a href="developing_19.html">通话和短信功能</a></li>
+                                    <li><a href="developing_20.html">图形处理(Drawing & Animation)</a></li>
+                                    <li><a href="developing_21.html">文件系统和应用设置</a></li>
+                                    <li><a href="developing_22.html">应用间通信</a></li>
+                                    <li><a href="developing_23.html">支付方式</a></li>
+                                    <li><a href="developing_24.html">Windows 8.1应用外设开发</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="testing.html">测试<span>Testing</span></a></h3>
+                                <ul>
+                                    <li><a href="testing_01.html">Windows 8 and WP 8开发FAQ</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu last">
+                                <h3><a href="distribute.html">发布<span>Distribute</span></a></h3>
+                                <ul>
+                                    <li><a href="distribute_01.html">应用商店(发布和更新应用)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="block success-story-nav-block">
+                            <h2>成功案例</h2>
+                        </div>
+                        <div class="block others">
+                            <a href="sample_code.html" class="left">示例代码</a>
+                            <a href="http://msdn.microsoft.com/zh-cn/dn473954" class="right">教学视频</a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3 class="title">Windows 8.1应用外设开发<span><a href="index.html">返回首页&gt;</a></span></h3>
+                        <div class="article-content">
+                            <div class="WordSection1">
+                                <h1>Windows 8.1人机接口设备(HID)
+                                </h1>
+                                <h2>快速开发手册
+                                </h2>
+                                <p>
+                                    2013年11月
+                                </p>
+                                <p>
+                                    本文信息适用于以下版本产品：
+                                </p>
+                                <p>
+                                    Windows 8.1
+                                </p>
+                                <p>
+                                    <img width="38" height="38" src="images/developing_24/image001.png" />
+                                    Windows规划与合作伙伴部
+                                </p>
+                                <br clear="all" />
+                                <div>
+                                    <h1>HID设备背景简介
+                                    </h1>
+                                </div>
+                                <p>
+                                    人机接口设备(Human Interface Devices 或简称 HID) 是一系列以支持该同名协议为基准的设备。HID协议最早是为键盘、鼠标和游戏杆等设备而开发的。其最初设计目的是为了处理 USB 数据传输，但现在这个协议已可以支持范围更加广泛的设备，而不仅局限于 USB 一者。任何符合 HID
+    协议标准定义的设备均可被称为HID设备。
+                                </p>
+                                <p>
+                                    Windows Runtime 8.1下新引入的HID API大大简化了开发者与HID设备通信的过程。HID API可通过HID Reports( Feature Report, Input Report, Output Report ) 方便的与HID设备进行直接通信，如果您对HID 协议中相关的Usage
+    Table, HID Report等概念较为生疏，您可以在下面链接页上找到有关其更详细的介绍：<a href="http://www.usb.org/developers/hidpage/">http://www.usb.org/developers/hidpage/</a>
+                                </p>
+                                <div>
+                                    <h1>Windows Runtime 8.1下的HID API开发
+                                    </h1>
+                                </div>
+                                <p>
+                                    在Windows Runtime 8.1下与HID设备进行通信非常简单且直观，Windows Runtime 8.1使用系统集成的HID内建驱动程序( Inbox Driver ) 原生支持在各类平台上( ARM/x86/x64 )
+    对HID设备的读写Report功能，免去开发者为不同平台分别开发驱动程序的过程，而可以直接调用系统内建的HID API与HID设备进行通信。
+                                </p>
+                                <p>
+                                    <strong>首先要考虑的设备局限性问题</strong>
+                                </p>
+                                <p>
+                                    在开始HID API开发前，首先需要了解Windows Runtime 8.1 HID API基于安全方面的考虑，阻挡了对如下Usage Page操作页的访问权限：
+                                </p>
+                                <ul>
+                                    <li>HID_USAGE_PAGE_UNDEFINED
+                                    </li>
+                                    <li>HID_USAGE_PAGE_GENERIC
+                                    </li>
+                                    <li>HID_USAGE_GENERIC_KEYBOARD
+                                    </li>
+                                    <li>HID_USAGE_GENERIC_KEYPAD
+                                    </li>
+                                    <li>HID_USAGE_GENERIC_SYSTEM_CTL
+                                    </li>
+                                    <li>HID_USAGE_PAGE_KEYBOARD
+                                    </li>
+                                    <li>HID_USAGE_PAGE_CONSUMER
+                                    </li>
+                                    <li>HID_USAGE_PAGE_DIGITIZER
+                                    </li>
+                                    <li>HID_USAGE_PAGE_SENSOR
+                                    </li>
+                                    <li>HID_USAGE_PAGE_BARCODE_SCANNER
+                                    </li>
+                                    <li>HID_USAGE_PAGE_WEIGHING_DEVICE
+                                    </li>
+                                    <li>HID_USAGE_PAGE_MAGNETIC_STRIPE_READER
+                                    </li>
+                                    <li>HID_USAGE_PAGE_TELEPHONY
+                                    </li>
+                                </ul>
+                                <p>
+                                    请注意基于以上Usage Page操作页的访问请求都将被系统拒绝。
+                                </p>
+                                <p>
+                                    <strong>设备声明的必要性</strong>
+                                </p>
+                                <p>
+                                    在使用HID API前，首先需要在应用的manifest配置中声明即将使用设备的设备信息，这将告知系统本应用有权访问被声明的设备，否则系统将拒绝一切与该设备的通信请求。需要注意的是，即使该设备在此被声明有权访问，在程序中进行打开设备请求时用户仍有最终决定是否允许访问该设备的权利。关于设备声明的详细内容请参考：    <strong>简单4步启动HID API应用开发 – 声明设备</strong>
+                                </p>
+                                <p>
+                                    <strong>简单4步启动HID</strong>
+                                    <strong>API</strong>
+                                    <strong>应用开发</strong>
+                                </p>
+                                <p>
+                                    Windows Runtime 8.1下的HID API设备通信可以简单归纳为以下4个步骤：<strong>声明设备</strong>，<strong>发现</strong><strong>设备</strong>，<strong>连接设备</strong>，<strong>读写设备</strong>。
+                                </p>
+                                <p>
+                                    下面介绍如何快速的实现这些步骤，如果您希望更进一步了解更多的资讯可以参考本文后面的API快速参考及相关资源列表。
+                                </p>
+                                <p>
+                                    请注意，下面信息可能并不完全适用于最终生产环境，一些商业应用中应考虑的相关场景(如设备占用，应用挂起、恢复处理等)并未在下述中涉及到。
+                                </p>
+                                <p>
+                                    <strong>1. </strong>
+                                    <strong>声明设备：</strong>
+                                    <strong></strong>
+                                </p>
+                                <p>
+                                    <strong></strong>
+                                </p>
+                                <p>
+                                    该步骤引导您首先需要在工程的<strong>Package.appxmanifest</strong>文件中声明对目标HID设备的使用。
+                                </p>
+                                <p>
+                                    对此只需要在&lt;Capabilities&gt;…&lt;/Capabilities&gt;内加入对该HID设备的设备描述，包括Vendor ID + Product ID 以及Usage信息，例如：
+                                </p>
+                                <textarea>    <m2:DeviceCapability Name="humaninterfacedevice"><!-- 此行声明如下为HID设备 -->
+      <m2:Device Id="vidpid:1941 8021"><!-- 声明设备的Vendor ID为1941，Product ID为8021 -->
+        <m2:Function Type="usage:FFA0 *" /><!-- 声明设备可使用其UsagePage：FFA0下的所有Usage ID：* -->
+      </m2:Device>
+    </m2:DeviceCapability>
+</textarea>
+                                <p>
+                                    请注意如果未做以上声明应用将无法连接或读写此设备。
+                                </p>
+                                <p>
+                                    <strong>2. </strong>
+                                    <strong>发现设备：</strong>
+                                    <strong></strong>
+                                </p>
+                                <p>
+                                    该步骤可通过两种方式实现：直接查找设备，或通过设备监视发现设备。
+                                </p>
+                                <p>
+                                    <strong>以直接查找设备方式：</strong>
+                                    <strong></strong>
+                                </p>
+                                <p>
+                                    基本流程：<strong>获取设备描述</strong><strong>HidDevice</strong><strong>.GetDeviceSelector</strong><strong>(...) </strong><strong>-&gt;</strong><strong> </strong><strong>查找设备</strong><strong>DeviceInformation</strong><strong>.</strong><strong>FindAllAsync(...)</strong><strong></strong>
+                                </p>
+                                <p>
+                                    示例C#代码 –
+                                </p>
+                                <pre><code>// 首先获取查找设备所需的设备描述信息Selector
+string myHidSelector = HidDevice.GetDeviceSelector(usagePage = 0xFFA0, usageId = 0x01, vendorId = 0x1941, productId = 0x8021);
+
+// 查找上面Selector所指向的设备
+DeviceInformationCollection myDeviceInformationCollection = await DeviceInformation.FindAllAsync(myHidSelector);
+</code></pre>
+                                <p>
+                                    通过对以上DeviceInformationCollection数据集中各元素进一步筛选获得目标设备之唯一DeviceInformation信息
+                                </p>
+                                <p>
+                                    <strong>以通过设备监视发现设备方式：</strong>
+                                    <strong></strong>
+                                </p>
+                                <p>
+                                    添加一个设备监视器( DeviceWatcher )，监视HID设备的连接与断开，并在检测到这些变化时告知应用。
+                                </p>
+                                <p>
+                                    基本流程：<strong>获取设备描述</strong><strong>HidDevice</strong><strong>.GetDeviceSelector</strong><strong>(...) </strong><strong>-&gt;</strong><strong> </strong><strong>创建监视</strong><strong>DeviceInformation</strong><strong>.CreateWatcher(...)</strong><strong> </strong><strong>-&gt; </strong><strong>添加设备事件处理</strong><strong> -&gt;</strong><strong> </strong><strong>开始监视</strong><strong>DeviceWatcher</strong><strong>.Start()</strong>    <strong></strong>
+                                </p>
+                                <p>
+                                    示例C#代码 –
+                                </p>
+                                <pre><code>// 首先获取DeviceWatcher所需的监视设备描述信息Selector
+string myHidSelector = HidDevice.GetDeviceSelector(usagePage = 0xFFA0, usageId = 0x01, vendorId = 0x1941, productId = 0x8021);
+
+// 创建一个DeviceWatcher用来监视上面Selector指向的设备
+DeviceWatcher myHidWatcher = DeviceInformation.CreateWatcher(myHidSelector);
+
+// 注册和设备监视相关的事件处理函数
+myHidWatcher.Added += new TypedEventHandler<DeviceWatcher,
+ DeviceInformation>(this.OnDeviceAdded);//设备连接时系统将调用this.OnDeviceAdded
+myHidWatcher.Removed += new TypedEventHandler<DeviceWatcher,
+ DeviceInformationUpdate>(this.OnDeviceRemoved);//设备断开时将调用this.OnDeviceRemoved
+
+// 开始监视
+myHidWatcher.Start();
+</code></pre>
+                                <p>
+                                    在事件处理函数this.OnDeviceAdded下系统传入的第二个参数即可以获得目标设备的唯一DeviceInformation信息。
+                                </p>
+                                <p>
+                                    通过以上两种方式获取的设备唯一DeviceInformation信息( 注：即使两台种类相同的设备也拥有不同的DeviceInformation信息
+    )将用于下一步与设备的连接。建议此处建立一个全局或公共变量记录该DeviceInformation信息供稍后使用，如：myHidDeviceInformation
+                                </p>
+                                <p>
+                                    <strong>3. </strong>
+                                    <strong>连接设备：</strong>
+                                    <strong></strong>
+                                </p>
+                                <p>
+                                    该步骤通过已获取的DeviceInformation信息连接并打开该HID设备。
+                                </p>
+                                <p>
+                                    基本流程：<strong>获取设备唯一</strong><strong>ID</strong><strong>信息</strong><strong>DeviceInformation</strong><strong>.Id</strong><strong> </strong><strong>-&gt;</strong><strong> </strong><strong>获取设备句柄</strong><strong>HidDevice</strong><strong>.FromIdAsync(...)</strong><strong> </strong><strong>-&gt; </strong><strong>判断设备句柄是否成功获取</strong><strong>(</strong><strong>null</strong><strong> != </strong><strong>HidDevice</strong>    <strong>)</strong><strong></strong>
+                                </p>
+                                <p>
+                                    示例C#代码 –
+                                </p>
+                                <pre><code>// 通过上一步获得的DeviceInformation下的唯一Id信息获取该HID设备操作句柄HidDevice
+HidDevice myHidHidDevice = await HidDevice.FromIdAsync(myHidDeviceInformation.Id, FileAccessMode.ReadWrite);
+
+if (null != myHidHidDevice)//非null表明已成功连接并打开该设备
+{
+    // 成功打开设备，可以继续进行后续操作
+}
+else//未能成功打开该设备
+{
+    var deviceAccessStatus = DeviceAccessInformation.CreateFromId(mMyFTHIDDeviceInfo.Id).CurrentStatus;
+
+    if (deviceAccessStatus == DeviceAccessStatus.DeniedByUser)//用户拒绝访问该设备
+    { }
+    else if (deviceAccessStatus == DeviceAccessStatus.DeniedBySystem)//系统拒绝访问该设备
+    { }
+    else//该设备可能已被其他应用打开
+    { }
+}
+</code></pre>
+                                <p>
+                                    <strong>4. </strong>
+                                    <strong>读写设备：</strong>
+                                    <strong></strong>
+                                </p>
+                                <p>
+                                    通过上一步获得的设备操作句柄HidDevice向HID设备读写数据。
+                                </p>
+                                <p>
+                                    OutputReport基本流程：<strong>创建</strong><strong>byte</strong><strong>类数组，其总长度应与设备定义的</strong><strong>ReportLength( </strong><strong>包括</strong><strong>ReportID</strong><strong>如果设备已定义之</strong><strong> )</strong><strong>一致</strong><strong> </strong><strong>-&gt;</strong><strong> </strong><strong>将</strong><strong>Report</strong><strong>内容写入</strong><strong>byte</strong><strong>类数组</strong><strong>( </strong><strong>如果设备已定义</strong><strong>ReportID</strong><strong>则必须将之添加至数组首元素否则可对其忽略，顺序将</strong><strong>Report</strong><strong>内容写入各数组元素中，将后面空缺字节全部补</strong><strong>0 ) -&gt; </strong><strong>将数组内容附到</strong><strong>HidOutputReport</strong><strong>.Data</strong><strong>上</strong><strong> -&gt;</strong><strong> </strong><strong>发送</strong><strong>Report</strong><strong>至设备</strong><strong>HidDevice</strong><strong>.SendOutputReportAsync(...)</strong><strong></strong>
+                                </p>
+                                <p>
+                                    InputReport基本流程：<strong>获取</strong><strong>Report</strong><strong>自设备</strong><strong>HidDevice</strong><strong>.G</strong><strong>etInputReportAsync(...) </strong><strong>-&gt;</strong><strong> </strong><strong>读取</strong><strong>HidInputReport</strong><strong>.Data</strong>    <strong>上内容至数组</strong><strong></strong>
+                                </p>
+                                <p>
+                                    示例C#代码 –
+                                </p>
+                                <p>
+                                    // 以下向HID设备输出OutputReport
+                                </p>
+                                <pre><code>// 以下向HID设备输出OutputReport
+byte reportID = 0x00;//设定ReportID为0x00
+List<byte> bytestowrite = new List<byte>() { reportID, 0x10 };//即将输出的内容，第一个字节必须为reportID如果设备已对其进行定义
+HidOutputReport outputReport = myHidHidDevice.CreateOutputReport(reportID);//创建OutputReport实例
+for (int n = bytestowrite.Count; n < outputReport.Data.Length; n++) bytestowrite.Add(0);//将Report后面的空缺字节全补为0
+
+// 创建一个DataWriter用来写入数据
+var dataWriter = new DataWriter();
+dataWriter.WriteBytes(bytestowrite.ToArray());
+outputReport.Data = dataWriter.DetachBuffer();
+
+// 发送OutputReport至HID设备
+await myHidHidDevice.SendOutputReportAsync(outputReport);
+
+//...
+
+// 以下从HID设备获取InputReport
+HidInputReport inputReport = await myHidHidDevice.GetInputReportAsync(reportID);
+
+// 将InputReport中获取的字节数据全部读入
+byte[] inputBytes = new byte[inputReport.Data.Length];
+DataReader.FromBuffer(inputReport.Data).ReadBytes(inputBytes);
+</code></pre>
+                                <p>
+                                    ­ <strong>关闭设备</strong>
+                                </p>
+                                <p>
+                                    当设备不再使用时，关闭设备以释放资源是一种良好的习惯。
+                                </p>
+                                <p>
+                                    示例C#代码 –
+                                </p>
+                                <pre><code>if (myHidHidDevice != null)
+{
+    // 关闭该HID设备操作句柄
+    myHidHidDevice.Dispose();
+
+    myHidHidDevice = null;
+}
+</code></pre>
+                                <div>
+                                    <h1>Windows Runtime 8.1 HID API开发需要注意的问题
+                                    </h1>
+                                </div>
+                                <p>
+                                    <strong>应用挂起</strong>
+                                    <strong>/</strong>
+                                    <strong>恢复</strong>
+                                    <strong></strong>
+                                </p>
+                                <p>
+                                    应用挂起时系统将自动关闭使用中的设备，但在应用恢复时不会自动将设备打开。另外应用挂起时DeviceWatcher仍然会继续工作，因此此时程序应通过停止DeviceWatcher停止监视设备连接，以免干扰设备稍后的正常运行。并且为保持代码一贯性，应用挂起时程序还应将设备关闭，应用恢复时再将其重新打开。
+                                </p>
+                                <div>
+                                    <h1>Windows Runtime 8.1 HID API 相关资料参考
+                                    </h1>
+                                </div>
+                                <p>
+                                    绝大部分HID API开发中需要运用到的API、事件及各类属性均位于以下两个命名空间。
+                                </p>
+                                <p>
+                                    Windows.Devices.HumanInterfaceDevice
+                                </p>
+                                <p>
+                                    Windows.Devices.Enumeration
+                                </p>
+                                <p>
+                                    <strong>更多关于HID的详细资料：</strong>
+                                </p>
+                                <p>
+                                    • Windows 8.1 设备开发概览
+                                </p>
+                                <p>
+                                    <a href="http://msdn.microsoft.com/zh-cn/library/windows/apps/bg182882.aspx">http://msdn.microsoft.com/zh-cn/library/windows/apps/bg182882.aspx</a>
+                                </p>
+                                <p>
+                                    • Supporting human interface devices
+                                </p>
+                                <p>
+                                    <a href="http://msdn.microsoft.com/library/windows/apps/dn263140.aspx">http://msdn.microsoft.com/library/windows/apps/dn263140.aspx</a>
+                                </p>
+                                <p>
+                                    • Quick Start: HID
+                                </p>
+                                <p>
+                                    <a href="http://msdn.microsoft.com/library/windows/apps/dn263133.aspx">http://msdn.microsoft.com/library/windows/apps/dn263133.aspx</a>
+                                </p>
+                                <p>
+                                    • How to specify device capabilities for HID
+                                </p>
+                                <p>
+                                    <a href="http://msdn.microsoft.com/library/windows/apps/dn263091.aspx">http://msdn.microsoft.com/library/windows/apps/dn263091.aspx</a>
+                                </p>
+                                <p>
+                                    • 自定义 HID 设备访问示例
+                                </p>
+                                <p>
+                                    <a href="http://code.msdn.microsoft.com/windowsapps/Custom-HID-Device-Access-40c3aa8f/">http://code.msdn.microsoft.com/windowsapps/Custom-HID-Device-Access-40c3aa8f/
+                                    </a>
+                                </p>
+                                <p>
+                                    • 视频：Building apps that connect with devices (英文)
+                                </p>
+                                <p>
+                                    <a href="http://channel9.msdn.com/Events/Build/2013/2-023">http://channel9.msdn.com/Events/Build/2013/2-023</a>
+                                </p>
+                                <p>
+                                    • 视频：Apps for HID Devices (英文)
+                                </p>
+                                <p>
+                                    <a href="http://channel9.msdn.com/Events/Build/2013/2-924b">http://channel9.msdn.com/Events/Build/2013/2-924b</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <!--End Content-->
+        <div style="text-align: right" class="gotoTop"><a href="javascript:scroll(0,0)"></a></div>
+        <!--Begin ProudctLinks-->
+        <div class="ms-pro-links">
+            <div class="grid-container clearfix">
+                <div class="cam-links">
+                    其它微软站点
+		<a href="http://www.microsoft.com/zh-cn/default.aspx">微软中国官方网站</a>
+                    <a href="http://www.microsoft.com/zh-cn/download/default.aspx?WT.mc_id=MSCOM_zh-cn_HP_Footer_downloads" target="_blank">微软中国下载中心</a>
+                    <a href="http://www.microsoftstore.com.cn?WT.mc_id=MSCOM_003" target="_blank">微软中国官方商城</a>
+                    <a href="http://www.microsoft.com/china/newsletter/" target="_blank">订阅电子期刊</a>
+                    <a href="https://sales.liveperson.net/hc/21661174/?cmd=file&file=visitorWantsToChat&site=21661174&byhref=1&SESSIONVAR!skill=APGC.PRC.ZH.CS.CON.PRESLS.GENERAL" target="_blank">联系微软销售代表</a>
+                    <a href="http://www.microsoft.com/zh-cn/sitemap.aspx" target="_blank">网站地图</a>
+                </div>
+            </div>
+        </div>
+        <!--End ProudctLinks-->
+        <!--Begin footer-->
+        <div class="footer">
+            <div class="grid-container">
+                <img src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-type-1x.png" alt="microsoft" class="logo">
+                <ul>
+                    <li><a href="http://www.miibeian.gov.cn/" title="">京ICP备09042378号-6</a></li>
+                    <li><a href="https://profile.microsoft.com/RegSysProfileCenter/default.aspx?lcid=2052" title="">个人信息中心</a></li>
+                    <li><a href="http://support.microsoft.com/contactus/?ws=support" title="">与我们联系</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkId=248681" title="">隐私权声明</a></li>
+                    <li><a href="http://go.microsoft.com/?linkid=4412892" title="">使用条款</a></li>
+                    <li><a href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Trademarks/EN-US.aspx" title="">商标</a></li>
+                    <li>&copy; 2013 Microsoft</li>
+                </ul>
+            </div>
+        </div>
+        <!--End footer-->
+        <!-- Begin MDA WEDCS -->
+        <script type="text/JavaScript">
+            var varSegmentation = 0;
+            var varClickTracking = 1;
+            var varCustomerTracking = 1;
+            var varAutoFirePV = 1;
+            var Route = "#";
+            var Ctrl = "#"
+            //document.write("<script type='text/javascript' src='" + window.location.protocol + "//c.microsoft.com/ms.js'><"+"/script>");
+        </script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="./assets/js/script.js"></script>
+        <script type="text/javascript" src="./js/siteSearch.js"></script>
+        <noscript>
+            <img alt="" width="1" height="1" src="http://c.microsoft.com/trans_pixel.aspx/" />
+        </noscript>
+        <!-- Begin MDA WEDCS -->
+    </div>
+</body>
+</html>

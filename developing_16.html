@@ -1,0 +1,925 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>浏览器控件WebView</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="css/templete.css" type="text/css" media="all" />
+    <meta charset="UTF-8">
+</head>
+<body class="level-2">
+    <div class="wrapper">
+        <!--Begin header-->
+        <div class="header">
+            <div class="grid-container clearfix">
+                <div class="header-left">
+                    <img alt="Microsoft" src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-lg-1x.png" width="94" height="20">
+                    <h1>X-Platform</h1>
+                </div>
+                <div id="mscom-search" class="mscom-search" style="margin-top: 37px;">
+                    <div class="search-form">
+                        <form action="" id="search-form">
+                            <div class="input-wrapper">
+                                <label class="screen-reader-text" for="search-input">搜索 Microsoft.com</label>
+                                <input id="search-input" type="text" class="input-area" autocomplete="off">
+                            </div>
+                            <button class="search-submit" id="search-btn" type="submit">
+                                <img width="16" height="16" alt="Submit" src="http://i.s-microsoft.com/global/imagestore/PublishingImages/sprites/search-button-blue.png"></button>
+                        </form>
+                    </div>
+                    <div class="search-results-box" id="results">
+                        <div class="search-scope">
+                            <ul>
+                                <li class=""><a class="checked" search="microsoft" role="search">搜索 Microsoft.com</a></li>
+                                <li class=""><a search="internet" role="search">搜索互联网</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End header-->
+        <br />
+        <!--Begin Content-->
+        <div class="content">
+            <div class="wrapper">
+                <div class="wrapper-header">
+                    <div>
+                        <a href="index.html">
+                            <img src="./assets/image/banner_1.jpg"></a>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="nav">
+                        <div class="block article-nav-block">
+                            <h2>移动应用开发生命周期</h2>
+                            <div class="menu">
+                                <h3><a href="idea.html">计划<span>Idea/Planning</span></a></h3>
+                                <ul>
+                                    <li><a href="idea_01.html">平台总览</a></li>
+                                    <li><a href="idea_02.html">开发工具、开发环境和模拟器</a></li>
+                                    <li><a href="idea_03.html">应用结构和生命周期</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="design.html">设计<span>Design</span></a></h3>
+                                <ul>
+                                    <li><a href="design_01.html">UI Layout的设计</a></li>
+                                    <li><a href="design_02.html">UI的控件</a></li>
+                                    <li><a href="design_03.html">UI页面的控制和导航</a></li>
+                                    <li><a href="design_04.html">不同屏幕尺寸和分辨率的适配</a></li>
+                                    <li><a href="design_05.html">第三方SDK</a></li>
+                                    <li><a href="design_06.html">游戏开发</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu active">
+                                <h3><a href="developing.html">开发<span>Developing</span></a></h3>
+                                <ul>
+                                    <li><a href="developing_01.html">开发语言</a></li>
+                                    <li><a href="developing_02.html">Audio、Video Player应用的开发</a></li>
+                                    <li><a href="developing_03.html">General APIs Mapping</a></li>
+                                    <li><a href="developing_04.html">IAP应用内支付</a></li>
+                                    <li><a href="developing_05.html">LBS应用</a></li>
+                                    <li><a href="developing_06.html">LBS、镜头和传感器应用接口使用</a></li>
+                                    <li><a href="developing_07.html">Native Code（C和C++）支持</a></li>
+                                    <li><a href="developing_08.html">Push Notification</a></li>
+                                    <li><a href="developing_09.html">Sharing in Social Network</a></li>
+                                    <li><a href="developing_10.html">Source Code Control</a></li>
+                                    <li><a href="developing_11.html">UI上的Data Binding</a></li>
+                                    <li><a href="developing_12.html">Windows 8.1和WP 8 Sharing应用分享功能实现</a></li>
+                                    <li><a href="developing_13.html">多媒体</a></li>
+                                    <li><a href="developing_14.html">后台任务和多任务处理</a></li>
+                                    <li><a href="developing_15.html">获取后台服务器数据</a></li>
+                                    <li><a href="developing_16.html">浏览器控件WebView</a></li>
+                                    <li><a href="developing_17.html">数据库（SQLite）</a></li>
+                                    <li><a href="developing_18.html">数据网络和数据通讯</a></li>
+                                    <li><a href="developing_19.html">通话和短信功能</a></li>
+                                    <li><a href="developing_20.html">图形处理(Drawing & Animation)</a></li>
+                                    <li><a href="developing_21.html">文件系统和应用设置</a></li>
+                                    <li><a href="developing_22.html">应用间通信</a></li>
+                                    <li><a href="developing_23.html">支付方式</a></li>
+                                    <li><a href="developing_24.html">Windows 8.1应用外设开发</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="testing.html">测试<span>Testing</span></a></h3>
+                                <ul>
+                                    <li><a href="testing_01.html">Windows 8 and WP 8开发FAQ</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu last">
+                                <h3><a href="distribute.html">发布<span>Distribute</span></a></h3>
+                                <ul>
+                                    <li><a href="distribute_01.html">应用商店(发布和更新应用)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="block success-story-nav-block">
+                            <h2>成功案例</h2>
+                        </div>
+                        <div class="block others">
+                            <a href="sample_code.html" class="left">示例代码</a>
+                            <a href="http://msdn.microsoft.com/zh-cn/dn473954" class="right">教学视频</a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3 class="title">WebBrowser(WebView) API<span><a href="index.html">返回首页&gt;</a></span></h3>
+                        <div class="article-content">
+                            <div class="WordSection1">
+                                <p class="MsoToc1"><a href="#_Toc371431876">一、 WP8中的WebBrowser</a></p>
+                                <p class="MsoToc1"><a href="#_Toc371431877">二、Windows8中的WebView</a></p>
+                                <p class="MsoToc1"><a href="#_Toc371431878">三、Android的WebView</a></p>
+                                <p class="MsoToc1"><a href="#_Toc371431879">四、 最佳做法</a></p>
+                                <p class="MsoToc2"><a href="#_Toc371431880">WP8: 4</a></p>
+                                <p class="MsoToc2"><a href="#_Toc371431881">Win8: 5</a></p>
+                                <p class="MsoToc1"><a href="#_Toc371431882">五、 应用WebBrowser （WebView）</a></p>
+                                <p class="MsoToc2"><a href="#_Toc371431883">WP8和Win8应用</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371431884">1.&nbsp; 显示网络中的 Web 内容</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371431885">2.&nbsp; 显示静态 Web 内容</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371431886">3.&nbsp; 显示动态生成的 Web 内容</a></p>
+                                <p class="MsoToc2"><a href="#_Toc371431887">Android的WebView</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371431888">在WebView中使用JavaScript</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371431889">处理页面导航</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371431890">操作网页历史</a></p>
+                                <p class="MsoToc1"><a href="#_Toc371431891">六、获取和设置 Cookie</a></p>
+                                <p class="MsoToc2"><a href="#_Toc371431892">WP8</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371431893">设置请求消息上的 Cookie</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371431894">获取响应消息上的 Cookie</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371431895">示例</a></p>
+                                <p class="MsoToc2"><a href="#_Toc371431896">Win8</a></p>
+                                <p class="MsoToc2"><a href="#_Toc371431897">Android</a></p>
+                                <br />
+                                <h1><a name="_Toc371431876">一、WP8中的WebBrowser </a></h1>
+                                <p>
+                                    Windows
+Phone 提供基于桌面浏览器的 WebBrowser
+控件。Windows
+Phone OS 7.1 的 WebBrowser
+控件基于 Internet
+Explorer 9，且 Windows
+Phone 8 的 WebBrowser
+控件基于 Internet
+Explorer 10。因此，与在 Windows
+Phone 8 上运行的手机相比，使用在 Windows
+Phone 7.5 运行的 WebBrowser
+的控件的应用，其外观稍有不同。
+                                </p>
+                                <p>
+                                    WebBrowser
+控件可以嵌入应用中并且使用它的原因很多，不仅限于以下原因：
+                                </p>
+                                <p style='margin-left: 36.0pt;'>
+                                    ●
+显示网络中的 Web 内容。您可以构建一个应用，该应用只是由指向您网站的嵌入 WebBrowser
+控件组成，在该控件外面有自定义标记。有关更多信息，请参见<a
+    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/ff431807(v=vs.105).aspx"><strong>如何使用Windows Phone</strong><strong>的WebBrowser</strong><strong>控件显示网络中的 Web </strong><strong>内容</strong></a>。
+                                </p>
+                                <p style='margin-left: 36.0pt;'>
+                                    ●
+显示静态的 Web 内容。可以将应用配置为在本地独立存储中保存的内容，然后在嵌入的 WebBrowser
+控件中查看这些内容。有关更多信息，请参见<a
+    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/ff431811(v=vs.105).aspx"><strong>如何使用 Windows Phone </strong><strong>的
+WebBrowser </strong><strong>控件显示静态 Web </strong><strong>内容</strong></a>。
+                                </p>
+                                <p style='margin-left: 36.0pt;'>
+                                    ●
+显示动态生成的 Web 内容。可以将 WebBrowser
+控件指向应用代码中动态构造的 HTML 内容。有关更多信息，请参见<a
+    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/ff431815(v=vs.105).aspx"><strong>如何使用Windows Phone</strong><strong>的WebBrowser</strong><strong>控件显示动态生成的 Web </strong><strong>内容</strong></a>。
+                                </p>
+                                <p>
+                                    默认情况下，脚本在 WebBrowser 控件中处于禁用状态。如果您想在控件中启用脚本，请将
+IsScriptEnabled 属性设置为 true。可使用
+InvokeScript 方法调用脚本。当 WebBrowser 控件中的 JavaScript 将字符串传递到托管的代码时，将发生 ScriptNotify 事件。
+                                </p>
+                                <p>
+                                    <b>警告</b>：当您在 XAML 中创建 WebBrowser 控件时，您必须为该控件的
+System.Windows.FrameworkElement.Name 属性指定值，以便 Windows
+Phone 功能检测工具能够合理地检测和赋予应用正确的功能。有关 Windows Phone 功能检测工具的详细信息，请参见<a
+    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/gg180730(v=vs.105).aspx"><strong>如何确定应用功能</strong></a>。
+                                </p>
+                                <h1><a name="_Toc371431877">二、Windows8中的WebView</a></h1>
+                                <p>Windows8 中的WebView提供承载应用程序内 HTML 内容的 UI 元素。<strong>WebView</strong>&nbsp;始终使用文档模式中 Internet&nbsp;Explorer 10。与WP8的WebBrowser类似，WebView可以显示网络中的 Web 内容、静态的 Web 内容以及动态生成的 Web 内容。具体使用方法我们稍后进行介绍。</p>
+                                <p>
+                                    需要注意的是，<strong>WebView</strong>&nbsp;目前不支持某些 HTML5 功能，包括 AppCache、IndexedDB、对剪贴板的编程访问或地理位置。此外，<strong>WebView</strong>&nbsp;不支持 ms-appdata: scheme，但是其支持 ms-appx-web:
+scheme<a name="_Toc370303255"></a>
+                                </p>
+                                <h1><a name="_Toc371431878">三、Android的WebView</a></h1>
+                                <p>如果你想实现一个Web应用（或仅仅是一个网页）作为你应用中的一部分，你可以使用WebView来实现它。WebView是Android的View类的扩展，它允许你显示一个网页作为Activity布局的一部分。它不包含成熟的浏览器的一些功能，例如导航控制或输入栏。默认情况下，WebView显示一个网页。</p>
+                                <p>一个使用WebView的很普遍的场合是当你想要在应用中提供需要时常更新的信息时，例如用户协议或用户手册。在Android应用当中，你能创建一个Activity它包含一个WebView，然后使用它你可以显示网上提供的文档。</p>
+                                <p>另一个使用WebView的场合是：假如你的应用总是需要网络链接来获取数据并提供给用户，例如电子邮件。这时候，你能发现在应用中创建一个WebView并使用网页来显示用户数据，比执行网络请求，解析数据然后再渲染到Android布局当中更加方便。你只需要根据Android设备设计网页，然后在应用当中实现一个WebView然后载入刚刚设计的网页。</p>
+                                <h1><a name="_Toc371431879"></a><a
+                                    name="_Toc370303264">四、最佳做法</a></h1>
+                                <h2><a name="_Toc371431880"></a><a name="_Toc370303265">WP8:</a></h2>
+                                <p>
+                                    开发使用 WebBrowser
+控件的应用程序时，考虑以下有关安全的最佳做法和信息：
+                                </p>
+                                <p style='margin-left: 36.0pt;'>
+                                    ●
+从独立存储加载的内容或使用
+NavigateToString(String) 方法动态加载的内容的处理方式不同于从网络加载的内容。从独立存储加载的内容或使用
+NavigateToString 动态加载的内容没有跨站点限制，但从网络加载的内容有跨站点限制。因此，在从独立存储加载或使用
+NavigateToString 动态加载不受信任的内容时应格外小心。
+                                </p>
+                                <p style='margin-left: 36.0pt;'>
+                                    ●
+请注意传递给
+InvokeScript(String) 方法的数据的敏感性。例如，隐私或位置数据不应该向不受信任的脚本代码公开。
+                                </p>
+                                <p style='margin-left: 36.0pt;'>
+                                    ●
+不应该使用 WebBrowser
+控件创建常规用途的浏览器应用程序，因为此 API 并未设计为支持此类应用程序所需的全部安全功能。
+                                </p>
+                                <p style='margin-left: 36.0pt;'>
+                                    ●
+WebBrowser
+控件不提供查看 URL 或安全锁定图标的功能。
+                                </p>
+                                <p style='margin-left: 36.0pt;'>
+                                    ●
+在 WebBrowser
+控件中，用户不能从 https 页面导航到 http 页面。这不同于设备浏览器，在设备浏览器中用户可以从 https 页面导航到 http 页面。
+                                </p>
+                                <p style='margin-left: 36.0pt;'>
+                                    ●
+应用程序不能与 Internet
+Explorer Mobile 共享 Cookie。
+                                </p>
+                                <p style='margin-left: 36.0pt;'>
+                                    ●
+除非在应用程序中将
+IsScriptEnabled 属性设置为 true，否则默认情况下在浏览器中禁用脚本。
+                                </p>
+                                <h2><a name="_Toc371431881"></a><a name="_Toc370303266">Win8:</a></h2>
+                                <p style='margin-left: 36.0pt;'>
+                                    ●
+WebView 不是Control子类且没有控件模板。显示区域为Width和Height。
+                                </p>
+                                <p style='margin-left: 36.0pt;'>
+                                    ●
+WebView 具有其他
+UI 区域特征，如控件无法呈现在 WebView 顶部。这问题的原因是如何处理窗口区域内部，尤其是输入事件是如何处理以及屏幕是如何绘制的。如果您要呈现
+HTML 内容并且还要将其他用户界面元素放置在该
+HTML 内容的顶部，则应使用<a
+    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.webviewbrush.aspx"><strong>WebViewBrush</strong></a>作为呈现区域。<strong>W</strong>ebView
+仍提供 HTML 源信息，您可通过元素名称绑定和 <a
+    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.webviewbrush.sourcename.aspx"><strong>SourceName</strong></a> 属性引用该 WebView。WebViewBrush
+没有此复盖限制。
+                                </p>
+                                <p style='margin-left: 36.0pt;'>
+                                    ●
+如果要显示一个偶尔有交互的WebView（例如下拉列表或应用程序栏），可以在必要时临时隐藏
+WebView 控件，将其替换为一个使用WebViewBrush填充的元素。然后，当重叠的内容不存在时，可以再次显示原始
+WebView。
+                                </p>
+                                <p>
+                                    WebView
+不支持许多像<a
+    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.uielement.keydown.aspx"><strong>KeyDown</strong></a>、<a
+        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.uielement.keyup.aspx"><strong>KeyUp</strong></a>和<a
+            href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.uielement.pointerpressed.aspx"><strong>PointerPressed</strong></a>的UIElement事件。此问题的常见解决方法是将<a
+                href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.webview.invokescript.aspx"><strong>WebView.InvokeScript</strong></a>与 eval 一起使用以便使用 HTML 事件处理程序，以及使用<a
+                    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.webview.scriptnotify.aspx"><strong>WebView.ScriptNotify</strong></a>以便使用 HTML 事件处理程序的
+window.external.notify 来通知应用程序。
+                                </p>
+                                <h1 style='margin-left: 45.0pt;'><a name="_Toc371431882">五、应用WebBrowser （WebView）</a></h1>
+                                <h2><a name="_Toc371431883">WP8和Win8应用</a></h2>
+                                <h3><a name="_Toc371431884"></a><a
+                                    name="_Toc370303267">1.&nbsp;
+显示网络中的 Web 内容</a></h3>
+                                <p>
+                                    可以通过将 WebBrowser
+（WebView）控件托管在应用程序中并使用其 Source 属性或
+Navigate(Uri) 方法更改该控件的位置来实现该操作。
+                                </p>
+                                <p>
+                                    <b>警告：</b> 默认情况下，脚本在 WebBrowser
+控件中处于禁用状态。如果您想在控件中启用脚本，请将
+IsScriptEnabled 属性设置为 true。
+                                </p>
+                                <p>
+                                    以下代码示例显示如何从 .xaml 文件内部更新 WebBrowser
+（WebView）控件的 Source 属性：
+                                </p>
+                                <p><b>Wp8:</b></p>
+                                <p>
+                                    &lt;phone:WebBrowser
+Source=&quot;http://www.bing.com&quot; /&gt;
+                                </p>
+                                <p><b>Win8:</b></p>
+                                <p>
+                                    &lt;WebView Source=&quot; http://www.bing.com
+&quot;/&gt;
+                                </p>
+                                <p>
+                                    或者，如果在 .xaml 文件中为 WebBrowser
+（WebView）控件指定了一个名称，则可以从该代码隐藏文件内部更新 Source 属性。以下代码示例显示如何更新 WebBrowser
+控件（在 .xaml 文件中已命名为
+webBrowser1（webView1））的 Source 属性：
+                                </p>
+                                <p><b>Wp8:</b></p>
+                                <p>
+                                    webBrowser1.Source = new
+Uri(&quot;http://www.bing.com&quot;, UriKind.Absolute);
+                                </p>
+                                <p><b>Win8:</b></p>
+                                <p>
+                                    webView1.Source = new
+Uri(&quot;http://www.bing.com&quot;, UriKind.Absolute);
+                                </p>
+                                <p>
+                                    或者，也可以使用 WebBrowser<a
+                                        name="OLE_LINK2"></a><a name="OLE_LINK1">（</a>WebView）类的
+Navigate(Uri) 方法来实现该目标：
+                                </p>
+                                <p><b>Wp8:</b></p>
+                                <p>
+                                    webBrowser1.Navigate(new
+Uri(&quot;http://www.bing.com&quot;, UriKind.Absolute));
+                                </p>
+                                <p><b>Win8:</b></p>
+                                <p>
+                                    webView.Navigate(new
+Uri(&quot;http://www.bing.com&quot;, UriKind.Absolute));
+                                </p>
+                                <p>
+                                    如果您选择调用方法而不是设置属性，那么请记住，如果WebBrowser控件尚不在可视化树中，则会引发
+InvalidOperationException。为了避免这个问题，您可以向 Loaded 事件附加一个处理程序，以确保在调用该方法之前此控件位于可视化树中。
+                                </p>
+                                <p><b>Wp8:</b></p>
+                                <pre><code>webBrowser1.Loaded += (object sender, RoutedEventArgs e) =>
+{
+    webBrowser1.Navigate(new Uri("http://www.bing.com", UriKind.Absolute));
+};</code></pre>
+                                <p><b>Win8:</b></p>
+                                <pre><code>webView1.Loaded += (object sender, RoutedEventArgs e) =>
+{
+    webView1.Navigate(new Uri("http://www.bing.com", UriKind.Absolute));
+};</code></pre>
+                                <h3><a name="_Toc371431885"></a><a
+                                    name="_Toc370303268">2.&nbsp;
+显示静态 Web 内容</a></h3>
+                                <p>
+                                    您可以使用 WebBrowser
+（WebView）控件在应用程序中显示已设置格式的静态内容。例如，开发人员可能希望在应用程序包中包含帮助文本，以便用户可以随时访问。或者，您也可以使用 WebBrowser
+（WebView）控件显示应用程序已使用
+SaveToString() 方法保存到独立存储的静态 Web 内容。
+                                </p>
+                                <h4><a name="_Toc370303269">`向项目中添加静态内容</a></h4>
+                                <p>向项目中添加静态内容的步骤</p>
+                                <p class="MsoListParagraph" style='margin-left: 18.0pt;'>1. 使用以下 HTML 代码创建一个名为 readme.htm 的 HTML 文件：</p>
+                                <textarea><html>
+   <head><title>Sample Readme File</title></head>
+   <body>
+      <p>Sample Readme Content</p>
+   </body>
+</html></textarea>
+                                <p class="MsoListParagraph" style='margin-left: 18.0pt;'>
+                                    2. 在 Visual
+Studio 中打开一个新的或现有的解决方案。
+                                </p>
+                                <p class="MsoListParagraph" style='margin-left: 18.0pt;'>3. 在“解决方案资源管理器”中，右键单击您项目的名称，单击“添加”，然后单击“现有项”。</p>
+                                <p class="MsoListParagraph" style='margin-left: 18.0pt;'>
+                                    4. 导航到
+readme.htm 文件的位置，选择该文件，然后单击“添加”。
+                                </p>
+                                <p class="MsoListParagraph" style='margin-left: 18.0pt;'>5. 在“解决方案资源浏览器”中，单击该文件的名称。确认“属性”窗口中的“生成操作”部分。</p>
+                                <h4><a name="_Toc370303270">`添加命名空间</a></h4>
+                                <p>
+                                    在页面后台代码中添加以下资源以包含以下命名空间。例如，如果您对主页使用默认命名约定，则应更新
+MainPage.xaml.cs。
+                                </p>
+                                <pre><code>using System.IO.IsolatedStorage;
+using System.IO;
+using System.Windows.Resources;</code></pre>
+                                <h4><a name="_Toc370303271">`添加 WebBrowser（WebView）控件</a></h4>
+                                <p>
+                                    可以使用工具添加 WebBrowser
+（WebView）控件，也可以手动添加 WebBrowser
+（WebView）控件。
+                                </p>
+                                <h4><a name="_Toc370303272">`使用工具添加 WebBrowser（WebView）控件</a></h4>
+                                <p>
+                                    使用工具添加 WebBrowser
+（WebView）控件的步骤
+                                </p>
+                                <p class="MsoListParagraph" style='margin-left: 18.0pt;'>
+                                    1. 在 Visual
+Studio 中打开一个新的或现有的解决方案。
+                                </p>
+                                <p class="MsoListParagraph" style='margin-left: 18.0pt;'>
+                                    2. 查看项目的 XAML
+文件时，单击“工具箱”，将 WebBrowser （WebView）控件拖动到设备的图像中。
+                                </p>
+                                <h4><a name="_Toc370303273">`手动添加 WebBrowser（WebView）控件</a></h4>
+                                <p>
+                                    在 XAML 中创建 WebBrowser
+（WebView）控件的步骤
+                                </p>
+                                <p class="MsoListParagraph" style='margin-left: 18.0pt;'>
+                                    1. 打开将在其中添加
+WebBrowser （WebView）控件的页面的 XAML
+文件。在“解决方案资源浏览器”中，右键单击该页面的 .xaml 文件（默认情况下，新应用程序的主页名为“MainPage.xaml”），然后选择“打开”。
+                                </p>
+                                <p class="MsoListParagraph" style='margin-left: 18.0pt;'>
+                                    2. 在
+ContentGrid 中添加一个 WebBrowser （WebView）控件。例如：
+                                </p>
+                                <p><b>Wp8:</b></p>
+                                <textarea><phone:WebBrowser HorizontalAlignment="Left" Margin="20,50,0,0" Name="webBrowser1" VerticalAlignment="Top" Height="500" Width="430" />
+</Grid></textarea>
+                                <p><b>Win8:</b></p>
+                                <textarea><Grid x:Name="ContentGrid" Grid.Row="1">
+    <WebView HorizontalAlignment="Left" Margin="20,50,0,0" Name="webView1" VerticalAlignment="Top" Height="500" Width="430" />
+</Grid></textarea>
+                                <h4><a name="_Toc370303274">`添加向独立存储中添加文件的代码</a></h4>
+                                <p>
+                                    修改页面后台代码以包含以下两个函数，这两个函数将帮助向独立存储中添加静态文件。例如，如果您对主页使用默认命名约定，则应更新
+MainPage.xaml.cs。
+                                </p>
+                                <pre><code>private void SaveFilesToIsoStore()
+    {
+        //These files must match what is included in the application package,
+        //or BinaryStream.Dispose below will throw an exception.
+        string[] files = {
+            "readme.htm"
+        };
+
+        IsolatedStorageFile isoStore = IsolatedStorageFile.GetUserStoreForApplication();
+
+        if (false == isoStore.FileExists(files[0]))
+        {
+            foreach (string f in files)
+            {
+                StreamResourceInfo sr = Application.GetResourceStream(new Uri(f, UriKind.Relative));
+                using (BinaryReader br = new BinaryReader(sr.Stream))
+                {
+                    byte[] data = br.ReadBytes((int)sr.Stream.Length);
+                    SaveToIsoStore(f, data);
+                }
+            }
+        }
+    }
+
+    private void SaveToIsoStore(string fileName, byte[] data)
+    {
+        string strBaseDir = string.Empty;
+        string delimStr = "/";
+        char[] delimiter = delimStr.ToCharArray();
+        string[] dirsPath = fileName.Split(delimiter);
+
+        //Get the IsoStore.
+        IsolatedStorageFile isoStore = IsolatedStorageFile.GetUserStoreForApplication();
+
+        //Re-create the directory structure.
+        for (int i = 0; i < dirsPath.Length - 1; i++)
+        {
+            strBaseDir = System.IO.Path.Combine(strBaseDir, dirsPath[i]);
+            isoStore.CreateDirectory(strBaseDir);
+        }
+
+        //Remove the existing file.
+        if (isoStore.FileExists(fileName))
+        {
+            isoStore.DeleteFile(fileName);
+        }
+
+        //Write the file.
+        using (BinaryWriter bw = new BinaryWriter(isoStore.CreateFile(fileName)))
+        {
+            bw.Write(data);
+            bw.Close();
+        }
+    }</code></pre>
+                                <h4><a name="_Toc370303275">`添加剩余的代码</a></h4>
+                                <p>
+                                    修改页面后台代码以更新并包含以下两个函数，这两个函数将向独立存储中添加静态文件并在嵌入的 WebBrowser
+（WebView）控件中显示该内容。您将需要覆盖现有的 MainPage 函数。
+                                </p>
+                                <pre><code>{    InitializeComponent();
+
+    SupportedOrientations = SupportedPageOrientation.Portrait | SupportedPageOrientation.Landscape;
+
+    webBrowser1.Loaded += WebBrowser_OnLoaded;
+}
+
+private void WebBrowser_OnLoaded(object sender, RoutedEventArgs e)
+{
+    SaveFilesToIsoStore();
+    webBrowser1.Navigate(new Uri("readme.htm", UriKind.Relative));
+}</code></pre>
+                                <h3><a name="_Toc371431886"></a><a
+                                    name="_Toc370303276">3.&nbsp;
+显示动态生成的 Web 内容</a></h3>
+                                <p>
+                                    本主题介绍如何使用 WebBrowser
+（WebView）控件的
+NavigateToString(String) 方法显示该控件中使用 XAML 和 C# 动态生成的 Web 内容。在使用该方法之前，您应该查看 WebBrowser
+（WebView）控件安全的注意事项。
+                                </p>
+                                <p>
+                                    可以使用工具添加 WebBrowser
+（WebView）控件，也可以手动添加 WebBrowser
+（WebView）控件。
+                                </p>
+                                <h4><a name="_Toc370303277">`使用工具添加 WebBrowser（WebView）控件</a></h4>
+                                <p class="MsoListParagraph" style='margin-left: 18.0pt;'>
+                                    1. 在 Visual
+Studio 中打开一个新的或现有的解决方案。
+                                </p>
+                                <p class="MsoListParagraph" style='margin-left: 18.0pt;'>
+                                    2. 查看项目的 XAML
+文件时，单击“工具箱”，将 WebBrowser （WebView）控件拖动到设备的图像中。
+                                </p>
+                                <h4><a name="_Toc370303278">`手动添加 WebBrowser（WebView）控件</a></h4>
+                                <p>
+                                    在 XAML 中创建 WebBrowser
+（WebView）控件的步骤
+                                </p>
+                                <p class="MsoListParagraph" style='margin-left: 18.0pt;'>
+                                    1. 打开将在其中添加
+WebBrowser （WebView）控件的页面的 XAML
+文件。在“解决方案资源浏览器”中，右键单击该页面的 .xaml 文件（默认情况下，新应用程序的主页名为“MainPage.xaml”），然后选择“打开”。
+                                </p>
+                                <p class="MsoListParagraph" style='margin-left: 18.0pt;'>
+                                    2. 在
+ContentGrid 中添加一个 WebBrowser （WebView）控件。例如：
+                                </p>
+                                <p><b>Wp8:</b></p>
+                                <textarea><Grid x:Name="ContentGrid" Grid.Row="1">
+    <phone:WebBrowser HorizontalAlignment="Left" Margin="20,50,0,0" Name="webBrowser1" VerticalAlignment="Top" Height="500" Width="430" />
+</Grid></textarea>
+                                <p><b>Win8</b></p>
+                                <textarea><Grid x:Name="ContentGrid" Grid.Row="1">
+    <WebView HorizontalAlignment="Left" Margin="20,50,0,0" Name="webView1" VerticalAlignment="Top" Height="500" Width="430" />
+</Grid></textarea>
+                                <h4><a name="_Toc370303279">`调用 NavigateToString</a></h4>
+                                <p>
+                                    更新页面后台代码以包含对
+NavigateToString 的调用。例如，如果使用的是具有默认命名约定的主页，则您将更新
+MainPage.xaml.cs。以下示例代码描述了执行此操作的一个方法：
+                                </p>
+                                <pre><code>public MainPage()
+{
+      InitializeComponent();
+      SupportedOrientations = SupportedPageOrientation.Portrait | SupportedPageOrientation.Landscape;
+
+      webBrowser1.Loaded += WebBrowser_OnLoaded;
+}
+
+private void WebBrowser_OnLoaded(object sender, RoutedEventArgs e)
+{
+      webBrowser1.NavigateToString("<html><head><meta name='viewport' content='width=480, user-scalable=yes' /></head><body>HTML Text</body></html>"); 
+}</code></pre>
+                                <h2><a name="_Toc371431887">Android的WebView</a></h2>
+                                <p>想添加一个WebView到应用当中，你只需要包含WebView标签到你的Activity布局文件当中。例如，下面是一个WebView填充满屏幕的布局。</p>
+                                <textarea><?xml version="1.0" encoding="utf-8"?>
+<WebView xmlns:android=http://schemas.android.com/apk/res/android 
+android:id="@+id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent"/>
+在WebView中载入网页，可以使用loadUrl()方法，例如：
+WebView myWebView = (WebView) findViewById(R.id.webview);
+myWebView.loadUrl("http://www.baidu.com");</textarea>
+                                <p>在WebView中载入网页，可以使用loadUrl()方法，例如：</p>
+                                <textarea>WebView myWebView = (WebView) findViewById(R.id.webview);
+myWebView.loadUrl("http://www.baidu.com");</textarea>
+                                <p>这段代码运行之前，你需要接入到因特网中。你仅需要添加因特网权限到你的Manifest文件当中。 </p>
+                                <textarea><manifest ... > 
+<uses-permission android:name="android.permission.INTERNET" /> ...
+</manifest></textarea>
+                                <p>这些是显示一个网页的基本知识。</p>
+                                <h3><a name="_Toc371431888"></a><a name="_Toc370303258">在WebView中使用JavaScript</a></h3>
+                                <p>如果你想要载入的网页实现了JavaScript，你必须在WebView中开启JavaScript功能。当JavaScript有用时，你还可以再你的应用代码和JavaScript代码之间创建接口。</p>
+                                <h4><a name="_Toc370303259">开启JavaScript</a></h4>
+                                <p>在WebView中JavaScript默认是不开启的。你可以通过WebSettings添加到WebView当中开启它。你可以使用getSettings()方法获得WebSettings，然后使用setJavaScriptEnabled()来开启它。 例如： </p>
+                                <pre><code>WebView myWebView = (WebView) findViewById(R.id.webview);
+WebSettings webSettings = myWebView.getSettings();
+webSettings.setJavaScriptEnabled(true);</code></pre>
+                                <p>在WebSettings中你可以发现很多有用的功能。例如，如果你使用WebView开发一个网络应用，你可以使用setUserAgentString()方法定义一个自定义用户代理字符串，后面可以查询网页中的自定义用户代理，辨别当前请求网页的是不是你的Android应用。</p>
+                                <h4><a name="_Toc370303260">绑定JavaScript代码到Android源码</a></h4>
+                                <p>当在应用当中使用WebView创建网络应用的时候，你可以在JavaScript和Android源码之间创建一个接口，例如，你的JavaScript代码可以调用Android中定义的方法来显示一个对话框，而不使用JavaScript的alert()方法。 </p>
+                                <p>
+                                    例如你可以在应用当中添加以下的类：
+                                </p>
+                                <pre><code>public class JavaScriptInterface {
+Context mContext;
+/** Instantiate the interface and set the context */
+JavaScriptInterface(Context c) { 
+mContext = c; 
+}
+/** Show a toast from the web page */ 
+public void showToast(String toast) { 
+Toast.makeText(mContext, toast, Toast.LENGTH_SHORT).show(); 
+}
+}</code></pre>
+                                <p>在这个例子中，JavaScriptInterface类使用showToast()方法创建Toast消息。 </p>
+                                <p>你可以绑定这个类到JavaScript当中并在WebView当中使用addJavaScriptInterface()方法运行并创建接口的名称为Android。 </p>
+                                <pre><code>WebView webView = (WebView) findViewById(R.id.webview);
+webView.addJavascriptInterface(new JavaScriptInterface(this), "Android");</code></pre>
+                                <p>这段代码会创建一个名称为“Android”的JavaScript接口并运行在WebView当中。在这里，你的Web应用会接入到JavaScriptInterface类。例如，下面为Html何JavaScript代码，它会在用户点击按钮的时候使用新的接口创建一个Toast消息。 </p>
+                                <textarea><input type="button" value="Say hello" onClick="showAndroidToast('Hello Android!')" />
+<script type="text/javascript">
+    function showAndroidToast(toast) {
+        Android.showToast(toast);
+    }
+</script></textarea>
+                                <h3><a name="_Toc371431889"></a><a name="_Toc370303261">处理页面导航</a></h3>
+                                <p>
+                                    当用户在你的WebView中点击一个链接时，对于Android来说默认的动作时启动一个应用程序捕捉它。通常，默认的网页浏览器会打开并且载入目标URL。然而，你可以在WebView中重写该动作，把该链接在你的WebView中打开。你还可以让用户自己处理历史的回退和前进功能。
+                                </p>
+                                <p>打开用户点击的链接，仅仅在WebView中提供WebViewClient即可，使用setWebViewClient()方法。例如： </p>
+                                <pre><code>WebView myWebView = (WebView) findViewById(R.id.webview);
+myWebView.setWebViewClient(new WebViewClient());</code></pre>
+                                <p>
+                                    完成，现在用户点击的所有链接都会在WebView中打开。如果你想要在点击链接并载入网页的时候做更多的操作，请创建自己的WebViewClient
+并重写java.lang.String)
+shouldOverrideUrlLoading()方法。例如：
+                                </p>
+                                <pre><code>private class MyWebViewClient extends WebViewClient { 
+@Override 
+public boolean shouldOverrideUrlLoading(WebView view, String url) { 
+if (Uri.parse(url).getHost().equals("www.example.com")) { 
+//这是我的网页，所以不要重写，让我的WebView载入它
+return false; 
+} 
+// 如果不是我的网页，则启动另外的Activity来处理该URL
+Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url)); 
+startActivity(intent); 
+return true; 
+}
+}</code></pre>
+                                <p>然后给WebView创建一个WebViewClient的实例。 </p>
+                                <pre><code>WebView myWebView = (WebView) findViewById(R.id.webview);
+myWebView.setWebViewClient(new MyWebViewClient());</code></pre>
+                                <p>
+                                    现在当用户点击一个链接，系统会调用java.lang.String)
+shouldOverrideUrlLoading() , 它会辨别URL主机是否要匹配指定的域名（就像我们上面列举的一样）。如果它不能匹配，则该方法返回false，一个Intent会创建并启动默认的Activity来处理该URL（它一般解析为用户的默认浏览器）。
+                                </p>
+                                <h3><a name="_Toc371431890"></a><a name="_Toc370303262">操作网页历史</a></h3>
+                                <p>当你的WebView重写URL的载入，它会自动累积访问过的网页历史。你可以使用goBack()方法和goForward()方法操纵回退和向前功能。 例如，下面是Activity使用返回按钮操作“回退”功能。</p>
+                                <pre><code>@Override
+public boolean onKeyDown(int keyCode, KeyEvent event) {
+// Check if the key event was the Back button and if there's history
+if ((keyCode == KeyEvent.KEYCODE_BACK) && myWebView.canGoBack() { 
+myWebView.goBack(); 
+return true; 
+} 
+// If it wasn't the Back key or there's no web page history, bubble up to the default 
+// system behavior (probably exit the activity) 
+return super.onKeyDown(keyCode, event);
+}</code></pre>
+                                <p>如果有网页历史则canGoBack()方法返回True，同样的，你可以使用canGoForward()来检查是否有“前进”历史。如果你不执行这个检查，当用户到达历史的尽头的时候，goBack()和goForward()什么都不做。</p>
+                                <h1><a name="_Toc371431891">六、</a><a
+                                    name="_Toc370303280">获取和设置
+Cookie</a></h1>
+                                <h2><a name="_Toc371431892">WP8</a></h2>
+                                <p>
+                                    <b>注意</b>： 如果服务器发送
+HTTPOnly Cookie，则应在请求上创建一个 <a
+    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.net.cookiecontainer(v=vs.105).aspx"><strong>System.Net.CookieContainer</strong></a> 用于保存
+Cookie，尽管将无法看到或访问该容器中存储的 Cookie。如果不创建容器来保存 Cookie，则请求将失败。有关 HTTPOnly Cookie 的更多信息，请参见<a href="http://go.microsoft.com/fwlink/?LinkId=155806"><strong>HTTPOnly
+cookies</strong></a>。
+                                </p>
+                                <h3><a name="_Toc371431893"></a><a name="_Toc370303281">设置请求消息上的 Cookie</a></h3>
+                                <p class="MsoListParagraph" style='margin-left: 18.0pt;'>
+                                    1. 为
+HttpWebRequest 的 HttpWebRequest.CookieContainer 属性创建一个
+                            <a
+                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.net.cookiecontainer(v=vs.105).aspx"><strong>System.Net.CookieContainer</strong></a>对象。
+                                </p>
+                                <p>
+                                    request.CookieContainer = new
+CookieContainer();
+                                </p>
+                                <p class="MsoListParagraph" style='margin-left: 18.0pt;'>
+                                    2. 使用
+CookieContainer.Add 方法将 Cookie 对象添加到 <a
+    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.net.httpwebrequest.cookiecontainer(v=vs.105).aspx"><strong>HttpWebRequest.CookieContainer</strong></a>。
+                                </p>
+                                <pre><code>request.CookieContainer.Add(new Uri("http://windowsteamblog.com/windows_phone/b/windowsphone/rss.aspx"),
+    new Cookie("id", "1234"));</code></pre>
+                                <h3><a name="_Toc371431894"></a><a name="_Toc370303282">获取响应消息上的 Cookie</a></h3>
+                                <p class="MsoListParagraph" style='margin-left: 18.0pt;'>
+                                    1. 在请求上创建一个
+System.Net.CookieContainer 以保存对响应发送的 Cookie 对象。即使没有发送任何 Cookie 也必须执行此操作。
+                                </p>
+                                <pre><code>request.CookieContainer = new CookieContainer();</code></pre>
+                                <p class="MsoListParagraph" style='margin-left: 18.0pt;'>
+                                    2. 检索
+HttpWebResponse 的 HttpWebResponse.Cookies 属性中的值。在此示例中，将检索 Cookie 并将它们保存到独立存储中。
+                                </p>
+                                <pre><code>private void ReadCallback(IAsyncResult asynchronousResult)
+{
+    HttpWebRequest request = (HttpWebRequest)asynchronousResult.AsyncState;
+    HttpWebResponse response = (HttpWebResponse)
+        request.EndGetResponse(asynchronousResult);
+    using (IsolatedStorageFile isf =
+        IsolatedStorageFile.GetUserStoreForApplication())
+    {
+        using (IsolatedStorageFileStream isfs = isf.OpenFile("CookieExCookies",
+            FileMode.OpenOrCreate, FileAccess.Write))
+        {
+            using (StreamWriter sw = new StreamWriter(isfs))
+            {
+                foreach (Cookie cookieValue in response.Cookies)
+                {
+                    sw.WriteLine("Cookie: " + cookieValue.ToString());
+                }
+                sw.Close();
+            }
+        }
+
+    }
+}</code></pre>
+                                <h3><a name="_Toc371431895"></a><a name="_Toc370303283">示例</a></h3>
+                                <p>
+                                    下面的示例演示如何创建 Web 请求并向该请求添加 Cookie。此示例还演示如何从 Web 响应提取 Cookie，如何将 Cookie 写入独立存储中的文件以及从独立存储中进行读取。运行此示例时，将在 TextBlock 控件中显示
+System.Net.Cookie 值。
+                                </p>
+                                <p><b>C#</b></p>
+                                <pre><code>using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Animation;
+using System.Windows.Shapes;
+using System.Net.Browser;
+using System.IO;
+using System.Text;
+using System.IO.IsolatedStorage;
+
+
+namespace CookiesEx
+{
+    public partial class MainPage : PhoneApplicationPage
+    {
+
+        public MainPage()
+        {
+            InitializeComponent();
+
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            InitializeWebRequestClientStackForURI();
+            ReadFromIsolatedStorage();
+        }
+
+        private void InitializeWebRequestClientStackForURI()
+        {
+
+            // Create a HttpWebRequest.
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(new Uri("http://windowsteamblog.com/windows_phone/b/windowsphone/rss.aspx"));
+
+            //Create the cookie container and add a cookie.
+            request.CookieContainer = new CookieContainer();
+
+
+            // This example shows manually adding a cookie, but you would most
+            // likely read the cookies from isolated storage.
+            request.CookieContainer.Add(new Uri("http://windowsteamblog.com/windows_phone/b/windowsphone/rss.aspx"),
+                new Cookie("id", "1234"));
+
+            // Send the request.
+            request.BeginGetResponse(new AsyncCallback(ReadCallback), request);
+        }
+
+        // Get the response and write cookies to isolated storage.
+        private void ReadCallback(IAsyncResult asynchronousResult)
+        {
+            HttpWebRequest request = (HttpWebRequest)asynchronousResult.AsyncState;
+            HttpWebResponse response = (HttpWebResponse)
+                request.EndGetResponse(asynchronousResult);
+            using (IsolatedStorageFile isf =
+                IsolatedStorageFile.GetUserStoreForApplication())
+            {
+                using (IsolatedStorageFileStream isfs = isf.OpenFile("CookieExCookies",
+                    FileMode.OpenOrCreate, FileAccess.Write))
+                {
+                    using (StreamWriter sw = new StreamWriter(isfs))
+                    {
+                        foreach (Cookie cookieValue in response.Cookies)
+                        {
+                            sw.WriteLine("Cookie: " + cookieValue.ToString());
+                        }
+                        sw.Close();
+                    }
+                }
+
+            }
+        }
+        private void ReadFromIsolatedStorage()
+        {
+            using (IsolatedStorageFile isf = IsolatedStorageFile.GetUserStoreForApplication())
+            {
+                using (IsolatedStorageFileStream isfs =
+                   isf.OpenFile("CookieExCookies", FileMode.OpenOrCreate))
+                {
+                    using (StreamReader sr = new StreamReader(isfs))
+                    {
+                        tb1.Text = sr.ReadToEnd();
+                        sr.Close();
+                    }
+                }
+
+            }
+        }
+    }
+}</code></pre>
+                                <p><b>XAML</b></p>
+                                <textarea><phone:PhoneApplicationPage x:Class="CookiesEx.MainPage" 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="800">
+    <StackPanel x:Name="LayoutRoot" Width="390">
+         <Button Width="372" Height="173" Content="Click to send request" 
+                HorizontalAlignment="Left"
+                x:Name="button1" Click="button1_Click" Margin="5"/>
+        <TextBlock TextWrapping="Wrap" Foreground="{StaticResource PhoneForegroundBrush}" Height="267" Name="tb1" Width="382" FontSize="22" />
+    </StackPanel>
+</phone:PhoneApplicationPage></textarea>
+                                <h2><a name="_Toc371431896">Win8</a></h2>
+                                <p>
+                                    WinRT对WebView的功能做了很多的限制，所以本身webview控件是获取不到cookie我们可以用<a
+                                        href="http://msdn.microsoft.com/en-us/library/windows/apps/system.net.httpwebrequest(v=VS.110).aspx"><strong>HttpWebRequest</strong></a>的<a
+                                            href="http://msdn.microsoft.com/en-us/library/windows/apps/system.net.httpwebrequest.cookiecontainer(v=vs.110).aspx"><strong>CookieContainer</strong></a>来完成cookie的设置。
+                                </p>
+                                <h2><a name="_Toc371431897">Android</a></h2>
+                                <p>在android里面，为使HttpClient中保存下来的Cookie设置到WebView组件里，让WebView也保持住Cookie状态，我们需要用到CookieSyncManager和CookieManager类。在webView调用webView.loadUrl方法之前做以下设置即可给WebView设置Cookie</p>
+                                <pre><code>CookieSyncManager.createInstance(context);  
+CookieManager cookieManager = CookieManager.getInstance();  
+cookieManager.setAcceptCookie(true);  
+cookieManager.removeSessionCookie();//移除  
+cookieManager.setCookie(url, cookies);//cookies是在HttpClient中获得的cookie  
+CookieSyncManager.getInstance().sync();</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <!--End Content-->
+        <div style="text-align: right" class="gotoTop"><a href="javascript:scroll(0,0)"></a></div>
+        <!--Begin ProudctLinks-->
+        <div class="ms-pro-links">
+            <div class="grid-container clearfix">
+                <div class="cam-links">
+                    其它微软站点
+		<a href="http://www.microsoft.com/zh-cn/default.aspx">微软中国官方网站</a>
+                    <a href="http://www.microsoft.com/zh-cn/download/default.aspx?WT.mc_id=MSCOM_zh-cn_HP_Footer_downloads" target="_blank">微软中国下载中心</a>
+                    <a href="http://www.microsoftstore.com.cn?WT.mc_id=MSCOM_003" target="_blank">微软中国官方商城</a>
+                    <a href="http://www.microsoft.com/china/newsletter/" target="_blank">订阅电子期刊</a>
+                    <a href="https://sales.liveperson.net/hc/21661174/?cmd=file&file=visitorWantsToChat&site=21661174&byhref=1&SESSIONVAR!skill=APGC.PRC.ZH.CS.CON.PRESLS.GENERAL" target="_blank">联系微软销售代表</a>
+                    <a href="http://www.microsoft.com/zh-cn/sitemap.aspx" target="_blank">网站地图</a>
+                </div>
+            </div>
+        </div>
+        <!--End ProudctLinks-->
+        <!--Begin footer-->
+        <div class="footer">
+            <div class="grid-container">
+                <img src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-type-1x.png" alt="microsoft" class="logo">
+                <ul>
+                    <li><a href="http://www.miibeian.gov.cn/" title="">京ICP备09042378号-6</a></li>
+                    <li><a href="https://profile.microsoft.com/RegSysProfileCenter/default.aspx?lcid=2052" title="">个人信息中心</a></li>
+                    <li><a href="http://support.microsoft.com/contactus/?ws=support" title="">与我们联系</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkId=248681" title="">隐私权声明</a></li>
+                    <li><a href="http://go.microsoft.com/?linkid=4412892" title="">使用条款</a></li>
+                    <li><a href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Trademarks/EN-US.aspx" title="">商标</a></li>
+                    <li>&copy; 2013 Microsoft</li>
+                </ul>
+            </div>
+        </div>
+        <!--End footer-->
+        <!-- Begin MDA WEDCS -->
+        <script type="text/JavaScript">
+            var varSegmentation = 0;
+            var varClickTracking = 1;
+            var varCustomerTracking = 1;
+            var varAutoFirePV = 1;
+            var Route = "#";
+            var Ctrl = "#"
+            //document.write("<script type='text/javascript' src='" + window.location.protocol + "//c.microsoft.com/ms.js'><"+"/script>");
+        </script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="./assets/js/script.js"></script>
+        <script type="text/javascript" src="./js/siteSearch.js"></script>
+        <noscript>
+            <img alt="" width="1" height="1" src="http://c.microsoft.com/trans_pixel.aspx/" />
+        </noscript>
+        <!-- Begin MDA WEDCS -->
+    </div>
+</body>
+</html>

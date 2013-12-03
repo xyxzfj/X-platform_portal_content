@@ -1,0 +1,916 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>LBS应用: LBS Migration</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="css/templete.css" type="text/css" media="all" />
+    <meta charset="UTF-8">
+</head>
+<body class="level-2">
+    <div class="wrapper">
+        <!--Begin header-->
+        <div class="header">
+            <div class="grid-container clearfix">
+                <div class="header-left">
+                    <img alt="Microsoft" src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-lg-1x.png" width="94" height="20">
+                    <h1>X-Platform</h1>
+                </div>
+                <div id="mscom-search" class="mscom-search" style="margin-top: 37px;">
+                    <div class="search-form">
+                        <form action="" id="search-form">
+                            <div class="input-wrapper">
+                                <label class="screen-reader-text" for="search-input">搜索 Microsoft.com</label>
+                                <input id="search-input" type="text" class="input-area" autocomplete="off">
+                            </div>
+                            <button class="search-submit" id="search-btn" type="submit">
+                                <img width="16" height="16" alt="Submit" src="http://i.s-microsoft.com/global/imagestore/PublishingImages/sprites/search-button-blue.png"></button>
+                        </form>
+                    </div>
+                    <div class="search-results-box" id="results">
+                        <div class="search-scope">
+                            <ul>
+                                <li class=""><a class="checked" search="microsoft" role="search">搜索 Microsoft.com</a></li>
+                                <li class=""><a search="internet" role="search">搜索互联网</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End header-->
+        <br />
+        <!--Begin Content-->
+        <div class="content">
+            <div class="wrapper">
+                <div class="wrapper-header">
+                    <div>
+                        <a href="index.html">
+                            <img src="./assets/image/banner_1.jpg"></a>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="nav">
+                        <div class="block article-nav-block">
+                            <h2>移动应用开发生命周期</h2>
+                            <div class="menu">
+                                <h3><a href="idea.html">计划<span>Idea/Planning</span></a></h3>
+                                <ul>
+                                    <li><a href="idea_01.html">平台总览</a></li>
+                                    <li><a href="idea_02.html">开发工具、开发环境和模拟器</a></li>
+                                    <li><a href="idea_03.html">应用结构和生命周期</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="design.html">设计<span>Design</span></a></h3>
+                                <ul>
+                                    <li><a href="design_01.html">UI Layout的设计</a></li>
+                                    <li><a href="design_02.html">UI的控件</a></li>
+                                    <li><a href="design_03.html">UI页面的控制和导航</a></li>
+                                    <li><a href="design_04.html">不同屏幕尺寸和分辨率的适配</a></li>
+                                    <li><a href="design_05.html">第三方SDK</a></li>
+                                    <li><a href="design_06.html">游戏开发</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu active">
+                                <h3><a href="developing.html">开发<span>Developing</span></a></h3>
+                                <ul>
+                                    <li><a href="developing_01.html">开发语言</a></li>
+                                    <li><a href="developing_02.html">Audio、Video Player应用的开发</a></li>
+                                    <li><a href="developing_03.html">General APIs Mapping</a></li>
+                                    <li><a href="developing_04.html">IAP应用内支付</a></li>
+                                    <li><a href="developing_05.html">LBS应用</a></li>
+                                    <li><a href="developing_06.html">LBS、镜头和传感器应用接口使用</a></li>
+                                    <li><a href="developing_07.html">Native Code（C和C++）支持</a></li>
+                                    <li><a href="developing_08.html">Push Notification</a></li>
+                                    <li><a href="developing_09.html">Sharing in Social Network</a></li>
+                                    <li><a href="developing_10.html">Source Code Control</a></li>
+                                    <li><a href="developing_11.html">UI上的Data Binding</a></li>
+                                    <li><a href="developing_12.html">Windows 8.1和WP 8 Sharing应用分享功能实现</a></li>
+                                    <li><a href="developing_13.html">多媒体</a></li>
+                                    <li><a href="developing_14.html">后台任务和多任务处理</a></li>
+                                    <li><a href="developing_15.html">获取后台服务器数据</a></li>
+                                    <li><a href="developing_16.html">浏览器控件WebView</a></li>
+                                    <li><a href="developing_17.html">数据库（SQLite）</a></li>
+                                    <li><a href="developing_18.html">数据网络和数据通讯</a></li>
+                                    <li><a href="developing_19.html">通话和短信功能</a></li>
+                                    <li><a href="developing_20.html">图形处理(Drawing & Animation)</a></li>
+                                    <li><a href="developing_21.html">文件系统和应用设置</a></li>
+                                    <li><a href="developing_22.html">应用间通信</a></li>
+                                    <li><a href="developing_23.html">支付方式</a></li>
+                                    <li><a href="developing_24.html">Windows 8.1应用外设开发</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="testing.html">测试<span>Testing</span></a></h3>
+                                <ul>
+                                    <li><a href="testing_01.html">Windows 8 and WP 8开发FAQ</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu last">
+                                <h3><a href="distribute.html">发布<span>Distribute</span></a></h3>
+                                <ul>
+                                    <li><a href="distribute_01.html">应用商店(发布和更新应用)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="block success-story-nav-block">
+                            <h2>成功案例</h2>
+                        </div>
+                        <div class="block others">
+                            <a href="sample_code.html" class="left">示例代码</a>
+                            <a href="http://msdn.microsoft.com/zh-cn/dn473954" class="right">教学视频</a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="textlist">
+                            LBS应用<br />
+                            <ul>
+                                <li><a href="developing_05.html">LBS App</a>
+                                <li><a href="developing_051.html">●LBS Migration</a>
+                            </ul>
+                        </div>
+                        <h3 class="title">LBS Migration<span><a href="index.html">返回首页&gt;</a></span></h3>
+                        <div class="article-content">
+                            <p class="MsoTocHeading">目录</p>
+                            <p class="MsoToc1"><a href="#_Toc372094555">从Android/IOS转移到Windows</a></p>
+                            <p class="MsoToc2"><a href="#_Toc372094556">1、介绍</a></p>
+                            <p class="MsoToc2"><a href="#_Toc372094557">2、地图控件</a></p>
+                            <p class="MsoToc2"><a href="#_Toc372094558">3、应用示例</a></p>
+                            <p class="MsoToc3"><a href="#_Toc372094559">3.1、在地图上显示当前位置</a></p>
+                            <p class="MsoToc3"><a href="#_Toc372094560">3.2、在地图中显示路线和方向</a></p>
+                            <p class="MsoToc3"><a href="#_Toc372094561">3.3、将UIElements元素添加到地图控件中</a></p>
+                            <p class="MsoToc3"><a href="#_Toc372094562">3.4、为Windows Phone 8请求行车或步行路线</a></p>
+                            <p class="MsoToc3"><a href="#_Toc372094563">3.5、响应Windows Phone 8的方向请求</a></p>
+                            <br />
+                            <h1><a name="_Toc372094555">从Android/IOS转移到Windows</a></h1>
+                            <h2><a name="_Toc372094556">1、介绍</a></h2>
+                            <p>
+                                Android/IOS和Windows Phone/Windows Store平台上都为LBS应用提供了各种API，应用开发者并不需要做很多事情就可以开发出一款功能强大的LBS应用程序。在Android中，使用<a
+                                    href="http://developer.android.com/reference/com/google/android/gms/maps/MapView.html">MapView</a>来显示地图，并使用<a
+                                        href="http://developer.android.com/google/play-services/location.html">Google
+Location Service</a>提供的API进行定位。在IOS中，<a
+    href="https://developer.apple.com/library/ios/documentation/MapKit/Reference/MKMapView_Class/MKMapView/MKMapView.html#//apple_ref/occ/cl/MKMapView">MKMpaView</a>类提供了在应用程序中显示地图数据的功能，并使用<a
+        href="https://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManager_Class/CLLocationManager/CLLocationManager.html#//apple_ref/occ/cl/CLLocationManager">CLocationManager</a>提供的API进行定位。在Windows Phone/Windows
+Store中，使用<a
+    href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/microsoft.phone.maps.controls.map(v=vs.105).aspx">Map</a>
+                                (Windows Phone) 或者<a
+                                    href="http://msdn.microsoft.com/en-us/library/hh846481.aspx">Bing Map</a> (Windows
+Store)控件来显示地图，使用<a
+    href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/windows.devices.geolocation.aspx">Windows.Device.Geolocation</a>来获取当前位置。
+                            </p>
+                            <h2><a name="_Toc372094557">2、地图控件</a></h2>
+                            <p>
+                                在Android中，<a
+                                    href="http://developer.android.com/reference/com/google/android/gms/maps/MapView.html">MapView</a>可以用来显示地图（数据获取自谷歌地图服务），当其获取焦点时，会捕捉到按键和触摸手势并移动地图。一个<a
+                                        href="http://developer.android.com/reference/com/google/android/gms/maps/GoogleMap.html">GoogleMap</a>对象只能通过<a
+                                            href="http://developer.android.com/reference/com/google/android/gms/maps/MapView.html#getMap()">getMap()</a>获取。
+                            </p>
+                            <p>
+                                在IOS中，<a
+                                    href="https://developer.apple.com/library/ios/documentation/MapKit/Reference/MKMapView_Class/MKMapView/MKMapView.html#//apple_ref/occ/cl/MKMapView">MKMpaView</a>类提供了在应用程序中显示地图数据的功能，想要在应用程序中添加地图功能，只要将地图控件拖到适当的位置即可，同时也可以通过代码的方式添加地图控件，只要创建一个<a
+                                        href="https://developer.apple.com/library/ios/documentation/MapKit/Reference/MKMapView_Class/MKMapView/MKMapView.html#//apple_ref/occ/cl/MKMapView">MKMapView</a>的实例，通过<a
+                                            href="https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIView_Class/UIView/UIView.html#//apple_ref/occ/instm/UIView/initWithFrame:">innitWithFrame</a>将其初始化，然后作为视图的一个子视图加入到应用程序中去。
+                            </p>
+                            <p>
+                                迁移到Windows Phone时，可以使用<a
+                                    href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/microsoft.phone.maps.controls.map(v=vs.105).aspx">Map</a>控件来显示地图，该控件是Windows Phone SDK的一部分，在使用控件之前，必须选定WMAppmanifest.xml中的ID_Cap_Map功能。
+                            </p>
+                            <p>如果直接从工具箱中拖放地图控件，则会自动添加Microsoft.Phone.Map程序集的引用，如果通过编写XAML添加控件，还需要将xmlns声明添加到phone:PhoneApplicationPage元素。</p>
+                            <textarea>xmlns:maps="clr-namespace:Microsoft.Phone.Maps.Controls;assembly=Microsoft.Phone.Maps"</textarea>
+                            <p>
+                                有关向 Windows Phone 8 项目添加 Map 控件的更多信息，请参见<a
+                                    href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/jj207033(v=vs.105).aspx">如何将地图控件添加到
+Windows Phone 8 中的页面中</a>。
+                            </p>
+                            <p>地图显示后,您首先要做的事情之一就是设置地图的中心和缩放。</p>
+                            <p>
+                                可以使用控件的&nbsp;<a
+                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.maps.controls.map.center(v=vs.105).aspx">Center</a>&nbsp;属性来设置&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.maps.controls.map(v=vs.105).aspx">Map</a>&nbsp;控件的中心。要使用 XAML 设置属性，请将一个（纬度，经度）对分配给&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.maps.controls.map.center(v=vs.105).aspx">Center</a>&nbsp;属性。以下代码示例演示了如何使用 XAML 设置&nbsp;<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.maps.controls.map(v=vs.105).aspx">Map</a>&nbsp;的中心。
+                            </p>
+                            <p>
+                                使用&nbsp;<a
+                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.maps.controls.map.zoomlevel(v=vs.105).aspx">ZoomLevel</a>&nbsp;属性设置您要用来显示地图的初始分辨率。<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.maps.controls.map.zoomlevel(v=vs.105).aspx">ZoomLevel</a>&nbsp;接受从 1 到 20 的值，其中 1 对应于完全放大地图，并且缩放级别越高，放大所采用的分辨率也更高。以下代码示例演示如何在 XAML 和C#代码中使用<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.maps.controls.map.zoomlevel(v=vs.105).aspx">ZoomLevel</a>&nbsp;属性设置地图的缩放。
+                            </p>
+                            <p>
+                                地图控件的&nbsp;<a
+                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.maps.controls.map.center(v=vs.105).aspx">Center</a>&nbsp;属性要求来自&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.device.location(v=vs.105).aspx">System.Device.Location</a>&nbsp;命名空间的&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.device.location.geocoordinate(v=vs.105).aspx">GeoCoordinate</a>&nbsp;的类型的值。如果您正在使用&nbsp;<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/windows.devices.geolocation.aspx">Windows.Devices.Geolocation</a>&nbsp;命名空间的位置服务，您需要将<a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/windows.devices.geolocation.geocoordinate.aspx">Windows.Devices.Geolocation.Geocoordinate</a>&nbsp;转换为&nbsp;<a
+                                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.device.location.geocoordinate(v=vs.105).aspx">System.Device.Location.GeoCoordinate</a>&nbsp;值以与地图控件结合使用。
+                            </p>
+                            <p>地图应用中一个常用的方案是：从地图中某个位置移动到另一个位置，或者从一个视图移动到另一个视图。每当平移、缩放、旋转或倾斜导致地图的位置发生更改时，都将定义新的地图视图。SetView()&nbsp;方法用于定义地图视图，该方法可包含如下参数：视图的中心、缩放级别、行进方向、间距、LocationRectangle 和用于从一个视图转到另一个视图的动画。</p>
+                            <p>
+                                设置地图的中心和缩放级别后，您可能想要设置地图的制图模式。制图模式将定义
+                                <a
+                                    href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/microsoft.phone.maps.controls.map(v=vs.105).aspx">Map</a>
+                                控件上坐标系的显示以及坐标系从屏幕坐标到世界坐标的转换。您可以使用 <a
+                                    href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/microsoft.phone.maps.controls.map(v=vs.105).aspx">Map</a>
+                                控件的 <a
+                                    href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/microsoft.phone.maps.controls.map.cartographicmode(v=vs.105).aspx">CartographicMode</a>
+                                属性设置地图的制图模式。此属性接受 <a
+                                    href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/microsoft.phone.maps.controls.mapcartographicmode(v=vs.105).aspx">MapCartographicMode</a>
+                                枚举中的值。
+                            </p>
+                            <p>
+                                可通过使用&nbsp;<a
+                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.maps.controls.map.colormode(v=vs.105).aspx">ColorMode</a>&nbsp;属性，以浅色或深色模式来显示地图。此属性可接受的值（<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.maps.controls.mapcolormode(v=vs.105).aspx">Light</a>&nbsp;或&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.maps.controls.mapcolormode(v=vs.105).aspx">Dark</a>）将在<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.maps.controls.mapcolormode(v=vs.105).aspx">MapColorMode</a>&nbsp;枚举中进行指定。默认值为&nbsp;<a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.maps.controls.mapcolormode(v=vs.105).aspx">Light</a>。
+                            </p>
+                            <p>您也可以在地图上显示其他元素，例如地标和步行街构造。</p>
+                            <p>更多信息，请参见：</p>
+                            <p>
+                                <a
+                                    href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/jj207033(v=vs.105).aspx">如何将地图控件添加到
+Windows Phone 8 中的页面中</a>
+                            </p>
+                            <p>
+                                <a
+                                    href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/jj207037(v=vs.105).aspx">如何将 UIElements
+添加到
+Windows Phone 8 中的地图控件中</a>
+                            </p>
+                            <p>
+                                <a
+                                    href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/jj244363(v=vs.105).aspx">如何在 Windows
+Phone 8 中的地图中显示路线和方向</a>
+                            </p>
+                            <p>&nbsp;</p>
+                            <p>
+                                对于Windows Store应用，需要使用<a
+                                    href="http://msdn.microsoft.com/en-us/library/hh846481.aspx">BingMap</a>控件来显示地图，新建一个Windows Store应用程序，添加命名空间xmlns:bm=&quot;using:Bing.Maps&quot;，将一下XAML代码放入Tag标签内，并用你的Bing Maps Key替换INSERT_YOUR_BING_MAPS_KEY占位符。
+                            </p>
+                            <pre>&lt;bm:Map Credentials=&quot;INSERT_YOUR_BING_MAPS_KEY&quot; x:Name=&quot;myMap&quot;&gt;&lt;/bm:Map&gt;</pre>
+                            <p>执行程序，地图控件就会出现。同Windows Phone中的地图控件一样，Windows Store应用程序中的地图控件也可以通过设置各种参数对其进行更加精细化的设置。</p>
+                            <p>详细用法，请参见<a href="http://msdn.microsoft.com/en-us/library/hh854973.aspx">代码示例</a>。</p>
+                            <h2><a name="_Toc372094558">3、应用示例</a></h2>
+                            <p>
+                                在Android中，使用的是<a
+                                    href="http://developer.android.com/reference/android/location/LocationManager.html">LocationManager</a>服务获取当前位置，和其他系统服务一样，你无法直接初始化一个<a
+                                        href="http://developer.android.com/reference/android/location/LocationManager.html">LocationManager</a>实例，而是要通过调用&nbsp;<a
+                                            href="http://developer.android.com/reference/android/content/Context.html#getSystemService(java.lang.String)">getSystemService(Context.LOCATION_SERVICE)</a>，该方法返回一个新的<a
+                                                href="http://developer.android.com/reference/android/location/LocationManager.html">LocationManager</a>实例的句柄。
+                            </p>
+                            <p>
+                                在IOS中，系统提供了三个类来管理位置信息：CLLocation
+CLLocationManager 和
+CLLHeading(不常用)。除了使用GPS来获取当前的位置信息外，IOS也可以基于WiFi基站和无线发射塔来获得位置信息。GPS的精度最高，可以精确到米级别，但是也最耗电。
+                            </p>
+                            <p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 在Windows Phone和Windows Store应用程序中，都使用<a
+                                    href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/windows.devices.geolocation.aspx">Windows.Device.Geolocation</a>来获取当前位置，首先要初始化 Geolocator 对象，并设置 DesiredAccuracyInMeters 属性。随后，将调用 GetGeopositionAsync 方法。
+                            </p>
+                            <p>
+                                Geolocator
+geolocator = new Geolocator();
+                            </p>
+                            <p>
+                                geolocator.DesiredAccuracyInMeters
+= 50;
+                            </p>
+                            <h3><a name="_Toc372094559">3.1、在地图上显示当前位置</a></h3>
+                            <p><b>3.1.1</b><b>、创建一个工程</b></p>
+                            <p>1、在 Visual Studio 中创建新的 Windows&nbsp;Phone 应用项目。将新项目命名为&nbsp;<b>ShowMyLocationOnMap</b>。</p>
+                            <p>
+                                2、（可选，更改应用程序标题）在 MainPage.xaml 中，在设计器内，选择包含应用标题&nbsp;<b>MY
+APPLICATION&nbsp;</b>的第一个文本块。将其中的文本更改为<b>&nbsp;SHOW MY LOCATION ON MAP</b>。
+                            </p>
+                            <p>
+                                3、（可选，更改页面标题）在设计器中，选择包含页面标题“<b>page
+name</b>”的第二个文本块。将文本更改为“<b>my location</b>”，以重命名该页面。
+                            </p>
+                            <p>4、在应用程序清单文件中，选择 ID_CAP_LOCATION 和 ID_CAP_MAP属性，以表示您的应用使用位置和地图 API。然后保存并关闭清单文件</p>
+                            <p><b>3.1.2</b><b>、添加地图控件</b></p>
+                            <p>
+                                更多信息，请参见<a
+                                    href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/jj207033(v=vs.105).aspx">如何为Windows
+Phone 8应用程序的页面添加地图控件</a>。
+                            </p>
+                            <p>1、在工具箱中，选择地图控件并将其拖放至设计器。</p>
+                            <p>如果你想通过添加XAML代码的方式添加控件，你必须将下面的xmlns声明代码添加到phone:PhoneApplicationPage元素中，如果你通过拖放的形式添加map控件，则下面的声明代码回自动添加。</p>
+                            <pre>xmlns:Controls=&quot;clr-namespace:Microsoft.Phone.Maps.Controls;assembly=Microsoft.Phone.Maps&quot;</pre>
+                            <p>2、在属性窗口中，将地图控件命名为<b>mapWithMyLocation</b></p>
+                            <p>3、在 MainPage.xaml 中的 XAML 代码窗口中，移除地图元素中除名称之外的所有属性。这会让地图控件可以填充页面上的可用空间。现在地图元素的 XAML 中包含以下代码：</p>
+                            <textarea><maps:Map x:Name=”mapWithMyLocation”/></textarea>
+                            <p><b>3.1.3</b><b>、添加一个转换地理坐标的辅助类</b></p>
+                            <p>
+                                当你获取到当前位置时，代码返回的是<a
+                                    href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/windows.devices.geolocation.geocoordinate.aspx">Windows.Device.Geolocation.Geocoordinate</a>。辅助类中的代码可以将<a
+                                        href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/windows.devices.geolocation.geocoordinate.aspx">Windows.Device.Geolocation.Geocoordinate</a>转换为地图控件所需要的<a
+                                            href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/system.device.location.geocoordinate(v=vs.105).aspx">System.Device.Location.GeoCoordinate</a>。
+                            </p>
+                            <p>
+                                如果想获取更多该转换的拓展方法，还有其他有用的地图API拓展，请下载<a href="http://go.microsoft.com/fwlink/?LinkId=272076">Windows&nbsp;
+Phone Toolkit</a>。
+                            </p>
+                            <p>1、在解决方案资源管理器中，右击项目，然后选择“<b>添加类</b>”。将新的帮助器类命名为&nbsp;<b>CoordinateConverter</b>。单击“<b>确定</b>”。</p>
+                            <p>2、使用以下代码替换新的类文件中的代码。</p>
+                            <pre><code>using System;
+using System.Device.Location; // Provides the GeoCoordinate class.
+using Windows.Devices.Geolocation; //Provides the Geocoordinate class.
+
+namespace ShowMyLocationOnMap
+{
+    public static class CoordinateConverter
+    {
+        public static GeoCoordinate ConvertGeocoordinate(Geocoordinate geocoordinate)
+        {
+            return new GeoCoordinate
+                (
+                geocoordinate.Latitude,
+                geocoordinate.Longitude,
+                geocoordinate.Altitude ?? Double.NaN,
+                geocoordinate.Accuracy,
+                geocoordinate.AltitudeAccuracy ?? Double.NaN,
+                geocoordinate.Speed ?? Double.NaN,
+                geocoordinate.Heading ?? Double.NaN
+                );
+        }
+    }
+}</code></pre>
+                            <p><b>3.1.4</b><b>、在地图上显示你的位置</b></p>
+                            <p>1、打开 MainPage.xaml.cs 代码文件。导入以下命名空间：</p>
+                            <pre><code>using Microsoft.Phone.Maps.Controls;
+using System.Device.Location; // Provides the GeoCoordinate class.
+using Windows.Devices.Geolocation; //Provides the Geocoordinate class.
+using System.Windows.Media;
+using System.Windows.Shapes;</code></pre>
+                            <p>2、在 MainPage.xaml.cs 代码文件中的 MainPage 类中，创建下面的新&nbsp;方法。</p>
+                            <pre><code>private async void ShowMyLocationOnTheMap()
+{
+}</code></pre>
+                            <p style='margin: 0cm; margin-bottom: .0001pt; text-indent: 21.0pt'>3、在 MainPage 类的构造函数中，添加对&nbsp;ShowMyLocationOnTheMap()&nbsp;方法的调用。</p>
+                            <pre><code>// Constructor
+public MainPage()
+{
+		InitializeComponent();
+            ShowMyLocationOnTheMap();
+}</code></pre>
+                            <p>4、在&nbsp;ShowMyLocationOnTheMap&nbsp;方法中，添加以下代码以获取您的当前位置。该代码使用您在上一步中添加至项目的&nbsp;CoordinateConverter&nbsp;类。</p>
+                            <pre><code>// Get my current location.
+Geolocator myGeolocator = new Geolocator();
+Geoposition myGeoposition = await myGeolocator.GetGeopositionAsync();
+Geocoordinate myGeocoordinate = myGeoposition.Coordinate;
+GeoCoordinate myGeoCoordinate =
+	CoordinateConverter.ConvertGeocoordinate(myGeocoordinate);</code></pre>
+                            <p>5、在<b>ShowMyLocationOnTheMap</b>方法中，添加以下代码使您的当前位置成为显示在地图控件上的地图的中心。</p>
+                            <pre><code>// Make my current location the center of the Map.
+this.mapWithMyLocation.Center = myGeoCoordinate;
+this.mapWithMyLocation.ZoomLevel = 13;</code></pre>
+                            <p><b>3.1.5</b><b>、在地图上标记出你的位置</b></p>
+                            <p>
+                                本示例中使用一个小圆圈标记出你在地图上的位置，相关任务的更多信息，请参见<a
+                                    href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/jj207037(v=vs.105).aspx">如何向Windows
+Phone 8地图控件中添加UIElements元素</a>
+                            </p>
+                            <p>
+                                1、在<b>ShowMyLocationOnTheMap</b>方法中，添加以下代码以创建用以标记您在地图上的位置的圆圈。该代码创建蓝色的小圆圈，它直径 20 像素，50%
+不透明。
+                            </p>
+                            <pre><code>// Create a small circle to mark the current location.
+Ellipse myCircle = new Ellipse();
+myCircle.Fill = new SolidColorBrush(Colors.Blue);
+myCircle.Height = 20;
+myCircle.Width = 20;
+myCircle.Opacity = 50;</code></pre>
+                            <p>
+                                2、在<b>ShowMyLocationOnTheMap</b>方法中，添加以下代码以创建&nbsp;<a
+                                    href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/microsoft.phone.maps.controls.mapoverlay(v=vs.105).aspx">MapOverlay</a>，以将圆圈包含在其中。通过使用&nbsp;<a
+                                        href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/microsoft.phone.maps.controls.mapoverlay.positionorigin(v=vs.105).aspx">PositionOrigin</a>&nbsp;和&nbsp;<a
+                                            href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/microsoft.phone.maps.controls.mapoverlay.geocoordinate(v=vs.105).aspx">GeoCoordinate</a>&nbsp;属性，该代码使圆圈以您的当前位置为中心。
+                            </p>
+                            <pre><code>// Create a MapOverlay to contain the circle.
+MapOverlay myLocationOverlay = new MapOverlay();
+myLocationOverlay.Content = myCircle;
+myLocationOverlay.PositionOrigin = new Point(0.5, 0.5);
+myLocationOverlay.GeoCoordinate = myGeoCoordinate;</code></pre>
+                            <p>
+                                3、在<b>ShowMyLocationOnTheMap</b>方法中，添加以下代码以创建&nbsp;<a
+                                    href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/microsoft.phone.maps.controls.maplayer(v=vs.105).aspx">MapLayer</a>，以将&nbsp;<a
+                                        href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/microsoft.phone.maps.controls.mapoverlay(v=vs.105).aspx">MapOverlay</a>&nbsp;包含在其中。
+                            </p>
+                            <pre><code>// Create a MapLayer to contain the MapOverlay.
+MapLayer myLocationLayer = new MapLayer();
+myLocationLayer.Add(myLocationOverlay);</code></pre>
+                            <p>
+                                4、在<b>ShowMyLocationOnTheMap</b>方法中，添加以下代码以便将&nbsp;<a
+                                    href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/microsoft.phone.maps.controls.maplayer(v=vs.105).aspx">MapLayer</a>&nbsp;添加至地图。
+                            </p>
+                            <pre><code>// Add the MapLayer to the Map.
+mapWithMyLocation.Layers.Add(myLocationLayer);</code></pre>
+                            <p>当运行该程序的时候，您将看到一幅地图填充了整个应用程序UI的可用空间。地图以您的当前位置为中心，该位置有蓝色的小圆圈做标记。</p>
+                            <h3><a name="_Toc372094560">3.2、在地图中显示路线和方向</a></h3>
+                            <p><b>3.2.1</b><b>、获取手机的当前位置</b></p>
+                            <p>
+                                1、在Visual
+Studio中创建一个新的Windows
+Phone 8工程。
+                            </p>
+                            <p>2、在应用程序清单文件中选择ID_CAP_LOCATION&nbsp; 和ID_CAP_MAP两项属性。</p>
+                            <p>3、在MainPage.xaml.cs中，将默认的代码替换为如下代码，这些代码会获取到手机的当前位置并将当前位置坐标添加到MyCoordinates中。</p>
+                            <pre><code>using System;
+using System.Collections.Generic;
+using System.Windows;
+using Microsoft.Phone.Controls;
+using System.Device.Location;
+using Windows.Devices.Geolocation;
+using Microsoft.Phone.Maps.Services;
+using Microsoft.Phone.Maps.Controls;
+
+namespace RouteDirectionsTopic
+{
+    public partial class MainPage : PhoneApplicationPage
+    {
+        List<GeoCoordinate> MyCoordinates = new List<GeoCoordinate>();
+        // Constructor
+        public MainPage()
+        {
+            InitializeComponent();
+            this.GetCoordinates();
+        }
+        private async void GetCoordinates()
+        {
+            // Get the phone's current location.
+            Geolocator MyGeolocator = new Geolocator();
+            MyGeolocator.DesiredAccuracyInMeters = 5;
+            Geoposition MyGeoPosition = null;
+            try
+            {
+                MyGeoPosition = await MyGeolocator.GetGeopositionAsync(TimeSpan.FromMinutes(1), TimeSpan.FromSeconds(10));
+                MyCoordinates.Add(new GeoCoordinate(MyGeoPosition.Coordinate.Latitude, MyGeoPosition.Coordinate.Longitude));
+            }
+            catch (UnauthorizedAccessException)
+            {
+                MessageBox.Show("Location is disabled in phone settings or capabilities are not checked.");
+            }
+            catch (Exception ex)
+            {
+                // Something else happened while acquiring the location.
+                MessageBox.Show(ex.Message);
+            }
+        }
+    }
+}</code></pre>
+                            <p><b>3.2.2</b><b>、显示从手机当前位置到地图上一个指定点的路线</b></p>
+                            <p>此处的代码将手机的当前位置作为搜索提示提供给查找目的地的操作，假设手机当前位置是Redmond, Washington，距离指定的目的地(Seattle, Washington)并不算远。</p>
+                            <p>
+                                1、在MainPage.xaml文件中，利用下面代码在ContentPanel网格控件中添加一个地图控件。更多添加地图控件的信息，请参见<a
+                                    href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/jj207033(v=vs.105).aspx">如何为Windows Phone
+8应用程序的页面添加地图控件</a>。
+                            </p>
+                            <textarea><maps:Map x:Name="MyMap" Grid.Row="1" Center="47.6268, -122.2460" ZoomLevel="11"/></textarea>
+                            <p>如果你通过书写XAML代码的方式添加地图控件，那么你必须在phone:PhoneApplicationPage元素中添加如下的xmlns声明，如果你通过拖拽的方式添加地图控件，那么下面的声明会自动添加。</p>
+                            <textarea>xmlns:maps="clr-namespace:Microsoft.Phone.Maps.Controls;assembly=Microsoft.Phone.Maps"</textarea>
+                            <p>2、在<b>MainPage.xaml.cs</b>的MainPage类中，创建以下变量。</p>
+                            <pre><code>RouteQuery MyQuery = null;
+GeocodeQuery Mygeocodequery = null;</code></pre>
+                            <p>
+                                3、在GetCoordinages()方法的<b>try</b>块之后，添加如下代码。这些代码设置了用户输入的目的地址作为&nbsp;<a
+                                    href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/microsoft.phone.maps.services.geocodequery(v=vs.105).aspx">GeocodeQuery</a>的<a
+                                        href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/microsoft.phone.maps.services.geocodequery.searchterm(v=vs.105).aspx">SearchTerm</a>，并将地址转换为地理坐标，随后将这些坐标设置成为<a
+                                            href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/microsoft.phone.maps.services.geocodequery(v=vs.105).aspx">GeocodeQuery</a> 的&nbsp;<a
+                                                href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/microsoft.phone.maps.services.geocodequery.geocoordinate(v=vs.105).aspx">GeoCoordinate</a>。
+                            </p>
+                            <pre><code>Mygeocodequery = new GeocodeQuery();
+Mygeocodequery.SearchTerm = "Seattle, WA";
+Mygeocodequery.GeoCoordinate = new GeoCoordinate(MyGeoPosition.Coordinate.Latitude, MyGeoPosition.Coordinate.Longitude);</code></pre>
+                            <p>
+                                4、在GetCoordinates()方法的<b>try</b>块之后，添加如下代码，这些代码将名为Mygeocodequery_QueryCompleted的事件处理句柄添加到<a
+                                    href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/jj208870(v=vs.105).aspx">QueryCompleted</a>事件，并调用<a
+                                        href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/microsoft.phone.maps.services.geocodequery(v=vs.105).aspx">GeocodeQuery</a>中的<a
+                                            href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/jj208612(v=vs.105).aspx">QueryAsync</a>方法。
+                            </p>
+                            <pre><code>Mygeocodequery.QueryCompleted += Mygeocodequery_QueryCompleted;
+Mygeocodequery.QueryAsync();</code></pre>
+                            <p>
+                                5、将Mygeocodequery_QueryCompleted事件处理句柄添加到类中，代码创建了一个新的<a
+                                    href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/microsoft.phone.maps.services.routequery(v=vs.105).aspx">RouteQuery</a>对象并将当前位置和目的位置的坐标存储在<a
+                                        href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/microsoft.phone.maps.services.routequery(v=vs.105).aspx">RouteQuery</a>的<a
+                                            href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/microsoft.phone.maps.services.routequery.waypoints(v=vs.105).aspx">Waypoints</a>属性中。同时也将MyQuery_QueryCompleted事件处理句柄添加到<a
+                                                href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/microsoft.phone.maps.services.routequery(v=vs.105).aspx">RouteQuery</a>的<a
+                                                    href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/jj208870(v=vs.105).aspx">QueryCompleted</a>事件。
+                            </p>
+                            <pre><code>void Mygeocodequery_QueryCompleted(object sender, QueryCompletedEventArgs<IList<MapLocation>> e)
+{
+	if (e.Error == null)
+	{
+		MyQuery = new RouteQuery();
+		MyCoordinates.Add(e.Result[0].GeoCoordinate);
+		MyQuery.Waypoints = MyCoordinates;
+		MyQuery.QueryCompleted += MyQuery_QueryCompleted;
+		MyQuery.QueryAsync();
+		Mygeocodequery.Dispose();
+	}
+}</code></pre>
+                            <p>6、在类中添加MyQuery_QueryCompleted事件处理句柄，下面的代码在地图上的两点之间添加一条路径。</p>
+                            <pre><code>void MyQuery_QueryCompleted(object sender, QueryCompletedEventArgs<Route> e)
+{
+	if (e.Error == null)
+	{
+                Route MyRoute = e.Result;
+                MapRoute MyMapRoute = new MapRoute(MyRoute);
+                MyMap.AddRoute(MyMapRoute);
+                MyQuery.Dispose();
+	}
+}</code></pre>
+                            <p><b>3.2.3</b><b>、显示从当前位置到地图上指定点的方向</b></p>
+                            <p>
+                                1、在MainPage.xaml中，删除整个名为LayoutRoot的网格控件，并用下面的代码替换。如下代码在地图控件的下面添加了一个<a
+                                    href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/microsoft.phone.controls.longlistselector(v=vs.105).aspx">LongListSelector</a>，可以显示两个位置之间的方向。
+                            </p>
+                            <textarea><phone:PhoneApplicationPage.Resources>
+   <DataTemplate x:Key="RouteListTemplate">
+      <TextBlock Text="{Binding}" FontSize="{StaticResource PhoneFontSizeMedium}" Margin="5,5,0,0"/>
+   </DataTemplate>
+</phone:PhoneApplicationPage.Resources>
+    
+<!--LayoutRoot is the root grid where all page content is placed-->
+<Grid x:Name="LayoutRoot" Background="Transparent">
+   <Grid.RowDefinitions>
+      <RowDefinition Height="auto"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="auto"/>
+      <RowDefinition Height="*"/>
+   </Grid.RowDefinitions>
+   <TextBlock Text="Map Route" Grid.Row="0" FontSize="{StaticResource PhoneFontSizeLarge}" Margin="0,0,0,20"/>
+   <maps:Map x:Name="MyMap" Grid.Row="1" Center="47.6268, -122.2460" ZoomLevel="11"/>
+   <TextBlock Text="Route Directions" Grid.Row="2" FontSize="{StaticResource PhoneFontSizeLarge}" Margin="0,10,0,20"/>
+   <phone:LongListSelector x:Name="RouteLLS" Grid.Row="3" Background="Transparent" ItemTemplate="{StaticResource RouteListTemplate}" LayoutMode="List" 
+      IsGroupingEnabled="False"/>
+</Grid></textarea>
+                            <p>2、在MainPage.xaml.cs中，在MyQuery_QueryCompleted事件处理句柄中添加下面的代码来显示两个位置之间的路径。</p>
+                            <pre><code>void MyQuery_QueryCompleted(object sender, QueryCompletedEventArgs<Route> e)
+{
+if (e.Error == null)
+{
+Route MyRoute = e.Result;
+MapRoute MyMapRoute = new MapRoute(MyRoute);
+MyMap.AddRoute(MyMapRoute);
+List<string> RouteList = new List<string>();
+foreach (RouteLeg leg in MyRoute.Legs)
+{
+foreach (RouteManeuver maneuver in leg.Maneuvers)
+{
+RouteList.Add(maneuver.InstructionText);
+}
+}
+RouteLLS.ItemsSource = RouteList;
+MyQuery.Dispose();
+}</code></pre>
+                            <p>运行程序，即可看到预期结果。</p>
+                            <h3><a name="_Toc372094561">3.3、将UIElements元素添加到地图控件中</a></h3>
+                            <p><b>3.3.1</b><b>、向地图中添加矩形</b></p>
+                            <p>
+                                在这里我们为地图中添加一个<a
+                                    href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/system.windows.controls.grid(v=vs.105).aspx">网格</a>元素，并在其中包含一个<a
+                                        href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/system.windows.shapes.rectangle(v=vs.105).aspx">矩形</a>和一个<a
+                                            href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/microsoft.phone.maps.controls.map(v=vs.105).aspx">多边形</a>。
+                            </p>
+                            <p>1、在 Visual Studio 中，创建新的名为 MapsApplication 的 Windows&nbsp;Phone&nbsp;8 项目。</p>
+                            <p>
+                                2、在<b>“</b><b>MainPage.xaml</b><b>”</b>中，使用以下代码替换名为&nbsp;LayoutRoot&nbsp;的网格。 它将创建一个名为“MyMap”的<a
+                                    href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/microsoft.phone.maps.controls.map(v=vs.105).aspx">Map</a>&nbsp;控件。有关添加&nbsp;<a
+                                        href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/microsoft.phone.maps.controls.map(v=vs.105).aspx">Map</a>&nbsp;控件的更多信息，请参见<a
+                                            href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/jj207033(v=vs.105).aspx">如何将地图控件添加到
+Windows Phone 8 中的页面中</a>。
+                            </p>
+                            <textarea><!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="Maps" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Text="MapOverlay" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+         <maps:Map x:Name="MyMap" Center="47.6097, -122.3331" ZoomLevel="10" />
+        </Grid>
+    </Grid></textarea>
+                            <p>3、在&nbsp;<b>MainPage.xaml.cs</b>&nbsp;中，添加以下&nbsp;using&nbsp;指令。</p>
+                            <pre><code>using Microsoft.Phone.Maps.Controls;
+using System.Device.Location;</code></pre>
+                            <p>
+                                4、在&nbsp;MainPage()&nbsp;构造函数中，添加以下代码以创建一个包含 <a
+                                    href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/system.windows.shapes.rectangle(v=vs.105).aspx">Rectangle</a>
+                                和 <a
+                                    href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/system.windows.shapes.polygon(v=vs.105).aspx">Polygon</a>
+                            </p>
+                            <p>
+                                的 &nbsp;<a
+                                    href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/system.windows.controls.grid(v=vs.105).aspx">Grid</a>&nbsp;元素。
+                            </p>
+                            <pre><code>//Creating a Grid element.
+
+Grid MyGrid = new Grid();
+MyGrid.RowDefinitions.Add(new RowDefinition());
+MyGrid.RowDefinitions.Add(new RowDefinition());
+MyGrid.Background = new SolidColorBrush(Colors.Transparent);
+
+//Creating a Rectangle
+Rectangle MyRectangle = new Rectangle();
+MyRectangle.Fill = new SolidColorBrush(Colors.Black);
+MyRectangle.Height = 20;
+MyRectangle.Width = 20;
+MyRectangle.SetValue(Grid.RowProperty, 0);
+MyRectangle.SetValue(Grid.ColumnProperty, 0);
+
+//Adding the Rectangle to the Grid
+MyGrid.Children.Add(MyRectangle);
+
+//Creating a Polygon
+Polygon MyPolygon = new Polygon();
+MyPolygon.Points.Add(new Point(2,0));
+MyPolygon.Points.Add(new Point(22,0));
+MyPolygon.Points.Add(new Point(2,40));
+MyPolygon.Stroke = new SolidColorBrush(Colors.Black);
+MyPolygon.Fill = new SolidColorBrush(Colors.Black);
+MyPolygon.SetValue(Grid.RowProperty, 1);
+MyPolygon.SetValue(Grid.ColumnProperty, 0);
+
+//Adding the Polygon to the Grid
+MyGrid.Children.Add(MyPolygon);</code></pre>
+                            <p>
+                                5、在&nbsp;MainPage()&nbsp;构造函数中，创建一个&nbsp;<a
+                                    href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/microsoft.phone.maps.controls.mapoverlay(v=vs.105).aspx">MapOverlay</a>&nbsp;并将&nbsp;<a
+                                        href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/system.windows.controls.grid(v=vs.105).aspx">Grid</a>&nbsp;元素添加到&nbsp;<a
+                                            href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/microsoft.phone.maps.controls.mapoverlay(v=vs.105).aspx">MapOverlay</a>。
+                            </p>
+                            <pre><code>//Creating a MapOverlay and adding the Grid to it.
+MapOverlay MyOverlay = new MapOverlay();
+MyOverlay.Content = MyGrid;</code></pre>
+                            <p>
+                                6、设置&nbsp;MyOverlay&nbsp;的&nbsp;<a
+                                    href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/microsoft.phone.maps.controls.mapoverlay.geocoordinate(v=vs.105).aspx">GeoCoordinate</a>&nbsp;属性，以将网格元素放置在地图的特定的 Geocoordinate
+位置上。
+                            </p>
+                            <pre><code>MyOverlay.GeoCoordinate = new GeoCoordinate(47.6097, -122.3331);</code></pre>
+                            <p>
+                                7、设置&nbsp;MyOverlay&nbsp;的&nbsp;<a
+                                    href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/microsoft.phone.maps.controls.mapoverlay.positionorigin(v=vs.105).aspx">PositionOrigin</a>&nbsp;属性，以指定要固定到地图的矩形的位置。
+                            </p>
+                            <pre><code>MyOverlay.PositionOrigin = new Point(0,0.5);</code></pre>
+                            <p>
+                                8、创建一个名为“MyLayer”的&nbsp;<a
+                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.maps.controls.maplayer(v=vs.105).aspx">MapLayer</a>&nbsp;并向其添加 MyOverlay。
+                            </p>
+                            <pre><code>//Creating a MapLayer and adding the MapOverlay to it
+MapLayer MyLayer = new MapLayer();
+MyLayer.Add(MyOverlay);
+MyMap.Layers.Add(MyLayer);</code></pre>
+                            <h3><a name="_Toc372094562">3.4、为Windows Phone 8请求行车或步行路线</a></h3>
+                            <p>
+                                本主题描述如何编写一个应用，用于从安装在手机上的另一应用<b>请求</b>到指定目的地的行车或步行路线。您通过使用<b>ms-drive-to</b>&nbsp;或&nbsp;<b>ms-walk-to</b>&nbsp;Uri
+方案来请求路线。
+                            </p>
+                            <p>
+                                有关使用 URI 来启动另一应用的更多信息，请参见<a
+                                    href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/jj206987(v=vs.105).aspx">使用 Windows
+Phone 8 文件和
+URI 关联的自动启动应用</a>。有关如何编写响应方向请求的应用的信息，请参见<a
+    href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/jj851121(v=vs.105).aspx">如何响应 Windows
+Phone 8 的方向请求</a>。
+                            </p>
+                            <p><b>3.4.1</b><b>、URI</b><b>的格式</b></p>
+                            <p><b>格式</b></p>
+                            <p>用于启动路线请求的 URI 具有以下格式：</p>
+                            <pre><code>ms-drive-to:?destination.latitude=<latitude>&destination.longitude=<longitude>&
+destination.name=<name>
+ms-walk-to:?destination.latitude=<latitude>&destination.longitude<longitude>&
+destination.name=<name></code></pre>
+                            <p>如果您不在请求中指定起点。它将假设为当前位置。</p>
+                            <p>您无需对 Uri 功&nbsp;<i>name</i>&nbsp;值进行编码。</p>
+                            <p><b>示例</b></p>
+                            <p>下面的示例演示到Redmond, Washington的路线请求的 URI。</p>
+                            <pre><code>ms-drive-to:?destination.latitude=47.6451413797194&destination.longitude=-122.141964733601&destination.name=Redmond, WA
+ms-walk-to:?destination.latitude=47.6451413797194&destination.longitude=-122.141964733601&destination.name=Redmond, WA</code></pre>
+                            <p><b>3.4.2</b><b>、请求路线</b></p>
+                            <p>下面的代码示例演示如何从安装在手机上的另一应用请求到指定目的地的行车路线。此示例获取所需的参数值后，会将其汇编到 Uri 中。然后将使用&nbsp;<b>LaunchUriAsync</b>&nbsp;方法来调用 URI。</p>
+                            <p>1、在 Visual Studio 中，创建一个空的新 Windows&nbsp;Phone 项目。</p>
+                            <p>2、在主页代码隐藏文件中，添加如下方法。</p>
+                            <pre><code>async void RequestDirections()
+{
+// Get the values required to specify the destination.
+string latitude = "47.6451413797194";
+string longitude = "-122.141964733601";
+string name = "Redmond, WA";
+// Assemble the Uri to launch.
+Uri uri = new Uri("ms-drive-to:?destination.latitude=" + latitude + 
+"&destination.longitude=" + longitude + "&destination.name=" + name);
+// The resulting Uri is: "ms-drive-to:?destination.latitude=47.6451413797194
+// &destination.longitude=-122.141964733601&destination.name=Redmond, WA")
+// Launch the Uri.
+var success = await Windows.System.Launcher.LaunchUriAsync(uri);
+if (success)
+{
+// Uri launched.
+}
+else
+{
+// Uri failed to launch.
+}
+}</code></pre>
+                            <p>3、在类的构造函数中，添加对&nbsp;RequestDirections&nbsp;方法的调用。</p>
+                            <p>4、运行应用。</p>
+                            <p>
+                                如果模拟器或手机没有任何可提供路线的应用，则会提示您在 Windows Phone 商店 中查找应用。
+                            </p>
+                            <p>
+                                如果模拟器或手机仅有一个提供路线的应用，则会自动启动该应用。
+                            </p>
+                            <p>
+                                如果模拟器或手机有多个提供路线的应用，则会提示您从列表中选择一个应用。
+                            </p>
+                            <h3><a name="_Toc372094563">3.5、响应Windows Phone 8的方向请求</a></h3>
+                            <p>本主题描述如何编写一个应用，以便在手机上安装的另一应用调用时为其<b>提供</b>到指定目的地的行车或步行路线。另一应用通过使用&nbsp;<b>ms-drive-to</b>&nbsp;或&nbsp;<b>ms-walk-to</b>&nbsp;Uri 方案来请求路线。</p>
+                            <p>
+                                有关使用 URI 来启动另一应用的更多信息，请参见<a
+                                    href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/jj206987(v=vs.105).aspx">使用 Windows
+Phone 8 文件和
+URI 关联的自动启动应用</a>。有关如何编写请求方向的应用的信息，请参见<a
+    href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/jj710324(v=vs.105).aspx">如何为 Windows
+Phone 8 请求行车或步行路线</a>。
+                            </p>
+                            <p><b>3.5.1</b><b>、注册以处理URI</b><b>关联</b></p>
+                            <p>
+                                在应用清单文件的<b>扩展</b>元素（必须紧跟在<b>标记</b>元素后）中，使用以下格式指定导航协议或应用可以处理的协议。您的应用无需同时处理两个 URI 关联。有关编辑应用清单文件的更多信息，请参见<a
+                                    href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/jj247542(v=vs.105).aspx">如何修改 Windows
+Phone 的应用清单文件</a>。
+                            </p>
+                            <textarea><Extensions>
+<Protocol Name="ms-drive-to" NavUriFragment="encodedLaunchUri=%s" TaskID="_default"/>
+<Protocol Name="ms-walk-to" NavUriFragment="encodedLaunchUri=%s" TaskID="_default"/>
+</Extensions></textarea>
+                            <p><b>3.5.2</b><b>、侦听URI</b></p>
+                            <p>
+                                1、创建 Uri
+映射类，将接收到的请求从调用应用映射到您应用中的页面。下面是 Uri 映射类的示例，它可以分析 Uri 并使用页面请求的参数调用 ShowDestination.xaml 页面。
+                            </p>
+                            <pre><code>class DirectionsRequestUriMapper : UriMapperBase
+{
+public override Uri MapUri(Uri uri)
+{
+string tempUri = Uri.UnescapeDataString(uri.ToString());
+// Does the Uri contain a request for driving directions or walking directions?
+if (tempUri.Contains("ms-drive-to") || tempUri.Contains("ms-walk-to"))
+        {
+         // Parse the Uri.
+         char[] uriDelimiters = { '?', '=', '&' };
+         string[] uriParameters = tempUri.Split(uriDelimiters);
+         string destLatitude = uriParameters[4];
+         string destLongitude = uriParameters[6];
+         string destName = uriParameters[8];
+// Map the request for directions to the ShowDestination page of the app.
+         return new Uri(
+                    "/ShowDestination.xaml?" +
+                    "latitude=" + destLatitude + "&" +
+                    "longitude=" + destLongitude + "&" +
+                    "name=" + destName,
+                    UriKind.Relative);
+        }
+        // Otherwise, handle the Uri normally.
+        return uri;
+}
+}</code></pre>
+                            <p>首先，示例代码从调用应用解码接收到的 Uri。</p>
+                            <p>下面是您的应用从本主题前面给出的示例接收到的编码 Uri 的示例：</p>
+                            <pre><code>/Protocol?encodedLaunchUri=ms-drive-to%3A%3Fdestination.latitude%3D47.6451413797194%26destination.longitude%3D-122.141964733601%26destination.name%3DRedmond%2C%20WA</code></pre>
+                            <p>接下来，示例会将 Uri 拆分为组件部件：</p>
+                            <ol style='margin-top: 0cm' start="1" type="a">
+                                <li class="MsoNormal" style='text-align: left'>（数组索引 0）/协议</li>
+                                <li class="MsoNormal" style='text-align: left'>（数组索引 1）uri</li>
+                                <li class="MsoNormal" style='text-align: left'>（数组索引 2）ms-drive-to</li>
+                                <li class="MsoNormal" style='text-align: left'>（数组索引 3）destination.latitude</li>
+                                <li class="MsoNormal" style='text-align: left'>（数组索引 4）47.6451413797194</li>
+                                <li class="MsoNormal" style='text-align: left'>（数组索引 5）destination.longitude</li>
+                                <li class="MsoNormal" style='text-align: left'>（数组索引 6）-122.141964733601</li>
+                                <li class="MsoNormal" style='text-align: left'>（数组索引 7）destination.longitude</li>
+                                <li class="MsoNormal" style='text-align: left'>（数组索引 8）Redmond,
+     WA</li>
+                            </ol>
+                            <p>
+                                最后示例会整合以下 Uri 以使用页面请求的参数调用
+ShowDestination.xaml 页面：
+                            </p>
+                            <pre><code>/ShowDestination.xaml?latitude=47.6451413797194&longitude=-122.141964733601&name=Redmond, WA</code></pre>
+                            <p>2、从解决方案资源管理器，打开 App.xaml.cs 代码文件。将下面的代码行添加到<b>InitializePhoneApplication</b>&nbsp;方法以启用 Uri 映射类。</p>
+                            <pre><code>private void InitializePhoneApplication()
+{
+...
+    RootFrame = new PhoneApplicationFrame();
+    ...
+    // Assign the Uri mapper class to the application frame.
+    RootFrame.UriMapper = new DirectionsRequestUriMapper();
+    ...
+}</code></pre>
+                            <p><b>3.5.3</b><b>、处理URI</b></p>
+                            <p>1、创建目标页面，用于处理到指定目的地的路线的请求。此示例将创建名为 ShowDestination.xaml 的页面，它仅显示传递到 Uri 中页面的参数值。</p>
+                            <p>
+                                未在请求中指定起始点，因此将假定为当前位置。在您使用位置服务获取当前位置之前，确保用户已同意使用手机的位置。有关更多信息和示例代码，请参见<a
+                                    href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/jj206956(v=vs.105).aspx">如何在 Windows
+Phone 8 中获取手机的当前位置</a>。
+                            </p>
+                            <p>
+                                2、在
+ShowDestination.xaml 中，将文本框添加到页面以显示参数值。
+                            </p>
+                            <textarea><!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <TextBox x:Name="tbDestinationParams" HorizontalAlignment="Left" Height="516" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="436" IsReadOnly="True"/>
+        </Grid></textarea>
+                            <p>
+                                3、在
+ShowDestination.xaml.cs 中，添加代码以处理页面的&nbsp;<b>OnNavigatedTo</b>&nbsp;中的 Uri。此代码仅显示传递到 Uri 中页面的参数值。
+                            </p>
+                            <pre><code>protected override void OnNavigatedTo(NavigationEventArgs e)
+{
+base.OnNavigatedTo(e);
+    // Extract the arguments from the query string passed to the page.
+    IDictionary<string, string> uriParameters = this.NavigationContext.QueryString;
+                string destLatitude = uriParameters["latitude"];
+                string destLongitude = uriParameters["longitude"];
+                string destName = uriParameters["name"];
+    this.tbDestinationParams.Text = "\tlatitude = " + destLatitude + "\r\n" +
+     "\tlongitude = " + destLongitude + "\r\n" +"\tname = " + destName;
+}</code></pre>
+                            <p>运行程序，即可得到预期结果。</p>
+                        </div>
+                        <div class="textlist">
+                            另一篇文章：<br />
+                            <ul>
+                                <li><a href="developing_05.html">LBS App</a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <!--End Content-->
+        <div style="text-align: right" class="gotoTop"><a href="javascript:scroll(0,0)"></a></div>
+        <!--Begin ProudctLinks-->
+        <div class="ms-pro-links">
+            <div class="grid-container clearfix">
+                <div class="cam-links">
+                    其它微软站点
+		<a href="http://www.microsoft.com/zh-cn/default.aspx">微软中国官方网站</a>
+                    <a href="http://www.microsoft.com/zh-cn/download/default.aspx?WT.mc_id=MSCOM_zh-cn_HP_Footer_downloads" target="_blank">微软中国下载中心</a>
+                    <a href="http://www.microsoftstore.com.cn?WT.mc_id=MSCOM_003" target="_blank">微软中国官方商城</a>
+                    <a href="http://www.microsoft.com/china/newsletter/" target="_blank">订阅电子期刊</a>
+                    <a href="https://sales.liveperson.net/hc/21661174/?cmd=file&file=visitorWantsToChat&site=21661174&byhref=1&SESSIONVAR!skill=APGC.PRC.ZH.CS.CON.PRESLS.GENERAL" target="_blank">联系微软销售代表</a>
+                    <a href="http://www.microsoft.com/zh-cn/sitemap.aspx" target="_blank">网站地图</a>
+                </div>
+            </div>
+        </div>
+        <!--End ProudctLinks-->
+        <!--Begin footer-->
+        <div class="footer">
+            <div class="grid-container">
+                <img src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-type-1x.png" alt="microsoft" class="logo">
+                <ul>
+                    <li><a href="http://www.miibeian.gov.cn/" title="">京ICP备09042378号-6</a></li>
+                    <li><a href="https://profile.microsoft.com/RegSysProfileCenter/default.aspx?lcid=2052" title="">个人信息中心</a></li>
+                    <li><a href="http://support.microsoft.com/contactus/?ws=support" title="">与我们联系</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkId=248681" title="">隐私权声明</a></li>
+                    <li><a href="http://go.microsoft.com/?linkid=4412892" title="">使用条款</a></li>
+                    <li><a href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Trademarks/EN-US.aspx" title="">商标</a></li>
+                    <li>&copy; 2013 Microsoft</li>
+                </ul>
+            </div>
+        </div>
+        <!--End footer-->
+        <!-- Begin MDA WEDCS -->
+        <script type="text/JavaScript">
+            var varSegmentation = 0;
+            var varClickTracking = 1;
+            var varCustomerTracking = 1;
+            var varAutoFirePV = 1;
+            var Route = "#";
+            var Ctrl = "#"
+            //document.write("<script type='text/javascript' src='" + window.location.protocol + "//c.microsoft.com/ms.js'><"+"/script>");
+        </script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="./assets/js/script.js"></script>
+        <script type="text/javascript" src="./js/siteSearch.js"></script>
+        <noscript>
+            <img alt="" width="1" height="1" src="http://c.microsoft.com/trans_pixel.aspx/" />
+        </noscript>
+        <!-- Begin MDA WEDCS -->
+    </div>
+</body>
+</html>

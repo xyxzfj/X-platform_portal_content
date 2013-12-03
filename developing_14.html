@@ -1,0 +1,1096 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>后台任务和多任务处理</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="css/templete.css" type="text/css" media="all" />
+    <meta charset="UTF-8">
+</head>
+<body class="level-2">
+    <div class="wrapper">
+        <!--Begin header-->
+        <div class="header">
+            <div class="grid-container clearfix">
+                <div class="header-left">
+                    <img alt="Microsoft" src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-lg-1x.png" width="94" height="20">
+                    <h1>X-Platform</h1>
+                </div>
+                <div id="mscom-search" class="mscom-search" style="margin-top: 37px;">
+                    <div class="search-form">
+                        <form action="" id="search-form">
+                            <div class="input-wrapper">
+                                <label class="screen-reader-text" for="search-input">搜索 Microsoft.com</label>
+                                <input id="search-input" type="text" class="input-area" autocomplete="off">
+                            </div>
+                            <button class="search-submit" id="search-btn" type="submit">
+                                <img width="16" height="16" alt="Submit" src="http://i.s-microsoft.com/global/imagestore/PublishingImages/sprites/search-button-blue.png"></button>
+                        </form>
+                    </div>
+                    <div class="search-results-box" id="results">
+                        <div class="search-scope">
+                            <ul>
+                                <li class=""><a class="checked" search="microsoft" role="search">搜索 Microsoft.com</a></li>
+                                <li class=""><a search="internet" role="search">搜索互联网</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End header-->
+        <br />
+        <!--Begin Content-->
+        <div class="content">
+            <div class="wrapper">
+                <div class="wrapper-header">
+                    <div>
+                        <a href="index.html">
+                            <img src="./assets/image/banner_1.jpg"></a>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="nav">
+                        <div class="block article-nav-block">
+                            <h2>移动应用开发生命周期</h2>
+                            <div class="menu">
+                                <h3><a href="idea.html">计划<span>Idea/Planning</span></a></h3>
+                                <ul>
+                                    <li><a href="idea_01.html">平台总览</a></li>
+                                    <li><a href="idea_02.html">开发工具、开发环境和模拟器</a></li>
+                                    <li><a href="idea_03.html">应用结构和生命周期</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="design.html">设计<span>Design</span></a></h3>
+                                <ul>
+                                    <li><a href="design_01.html">UI Layout的设计</a></li>
+                                    <li><a href="design_02.html">UI的控件</a></li>
+                                    <li><a href="design_03.html">UI页面的控制和导航</a></li>
+                                    <li><a href="design_04.html">不同屏幕尺寸和分辨率的适配</a></li>
+                                    <li><a href="design_05.html">第三方SDK</a></li>
+                                    <li><a href="design_06.html">游戏开发</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu active">
+                                <h3><a href="developing.html">开发<span>Developing</span></a></h3>
+                                <ul>
+                                    <li><a href="developing_01.html">开发语言</a></li>
+                                    <li><a href="developing_02.html">Audio、Video Player应用的开发</a></li>
+                                    <li><a href="developing_03.html">General APIs Mapping</a></li>
+                                    <li><a href="developing_04.html">IAP应用内支付</a></li>
+                                    <li><a href="developing_05.html">LBS应用</a></li>
+                                    <li><a href="developing_06.html">LBS、镜头和传感器应用接口使用</a></li>
+                                    <li><a href="developing_07.html">Native Code（C和C++）支持</a></li>
+                                    <li><a href="developing_08.html">Push Notification</a></li>
+                                    <li><a href="developing_09.html">Sharing in Social Network</a></li>
+                                    <li><a href="developing_10.html">Source Code Control</a></li>
+                                    <li><a href="developing_11.html">UI上的Data Binding</a></li>
+                                    <li><a href="developing_12.html">Windows 8.1和WP 8 Sharing应用分享功能实现</a></li>
+                                    <li><a href="developing_13.html">多媒体</a></li>
+                                    <li><a href="developing_14.html">后台任务和多任务处理</a></li>
+                                    <li><a href="developing_15.html">获取后台服务器数据</a></li>
+                                    <li><a href="developing_16.html">浏览器控件WebView</a></li>
+                                    <li><a href="developing_17.html">数据库（SQLite）</a></li>
+                                    <li><a href="developing_18.html">数据网络和数据通讯</a></li>
+                                    <li><a href="developing_19.html">通话和短信功能</a></li>
+                                    <li><a href="developing_20.html">图形处理(Drawing & Animation)</a></li>
+                                    <li><a href="developing_21.html">文件系统和应用设置</a></li>
+                                    <li><a href="developing_22.html">应用间通信</a></li>
+                                    <li><a href="developing_23.html">支付方式</a></li>
+                                    <li><a href="developing_24.html">Windows 8.1应用外设开发</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="testing.html">测试<span>Testing</span></a></h3>
+                                <ul>
+                                    <li><a href="testing_01.html">Windows 8 and WP 8开发FAQ</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu last">
+                                <h3><a href="distribute.html">发布<span>Distribute</span></a></h3>
+                                <ul>
+                                    <li><a href="distribute_01.html">应用商店(发布和更新应用)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="block success-story-nav-block">
+                            <h2>成功案例</h2>
+                        </div>
+                        <div class="block others">
+                            <a href="sample_code.html" class="left">示例代码</a>
+                            <a href="http://msdn.microsoft.com/zh-cn/dn473954" class="right">教学视频</a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3 class="title">Background Task &amp; Multitask<span><a href="index.html">返回首页&gt;</a></span></h3>
+                        <div class="article-content">
+                            <div class="WordSection1">
+                                <p class="MsoToc1"><a href="#_Toc371249613">概述</a></p>
+                                <p class="MsoToc1"><a href="#_Toc371249614">Windows Phone的后台任务</a></p>
+                                <p class="MsoToc2"><a href="#_Toc371249615">后台音频</a></p>
+                                <p class="MsoToc2"><a href="#_Toc371249616">计划任务</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371249617">计划任务的类型</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371249618">后台代理生命周期</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371249619">限制</a></p>
+                                <p class="MsoToc2"><a href="#_Toc371249620">后台文件传输</a></p>
+                                <p class="MsoToc2"><a href="#_Toc371249621">计划通知</a></p>
+                                <p class="MsoToc2"><a href="#_Toc371249622">快速应用程序切换</a></p>
+                                <p class="MsoToc1"><a href="#_Toc371249623">Windows应用商店应用的后台任务</a></p>
+                                <p class="MsoToc2"><a href="#_Toc371249624">后台任务资源限制</a></p>
+                                <p class="MsoToc2"><a href="#_Toc371249625">管理后台任务</a></p>
+                                <p class="MsoToc2"><a href="#_Toc371249626">后台任务指南</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371249627">CPU 和网络配额</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371249628">管理后台任务</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371249629">使用BackgroundTaskDeferral 15</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371249630">更新应用清单</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371249631">准备应用更新</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371249632">支持锁屏的应用的后台任务</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371249633">后台任务清单</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371249634">支持锁屏的应用的后台任务清单</a></p>
+                                <p class="MsoToc1"><a href="#_Toc371249635">另请参见</a></p>
+                                <br />
+                                <h1><a name="_Toc371249613"></a><a name="_Toc371249532">概述</a></h1>
+                                <p style='margin: 0cm; margin-bottom: .0001pt'>
+                                    为了确保创建一个快速响应的用户体验以及为了优化手机上的电源使用，在 Windows&nbsp;Phone 中，仅允许在前台运行一个应用。然而，Windows&nbsp;Phone
+中的若干功能为应用在不是活跃的前台应用时提供执行操作的能力。
+                                </p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt'>同样的，在Windows 8中，当用户将应用移下屏幕时，Windows&nbsp;8 会在内存中挂起应用。这样可允许其他应用在前台运行。当应用挂起时，它驻留在内存中，并且 Windows 已停止其运行。</p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt'>可以看到，Windows Phone在处理后台任务的机制上跟IOS是类似的，应用在被切到后台后，操作系统处于合理分配资源和保持运行流畅的考虑，可能会将应用挂起，这时候就需要做相应的数据保存与恢复的操作，而Android不需要考虑这个问题，Android的多任务是多个任务同时在后台执行代码、抢占资源。</p>
+                                <h1><a name="_Toc371249614"></a><a name="_Toc371249533">Windows
+Phone的后台任务</a></h1>
+                                <h2><a name="_Toc371249615"></a><a name="_Toc371249534">后台音频</a></h2>
+                                <p style='margin: 0cm; margin-bottom: .0001pt'>
+                                    即使当您的应用不再在前台中运行时，Windows&nbsp;Phone
+应用仍可以播放持续运行的音频。为了实现此任务，必须创建一个持续在后台中运行的 AudioPlayerAgent。而Android要实现后台音频播放，主要通过一个继承自Service的服务类，在AndroidManifest.xml配置文件中添加对该Service的注册来实现。有关如何实现Windows Phone后台音频的更多信息，请参见<a
+    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/hh202978(v=vs.105).aspx">如何播放 Windows Phone 的后台音频</a>。
+                                </p>
+                                <h2><a name="_Toc371249616"></a><a name="_Toc371249535">计划任务</a></h2>
+                                <p style='margin: 0cm; margin-bottom: .0001pt'>“计划任务”允许应用实现一个代理，该代码即使当主应用未运行时，仍可以在后台中执行代码。可以通过两种方法计划其中一个代理的运行时间。定期任务运行的时间通常较短。资源密集型任务会运行较长的一段时间，但仅在手机处于资源密集型处理未干扰前台体验的状态时运行。</p>
+                                <h3><a name="_Toc371249617"></a><a name="_Toc371249536">计划任务的类型</a></h3>
+                                <p>下面是计划任务的类型。请注意，ScheduledTask&nbsp;派生自&nbsp;ScheduledAction。在后台运行的代码放置在从ScheduledTaskAgent（派生自&nbsp;BackgroundAgent）派生的类中。</p>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                <b>计划任务类型</b>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                <b>说明</b>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                <a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.scheduler.periodictask(v=vs.105).aspx">PeriodicTask</a>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                <i>定期代理</i>以定期重复的间隔运行一小段时间。这种类型的任务的典型方案包括上传设备的位置以及执行少量的数据同步。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                <a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.scheduler.resourceintensivetask(v=vs.105).aspx">ResourceIntensiveTask</a>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                <i>资源密集型代理</i>在手机符合与处理器活动、电源以及网络连接有关的一组要求时运行，运行的时间相对较长。这种类型任务的典型方案是，在用户没有主动使用手机时将大量数据同步到手机。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <p><a name="_Toc371249618"></a><a name="_Toc371249537">&nbsp;</a></p>
+                                <p>
+                                    Windows
+Phone中可以用后台代理实现后台任务，同样的Android及IOS中也有相应的实现方法。例如Android中可以用AsyncTask这样实现：
+                                </p><pre><code>http://news.qq.com/zt2013/CHANGE_3/jlp.htm</code></pre>
+                                <p>可以用Service这样实现：</p><pre><code>public class WxService extends Service{
+
+    @Override
+    public IBinder onBind(Intent intent) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public void onCreate() {
+        // TODO Auto-generated method stub
+        super.onCreate();
+        Timer timer = new Timer();
+        timer.schedule(new Work(),0, 30000);
+        
+    }
+
+    @Override
+    public void onStart(Intent intent, int startId) {
+        // TODO Auto-generated method stub
+        super.onStart(intent, startId);
+    }
+}
+class Work extends TimerTask{
+        @Override
+        public void run() {
+            // TODO Auto-generated method stub
+        Message message = new Message();
+        message.what=1;
+        handler.sendMessage(message);
+        } 
+     }
+     
+     Handler handler = new Handler()
+     {
+
+        @Override
+        public void handleMessage(Message msg) {
+            // TODO Auto-generated method stub
+            super.handleMessage(msg);
+            if(msg.what==1)
+            {
+                new Updata().execute();
+            }
+        }
+         
+     };</code></pre>
+                                <p>IOS中这样实现：</p><pre><code>- (void)applicationDidEnterBackground:(UIApplication *)application {
+ //切入后台 ，申请后台任务时间，
+    UIApplication *app = [UIApplication sharedApplication];
+    UIBackgroundTaskIdentifier taskID;//一个后台任务标识符
+    taskID = [app beginBackgroundTaskWithExpirationHandler:^{ //如果系统觉得我们运行时间太长，将执行这个程序块，并停止运行应用程序
+       
+        [app endBackgroundTask:taskID];
+    }];
+    
+    if (taskID == UIBackgroundTaskInvalid) {//UIBackgroundTaskInvalid表示系统没有为我们提供额外的时间
+       
+        return;
+    }
+
+    [self performSelector:@selector(exitApp) withObject:nil afterDelay:180.0];//退入后台 延时3分钟，退出登陆
+  
+}
+- (void)applicationWillEnterForeground:(UIApplication *)application {
+
+    [[UIApplication sharedApplication] endBackgroundTask:taskID];//切回前台，结束后台任务
+    [NSObject   cancelPreviousPerformRequestsWithTarget:self selector:@selector(exitApp) object:nil];//取消之前将要退出的方法
+
+}</code></pre>
+                                <h3>后台代理生命周期</h3>
+                                <p>一个应用程序可能只有一个后台代理。可以将该代理注册为 PeriodicTask、ResourceIntensiveTask 或两者。运行代理的计划取决于注册的任务类型。将在本主题的后面部分介绍计划的详细信息。一次只能运行代理的一个实例。</p>
+                                <p>
+                                    代理的代码由应用程序在从 BackgroundAgent 继承的类中实现。代理启动时，操作系统调用
+OnInvoke(ScheduledTask)。在该方法中，应用程序可以确定它以哪种
+ScheduledTask 类型运行，并执行相应的操作。代理完成其任务之后，它应该调用
+NotifyComplete() 或 Abort() 以让操作系统知道它已完成。如果任务成功，则应该使用 NotifyComplete。如果代理无法执行其任务（如所需的服务器不可用），则代理应该调用 Abort，这将导致 IsScheduled 属性设置为 false。前台应用程序可以在其运行时检查该属性，以确定是否调用了 Abort。
+                                </p>
+                                <h3><a name="_Toc371249619"></a><a name="_Toc371249538">限制</a></h3>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                <b>限制</b>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                <b>说明</b>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                不支持的 API
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                有一组无法由任何计划任务使用的 API。使用这些 API 将导致在运行时引发异常，或者将导致在提交到
+  商店 期间应用程序无法认证。有关受限制的 API 的列表，请参见&nbsp;<a
+      href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/hh202962(v=vs.105).aspx">Windows Phone 的后台代理不支持的 API</a>。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                内存使用上限
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                定期代理和资源密集型代码任何时候都不能使用超过 11 MB 的内存。音频代理限制为 15 MB。如果计划任务超过此内存上限，则立即终止。
+                                            </p>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                在调试器下运行时，暂停内存和超时限制。可以使用&nbsp;<a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.info.devicestatus.applicationmemoryusagelimit(v=vs.105).aspx">ApplicationMemoryUsageLimit</a>&nbsp;API
+  查询前台应用程序和后台代理的内存限制。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                每隔两周需要重新计划
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                使用&nbsp;<a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.scheduler.scheduledtask(v=vs.105).aspx">ScheduledTask</a>&nbsp;对象的&nbsp;<a
+                                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.scheduler.scheduledaction.expirationtime(v=vs.105).aspx">ExpirationTime</a>&nbsp;属性设置之后不再运行任务的时间。当使用<a
+                                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.scheduler.scheduledactionservice.add(v=vs.105).aspx">Add(ScheduledAction)</a>&nbsp;方法计划操作时，该值必须设置为两周之内的某个时间。当与该任务关联的应用程序在前台运行时，可能会重新计划该任务并将过期时间重置为从当前时间起最多两周。
+                                            </p>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                极少数情况下，应用的后台代理不会过期或会自动续订。
+                                            </p>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 43.5pt; margin-bottom: .0001pt;'>
+                                                ●&nbsp;
+  如果应用的图块固定在手机的“开始”屏幕，则无论后台代理何时调用<a
+      href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.shell.shelltile.update(v=vs.105).aspx">Update(ShellTileData)</a>&nbsp;来更新图块，后台代理计划的过期时间均会自动延长至两周。有关更多信息，请参见&nbsp;<a
+          href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/hh202948(v=vs.105).aspx">Windows Phone 的图块</a>。
+                                            </p>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 43.5pt; margin-bottom: .0001pt;'>
+                                                ●&nbsp;
+  如果用户选择您的应用以在锁定屏幕上显示通知，则无论后台代理何时调用<a
+      href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.shell.shelltile.update(v=vs.105).aspx">Update(ShellTileData)</a>&nbsp;来更新锁定屏幕，后台代理计划的过期时间均会自动延长至两周。有关更多信息，请参见&nbsp;<a
+          href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/jj207048(v=vs.105).aspx">Windows Phone 8 的锁定屏幕通知</a>。
+                                            </p>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 43.5pt; margin-bottom: .0001pt;'>
+                                                ●&nbsp;
+  如果应用使用资源密集型代理自动上载照片，则只要用户在<b>“照片和相机”</b>设置页面启用应用的此功能，资源密集型代理计划就不会过期。有关详细信息，请参见<a
+      href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/jj571205(v=vs.105).aspx">Windows Phone 8 自动上载应用</a>。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                两次连续崩溃之后取消代理计划
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                如果由于超过内存配额或任何其他未处理的异常而连续两次退出，则取消定期代理和资源密集型代理的计划。代理必须由前台应用程序重新计划。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <h4>定期代理的限制</h4>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                <b>限制</b>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                <b>说明</b>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                计划间隔：30 分钟
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                定期代理通常每隔 30 分钟运行一次。若要优化电池使用时间，定期代理的运行可以与其他后台进程一致，因此执行时间可能最多漂移 10 分钟。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                计划持续时间：25 秒
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                定期代理通常运行 25 秒。其他限制可能会导致代理提取终止。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                节电模式可能会阻止执行
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                节电模式是一个选项，用户可以在设备上启用该选项以指示应该优先考虑电池使用时间。如果启用此模式，则定期代理可能不运行，即使间隔已过也是如此。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                每个设备的定期代理限制
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                为了帮助最大程度地提高设备的电池使用时间，对手机上可以计划的定期代理数量进行了硬性限制。它因每个设备配置而异并且可以低到 6。还有另一个低于硬性限制的限制，超过该限制之后会警告用户他们正在运行多个后台代理，因此电池消耗可能比较快。
+                                            </p>
+                                            <p style='background: #FFFFC6'>
+                                                <img border="0" width="11"
+                                                    height="11" id="图片 3" src="images/developing_14/image001.gif" alt="警告说明">警告：<BR />
+                                                当超出设备限制时，如果您尝试添加定期后台代理，则对&nbsp;<a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.scheduler.scheduledactionservice.add(v=vs.105).aspx">Add(ScheduledAction)</a>&nbsp;的调用将引发&nbsp;<b>InvalidOperationException</b>。由于每个设备的定期代理限制非常低，因此您的应用程序很可能会遇到此异常。出于此原因，您在添加定期代理时捕获此异常非常重要，这样您的应用程序就不会崩溃。其示例代码可以在&nbsp;<a
+                                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/hh202944(v=vs.105).aspx">Windows
+  Phone 的后台代理最佳做法</a>中找到。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <br />
+                                <h4>资源密集型代理的限制</h4>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                <b>限制</b>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                <b>说明</b>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                持续时间：10
+  分钟
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                资源密集型代理通常运行 10 分钟。其他限制可能会导致代理提取终止。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                需要外部电源
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                除非设备连接到外部电源，否则不运行资源密集型代理。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                需要非手机网络连接
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                除非设备通过
+  Wi-Fi 或 PC 连接建立网络连接，否则资源密集型代理不运行。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                最低电池电量
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                除非设备的电池电量高于 90%，否则资源密集型代理不运行。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                需要设备屏幕锁定
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                除非设备屏幕锁定，否则资源密集型代理不运行。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                非活动手机呼叫
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                当手机呼叫处于活动状态时，资源密集型代理不运行。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                不能将网络更改为手机网络
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                如果资源密集型代理尝试调用指定&nbsp;MobileBroadbandGSM()&nbsp;或&nbsp;MobileBroadbandCDMA()的&nbsp;<a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.net.networkinformation.socketextensions.associatetonetworkinterface(v=vs.105).aspx">AssociateToNetworkInterface(Socket,
+  NetworkInterfaceInfo)</a>，则该方法调用失败。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <p>如果设备达到了一种状态，即，符合所有需要的条件并且启动了资源密集型代理，那么当设备状态发生更改以至于不符合任何条件时，则会立即终止资源密集型代理。</p>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p style='background: #FFFFC6'>
+                                                <img border="0" width="11"
+                                                    height="11" id="Img1" src="images/developing_14/image001.gif" alt="警告说明">警告：<BR />
+                                                由于必须符合设备上的限制才能运行资源密集型代理，因此在特殊的设备上可能从不运行该代理。例如，如果用户没有对 Wi-Fi 或 PC 的访问权限，则他们可能从不会有非手机网络连接，并且其设备上的资源密集型代理将从不运行。而且，资源密集型代理一次运行一个，因此当设备上安装了多个使用资源密集型代理的应用程序时，运行代理的可能性变得更低。设计应用程序时应该考虑这个问题。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <br />
+                                <h2><a name="_Toc371249620"></a><a name="_Toc371249539">后台文件传输</a></h2>
+                                <p style='margin: 0cm; margin-bottom: .0001pt'>后台传输服务允许应用将多个 HTTP 文件传输请求进行排队，从而当应用不再在前台中运行时，可以继续执行请求。支持文件下载和上传。</p>
+                                <h4>后台传输API</h4>
+                                <p>
+                                    可以在 Microsoft.Phone.BackgroundTransfer 命名空间中找到后台传输服务 API。您将使用的主要编程元素为 BackgroundTransferRequest 和
+BackgroundTransferService 类。BackgroundTransferRequest
+对象表示单个传输请求，包括目标和目标文件路径、传输方法以及传输的当前状态。BackgroundTransferService
+对象用于启动新传输以及查询或删除现有文件传输。
+                                </p>
+                                <h4>支持的传输方法</h4>
+                                <p>后台传输服务仅支持使用 HTTP 和 HTTPS 的传输。不支持 FTP。您可以使用 BackgroundTransferService 在后台上传和下载文件。GET HTTP 方法支持下载文件，POST 方法支持下载或上传文件。可以通过使用 BackgroundTransferRequest 对象的 Method 属性来设置传输方法。</p>
+                                <h4>文件系统限制</h4>
+                                <p>所有后台传输都需要本地文件路径。下载需要目标路径，该路径指定将保存下载的文件的位置。上传需要源路径，该路径指定将从中上传文件的位置。后台传输的所有本地路径都必须位于您应用程序的独立存储中，在名为“/shared/transfers”的根目录中。该目录是操作系统在安装应用程序时创建的，但如果应用程序删除或重命名该目录，则必须在启动任何文件传输之前重新创建该目录。您可以在“/shared/transfers”根目录下创建您选择的任何其他目录结构，并且可以在传输完成之后复制或删除文件，目的是确保后台传输服务不修改文件，但尝试使用“/shared/transfers”目录之外的路径启动传输将引发异常。</p>
+                                <h4>后台传输策略</h4>
+                                <p>
+                                    操作系统对于与文件大小、连接速度以及设备资源有关的后台传输强制很多限制。本节列出了 Windows&nbsp;Phone 的后台传输策略。请注意，Windows
+Phone 模拟器模拟与 Wi-Fi 和外部电源相连的设备。若要验证应用程序是否在其他条件下工作，您应该在物理设备上进行测试。
+                                </p>
+                                <h5 style='margin: 0cm; margin-bottom: .0001pt'>大小</h5>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                上传最大文件大小
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                通过手机网络连接 - 5 MB
+                                            </p>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                通过
+  Wi-Fi 连接（使用电池）- 20 MB
+                                            </p>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                通过
+  Wi-Fi 连接（使用外部电源）- 100 MB
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                通过手机网络连接的最大下载大小
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                20 MB - 如果超过此限制，则传输的&nbsp;<a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.backgroundtransfer.backgroundtransferrequest.transferpreferences(v=vs.105).aspx">TransferPreferences</a>&nbsp;属性将自动更改为<a
+                                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.backgroundtransfer.transferpreferences(v=vs.105).aspx">AllowBattery</a>，它对需要 Wi-Fi 的传输有影响。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                通过
+  Wi-Fi 而没有外部电源的最大下载大小
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                100&nbsp;MB
+  - 对于大于 100&nbsp;MB 的文件，您必须将传输的&nbsp;<a
+      href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.backgroundtransfer.backgroundtransferrequest.transferpreferences(v=vs.105).aspx">TransferPreferences</a>&nbsp;属性设置为<a
+          href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.backgroundtransfer.transferpreferences(v=vs.105).aspx">None</a>，否则传输将失败。如果您不知道传输的大小，而且它有可能超出限制，那么您应将该值设为&nbsp;<b>None</b>，这意味着传输将只在手机与外部电源连接而且具有 Wi-Fi 连接时进行。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <h5 style='margin: 0cm; margin-bottom: .0001pt'>限制</h5>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                每个应用程序的队列中未完成的最大请求数（这包括活动和挂起的请求）。
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                25 - 完成后不会自动从队列中删除传输。应用程序应该使用<a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.backgroundtransfer.backgroundtransferservice.remove(v=vs.105).aspx">Remove(BackgroundTransferRequest)</a>&nbsp;从队列中删除完成的传输，以便为新的传输留出空槽。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                设备上所有应用程序的最大并发传输数
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                2
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                设备上所有应用程序的最大排队传输数
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                500
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                每个请求的最大 HTTP 标头数
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                15
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                HTTP 标头的最大大小
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                每个
+  16&nbsp;KB
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <h5 style='margin: 0cm; margin-bottom: .0001pt'>策略</h5>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 36.0pt; margin-bottom: .0001pt;'>
+                                    ●
+当应用处于前台时，后台传输服务将在以下数据网络上进行传输。当应用不处于前台时，传输将不在这些网络上进行。<a
+    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.net.httpwebrequest(v=vs.105).aspx">HttpWebRequest</a>&nbsp;对象同样有此限制，因此从这一方面看，执行自己的传输确实比使用后台传输有优势。
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 72.0pt; margin-bottom: .0001pt;'>
+                                    o&nbsp;
+2G、EDGE、标准 GPRS
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 36.0pt; margin-bottom: .0001pt'>
+                                    在 3G 和更高的网络中，假设所有其他条件都符合，那么无论应用是否正在前台运行，后台传输都将继续。
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 36.0pt; margin-bottom: .0001pt;'>
+                                    ●
+服务器端所需的文件内容长度标头大于 5&nbsp;MB。服务器应该始终在响应中返回内容长度。不这样做可能会导致严重降低传输的性能。
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 36.0pt; margin-bottom: .0001pt;'>
+                                    ●
+服务器端所需的文件范围标头大于 5&nbsp;MB。服务器应该始终支持范围请求标头。不这样做可能会导致严重降低传输的性能。
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 36.0pt; margin-bottom: .0001pt;'>
+                                    ●
+当节电模式功能开启且电量低于阈值时，系统会进入节电模式（电池图标上会显示&#9829;符号），此时除了电话和短信以外的所有后台任务都会关闭，后台传输也都会停止，只有在应用程序打开时才能运行。
+                                </p>
+                                <h5 style='margin: 0cm; margin-bottom: .0001pt'>慢速传输</h5>
+                                <p style='margin: 0cm; margin-bottom: .0001pt'>如果设备的网络连接速度低于以下速率，则会暂停传输并重试。这些限制（单位为 Kb/s）比较低，因此通常不会达到。</p>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                <b>网络媒介</b>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                <b>最低数据速率</b>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                3G
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                50&nbsp;Kbps
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                Wi-Fi/USB
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt'>
+                                                100&nbsp;Kbps
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <br />
+                                <h2><a name="_Toc371249621"></a><a name="_Toc371249540">计划通知</a></h2>
+                                <p style='margin: 0cm; margin-bottom: .0001pt'>“计划通知”允许应用注册在预定义时间在前台中弹出的定期和一次性闹钟和提醒。用户体验类似于内置日历应用实现的提醒。用户点按闹钟或提醒会启动您的应用。</p>
+                                <h2>快速应用程序恢复</h2>
+                                <p style='margin: 0cm; margin-bottom: .0001pt; text-align: justify; text-justify: inter-ideograph'>
+                                    如果应用被挂起，而用户重启应用，如通过点按应用列表中的应用名称或点按应用的主要开始图块，那么默认情况下，应用的旧实例将终止，应用的全新实例将创建出来。该过程比恢复已挂起的应用慢，而且用户体验也不一样。Windows&nbsp;Phone&nbsp;8 引入了应用程序快速恢复特性，当用户导航离开应用程序时，应用程序将被挂起，其状态保留在内存中。如果用户通过按“后退”按钮或使用“任务切换器”返回应用程序，那么应用实例将恢复。因为应用被保留在内存中，所有应用可以快速恢复至用户导航离开时的状态。
+                                </p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt; text-align: justify; text-justify: inter-ideograph'>
+                                    启用“快速恢复”很容易。只需对应用清单文件进行微小的更改。但是，一旦您启用了“快速恢复”，当您的应用恢复时，对于应用如何管理之前所访问的页面的后退堆栈，有几个不同的选项。若要启用您的应用的“快速恢复”，则在 WMAppManifest.xml 中，将&nbsp;<b>ActivationPolicy</b>&nbsp;特性添加至<b>DefaultTask</b>&nbsp;元素，并且将值设为“Resume”。
+                                </p>
+                                <p style='text-align: justify; text-justify: inter-ideograph'>实现“快速恢复”时，您应确定从手机上可用的不同启动点启动时，您的应用的最佳用户体验是什么。</p>
+                                <p style='margin-left: 36.0pt; text-align: justify; text-justify: inter-ideograph;'>
+                                    ●
+主要启动点将用户带到应用的主页。主要启动点包括“开始”屏幕上应用的主要图块、应用列表中的应用名称或游戏中心。
+                                </p>
+                                <p style='margin-left: 36.0pt; text-align: justify; text-justify: inter-ideograph;'>
+                                    ●
+深层链接将用户导航至应用内的其他页。深层链接包括次要图块、Toast 通知、可扩展性点（如搜索）或照片中心。
+                                </p>
+                                <p style='text-align: justify; text-justify: inter-ideograph'>
+                                    对于
+Windows&nbsp;Phone 应用，系统保持用户在应用内已访问的页面历史记录，这让用户可以使用“后退”按钮向后导航堆栈至之前访问的页面。通过“快速恢复”，当应用恢复时，系统为启动点目标创建新的页面实例，而且该页面放置在应用现有后退堆栈的顶部。在这种情况下，应用可以选择清除现有后退堆栈，而仅保留堆栈上新建的页面。在这种情况下，用户体验将如同“全新”的应用启动。如果他们从已恢复的应用向后导航，而历史记录中并无页面，那么他们将返回“开始”屏幕或之前的应用。处理“快速恢复”的另一种方式是取消导航至新建页面。在这种情况下，用户将到达他们最后浏览的应用页面，之前会话的后退堆栈将保持完整。看起来如同仅是他们之前的应用会话恢复了。
+                                </p>
+                                <h2><a name="_Toc371249622"></a><a name="_Toc371249541">快速应用程序切换</a></h2>
+                                <p style='margin: 0cm; margin-bottom: .0001pt'>在 Windows&nbsp;Phone 中，当用户导航离开时，应用通常会处于休眠状态。在休眠状态下，应用会保存在内存中，因此，当用户返回到应用时，应用几乎可以立即恢复。应用无需实现任何代码就可以实现快速应用切换；该功能是自动启用的。但是，应用在处于休眠状态时可能会终止。您一定要对您的应用进行设计，以便它能够处理这些出现在整个应用生命周期中的状态变更。</p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt'><b>说明：</b></p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt'>
+                                    multiple devices 低内存设备 上支持快速应用程序切换。然而，由于为进行快速应用程序切换而将应用保持在休眠状态要依赖于手机的可用内存，因此，相比运行在具有更多内存的手机上的应用，对运行在
+低内存设备 上的同一应用的终止和逻辑删除将更快更频繁。
+                                </p>
+                                <h1><a name="_Toc371249623"></a><a name="_Toc371249542">Windows应用商店应用的后台任务</a></h1>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>
+                                    后台任务是
+Windows 在后台运行的轻型类。你可以使用后台任务在应用挂起或未运行时提供功能。也可以将后台任务用于实时通信应用，例如 VOIP、邮件和 IM。
+                                </p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>后台任务是实现&nbsp;<strong>IBackgroundTask</strong>&nbsp;接口的单独的类。Windows 应用商店应用使用&nbsp;<strong>BackgroundTaskBuilder</strong>&nbsp;类注册后台任务。注册后台任务时将此类名称作为入口点指定。</p>
+                                <h2><a name="_Toc371249624"></a><a name="_Toc371249543">后台任务资源限制</a></h2>
+                                <p>后台任务时轻型的。使后台执行最少可确保前台应用的最佳用户体验以及最佳电池寿命。通过对后台任务应用资源限制来实施该操作：</p>
+                                <p style='margin-left: 18.0pt;'>
+                                    ●
+CPU 的使用限制如下。
+                                </p>
+                                <table>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <p style='margin: 7.5pt;'><b>CPU </b><b>使用配额</b></p>
+                                        </td>
+                                        <td>
+                                            <p style='margin: 7.5pt;'><b>刷新时间</b></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin: 7.5pt;'><b>应用不在锁屏上</b></p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                1 秒
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                2 小时
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin: 7.5pt;'><b>应用位于锁屏上</b></p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                2 秒
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                15 分钟
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <p style='margin-left: 18.0pt;'>
+                                    ●
+当使用电池（直流电源）运行时，后台任务还具有网络数据使用限制。此限制是网络接口所用能量的函数，因此它因设备和网络环境而异 - 但这个量可以估计。
+                                </p>
+                                <p>
+                                    下表描述了网络数据吞吐量特性，假定 WiFi
+网络的资源限制为每数据吞吐量 1Mbps。为了估计正确的限制，请乘以连接的每秒平均 Mb 数 (Mbps)。例如，如果应用位于锁屏上，则在 10Mbps WiFi 连接条件下该应用每 2 小时可以使用 25 MB 数据。示例 WiFi 接口假定干扰最少。
+                                </p>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p style='margin: 7.5pt;'><b>刷新周期</b></p>
+                                        </td>
+                                        <td>
+                                            <p style='margin: 7.5pt;'>15 分钟</p>
+                                        </td>
+                                        <td>
+                                            <p style='margin: 7.5pt;'>2 小时</p>
+                                        </td>
+                                        <td>
+                                            <p style='margin: 7.5pt;'>每天</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin: 7.5pt;'><b>数据限制（在锁屏上）</b></p>
+                                        </td>
+                                        <td>
+                                            <p style='margin: 7.5pt;'>0.469 MB</p>
+                                        </td>
+                                        <td>
+                                            <p style='margin: 7.5pt;'>不适用</p>
+                                        </td>
+                                        <td>
+                                            <p style='margin: 7.5pt;'>45 MB</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin: 7.5pt;'><b>数据限制（不在锁屏上）</b></p>
+                                        </td>
+                                        <td>
+                                            <p style='margin: 7.5pt;'>不适用</p>
+                                        </td>
+                                        <td>
+                                            <p style='margin: 7.5pt;'>0.625 MB</p>
+                                        </td>
+                                        <td>
+                                            <p style='margin: 7.5pt;'>7.5 MB</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <p>&nbsp;</p>
+                                <p><b>注意</b>&nbsp;当插入设备（交流电源）时，网络数据使用限制将增加，但 CPU 的使用配额仍适用。同样的，CPU 和网络资源约束由于应用的后台任务而挂起时，用户与该应用的交互仍在前台。</p>
+                                <h2><a name="_Toc371249626"></a><a name="_Toc371249545">后台任务指南</a></h2>
+                                <h3><a name="_Toc371249627"></a><a name="_Toc371249546">CPU </a>和网络配额<strong>&nbsp;</strong></h3>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>
+                                    不要超过适用于你的后台任务的 CPU 配额或网络数据使用配额。后台任务应该是轻型的任务以延长电池寿命并为前台应用提供最佳用户体验。有关适用于后台任务的资源限制，请参阅<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh977056.aspx">使用后台任务支持应用</a>。
+                                </p>
+                                <h3><a name="_Toc371249628"></a><a name="_Toc371249547"><strong>管理后台任务</strong></a><strong>&nbsp;</strong></h3>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>
+                                    你的应用应该获取已注册后台任务的列表，注册进度和完成处理程序以及相应地处理这些事件。你的后台任务类应该报告进度、取消以及完成。有关详细信息，请参阅<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh977050.aspx">如何获取待完成后台任务的列表</a>、<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh977052.aspx">如何处理取消的后台任务</a>和<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh977054.aspx">如何监视后台任务进度和完成情况</a>。
+                                </p>
+                                <h3><a name="_Toc371249629"></a><a name="_Toc371249548"><strong>使用</strong><strong>BackgroundTaskDeferral</strong></a></h3>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>
+                                    如果后台任务类运行异步代码，则确保使用延迟。否则，当&nbsp;Run&nbsp;方法完成时，你的后台任务可能会被提前终止。有关详细信息，请参阅&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh977055.aspx">快速入门：创建和注册后台任务</a>。
+                                </p>
+                                <p class="note" style='margin: 0cm; margin-bottom: .0001pt;'>或者也可以请求一个延迟，并使用&nbsp;<strong>async/await</strong>&nbsp;来完成异步方法调用。在&nbsp;<strong>await</strong>&nbsp;方法调用之后关闭延迟。</p>
+                                <h3><a name="_Toc371249630"></a><a name="_Toc371249549"><strong>更新应用清单</strong></a></h3>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>
+                                    在应用程序清单中声明每个后台任务及其使用的触发器类型。否则，你的应用将不能在运行时注册后台任务。有关详细信息，请参阅<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh977049.aspx">如何在应用程序清单中声明后台任务</a>。
+                                </p>
+                                <h3><a name="_Toc371249631"></a><a name="_Toc371249550"><strong>准备应用更新</strong></a></h3>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>如果你的应用将更新，请创建和注册一个&nbsp;<strong>ServicingComplete</strong>&nbsp;后台任务，以帮助在前台运行的上下文之外执行所需的应用更新。</p>
+                                <h3><a name="_Toc371249632"></a><a name="_Toc371249551"><strong>支持锁屏的应用的后台任务</strong></a></h3>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>锁屏是一个共享的资源。一次只能在锁屏上放置 7 个应用，并且只有一个应用可以显示宽磁贴。你的应用可以通过使用&nbsp;<strong>RequestAccessAsync</strong>&nbsp;方法请求锁屏访问，同时确保你的应用即使不在锁屏上也仍然工作来提供最佳用户体验。未使用锁屏的应用仍可以更新磁贴，更新锁屏提醒，发送通知以及注册系统事件触发器。当应用位于前台时的用户体验应该从不中断，即使用户未将应该放置在锁屏上也是如此。</p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>
+                                    请阅读<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh779720.aspx">锁屏概述</a>以了解锁屏是否适合你的应用。
+                                </p>
+                                <h3><a name="_Toc371249633"></a><a name="_Toc371249552">后台任务清单</a></h3>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>以下清单适用于所有后台任务。</p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 18.0pt; margin-bottom: .0001pt;'>
+                                    ●
+将后台任务与正确的触发器关联。
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 18.0pt; margin-bottom: .0001pt;'>
+                                    ●
+添加条件以帮助确保你的后台任务成功运行。
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 18.0pt; margin-bottom: .0001pt;'>
+                                    ●
+处理后台任务进度、完成以及取消。
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 18.0pt; margin-bottom: .0001pt;'>
+                                    ●
+请勿通过后台任务显示 UI，但 Toast、磁贴以及锁屏提醒更新除外。
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 18.0pt; margin-bottom: .0001pt;'>
+                                    ●
+在&nbsp;Run&nbsp;方法中，为每个异步方法调用请求延迟并在完成该方法时关闭它们。
+                                </p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>或者，通过&nbsp;<strong>async/await</strong>&nbsp;使用一个延迟。</p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 18.0pt; margin-bottom: .0001pt;'>
+                                    ●
+使用永久性存储在后台任务与应用之间共享数据。
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 18.0pt; margin-bottom: .0001pt;'>
+                                    ●
+在应用程序清单中声明每个后台任务及其使用的触发器类型。确保入口点和触发器类型正确。
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 18.0pt; margin-bottom: .0001pt;'>
+                                    ●
+编写生存时间较短的后台任务。请勿超过<a
+    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh977056.aspx">使用后台任务支持应用</a>中显示的 CPU 或网络配额。
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 18.0pt; margin-bottom: .0001pt;'>
+                                    ●
+不要依赖后台任务中的用户交互。
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 18.0pt; margin-bottom: .0001pt;'>
+                                    ●
+请勿在清单中指定 Executable 元素，除非使用的是应运行在与应用相同的上下文中的触发器。
+                                </p>
+                                <h3><a name="_Toc371249634"></a><a name="_Toc371249553">支持锁屏的应用的后台任务清单</a></h3>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>
+                                    当开发可以使用锁屏的应用的后台任务时，请遵循此指南。遵循<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh761460.aspx">锁屏磁贴指南和清单</a>中的指南。
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 18.0pt; margin-bottom: .0001pt;'>
+                                    ●
+在将你的应用作为可锁屏应用进行开发之前，确保该应用位于锁屏上。有关详细信息，请参阅<a
+    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh779720.aspx">锁屏概述</a>。
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 18.0pt; margin-bottom: .0001pt;'>
+                                    ●
+确保你的应用在未置于锁屏上时也能工作。
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 18.0pt; margin-bottom: .0001pt;'>
+                                    ●
+使用&nbsp;<strong>RequestAccessAsync</strong>&nbsp;方法请求锁屏访问。
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 18.0pt; margin-bottom: .0001pt;'>
+                                    ●
+包含使用&nbsp;<strong>PushNotificationTrigger</strong>、<strong>ControlChannelTrigger</strong>&nbsp;或&nbsp;<strong>TimeTrigger</strong>&nbsp;注册并在应用清单中声明的后台任务。确保入口点和触发器类型正确。 这是认证所需的内容，它使得用户能够将应用置于锁屏上。
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 18.0pt; margin-bottom: .0001pt;'>
+                                    ●
+编写生存时间较短的后台任务，即使为可锁屏的应用编写后台任务也是如此。请勿超过<a
+    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh977056.aspx">使用后台任务支持应用</a>中显示的 CPU 或网络配额。
+                                </p>
+                                <br />
+                                <h1><a name="_Toc371249635"></a><a name="_Toc371249554">另请参见</a></h1>
+                                <p>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/hh202944(v=vs.105).aspx">Windows Phone的后台代理最佳做法</a>
+                                </p>
+                                <p>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/hh202941(v=vs.105).aspx">如何实现Windows
+Phone的后台代理</a>
+                                </p>
+                                <p>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh977051.aspx">后台任务指南（Windows
+应用商店应用）</a>
+                                </p>
+                                <p>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh977056.aspx">使用后台任务支持应用（使用
+C#/VB/C++ 和 XAML 的 Windows 应用商店应用）</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <!--End Content-->
+        <div style="text-align: right" class="gotoTop"><a href="javascript:scroll(0,0)"></a></div>
+        <!--Begin ProudctLinks-->
+        <div class="ms-pro-links">
+            <div class="grid-container clearfix">
+                <div class="cam-links">
+                    其它微软站点
+		<a href="http://www.microsoft.com/zh-cn/default.aspx">微软中国官方网站</a>
+                    <a href="http://www.microsoft.com/zh-cn/download/default.aspx?WT.mc_id=MSCOM_zh-cn_HP_Footer_downloads" target="_blank">微软中国下载中心</a>
+                    <a href="http://www.microsoftstore.com.cn?WT.mc_id=MSCOM_003" target="_blank">微软中国官方商城</a>
+                    <a href="http://www.microsoft.com/china/newsletter/" target="_blank">订阅电子期刊</a>
+                    <a href="https://sales.liveperson.net/hc/21661174/?cmd=file&file=visitorWantsToChat&site=21661174&byhref=1&SESSIONVAR!skill=APGC.PRC.ZH.CS.CON.PRESLS.GENERAL" target="_blank">联系微软销售代表</a>
+                    <a href="http://www.microsoft.com/zh-cn/sitemap.aspx" target="_blank">网站地图</a>
+                </div>
+            </div>
+        </div>
+        <!--End ProudctLinks-->
+        <!--Begin footer-->
+        <div class="footer">
+            <div class="grid-container">
+                <img src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-type-1x.png" alt="microsoft" class="logo">
+                <ul>
+                    <li><a href="http://www.miibeian.gov.cn/" title="">京ICP备09042378号-6</a></li>
+                    <li><a href="https://profile.microsoft.com/RegSysProfileCenter/default.aspx?lcid=2052" title="">个人信息中心</a></li>
+                    <li><a href="http://support.microsoft.com/contactus/?ws=support" title="">与我们联系</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkId=248681" title="">隐私权声明</a></li>
+                    <li><a href="http://go.microsoft.com/?linkid=4412892" title="">使用条款</a></li>
+                    <li><a href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Trademarks/EN-US.aspx" title="">商标</a></li>
+                    <li>&copy; 2013 Microsoft</li>
+                </ul>
+            </div>
+        </div>
+        <!--End footer-->
+        <!-- Begin MDA WEDCS -->
+        <script type="text/JavaScript">
+            var varSegmentation = 0;
+            var varClickTracking = 1;
+            var varCustomerTracking = 1;
+            var varAutoFirePV = 1;
+            var Route = "#";
+            var Ctrl = "#"
+            //document.write("<script type='text/javascript' src='" + window.location.protocol + "//c.microsoft.com/ms.js'><"+"/script>");
+        </script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="./assets/js/script.js"></script>
+        <script type="text/javascript" src="./js/siteSearch.js"></script>
+        <noscript>
+            <img alt="" width="1" height="1" src="http://c.microsoft.com/trans_pixel.aspx/" /></noscript>
+        <!-- Begin MDA WEDCS -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,1098 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Audio、Video Player应用的开发: Audio、Video Player（App design）</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="css/templete.css" type="text/css" media="all" />
+    <meta charset="UTF-8">
+</head>
+<body class="level-2">
+    <div class="wrapper">
+        <!--Begin header-->
+        <div class="header">
+            <div class="grid-container clearfix">
+                <div class="header-left">
+                    <img alt="Microsoft" src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-lg-1x.png" width="94" height="20">
+                    <h1>X-Platform</h1>
+                </div>
+                <div id="mscom-search" class="mscom-search" style="margin-top: 37px;">
+                    <div class="search-form">
+                        <form action="" id="search-form">
+                            <div class="input-wrapper">
+                                <label class="screen-reader-text" for="search-input">搜索 Microsoft.com</label>
+                                <input id="search-input" type="text" class="input-area" autocomplete="off">
+                            </div>
+                            <button class="search-submit" id="search-btn" type="submit">
+                                <img width="16" height="16" alt="Submit" src="http://i.s-microsoft.com/global/imagestore/PublishingImages/sprites/search-button-blue.png"></button>
+                        </form>
+                    </div>
+                    <div class="search-results-box" id="results">
+                        <div class="search-scope">
+                            <ul>
+                                <li class=""><a class="checked" search="microsoft" role="search">搜索 Microsoft.com</a></li>
+                                <li class=""><a search="internet" role="search">搜索互联网</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End header-->
+        <br />
+        <!--Begin Content-->
+        <div class="content">
+            <div class="wrapper">
+                <div class="wrapper-header">
+                    <div>
+                        <a href="index.html">
+                            <img src="./assets/image/banner_1.jpg"></a>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="nav">
+                        <div class="block article-nav-block">
+                            <h2>移动应用开发生命周期</h2>
+                            <div class="menu">
+                                <h3><a href="idea.html">计划<span>Idea/Planning</span></a></h3>
+                                <ul>
+                                    <li><a href="idea_01.html">平台总览</a></li>
+                                    <li><a href="idea_02.html">开发工具、开发环境和模拟器</a></li>
+                                    <li><a href="idea_03.html">应用结构和生命周期</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="design.html">设计<span>Design</span></a></h3>
+                                <ul>
+                                    <li><a href="design_01.html">UI Layout的设计</a></li>
+                                    <li><a href="design_02.html">UI的控件</a></li>
+                                    <li><a href="design_03.html">UI页面的控制和导航</a></li>
+                                    <li><a href="design_04.html">不同屏幕尺寸和分辨率的适配</a></li>
+                                    <li><a href="design_05.html">第三方SDK</a></li>
+                                    <li><a href="design_06.html">游戏开发</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu active">
+                                <h3><a href="developing.html">开发<span>Developing</span></a></h3>
+                                <ul>
+                                    <li><a href="developing_01.html">开发语言</a></li>
+                                    <li><a href="developing_02.html">Audio、Video Player应用的开发</a></li>
+                                    <li><a href="developing_03.html">General APIs Mapping</a></li>
+                                    <li><a href="developing_04.html">IAP应用内支付</a></li>
+                                    <li><a href="developing_05.html">LBS应用</a></li>
+                                    <li><a href="developing_06.html">LBS、镜头和传感器应用接口使用</a></li>
+                                    <li><a href="developing_07.html">Native Code（C和C++）支持</a></li>
+                                    <li><a href="developing_08.html">Push Notification</a></li>
+                                    <li><a href="developing_09.html">Sharing in Social Network</a></li>
+                                    <li><a href="developing_10.html">Source Code Control</a></li>
+                                    <li><a href="developing_11.html">UI上的Data Binding</a></li>
+                                    <li><a href="developing_12.html">Windows 8.1和WP 8 Sharing应用分享功能实现</a></li>
+                                    <li><a href="developing_13.html">多媒体</a></li>
+                                    <li><a href="developing_14.html">后台任务和多任务处理</a></li>
+                                    <li><a href="developing_15.html">获取后台服务器数据</a></li>
+                                    <li><a href="developing_16.html">浏览器控件WebView</a></li>
+                                    <li><a href="developing_17.html">数据库（SQLite）</a></li>
+                                    <li><a href="developing_18.html">数据网络和数据通讯</a></li>
+                                    <li><a href="developing_19.html">通话和短信功能</a></li>
+                                    <li><a href="developing_20.html">图形处理(Drawing & Animation)</a></li>
+                                    <li><a href="developing_21.html">文件系统和应用设置</a></li>
+                                    <li><a href="developing_22.html">应用间通信</a></li>
+                                    <li><a href="developing_23.html">支付方式</a></li>
+                                    <li><a href="developing_24.html">Windows 8.1应用外设开发</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="testing.html">测试<span>Testing</span></a></h3>
+                                <ul>
+                                    <li><a href="testing_01.html">Windows 8 and WP 8开发FAQ</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu last">
+                                <h3><a href="distribute.html">发布<span>Distribute</span></a></h3>
+                                <ul>
+                                    <li><a href="distribute_01.html">应用商店(发布和更新应用)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="block success-story-nav-block">
+                            <h2>成功案例</h2>
+                        </div>
+                        <div class="block others">
+                            <a href="sample_code.html" class="left">示例代码</a>
+                            <a href="http://msdn.microsoft.com/zh-cn/dn473954" class="right">教学视频</a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="textlist">
+                            Audio、Video Player应用的开发<br />
+                            <ul>
+                                <li><a href="developing_02.html">●Audio、Video Player（App design）</a>
+                                <li><a href="developing_021.html">Audio、Video Player（Typical app migration ）</a>
+                            </ul>
+                        </div>
+                        <h3 class="title"><a name="text1">Audio、Video Player（App design）</a><span><a href="index.html">返回首页&gt;</a></span></h3>
+                        <div class="article-content">
+                            <div class="WordSection1">
+                                <p class="MsoToc1"><a href="#_Toc372096479">不同平台对音视频播放的支持</a></p>
+                                <p class="MsoToc1">
+                                    <a href="#_Toc372096480">Windows/Windows
+phone中的MediaElement</a>
+                                </p>
+                                <p class="MsoToc2"><a href="#_Toc372096481">适用于Windows和Windows phone的特性</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372096482">MediaElement&nbsp;为Windows应用商店应用提供的新特性</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372096483">Windows phone中需要注意的事项</a></p>
+                                <p class="MsoToc1"><a href="#_Toc372096484">支持的编码格式</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372096485">Android 和 ios支持的视频和音频格式</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372096486">Windows phone中支持的音视频格式</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372096487">Windows应用商店应用</a></p>
+                                <p class="MsoToc1"><a href="#_Toc372096488">播放不同来源的文件</a></p>
+                                <p class="MsoToc1"><a href="#_Toc372096489">后台播放</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372096490">Android和IOS中的后台播放</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372096491">Windows phone中后台播放音频</a></p>
+                                <p class="MsoToc3"><a href="#_Toc372096492">播放列表应用程序</a></p>
+                                <p class="MsoToc3"><a href="#_Toc372096493">对音频应用程序进行流处理</a></p>
+                                <p class="MsoToc3"><a href="#_Toc372096494">后台代理生命周期</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372096495">Windows应用商店应用后台播放</a></p>
+                                <p class="MsoToc1"><a href="#_Toc372096496">另请参见</a></p>
+                                <br />
+                                <h1><a name="_Toc372096479"></a><a name="_Toc372030861"></a><a
+                                    name="_Toc372030804">不同平台对音视频播放的支持</a></h1>
+                                <p>随着网络中各种音频和视频资源的不断丰富，很多移动应用都嵌入了音频和视频播放功能以满足人们的需求，从而吸引更多用户。各移动开发平台都提供了对音视频播放的支持。</p>
+                                <p>Android通过MediaPlayer类支持播放音频和视频。MediaPlayer类处于Android&nbsp;media包的核心位置，是播放媒体文件最为广泛使用的类。MediaPlayer已设计用来播放大容量的音频文件以及同样可支持播放操作（停止、开始、暂停等）和查找操作的流媒体。</p>
+                                <p>在 iOS 系统中利用MPMoviePlayerController 播放视频，AVAudioPlayer播放音频。</p>
+                                <p>微软为windows应用商店应用和Windows phone开发提供了MediaElement用于支持音视频播放。MediaElement&nbsp;提供了许多用于控制音频和视频播放的属性和方法，能够很好的满足开发需求。以下将详细介绍MediaElement&nbsp;、windows和Windows phone中有关音视频播放的相关内容以及与android和ios中相应内容的比较。</p>
+                                <h1><a name="_Toc372096480"></a><a name="_Toc372030862"></a><a
+                                    name="_Toc372030805">Windows/Windows phone中的MediaElement</a></h1>
+                                <p>
+                                    &nbsp;Windows 应用商店应用和Windows phone中都利用<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.mediaelement.aspx"><strong>MediaElement</strong></a>实现播放音频和视频媒体。<strong>MediaElement</strong>&nbsp;提供了许多用于控制音频和视频播放的属性和方法，向应用中添加媒体的操作十分简单，只需将&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.mediaelement(v=vs.105).aspx">MediaElement</a>&nbsp;添加到标记并为要播放的媒体提供统一资源标识符 (URI)。
+                                </p>
+                                <h2><a name="_Toc372096481"></a><a name="_Toc372030863"></a><a
+                                    name="_Toc372030806">适用于Windows和Windows phone的特性</a></h2>
+                                <p style='margin: 0cm; margin-bottom: .0001pt'>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.mediaelement(v=vs.105).aspx">MediaElement</a>&nbsp;对象提供几个媒体特定的属性。下面的列表描述了常用的属性。
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 36.0pt; margin-bottom: .0001pt;'>
+                                    ●
+                            <a
+                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.mediaelement.autoplay(v=vs.105).aspx">AutoPlay</a>：指定&nbsp;<a
+                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.mediaelement(v=vs.105).aspx">MediaElement</a>&nbsp;是否应自动开始播放。默认值为&nbsp;<b>True</b>。
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 36.0pt; margin-bottom: .0001pt;'>
+                                    ●
+                            <a
+                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.mediaelement.ismuted(v=vs.105).aspx">IsMuted</a>：指定&nbsp;<a
+                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.mediaelement(v=vs.105).aspx">MediaElement</a>&nbsp;是否静音。<b>True</b>&nbsp;值将使&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.mediaelement(v=vs.105).aspx">MediaElement</a>&nbsp;静音。默认值为&nbsp;<b>false</b>。
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 36.0pt; margin-bottom: .0001pt;'>
+                                    ●
+                            <a
+                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.mediaelement.volume(v=vs.105).aspx">Volume</a>：指定介于 0 到 1 的&nbsp;<a
+                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.mediaelement(v=vs.105).aspx">MediaElement</a>&nbsp;对象的音频音量值，1 表示最大音量。默认值为 0.5。
+                                </p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt'>
+                                    除了媒体特定的属性之外，<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.mediaelement(v=vs.105).aspx">MediaElement</a>&nbsp;还具有&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.uielement(v=vs.105).aspx">UIElement</a>&nbsp;的所有属性（如&nbsp;<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.uielement.opacity(v=vs.105).aspx">Opacity</a>&nbsp;和&nbsp;<a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.uielement.clip(v=vs.105).aspx">Clip</a>）。
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 36.0pt; margin-bottom: .0001pt;'>
+                                    ●
+                            <a
+                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.mediaelement.stretch(v=vs.105).aspx">Stretch</a>：指定如何拉伸视频以填充&nbsp;<a
+                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.mediaelement(v=vs.105).aspx">MediaElement</a>&nbsp;对象。可能的值有<b>None</b>、<b>Uniform</b>、<b>UniformToFill</b>&nbsp;和&nbsp;<b>Fill</b>。默认值为&nbsp;<b>Fill</b>。下图演示&nbsp;<b>Stretch</b>&nbsp;值的示例。
+                                </p>
+                                <p class="imgp">
+                                    <img
+                                        border="0" width="551" height="209" id="图片 1" src="images/developing_02/image001.png">
+                                </p>
+                                <p>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.mediaelement.aspx"><b>MediaElement</b></a>&nbsp;对象提供了几个用于控制媒体播放的特定于媒体的方法。下面是其中一些常用的方法：
+                                </p>
+
+                                <p>&nbsp;</p>
+                                <p>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.mediaelement.aspx"><b>MediaElement</b></a>&nbsp;对象提供了几个特定于媒体的事件。下面是其中一些常用的事件：
+                                </p>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                <b>方法</b>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                <b>描述</b>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                <a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.mediaelement.mediaopened.aspx"><b>MediaOpened</b></a>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                当已验证并打开了媒体流且已读取了文件头时发生。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                <a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.mediaelement.mediaended.aspx"><b>MediaEnded</b></a>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                在&nbsp;<a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.mediaelement.aspx"><b>MediaElement</b></a>&nbsp;完成了音频或视频播放时发生。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                <a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.mediaelement.mediafailed.aspx"><b>MediaFailed</b></a>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                当存在与媒体&nbsp;<a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.mediaelement.source.aspx"><b>Source</b></a>&nbsp;相关的错误时发生。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                <a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.mediaelement.currentstatechanged.aspx"><b>CurrentStateChange</b></a>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                当&nbsp;<a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.mediaelement.currentstate.aspx"><b>CurrentState</b></a>&nbsp;属性的值更改时发生。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <p>&nbsp;</p>
+                                <p>
+                                    另外，要阻止显示屏在不再检测到用户操作时（例如在应用播放全屏视频时）被停用，可以调用<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.system.display.displayrequest.requestactive.aspx"><b>DisplayRequest.RequestActive</b></a>。为了省电并延长电池寿命，你应当调用 <a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.system.display.displayrequest.requestrelease.aspx"><b>DisplayRequest.RequestRelease</b></a>&nbsp;在不再需要显示请求时释放显示请求，例如，当媒体被暂停或停止时、当媒体结束时或者当应用被挂起时。
+                                </p>
+                                <h2><a
+                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.mediaelement(v=vs.105).aspx">MediaElement</a><a
+                                        name="_Toc372030807"></a><a name="_Toc372030864"></a><a name="_Toc372096482">&nbsp;为Windows应用商店应用提供的新特性</a></h2>
+                                <p style='margin: 0cm; margin-bottom: .0001pt; text-align: justify; text-justify: inter-ideograph;'>
+                                    Windows&nbsp;8.1 引入了用于&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh871377.aspx">MediaElement</a>&nbsp;的内置传输控件。 它们处理播放、停止、暂停、音量、静音、定位/前进，以及音轨选择。 要启用这些控件，请将<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.mediaelement.aretransportcontrolsenabled.aspx"><strong>AreTransportControlsEnabled</strong></a>&nbsp;设置为&nbsp;<strong>true</strong>。要禁用它们，请将<strong>AreTransportControlsEnabled</strong>&nbsp;设置为&nbsp;<strong>false</strong>。
+                                </p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt; text-align: justify; text-justify: inter-ideograph;'>
+                                    Windows&nbsp;8.1 引入了&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.mediaelement.isfullwindow.aspx"><strong>IsFullWindow</strong></a>&nbsp;属性来启用和禁用全屏呈现。 这可以确保在切换到全屏呈现时将启用系统优化。
+在 Windows&nbsp;8.1 和更高版本中，始终应当使用&nbsp;<strong>IsFullWindow</strong>&nbsp;属性来启用和禁用全屏呈现。
+                                </p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>
+                                    在早于 Windows&nbsp;8.1 的版本中，开发人员负责创建用于控制音频和视频播放的自定义 UI。 例如，要在你的应用中启动媒体，你可以创建一个&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.button.aspx"><strong>Button</strong></a>&nbsp;并在&nbsp;<strong>Button</strong>&nbsp;事件处理程序中调用&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.mediaelement.play.aspx"><strong>Play</strong></a>。 虽然 Windows&nbsp;8.1 引入内置传输控件，但是如果你要支持额外功能或要使用自己的控件替代内置控件，则仍需要创建自定义 UI。 有关创建自定义传输控件的更深入的讨论，请参阅<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh986967.aspx">如何创建自定义媒体传输控件</a>。
+                                </p>
+                                <h2><a name="_Toc372096483"></a><a name="_Toc372030865"></a><a
+                                    name="_Toc372030808">Windows phone中需要注意的事项</a></h2>
+                                <p class="MsoListParagraph" style='margin-left: 21.0pt;'>
+                                    当您采用 XAML 添加&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.mediaelement(v=vs.105).aspx">MediaElement</a>&nbsp;时，请始终命名&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.mediaelement(v=vs.105).aspx">MediaElement</a>。否则，在向
+Windows Phone 商店 提交的过程中将不会授予媒体库安全功能。有关更多信息，请参见&nbsp;<a
+    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/ff402533(v=vs.105).aspx">Windows Phone 安全性</a>。
+                                </p>
+                                <p class="MsoListParagraph" style='margin-left: 21.0pt;'>
+                                    当通过MediaElement播放音视频时，所有其他的媒体播放将被停止
+                                </p>
+                                <p class="MsoListParagraph" style='margin-left: 21.0pt;'>
+                                    不能同时使用多个MediaElement
+                                </p>
+                                <p class="MsoListParagraph" style='margin-left: 21.0pt;'>
+                                    Windows phone模拟器不支持MediaElement播放音视频
+                                </p>
+                                <p class="MsoListParagraph" style='margin-left: 21.0pt;'>
+                                    以下属性在Windows phone中不支持：
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 42.0pt; margin-bottom: .0001pt;'>
+                                    ● <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/system.windows.controls.mediaelement.attributes(v=vs.95).aspx">Attributes</a>
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 42.0pt; margin-bottom: .0001pt;'>
+                                    ● <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/system.windows.controls.mediaelement.attributesproperty(v=vs.95).aspx">AttributesProperty</a>
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 42.0pt; margin-bottom: .0001pt;'>
+                                    ●
+                            <a
+                                href="http://msdn.microsoft.com/zh-cn/library/system.windows.controls.mediaelement.markerreached(v=vs.95).aspx">MarkerReached</a>
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 42.0pt; margin-bottom: .0001pt;'>
+                                    ●
+                            <a
+                                href="http://msdn.microsoft.com/zh-cn/library/system.windows.controls.mediaelement.markers(v=vs.95).aspx">Markers</a>
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 21.0pt; margin-bottom: .0001pt;'>
+                                    ●
+                            <a
+                                href="http://msdn.microsoft.com/zh-cn/library/system.windows.controls.mediaelement.canpause(v=vs.95).aspx">CanPause</a>和<a
+                                    href="http://msdn.microsoft.com/zh-cn/library/system.windows.controls.mediaelement.canseek(v=vs.95).aspx">CanSeek</a> &nbsp;属性不支持设置值
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 21.0pt; margin-bottom: .0001pt;'>
+                                    ●<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/system.windows.controls.mediaelement.audiostreamcount(v=vs.95).aspx">AudioStreamCount</a>和<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/system.windows.controls.mediaelement.balance(v=vs.95).aspx">Balance</a>返回值总是1
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 21.0pt; margin-bottom: .0001pt;'>
+                                    ●<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/system.windows.controls.mediaelement.audiostreamindex(v=vs.95).aspx">AudioStreamIndex</a>属性返回值总是0
+                                </p>
+                                <h1><a name="_Toc372096484"></a><a name="_Toc372030866"></a><a
+                                    name="_Toc372030809">支持的编码格式</a></h1>
+                                <h2><a name="_Toc372096485"></a><a name="_Toc372030867"></a><a
+                                    name="_Toc372030810">Android 和 ios支持的视频和音频格式</a></h2>
+                                <p>Android中支持的视频格式有H.263、H.264 AVC、MPEG-4 SP、VP8。支持的音频格式有AAC LC、HE-AACv1&nbsp;、HE-AACv2&nbsp;、AAC ELD&nbsp;、AMR-NB、AMR-WB、FLAC、MP3、MIDI、Vorbis、PCM/WAVE。</p>
+                                <p>
+                                    iOS sdk中的MPMoviePlayerController 支持H.264 (Baseline Profile Level 3.0)和 MPEG-4
+Part 2 video (Simple Profile)两种格式。AudioToolbox
+framework支持Core Audio Format (.caf)、Waveform audio (.wav)或者 Audio Interchange
+File (.aiff)三种格式
+                                </p>
+                                <h2><a name="_Toc372096486"></a><a name="_Toc372030868"></a><a
+                                    name="_Toc372030811">Windows phone中支持的音视频格式</a></h2>
+                                <p>Qualcomm 8x27、8x30 和 8960 处理器上支持的音频格式及编解码器如下表所示：</p>
+                                <p class="imgp">
+                                    <img border="0" width="549" height="120" id="图片 2"
+                                        src="images/developing_02/image002.png">
+                                </p>
+                                <p>Qualcomm 8x30 和 8960 处理器上支持的视频格式及编解码器如下表所示：&nbsp;</p>
+                                <p class="imgp">
+                                    <img border="0" width="554" height="135" id="图片 4"
+                                        src="images/developing_02/image003.png">
+                                </p>
+                                <p>
+                                    有关其他处理器支持的音频和视频的格式请参见：<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/ff462087(v=vs.105).aspx"
+                                        title="支持的 Windows Phone 媒体编解码器">支持的
+Windows Phone 媒体编解码器</a>
+                                </p>
+                                <h2><a name="_Toc372096487"></a><a name="_Toc372030869"></a><a
+                                    name="_Toc372030812">Windows应用商店应用</a></h2>
+                                <p>Windows应用商店应用中支持的音视频格式如下表所示：</p>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td width="113" rowspan="2">
+                                                <p>
+                                                    <strong>媒体文件容器或文件格式</strong>
+                                                </p>
+                                            </td>
+                                            <td width="133" rowspan="2">
+                                                <p>
+                                                    <strong>文件扩展名</strong>
+                                                </p>
+                                            </td>
+                                            <td width="355" colspan="2">
+                                                <p>
+                                                    <strong>媒体流格式（编解码器）</strong>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="190">
+                                                <p>
+                                                    <strong>视频</strong>
+                                                </p>
+                                            </td>
+                                            <td width="165">
+                                                <p>
+                                                    <strong>音频</strong>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="113" rowspan="9" valign="top">
+                                                <p>
+                                                    MPEG-4
+                                                </p>
+                                            </td>
+                                            <td width="133" valign="top">
+                                                <p>
+                                                    .3g2
+                                                </p>
+                                            </td>
+                                            <td width="190" rowspan="4" valign="top">
+                                                <p>
+                                                    H.263
+                                                </p>
+                                                <p>
+                                                    H.264（基线、主、高）
+                                                </p>
+                                                <p>
+                                                    MPEG-4 Part2 SP 和 ASP
+                                                </p>
+                                            </td>
+                                            <td width="165" rowspan="4" valign="top">
+                                                <p>
+                                                    AAC（LC、HE）
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="133" valign="top">
+                                                <p>
+                                                    .3gp2
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="133" valign="top">
+                                                <p>
+                                                    .3gp
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="133" valign="top">
+                                                <p>
+                                                    .3gpp
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="133" valign="top">
+                                                <p>
+                                                    .m4a
+                                                </p>
+                                            </td>
+                                            <td width="190" valign="top">
+                                                <p>
+                                                    不适用
+                                                </p>
+                                            </td>
+                                            <td width="165" rowspan="5" valign="top">
+                                                <p>
+                                                    AAC（LC、HE）
+                                                </p>
+                                                <p>
+                                                    MP3
+                                                </p>
+                                                <p>
+                                                    AC3（DD、DD+）
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="133" valign="top">
+                                                <p>
+                                                    .m4v
+                                                </p>
+                                            </td>
+                                            <td width="190" rowspan="4" valign="top">
+                                                <p>
+                                                    H.263
+                                                </p>
+                                                <p>
+                                                    H.264（基线、主、高）
+                                                </p>
+                                                <p>
+                                                    MPEG-4 Part2 SP 和 ASP
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="133" valign="top">
+                                                <p>
+                                                    .mp4v
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="133" valign="top">
+                                                <p>
+                                                    .mp4
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="133" valign="top">
+                                                <p>
+                                                    .mov
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="113" valign="top">
+                                                <p>
+                                                    MPEG-2
+                                                </p>
+                                            </td>
+                                            <td width="133" valign="top">
+                                                <p>
+                                                    .m2ts（例如 AVCHD）
+                                                </p>
+                                            </td>
+                                            <td width="190" valign="top">
+                                                <p>
+                                                    H.264
+                                                </p>
+                                            </td>
+                                            <td width="165" valign="top">
+                                                <p>
+                                                    MPEG-2（L1、L2、仅立体声）
+                                                </p>
+                                                <p>
+                                                    MPEG-1（L1、L2）
+                                                </p>
+                                                <p>
+                                                    AAC（LC、HE）
+                                                </p>
+                                                <p>
+                                                    AC3（DD、DD+）
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="113" rowspan="4" valign="top">
+                                                <p>
+                                                    ASF
+                                                </p>
+                                            </td>
+                                            <td width="133" valign="top">
+                                                <p>
+                                                    .asf
+                                                </p>
+                                            </td>
+                                            <td width="190" rowspan="3" valign="top">
+                                                <p>
+                                                    VC-1
+                                                </p>
+                                                <p>
+                                                    WMV9
+                                                </p>
+                                            </td>
+                                            <td width="165" rowspan="4" valign="top">
+                                                <p>
+                                                    WMA 标准
+                                                </p>
+                                                <p>
+                                                    WMA 语音
+                                                </p>
+                                                <p>
+                                                    WMA 无损
+                                                </p>
+                                                <p>
+                                                    WMA Pro
+                                                </p>
+                                                <p>
+                                                    AC3（DD、DD+）
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="133" valign="top">
+                                                <p>
+                                                    .wm
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="133" valign="top">
+                                                <p>
+                                                    .wmv
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="133" valign="top">
+                                                <p>
+                                                    .wma
+                                                </p>
+                                            </td>
+                                            <td width="190" valign="top">
+                                                <p>
+                                                    不适用
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="113" rowspan="3" valign="top">
+                                                <p>
+                                                    ADTS
+                                                </p>
+                                            </td>
+                                            <td width="133" valign="top">
+                                                <p>
+                                                    .aac
+                                                </p>
+                                            </td>
+                                            <td width="190" rowspan="3" valign="top">
+                                                <p>
+                                                    不适用
+                                                </p>
+                                            </td>
+                                            <td width="165" rowspan="3" valign="top">
+                                                <p>
+                                                    AAC（LC、HE）
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="133" valign="top">
+                                                <p>
+                                                    .adt
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="133" valign="top">
+                                                <p>
+                                                    .adts
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="113" valign="top">
+                                                <p>
+                                                    MP3
+                                                </p>
+                                            </td>
+                                            <td width="133" valign="top">
+                                                <p>
+                                                    .mp3
+                                                </p>
+                                            </td>
+                                            <td width="190" valign="top">
+                                                <p>
+                                                    不适用
+                                                </p>
+                                            </td>
+                                            <td width="165" valign="top">
+                                                <p>
+                                                    MP3
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="113" valign="top">
+                                                <p>
+                                                    WAV
+                                                </p>
+                                            </td>
+                                            <td width="133" valign="top">
+                                                <p>
+                                                    .wav
+                                                </p>
+                                            </td>
+                                            <td width="190" valign="top">
+                                                <p>
+                                                    不适用
+                                                </p>
+                                            </td>
+                                            <td width="165" valign="top">
+                                                <p>
+                                                    PCM
+                                                </p>
+                                                <p>
+                                                    MP3
+                                                </p>
+                                                <p>
+                                                    MS ADPCM
+                                                </p>
+                                                <p>
+                                                    IMA ADPCM
+                                                </p>
+                                                <p>
+                                                    MS DDITT G.711
+                                                </p>
+                                                <p>
+                                                    MS GSM 6.10
+                                                </p>
+                                                <p>
+                                                    AC3（DD、DD+）
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="113" valign="top">
+                                                <p>
+                                                    AVI
+                                                </p>
+                                            </td>
+                                            <td width="133" valign="top">
+                                                <p>
+                                                    .avi
+                                                </p>
+                                            </td>
+                                            <td width="190" valign="top">
+                                                <p>
+                                                    MPEG-4 Part2 SP 和 ASP
+                                                </p>
+                                                <p>
+                                                    Motion-JPG
+                                                </p>
+                                                <p>
+                                                    H.263
+                                                </p>
+                                                <p>
+                                                    未压缩的
+                                                </p>
+                                            </td>
+                                            <td width="165" valign="top">
+                                                <p>
+                                                    PCM
+                                                </p>
+                                                <p>
+                                                    MP3
+                                                </p>
+                                                <p>
+                                                    MS ADPCM
+                                                </p>
+                                                <p>
+                                                    IMA ADPCM
+                                                </p>
+                                                <p>
+                                                    MS CCITT G.711
+                                                </p>
+                                                <p>
+                                                    MS GSM 6.10
+                                                </p>
+                                                <p>
+                                                    AC3（DD、DD+）
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="113" valign="top">
+                                                <p>
+                                                    AC-3
+                                                </p>
+                                            </td>
+                                            <td width="133" valign="top">
+                                                <p>
+                                                    .ac3
+                                                </p>
+                                                <p>
+                                                    .ec3
+                                                </p>
+                                            </td>
+                                            <td width="190" valign="top">
+                                                <p>
+                                                    不适用
+                                                </p>
+                                            </td>
+                                            <td width="165" valign="top">
+                                                <p>
+                                                    AC3（DD、DD+）
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h1><a name="_Toc372096488"></a><a name="_Toc372030870"></a><a
+                                    name="_Toc372030813">播放不同来源的文件</a></h1>
+                                <p>
+                                    被播放的文件可以来自应用程序、本地文件系统或者网络。Android中通过mediaPlayer 的setDataSource方法设置要播放的文件的路径。Ios同样通过MPMoviePlayerController和AVAudioPlayer的url以及 NSFileManager来配合实现播放文件源的设置。在Windows
+和windows phone中通过设置<a
+    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.mediaelement.aspx"><strong>MediaElement</strong></a>&nbsp;的source属性来实现播放不同来源的文件。
+                                </p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>
+                                    要播放网络上的文件或应用程序附带的文件，请将&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.mediaelement.source.aspx"><strong>Source</strong></a>&nbsp;属性设置为该文件的路径。
+                                </p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>
+                                    <b>注意：</b>当播放来自网络的媒体文件时，需要在你的项目的&nbsp;<em>Package.appmanifest</em>&nbsp;文件中设置&nbsp;<strong>Internet
+(Client)</strong>&nbsp;功能。
+有关声明功能的详细信息，请参阅<a
+    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh464936.aspx">应用功能声明</a>。
+                                </p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>
+                                    要打开本地系统上的或 Microsoft SkyDrive 中的文件，你可以使用&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.storage.pickers.fileopenpicker.aspx"><strong>FileOpenPicker</strong></a>&nbsp;获取文件并使用&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windows/apps/br244338.aspx"><strong>SetSource</strong></a>&nbsp;设置媒体源。
+有关详细信息，请参阅<a
+    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh871377.aspx">如何使用 FileOpenPicker 控件打开媒体文件</a>
+                                </p>
+                                <h1><a name="_Toc372096489"></a><a name="_Toc372030871"></a><a
+                                    name="_Toc372030814">后台播放</a></h1>
+                                <h2><a name="_Toc372096490"></a><a name="_Toc372030872"></a><a
+                                    name="_Toc372030815">Android和IOS中的后台播放</a></h2>
+                                <p>
+                                    后台播放音频是任何音视频播放应用都应该支持的功能。Android中利用&nbsp;<a
+                                        href="http://developer.android.com/reference/android/app/Service.html">Service</a>实现后台播放，一般&nbsp;<a
+                                            href="http://developer.android.com/reference/android/app/Service.html">Service</a>都运行于后台，完成诸如异步传输、下载等这些用户可能不会意识到其存在且不会与其进行交互的任务。但是后台播放任务不同于其他后台任务，用户能够意识到其存在并且随时可能与其进行交互。Android通过将这种后台任务转化为“前台任务”从而实现后台音频播放功能。更多详细信息参见<a
+                                                href="http://developer.android.com/guide/topics/media/mediaplayer.html#foregroundserv">Running as a foreground service</a>。Ios中通过为Info.plist文件添加值为App plays audio的Required background modes键，并设置AVAdioSession实例来实现后台音频播放。
+                                </p>
+                                <h2><a name="_Toc372096491"></a><a name="_Toc372030873"></a><a
+                                    name="_Toc372030816">Windows phone中后台播放音频</a></h2>
+                                <p>您可以编写在后台播放音频的 Windows&nbsp;Phone 应用。这意味着，即使用户已通过按<b>“返回”</b>按键或<b>“开始”</b>按键离开您的应用，您的应用程序也可以继续播放音频。</p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt'>
+                                    Windows&nbsp;Phone
+上的所有媒体都是通过 Zune 媒体队列播放的。后台音频应用程序向 Zune 媒体队列发送命令以设置当前堆栈、开始播放、暂停、快进、后退等。通过在&nbsp;<a
+    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.backgroundaudio.backgroundaudioplayer(v=vs.105).aspx">BackgroundAudioPlayer</a>&nbsp;类中调用方法来完成该操作。然后，<a
+        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.backgroundaudio.backgroundaudioplayer.instance(v=vs.105).aspx">Instance</a>&nbsp;对象与 Zune 媒体队列通信以操作音频的播放。
+                                </p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt'>
+                                    通用音量控制 (UVC) 是一组控件，当正在播放音频或当用户按音量控制开关时显示这些控件。UVC 还操作 Zune 媒体队列。因此，当您随后从应用程序开始播放某些内容时，可以使用 UVC 控制音频。UVC 向您应用程序中的<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.backgroundaudio.audioplayeragent(v=vs.105).aspx">AudioPlayerAgent</a>&nbsp;发送事件，从而允许您实现播放列表逻辑。将在本主题的后面部分对&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.backgroundaudio.audioplayeragent(v=vs.105).aspx">AudioPlayerAgent</a>&nbsp;进行详细讨论。
+                                </p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt'>有两种类型的后台音频应用程序：</p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 21.0pt; margin-bottom: .0001pt;'>
+                                    ●
+一种类型实现简单的播放列表并将一个包含媒体文件地址的&nbsp;<a
+    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.uri(v=vs.105).aspx">Uri</a>&nbsp;传递给 Zune 媒体队列以设置当前曲目。<a
+        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.uri(v=vs.105).aspx">Uri</a>&nbsp;可以是手机的本地或远程地址。在任何一种情况下，音频需要是 Windows&nbsp;Phone 支持的类型才能播放。有关有效的视频文件类型，请参见<a
+            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/ff462087(v=vs.105).aspx">支持的 Windows Phone 媒体编解码器</a>。
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 21.0pt; margin-bottom: .0001pt; text-align: justify; text-justify: inter-ideograph;'>
+                                    ●另一种类型的后台音频应用程序使用&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.media.mediastreamsource(v=vs.105).aspx">MediaStreamSource</a>&nbsp;实现音频流以向播放系统输送音频示例。此流的格式可以是您需要的任何格式，因为您实现一个从&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.media.mediastreamsource(v=vs.105).aspx">MediaStreamSource</a>&nbsp;派生的类来处理音频的流处理以及对音频的解码。实现&nbsp;<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.media.mediastreamsource(v=vs.105).aspx">MediaStreamSource</a>&nbsp;不在本文的讨论范围内。
+                                </p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt'>
+                                    这两种类型的应用程序共享多个部分。我们将开始讨论实现播放列表的应用程序。然后，我们将讨论使用<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.media.mediastreamsource(v=vs.105).aspx">MediaStreamSource</a>&nbsp;(MSS) 实现流处理的部分。
+                                </p>
+                                <h3><a name="_Toc372096492"></a><a name="_Toc372030874"></a><a
+                                    name="_Toc372030817">播放列表应用程序</a></h3>
+                                <p>
+                                    若要创建后台音频播放列表应用程序，您应实现两项内容：可以提供用于控制播放的用户界面的应用程序和可以实现派生自&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.backgroundaudio.audioplayeragent(v=vs.105).aspx">AudioPlayerAgent</a>&nbsp;的类的程序集。您必须实现的这两个部分在下图中以绿色显示：
+                                </p>
+                                <p class="imgp">
+                                    <img
+                                        border="0" width="404" height="350" id="图片 5" src="images/developing_02/image004.png">
+                                </p>
+                                <h3><a name="_Toc372096493"></a><a name="_Toc372030875"></a><a
+                                    name="_Toc372030818">对音频应用程序进行流处理</a></h3>
+                                <p>
+                                    若要创建流音频应用程序，您必须实现与<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/hh394039(v=vs.105).aspx#BKMK_PlaylistApplication">播放列表应用程序</a>相同的部分。具体来说，就是您必须创建一个提供用户界面的主应用程序，以及一个&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.backgroundaudio.audioplayeragent(v=vs.105).aspx">AudioPlayerAgent</a>。对于流音频应用程序，您还必须实现从<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.backgroundaudio.audiostreamingagent(v=vs.105).aspx">AudioStreamingAgent</a>&nbsp;派生的一个类以及从&nbsp;<a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.media.mediastreamsource(v=vs.105).aspx">MediaStreamSource</a>&nbsp;派生的一个类。您必须实现的这些部分在下图中以绿色显示：
+                                </p>
+                                <p class="imgp">
+                                    <img
+                                        border="0" width="553" height="357" id="图片 6" src="images/developing_02/image005.png">
+                                </p>
+                                <h3><a name="_Toc372096494"></a><a name="_Toc372030876"></a><a
+                                    name="_Toc372030819">后台代理生命周期</a></h3>
+                                <p style='margin: 0cm; margin-bottom: .0001pt; text-align: justify; text-justify: inter-ideograph'>
+                                    您的&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.backgroundaudio.audioplayeragent(v=vs.105).aspx">AudioPlayerAgent</a>&nbsp;是由&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.backgroundaudio.backgroundaudioplayer(v=vs.105).aspx">BackgroundAudioPlayer</a>&nbsp;在需要时创建的，用于处理来自您应用程序的用户界面或来自 UVC 的&nbsp;<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.backgroundaudio.useraction(v=vs.105).aspx">UserAction</a>&nbsp;请求。
+                                </p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt; text-align: justify; text-justify: inter-ideograph'>
+                                    您的&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.backgroundaudio.audiostreamingagent(v=vs.105).aspx">AudioStreamingAgent</a>&nbsp;是由&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.backgroundaudio.backgroundaudioplayer(v=vs.105).aspx">BackgroundAudioPlayer</a>&nbsp;在需要新流时创建的。创建代理之后，<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.backgroundaudio.backgroundaudioplayer(v=vs.105).aspx">BackgroundAudioPlayer</a>&nbsp;在您的&nbsp;<a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.backgroundaudio.audiostreamingagent(v=vs.105).aspx">AudioStreamingAgent</a>&nbsp;中调用&nbsp;<a
+                                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.backgroundaudio.audiostreamingagent.onbeginstreaming(v=vs.105).aspx">OnBeginStreaming(AudioTrack, AudioStreamer)</a>&nbsp;方法。
+                                </p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt; text-align: justify; text-justify: inter-ideograph'>
+                                    当后台代理调用&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.backgroundagent.abort(v=vs.105).aspx">Abort()</a>&nbsp;或&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.backgroundagent.notifycomplete(v=vs.105).aspx">NotifyComplete()</a>&nbsp;时释放后台代理。
+                                </p>
+                                <h2><a name="_Toc372096495"></a><a name="_Toc372030877"></a><a
+                                    name="_Toc372030820">Windows应用商店应用后台播放</a></h2>
+                                <p>
+                                    若要在后台播放音频，请声明&nbsp;<b>Audio</b>&nbsp;后台任务，并处理<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.media.systemmediatransportcontrols.aspx"><b>SystemMediaTransportControls</b></a>&nbsp;按钮。
+                                </p>
+                                <p>
+                                    <b>要点：</b>&nbsp;Windows&nbsp;8.1
+引入了&nbsp;<a
+    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.media.systemmediatransportcontrols.aspx"><b>SystemMediaTransportControls</b></a>&nbsp;类，它可以替代Windows 8中的<a
+        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.media.mediacontrol.aspx"><b>MediaControl</b></a>&nbsp;类。 你应该在应用中使用&nbsp;<b>SystemMediaTransportControls</b>。
+                                </p>
+                                <p>
+                                    <b>注意：</b>&nbsp;如果使视频流能够在后台播放，则当应用被切换到后台时，你将可以听到音频却看不到视频。这是设计使然。
+这降低了设备在后台播放视频时的电量需求
+                                </p>
+                                <p>&nbsp;</p>
+                                <p>为时应用可以后台播放音频，你必须显式声明你的应用将执行后台任务，步骤如下：</p>
+                                <p style='margin-left: 21.05pt;'>
+                                    1.
+在 Microsoft Visual Studio 中打开应用的项目文件。
+                                </p>
+                                <p style='margin-left: 21.05pt;'>
+                                    2.
+在解决方案资源管理器中双击 Package.appmanifest 文件以打开&nbsp;<b>Package.appmanifest</b>&nbsp;对话框。
+                                </p>
+                                <p style='margin-left: 21.05pt;'>
+                                    3.
+单击“声明”&nbsp;选项卡，然后从“可用声明”&nbsp;下拉框中选择“后台任务”。
+                                </p>
+                                <p style='margin-left: 21.05pt;'>
+                                    4.
+单击“添加”，然后选中“音频”复选框。
+                                </p>
+                                <p style='margin-left: 21.0pt;'>
+                                    也可以通过使用在上面步骤中为音频创建的相同清单文件为视频流进行后台声明。若要执行此操作，请将“任务类型”属性设置为音频。
+                                </p>
+                                <p style='margin-left: 21.05pt;'>
+                                    5.
+指定入口点。在大多数情况下，如果你的项目被命名为&nbsp;<b>Foo</b>，则你将指定&nbsp;<b>Foo.App</b>。
+                                </p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt; text-align: justify; text-justify: inter-ideograph'>
+                                    然后，将&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.mediaelement.aspx"><strong>MediaElement</strong></a>&nbsp;上的&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.mediaelement.audiocategory.aspx"><strong>AudioCategory</strong></a>&nbsp;属性设置为&nbsp;<em>Communications</em>&nbsp;或&nbsp;<em>BackgroundCapableMedia</em><em>。</em>
+                                </p>
+                                <p>
+                                    最后，通过<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.media.systemmediatransportcontrols.aspx"><b>SystemMediaTransportControls</b></a>&nbsp;实现后台播放。即使应用声明要在后台播放音频，该应用必须通过将&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.media.systemmediatransportcontrols.isplayenabled.aspx"><b>IsPlayEnabled</b></a>&nbsp;和&nbsp;<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.media.systemmediatransportcontrols.ispauseenabled.aspx"><b>IsPauseEnabled</b></a>&nbsp;设置为&nbsp;<b>true</b>&nbsp;来启用<a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.media.systemmediatransportcontrols.aspx"><b>SystemMediaTransportControls</b></a>&nbsp;播放和暂停按钮。该应用还必须处理&nbsp;<a
+                                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.media.systemmediatransportcontrols.buttonpressed.aspx"><b>ButtonPressed</b></a>&nbsp;事件，它可以在按下系统媒体传输控件按钮时通知应用。通过提供此最小事件处理支持，你可以为用户提供在无需将应用带至前台的情况下，播放或暂停音频的功能。
+                                </p>
+                                <p>
+                                    要从&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.media.systemmediatransportcontrols.buttonpressed.aspx"><b>ButtonPressed</b></a>&nbsp;事件处理程序更新 UI 线程上的对象（例如&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.mediaelement.aspx"><b>MediaElement</b></a>&nbsp;对象），你必须通过<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.core.coredispatcher.aspx"><b>CoreDispatcher</b></a>&nbsp;来封送调用。
+这是因为不会从 UI 线程调用&nbsp;<b>ButtonPressed</b>&nbsp;事件处理程序。
+只有 UI 线程可以修改 UI 线程上的对象。 如果你尝试从非 UI 线程修改 UI 对象，则会引发异常。 以下代码示例展示了如何执行此操作。
+                                </p>
+                                <p>
+                                    除了处理&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.media.systemmediatransportcontrols.buttonpressed.aspx"><b>ButtonPressed</b></a>&nbsp;事件，还必须在媒体状态更改（例如，当它暂停或播放）时通知<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.media.systemmediatransportcontrols.aspx"><b>SystemMediaTransportControls</b></a>。
+若要向&nbsp;<b>SystemMediaTransportControl</b>&nbsp;通知媒体状态更改，请将其<a
+    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.media.systemmediatransportcontrols.playbackstatus.aspx"><b>PlaybackStatus</b></a>&nbsp;属性设置为&nbsp;<a
+        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.media.mediaplaybackstatus.aspx"><b>MediaPlaybackStatus</b></a>&nbsp;中的值之一。
+                                </p>
+                                <p>&nbsp;</p>
+                                <p>
+                                    <strong>注意</strong>&nbsp;：如果你的应用执行除流式播放音频或视频任务之外的其他任务，则当应用失去焦点并且不再是活动窗口时，该应用应停止执行非媒体相关工作。
+你的应用仍流式播放音频，并且如果播放的是音频-视频流，则视频流将自动停止
+                                </p>
+                                <h1><a name="_Toc372096496"></a><a name="_Toc372030878"></a><a
+                                    name="_Toc372030821">另请参见</a></h1>
+                                <p>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/ff402550(v=vs.105).aspx">Windows
+Phone 的媒体</a><a
+    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh465160.aspx"
+    title="快速入门：视频和音频"></a>
+                                </p>
+                                <p>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh465160.aspx"
+                                        title="快速入门：视频和音频">Windows应用商店应用快速入门：视频和音频</a>
+                                </p>
+                                <p>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/ff402550(v=vs.92).aspx">Windows Phone 的媒体概述</a>
+                                </p>
+                                <p>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/hh394039(v=vs.92).aspx">Windows
+Phone 的后台音频概述</a>
+                                </p>
+                                <p>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/jj841209.aspx">Windows应用商店应用如何在后台播放音频</a>
+                                </p>
+                                <p>
+                                    <a
+                                        href="http://developer.android.com/guide/topics/media/mediaplayer.html">Android应用程序开发：音频和视频</a>
+                                </p>
+                                <p>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh871377.aspx">Windows应用商店应用如何使用 FileOpenPicker 控件打开本地媒体文件</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="textlist">
+                            另一篇文章：<br />
+                            <ul>
+                                <li><a href="developing_021.html">Audio、Video Player（Typical app migration ）</a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <!--End Content-->
+        <div style="text-align: right" class="gotoTop"><a href="javascript:scroll(0,0)"></a></div>
+        <!--Begin ProudctLinks-->
+        <div class="ms-pro-links">
+            <div class="grid-container clearfix">
+                <div class="cam-links">
+                    其它微软站点
+		<a href="http://www.microsoft.com/zh-cn/default.aspx">微软中国官方网站</a>
+                    <a href="http://www.microsoft.com/zh-cn/download/default.aspx?WT.mc_id=MSCOM_zh-cn_HP_Footer_downloads" target="_blank">微软中国下载中心</a>
+                    <a href="http://www.microsoftstore.com.cn?WT.mc_id=MSCOM_003" target="_blank">微软中国官方商城</a>
+                    <a href="http://www.microsoft.com/china/newsletter/" target="_blank">订阅电子期刊</a>
+                    <a href="https://sales.liveperson.net/hc/21661174/?cmd=file&file=visitorWantsToChat&site=21661174&byhref=1&SESSIONVAR!skill=APGC.PRC.ZH.CS.CON.PRESLS.GENERAL" target="_blank">联系微软销售代表</a>
+                    <a href="http://www.microsoft.com/zh-cn/sitemap.aspx" target="_blank">网站地图</a>
+                </div>
+            </div>
+        </div>
+        <!--End ProudctLinks-->
+        <!--Begin footer-->
+        <div class="footer">
+            <div class="grid-container">
+                <img src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-type-1x.png" alt="microsoft" class="logo">
+                <ul>
+                    <li><a href="http://www.miibeian.gov.cn/" title="">京ICP备09042378号-6</a></li>
+                    <li><a href="https://profile.microsoft.com/RegSysProfileCenter/default.aspx?lcid=2052" title="">个人信息中心</a></li>
+                    <li><a href="http://support.microsoft.com/contactus/?ws=support" title="">与我们联系</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkId=248681" title="">隐私权声明</a></li>
+                    <li><a href="http://go.microsoft.com/?linkid=4412892" title="">使用条款</a></li>
+                    <li><a href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Trademarks/EN-US.aspx" title="">商标</a></li>
+                    <li>&copy; 2013 Microsoft</li>
+                </ul>
+            </div>
+        </div>
+        <!--End footer-->
+        <!-- Begin MDA WEDCS -->
+        <script type="text/JavaScript">
+            var varSegmentation = 0;
+            var varClickTracking = 1;
+            var varCustomerTracking = 1;
+            var varAutoFirePV = 1;
+            var Route = "#";
+            var Ctrl = "#"
+            //document.write("<script type='text/javascript' src='" + window.location.protocol + "//c.microsoft.com/ms.js'><"+"/script>");
+        </script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="./assets/js/script.js"></script>
+        <script type="text/javascript" src="./js/siteSearch.js"></script>
+        <noscript>
+            <img alt="" width="1" height="1" src="http://c.microsoft.com/trans_pixel.aspx/" />
+        </noscript>
+        <!-- Begin MDA WEDCS -->
+    </div>
+</body>
+</html>

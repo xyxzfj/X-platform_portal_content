@@ -1,0 +1,708 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>数据库（SQLite）</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="css/templete.css" type="text/css" media="all" />
+    <meta charset="UTF-8">
+</head>
+<body class="level-2">
+    <div class="wrapper">
+        <!--Begin header-->
+        <div class="header">
+            <div class="grid-container clearfix">
+                <div class="header-left">
+                    <img alt="Microsoft" src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-lg-1x.png" width="94" height="20">
+                    <h1>X-Platform</h1>
+                </div>
+                <div id="mscom-search" class="mscom-search" style="margin-top: 37px;">
+                    <div class="search-form">
+                        <form action="" id="search-form">
+                            <div class="input-wrapper">
+                                <label class="screen-reader-text" for="search-input">搜索 Microsoft.com</label>
+                                <input id="search-input" type="text" class="input-area" autocomplete="off">
+                            </div>
+                            <button class="search-submit" id="search-btn" type="submit">
+                                <img width="16" height="16" alt="Submit" src="http://i.s-microsoft.com/global/imagestore/PublishingImages/sprites/search-button-blue.png"></button>
+                        </form>
+                    </div>
+                    <div class="search-results-box" id="results">
+                        <div class="search-scope">
+                            <ul>
+                                <li class=""><a class="checked" search="microsoft" role="search">搜索 Microsoft.com</a></li>
+                                <li class=""><a search="internet" role="search">搜索互联网</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End header-->
+        <br />
+        <!--Begin Content-->
+        <div class="content">
+            <div class="wrapper">
+                <div class="wrapper-header">
+                    <div>
+                        <a href="index.html">
+                            <img src="./assets/image/banner_1.jpg"></a>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="nav">
+                        <div class="block article-nav-block">
+                            <h2>移动应用开发生命周期</h2>
+                            <div class="menu">
+                                <h3><a href="idea.html">计划<span>Idea/Planning</span></a></h3>
+                                <ul>
+                                    <li><a href="idea_01.html">平台总览</a></li>
+                                    <li><a href="idea_02.html">开发工具、开发环境和模拟器</a></li>
+                                    <li><a href="idea_03.html">应用结构和生命周期</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="design.html">设计<span>Design</span></a></h3>
+                                <ul>
+                                    <li><a href="design_01.html">UI Layout的设计</a></li>
+                                    <li><a href="design_02.html">UI的控件</a></li>
+                                    <li><a href="design_03.html">UI页面的控制和导航</a></li>
+                                    <li><a href="design_04.html">不同屏幕尺寸和分辨率的适配</a></li>
+                                    <li><a href="design_05.html">第三方SDK</a></li>
+                                    <li><a href="design_06.html">游戏开发</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu active">
+                                <h3><a href="developing.html">开发<span>Developing</span></a></h3>
+                                <ul>
+                                    <li><a href="developing_01.html">开发语言</a></li>
+                                    <li><a href="developing_02.html">Audio、Video Player应用的开发</a></li>
+                                    <li><a href="developing_03.html">General APIs Mapping</a></li>
+                                    <li><a href="developing_04.html">IAP应用内支付</a></li>
+                                    <li><a href="developing_05.html">LBS应用</a></li>
+                                    <li><a href="developing_06.html">LBS、镜头和传感器应用接口使用</a></li>
+                                    <li><a href="developing_07.html">Native Code（C和C++）支持</a></li>
+                                    <li><a href="developing_08.html">Push Notification</a></li>
+                                    <li><a href="developing_09.html">Sharing in Social Network</a></li>
+                                    <li><a href="developing_10.html">Source Code Control</a></li>
+                                    <li><a href="developing_11.html">UI上的Data Binding</a></li>
+                                    <li><a href="developing_12.html">Windows 8.1和WP 8 Sharing应用分享功能实现</a></li>
+                                    <li><a href="developing_13.html">多媒体</a></li>
+                                    <li><a href="developing_14.html">后台任务和多任务处理</a></li>
+                                    <li><a href="developing_15.html">获取后台服务器数据</a></li>
+                                    <li><a href="developing_16.html">浏览器控件WebView</a></li>
+                                    <li><a href="developing_17.html">数据库（SQLite）</a></li>
+                                    <li><a href="developing_18.html">数据网络和数据通讯</a></li>
+                                    <li><a href="developing_19.html">通话和短信功能</a></li>
+                                    <li><a href="developing_20.html">图形处理(Drawing & Animation)</a></li>
+                                    <li><a href="developing_21.html">文件系统和应用设置</a></li>
+                                    <li><a href="developing_22.html">应用间通信</a></li>
+                                    <li><a href="developing_23.html">支付方式</a></li>
+                                    <li><a href="developing_24.html">Windows 8.1应用外设开发</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="testing.html">测试<span>Testing</span></a></h3>
+                                <ul>
+                                    <li><a href="testing_01.html">Windows 8 and WP 8开发FAQ</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu last">
+                                <h3><a href="distribute.html">发布<span>Distribute</span></a></h3>
+                                <ul>
+                                    <li><a href="distribute_01.html">应用商店(发布和更新应用)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="block success-story-nav-block">
+                            <h2>成功案例</h2>
+                        </div>
+                        <div class="block others">
+                            <a href="sample_code.html" class="left">示例代码</a>
+                            <a href="http://msdn.microsoft.com/zh-cn/dn473954" class="right">教学视频</a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3 class="title">Database (SQLite)<span><a href="index.html">返回首页&gt;</a></span></h3>
+                        <div class="article-content">
+                            <div class="WordSection1">
+                                <p class="MsoToc1"><a href="#_Toc371520275">一、SQLite简介</a></p>
+                                <p class="MsoToc1">
+                                    <a
+                                        href="#_Toc371520276">二、SQLite体系结构</a>
+                                </p>
+                                <p class="MsoToc1">
+                                    <a
+                                        href="#_Toc371520277">三、加入SQLite</a>
+                                </p>
+                                <p class="MsoToc2">
+                                    <a
+                                        href="#_Toc371520278">IOS &amp; Android</a>
+                                </p>
+                                <p class="MsoToc3">
+                                    <a
+                                        href="#_Toc371520279">IOS</a>
+                                </p>
+                                <p class="MsoToc3">
+                                    <a
+                                        href="#_Toc371520280">Android</a>
+                                </p>
+                                <p class="MsoToc2">
+                                    <a
+                                        href="#_Toc371520281">Windows应用商店应用</a>
+                                </p>
+                                <p class="MsoToc3">
+                                    <a
+                                        href="#_Toc371520282">安装</a>
+                                </p>
+                                <p class="MsoToc3">
+                                    <a
+                                        href="#_Toc371520283">引用</a>
+                                </p>
+                                <p class="MsoToc3">
+                                    <a
+                                        href="#_Toc371520284">获取帮助程序库</a>
+                                </p>
+                                <p class="MsoToc2">
+                                    <a
+                                        href="#_Toc371520285">Windows Phone 8</a>
+                                </p>
+                                <p class="MsoToc3">
+                                    <a
+                                        href="#_Toc371520286">安装</a>
+                                </p>
+                                <p class="MsoToc3">
+                                    <a
+                                        href="#_Toc371520287">引用</a>
+                                </p>
+                                <p class="MsoToc3">
+                                    <a
+                                        href="#_Toc371520288">获取帮助程序库</a>
+                                </p>
+                                <p class="MsoToc3">
+                                    <a
+                                        href="#_Toc371520289">添加用于Windows Phone 8 的封装</a>
+                                </p>
+                                <p class="MsoToc3">
+                                    <a
+                                        href="#_Toc371520290">添加条件编译符号</a>
+                                </p>
+                                <p class="MsoToc3">
+                                    <a
+                                        href="#_Toc371520291">注意事项</a>
+                                </p>
+                                <p class="MsoToc1">
+                                    <a
+                                        href="#_Toc371520292">四、使用SQLite</a>
+                                </p>
+                                <p class="MsoToc3">
+                                    <a
+                                        href="#_Toc371520293">创建表</a>
+                                </p>
+                                <p class="MsoToc3">
+                                    <a
+                                        href="#_Toc371520294">创建记录</a>
+                                </p>
+                                <p class="MsoToc3">
+                                    <a
+                                        href="#_Toc371520295">删除记录</a>
+                                </p>
+                                <p class="MsoToc3">
+                                    <a
+                                        href="#_Toc371520296">更新记录</a>
+                                </p>
+                                <p class="MsoToc3">
+                                    <a
+                                        href="#_Toc371520297">读取记录</a>
+                                </p>
+                                <p class="MsoToc1">
+                                    <a
+                                        href="#_Toc371520298">五、另请参见</a>
+                                </p>
+                                <br />
+                            </div>
+                            <div class="WordSection2">
+                                <h1><a name="_Toc371520275">一、SQLite简介</a></h1>
+                                <p>
+                                    SQLite
+的网站 (sqlite.org) 对SQL进行了如下描述：“SQLite 是一个可实现独立、无服务器、零配置、事务性 SQL 数据库引擎的软件库”。这句话中的关键要素都围绕着“库”这一名词。与使用客户端程序集向服务器发送请求以供分析和执行的 SQL Server 不同的是，SQLite 完全驻留在客户端进程中，这使之成为一种“嵌入式”数据库。&nbsp;在使用期间，SQLite 数据库的运行空间是一个存储在客户端文件系统的某一位置中的单个文件，并且安装空间通常也相当小。
+                                </p>
+                                <p>
+                                    尽管如此，SQLite 数据库的功能却是极其丰富的，因为它支持大部分 SQL-92 规范，只是去除了 RIGHT 和 FULL OUTER JOIN、ALTER TABLE、某一触发器支持、GRANT/REVOKE 以及写入 VIEW 等几项内容（更详细的说明请参见 SQLite 网站）。&nbsp;令人印象深刻的是支持的功能数量，包括事务和各种数据类型。&nbsp;虽然不加修改就将 SQL Server
+数据库方案全盘迁移到 SQLite 是不足为信的，但有一点是合乎情理的，即在迁移非常简单（即未利用 SQL Server 特定的类型或功能）的方案时几乎不会遇到什么麻烦。&nbsp;这使 SQLite 十分适合只需“轻型 SQL”的情形。
+                                </p>
+                                <h1><a name="_Toc371520276">二、SQLite体系结构</a></h1>
+                                <p>SQLite的体系结构主要由接口、SQL命令处理器、虚拟机组成，当然其中也包括必要的测试代码与工具代码，他们之间的关系可以简单的用下图表现：</p>
+                                <p class="imgp">
+                                    <img width="315" height="383" id="图片 11"
+                                        src="images/developing_17/image001.gif">
+                                </p>
+                                <p>各部分的功能为：</p>
+                                <p class="MsoListParagraph" style='margin-left: 21.0pt;'>
+                                    l&nbsp;
+接口
+                                </p>
+                                <p>虽然也有部分实现散落在其他文件夹中以便可以访问到他们所需的数据结构，但大部分的公共接口SQLite库的方法是在main.c,legacy.c以及vdbeapi.c中实现的。同时，为避免与其他软件命名冲突，SQLite的所有外部符号都以sqlite3前缀开始。</p>
+                                <p class="MsoListParagraph" style='margin-left: 21.0pt;'>
+                                    l&nbsp;
+标记生成器
+                                </p>
+                                <p>当要执行一个包含SQL语句的字符串，接口将该字符串符号传给标记生成器。标记生成器的工作就是要打破原来的字符串成标记，并将这些标记传递给解析器。</p>
+                                <p class="MsoListParagraph" style='margin-left: 21.0pt;'>
+                                    l&nbsp;
+解析器
+                                </p>
+                                <p>解析器是一块基于标记内容的令牌。SQLite的解析器由 Lemon LALR(1)语法解析器生成，Lemon LALR(1)语法解析器与YACC / BISON，做同样的工作，但它使用了不同的输入语法，使得不容易出错，与此同时，Lemon还生成一个解析器，这是可重入和线程安全的。并且，Lemon定义了非终端的析构函数的概念，因此它不会泄露内存时遇到语法错误。</p>
+                                <p class="MsoListParagraph" style='margin-left: 21.0pt;'>
+                                    l&nbsp;
+代码生成器
+                                </p>
+                                <p>当解析器组装成完整的SQL语句的令牌后，它会调用代码生成器来生成虚拟机代码（SQL语句请求）。</p>
+                                <p class="MsoListParagraph" style='margin-left: 21.0pt;'>
+                                    l&nbsp;
+虚拟机
+                                </p>
+                                <p>由代码生成器生成的程序是由虚拟机执行。在虚拟机实现一个专门设计的操作数据库文件的摘要的计算引擎，另外，虚拟机具有用于中间存储栈。每个指令包含操作码和最多三个额外的操作数。</p>
+                                <p class="MsoListParagraph" style='margin-left: 21.0pt;'>
+                                    l&nbsp;
+B-树
+                                </p>
+                                <p>SQLite数据库保持在磁盘上发现btree.c源文件使用一个B-tree实现。一个单独的B-树是用于在数据库中的每个表和索引。所有的B树存储在同一个磁盘文件中。文件格式的详细信息被记录在一个大的评论在btree.c的开头。</p>
+                                <p class="MsoListParagraph" style='margin-left: 21.0pt;'>
+                                    l&nbsp;
+页面缓存
+                                </p>
+                                <p>B-树的模块要求在固定大小的块从磁盘信息。缺省块大小为1024字节，但也可能在512和65536字节之间。页面缓存负责，读，写和缓存这些块。页面缓存还提供了回滚和原子提交的抽象和保护锁定的数据库文件。B-树的驱动程序请求特定页&#8203;&#8203;面的页面缓存页面缓存和通知，当它想修改页面或提交或回滚的变化。页面缓存确保的要求迅速处理，安全，有效地处理所有繁琐的细节。</p>
+                                <p class="MsoListParagraph" style='margin-left: 21.0pt;'>
+                                    l&nbsp;
+OS界面
+                                </p>
+                                <p>为了提供POSIX和Win32的操作系统之间的可移植性，SQLite使用一个抽象层与操作系统的接口，即OS界面。</p>
+                                <p class="MsoListParagraph" style='margin-left: 21.0pt;'>
+                                    l&nbsp;
+工具代码
+                                </p>
+                                <p>工具代码的主要工作是：内存分配、不区分大小写比较、维护符号映射表、Unicode转换、打印以及随机数发生器。</p>
+                                <p class="MsoListParagraph" style='margin-left: 21.0pt;'>
+                                    l&nbsp;
+测试代码
+                                </p>
+                                <p>如果算上回归测试脚本中，超过半数的代码经过了基于的SQLite库的专门测试。</p>
+                                <h1><a name="_Toc371520277">三、加入SQLite</a></h1>
+                                <h2><a name="_Toc371520278">IOS &amp; Android</a></h2>
+                                <h3><a name="_Toc371520279">IOS</a></h3>
+                                <p>因为sqlite是c语言写的，objective-c可以直接引用sqlite的库：</p>
+                                <p style='margin-top: 7.5pt; margin-right: 0cm; margin-bottom: 7.5pt; margin-left: 0cm;'>
+                                    <a
+                                        href="http://marshal.easymorse.com/wp-content/uploads/2010/09/image77.png"><b>
+                                            <img border="0" width="273" height="229" id="图片 10"
+                                                src="images/developing_17/image002.png" alt="image"></b></a>&nbsp;
+                                </p>
+                                <p style='margin-top: 7.5pt; margin-right: 0cm; margin-bottom: 7.5pt; margin-left: 0cm;'>
+                                    选择sqlite库：
+                                </p>
+                                <p style='margin-top: 7.5pt; margin-right: 0cm; margin-bottom: 7.5pt; margin-left: 0cm;'>
+                                    <a
+                                        href="http://marshal.easymorse.com/wp-content/uploads/2010/09/image78.png"><b>
+                                            <img border="0" width="244" height="157" id="图片 9"
+                                                src="images/developing_17/image003.png" alt="image"></b></a>
+                                </p>
+                                <br />
+                                <h3><a name="_Toc371520280">Android</a></h3>
+                                <p>Android 在运行时（run-time）集成了 SQLite，所以每个 Android 应用程序都可以使用 SQLite 数据库。</p>
+                                <h2><a name="_Toc371520281">Windows应用商店应用</a></h2>
+                                <h3><a name="_Toc371520282">安装</a></h3>
+                                <p class="MsoListParagraph" style='margin-left: 21.0pt;'>
+                                    <a name="OLE_LINK2"></a><a name="OLE_LINK1">1.
+在 Microsoft
+Visual Studio 中的“工具”菜单上，单击“扩展和更新”。</a>
+                                </p>
+                                <p class="MsoListParagraph" style='margin-left: 21.0pt;'>
+                                    2. 展开“联机”。如果尚未选择“Visual Studio 库”，请单击它。
+                                </p>
+                                <p class="MsoListParagraph" style='margin-left: 21.0pt;'>
+                                    3. 在“搜索 Visual
+Studio 库”框中，键入“SQLite”&quot;&quot;。
+                                </p>
+                                <p class="MsoListParagraph" style='margin-left: 21.0pt;'>
+                                    4.&nbsp;
+单击“用于 Windows 运行时的 SQLite”旁的“下载”，如下所示。
+                                </p>
+                                <p class="imgp">
+                                    <img border="0" width="553" height="111" id="图片 1"
+                                        src="images/developing_17/image004.jpg">
+                                </p>
+                                <p style='margin-left: 21.0pt;'>
+                                    5.&nbsp; 单击“安装”。
+                                </p>
+                                <p style='margin-left: 21.0pt;'>
+                                    6.&nbsp; 重新启动
+Visual Studio。
+                                </p>
+                                <h3><a name="_Toc371520283">引用</a></h3>
+                                <p>安装用于 Windows 运行时的 SQLite 包后，在 Visual Studio 中从 Windows 应用商店应用项目设置对它的引用：</p>
+                                <p style='margin-left: 18.0pt;'>
+                                    1. 当应用的项目在 Visual Studio 中打开时，在“解决方案资源管理器”窗口中，右键单击“引用”文件夹，然后单击“添加引用”，如下所示。
+                                </p>
+                                <p class="imgp">
+                                    <img border="0" width="308" height="174" id="图片 3"
+                                        src="images/developing_17/image005.png" alt="Visual Studio“添加引用”菜单命令">
+                                </p>
+                                <p style='margin-left: 18.0pt;'>
+                                    2. 展开“Windows”，并单击“扩展”。
+                                </p>
+                                <p style='margin-left: 18.0pt;'>
+                                    3. 选中“Microsoft Visual C++ 运行时包”和“用于 Windows 运行时的 SQLite”框（如下所示），并单击“确定”。
+                                </p>
+                                <p class="imgp">
+                                    <img
+                                        border="0" width="554" height="129" id="图片 4" src="images/developing_17/image006.jpg">
+                                </p>
+                                <br />
+                                <p>
+                                    注意，添加这些引用后，应用的项目可能不会构建或运行。若要修复此问题，请在 Visual
+Studio 中的“构建”菜单上，单击“配置管理器”。在“活动解决方案平台”框中，单击你的特定目标平台，如“ARM”、“x64”或“x86”。然后单击“关闭”。
+                                </p>
+                                <h3><a name="_Toc371520284">获取帮助程序库</a></h3>
+                                <p>
+                                    在开始编写代码之前，你可能希望安装 SQLite 帮助程序库来简化你的编码工作。提供了许多此类帮助程序库。例如，可以安装
+sqlite-net 库。以下是获取该库的方法：
+                                </p>
+                                <p style='margin-left: 18.0pt;'>
+                                    1. 当应用的项目仍然在 Visual Studio 中打开时，在“解决方案资源管理器”窗口中，右键单击“引用”文件夹，然后单击“管理 NuGet 包”。如果你没有看到“管理 NuGet 包”，以下是解决方法：
+                                </p>
+                                <p style='margin-left: 18.0pt;'>
+                                    a. 在 Visual Studio 的“工具”菜单上，单击“扩展更新”。
+                                </p>
+                                <p style='margin-left: 18.0pt;'>
+                                    b.&nbsp; 展开“联机”。如果尚未选定“Visual Studio 库”，请单击它。
+                                </p>
+                                <p style='margin-left: 18.0pt;'>
+                                    c. 在“搜索 Visual Studio 库”框内，键入“NuGet”。
+                                </p>
+                                <p style='margin-left: 18.0pt;'>
+                                    d.&nbsp; 在“NuGet 包管理器”旁，单击“下载”。
+                                </p>
+                                <p style='margin-left: 18.0pt;'>
+                                    e. 单击“安装”。
+                                </p>
+                                <p style='margin-left: 18.0pt;'>
+                                    f.&nbsp; 重新启动 Visual Studio。
+                                </p>
+                                <p style='margin-left: 18.0pt;'>
+                                    g.&nbsp; 如果应用的项目没有自动打开，请将其打开。
+                                </p>
+                                <p style='margin-left: 18.0pt;'>
+                                    h.&nbsp; 请重试：在“解决方案资源管理器”窗口中，右键单击“引用”文件夹，然后单击“管理 NuGet 包”。
+                                </p>
+                                <p style='margin-left: 18.0pt;'>
+                                    2. 展开“联机”。
+                                </p>
+                                <p style='margin-left: 18.0pt;'>
+                                    3. 在“联机搜索”框中，键入“sqlite-net”。
+                                </p>
+                                <p style='margin-left: 18.0pt;'>
+                                    4. 在“sqlite-net”旁，单击“安装”，如下所示。
+                                </p>
+                                <p class="imgp">
+                                    <img border="0" width="553" height="80" id="图片 6"
+                                        src="images/developing_17/image007.jpg">
+                                </p>
+                                <p style='margin-left: 18.0pt;'>
+                                    5. 单击“关闭”。
+                                </p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>
+                                    注意，NuGet 是一种
+Visual Studio 扩展，使你可以更轻松地在 Visual Studio 中安装和更新第三方的库和工具。若要了解有关 NuGet 的详细信息，请参阅&nbsp;<a
+    href="http://go.microsoft.com/fwlink/p/?LinkId=299207">NuGet
+库</a>。
+                                </p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>
+                                    熟悉
+NuGet 后，你会发现可以更轻松地使用 NuGet 的命令行版本。要在 Visual Studio 中使用它，请在“工具”菜单上单击“库程序包管理器”&gt;“程序包管理器控制台”
+                                </p>
+                                <br />
+                                <h2><a name="_Toc371520285">Windows Phone 8</a></h2>
+                                <h3><a name="_Toc371520286">安装</a></h3>
+                                <p class="MsoListParagraph" style='margin-left: 21.0pt;'>
+                                    1. 在 Microsoft Visual Studio 中的“工具”菜单上，单击“扩展和更新”。
+                                </p>
+                                <p class="MsoListParagraph" style='margin-left: 21.0pt;'>
+                                    2. 展开“联机”。如果尚未选择“Visual Studio 库”，请单击它。
+                                </p>
+                                <p class="MsoListParagraph" style='margin-left: 21.0pt;'>
+                                    3. 在“搜索 Visual
+Studio 库”框中，键入“SQLite”&quot;&quot;。
+                                </p>
+                                <p class="MsoListParagraph" style='margin-left: 21.0pt;'>
+                                    4.&nbsp;
+单击“用于 Windows 运行时的 SQLite”旁的“下载”，如下所示。
+                                </p>
+                                <p class="imgp">
+                                    <img border="0" width="485" height="81" id="图片 8"
+                                        src="images/developing_17/image008.png">
+                                </p>
+                                <p style='margin-left: 21.0pt;'>
+                                    5.&nbsp; 单击“安装”。
+                                </p>
+                                <p class="MsoListParagraph" style='margin-left: 21.0pt;'>重新启动 Visual Studio。</p>
+                                <h3><a name="_Toc371520287">引用</a></h3>
+                                <p>同Windows应用商店应用程序</p>
+                                <h3><a name="_Toc371520288">获取帮助程序库</a></h3>
+                                <p>同Windows应用商店应用程序</p>
+                                <h3><a name="_Toc371520289">添加用于Windows Phone 8 的封装</a></h3>
+                                <p>要在Windows Phone 8 解决方案中使用SQLite数据库，需要从GitHub上下载sqlite-net-wp8的C++原生工程加入都解决方案中，sqlite-net-wp8里封装了一些方法供sqlite-net调用，下载链接如下：</p>
+                                <p>
+                                    <a
+                                        href="https://github.com/peterhuene/sqlite-net-wp8">https://github.com/peterhuene/sqlite-net-wp8</a>
+                                </p>
+                                <h3><a name="_Toc371520290">添加条件编译符号</a></h3>
+                                <p>右击Phone 8工程选择“属性”，在“生成”选项卡下的条件编译符号框中增加USE_WP8_NATIVE_SQLITE，如下图所示：</p>
+                                <p class="imgp">
+                                    <img border="0" width="554" height="88" id="图片 2"
+                                        src="images/developing_17/image009.png">
+                                </p>
+                                <h3><a name="_Toc371520291">注意事项</a></h3>
+                                <p class="MsoListParagraph" style='margin-left: 21.0pt;'>
+                                    1.&nbsp;
+由于Windows Phone 8之前的Windows
+Phone版本不支持原生C++代码，所以以上方法只适用于Windows
+Phone 8 工程。
+                                </p>
+                                <p class="MsoListParagraph" style='margin-left: 21.0pt;'>
+                                    2.&nbsp;
+添加完sqlite-net-wp8原生工程后，将无法面向Any CPU平台生产解决方案，请根据需要，在配置管理器中设置面向平台为Win32（模拟器）或ARM（真机）。
+                                </p>
+                                <p>使用模拟器调试时的配置：</p>
+                                <p class="imgp">
+                                    <img border="0" width="554" height="150" id="图片 5"
+                                        src="images/developing_17/image010.png">
+                                </p>
+                                <p>使用真机调试时的配置：</p>
+                                <p class="imgp">
+                                    <img border="0" width="553" height="159" id="图片 7"
+                                        src="images/developing_17/image011.png">
+                                </p>
+                                <br />
+                                <p class="MsoListParagraph" style='margin-left: 21.0pt;'>
+                                    3.&nbsp;
+由于sqlite-net-wp8工程基于特定sqlite版本，所以当Visual Studio的sqlite推出新的版本时，请确定Git上sqlite-net-wp8也作了相应的升级，之后再更新sqlite扩展与原生工程，如果二者的版本不匹配将导致无法加载原生工程。
+                                </p>
+                                <h1><a name="_Toc371520292">四、使用SQLite</a></h1>
+                                <h3><a name="_Toc371520293">创建表</a></h3>
+                                <p>对于此示例，我们假设你的 Windows 应用商店应用使用博客文章。这些博客文章在 SQLite 数据库表中以记录的形式表示。使用你安装的 sqlite-net 包，可以通过为代表每篇博客文章的类进行编码来定义表。在此案例中，每篇博客文章都具有唯一的 ID、标题以及文章的文本，如下所示。</p>
+                                <pre><code>public class Post
+{
+    [PrimaryKey]
+    public int Id { get; set; }
+    public string Title { get; set; }
+    public string Text { get; set; }
+}</code></pre>
+                                <p><b>PrimaryKey</b>&nbsp;属性在 sqlite-net 包中进行定义。</p>
+                                <p>定义表后，可以使用如下代码创建该表。</p><pre><code>private async void CreateTable()
+{
+    SQLiteAsyncConnection conn = new SQLiteAsyncConnection("blog");
+    await conn.CreateTableAsync<Post>();
+}</code></pre>
+                                <p><b>SQLiteAsyncConnection</b>&nbsp;方法的 &quot;blog&quot; 参数可以指定 SQLite 数据库的路径。</p>
+                                <p><b>CreateTableAsync</b>&nbsp;方法的类型对应类型为&nbsp;<b>Post</b>&nbsp;的表，此表之前已作为类进行编码。</p>
+                                <br />
+                                <p><a name="OLE_LINK4"></a><a name="OLE_LINK3">Android中对应的方法：</a></p><pre><code>public void onCreate(SQLiteDatabase db) {
+    db.execSQL("CREATE TABLE Post ( Id INTEGER PRIMARY KEY, Title TEXT, Text TEXT )");
+}</code></pre>
+                                <p>IOS中对应的方法：</p><pre><code>char *errorMsg; 
+const char *createSql="create table if not exists persons (id integer primary key autoincrement,name text)";
+
+if (sqlite3_exec(database, createSql, NULL, NULL, &errorMsg)==SQLITE_OK) { 
+    NSLog(@"create ok."); 
+}</code></pre>
+                                <h3><a name="_Toc371520294">创建记录</a></h3>
+                                <p>创建表后，你可以使用如下代码为它添加记录。</p><pre><code>public async void InsertPost(Post post)
+{
+    SQLiteAsyncConnection conn = new SQLiteAsyncConnection("blog");
+    await conn.InsertAsync(post);
+}</code></pre>
+                                <p><a name="OLE_LINK6"></a><a name="OLE_LINK5">Android中对应的方法：</a></p><pre><code>public void insertPost(SQLiteDatabase db, String title, String text ) {
+    ContentValues values = new ContentValues();
+
+    values.put("Title", title);
+    values.put("Text", text);
+    long newRowId;
+
+    newRowId = db.insert("Post", null, values);
+}</code></pre>
+                                <p>IOS中对应的方法：</p><pre><code>const char *insertSql="insert into persons (name) values(‘张三’)"; 
+    if (sqlite3_exec(database, insertSql, NULL, NULL, &errorMsg)==SQLITE_OK) { 
+        NSLog(@"insert ok."); 
+    }</code></pre>
+                                <h3><a name="_Toc371520295">删除记录</a></h3>
+                                <p>若要删除记录，请使用如下代码。</p><pre><code>public async void DeletePost(Post post)
+{
+    SQLiteAsyncConnection conn = new SQLiteAsyncConnection("blog");
+    await conn.DeleteAsync(post);
+}</code></pre>
+                                <p>Android中对应的方法：</p><pre><code>public void deletePost(SQLiteDatabase db, Integer id ) {
+    String selection = "Id LIKE ?";
+    String[] selelectionArgs = { String.valueOf(id) };
+    
+    db.delete("Post", selection, selectionArgs);
+}</code></pre>
+                                <h3><a name="_Toc371520296">更新记录</a></h3>
+                                <p>若要更新记录，请使用如下代码。</p><pre><code>public async void UpdatePost(Post post)
+{
+    SQLiteAsyncConnection conn = new SQLiteAsyncConnection("blog");
+    await conn.UpdateAsync(post);
+}</code></pre>
+                                <p>Android中对应的方法：</p><pre><code>public void updatePost(SQLiteDatabase db, Integer id, String title, String text ) {
+    ContentValues values = new ContentValues();
+    
+    values.put("Title", title);
+    values.put("Text", text);
+ 
+    String selection = "Id LIKE ?";
+    String[] selelectionArgs = { String.valueOf(id) };
+ 
+    int count = db.update(
+        "Post,
+        values,
+        selection,
+        selectionArgs);
+}</code></pre>
+                                <h3><a name="_Toc371520297">读取记录</a></h3>
+                                <p>若要读取单个记录，请使用如下代码。</p><pre><code>public async Task<Post> GetPost(int id)
+{
+    SQLiteAsyncConnection conn = new SQLiteAsyncConnection("blog");
+
+    var query = conn.Table<Post>().Where(x => x.Id == id);
+    var result = await query.ToListAsync();
+
+    return result.FirstOrDefault();
+}</code></pre>
+                                <p>Android中对应的方法：</p><pre><code>public Cursor getPost(SQLiteDatabase db, Integer id){
+    String[] projection = {"Id", "Title", "Text" };
+    String selection = "Id LIKE ?";
+    String[] selelectionArgs = { String.valueOf(id) };
+
+    Cursor c = db.query(
+        "Post",
+        projection,
+        selection,
+        selectionArgs,
+        null,
+        null,
+        null
+    );
+
+    return c;
+}</code></pre>
+                                <p>IOS中对应的方法：</p><pre><code>const char *selectSql="select id,name from persons"; 
+sqlite3_stmt *statement; 
+if (sqlite3_prepare_v2(database, selectSql, -1, &statement, nil)==SQLITE_OK) { 
+    NSLog(@"select ok."); 
+}
+
+while (sqlite3_step(statement)==SQLITE_ROW) { 
+    int _id=sqlite3_column_int(statement, 0); 
+    NSString *name=[[NSString alloc] initWithCString:(char *)sqlite3_column_text(statement, 1) encoding:NSUTF8StringEncoding]; 
+    NSLog(@"row>>id %i, name %@",_id,name); 
+}
+
+sqlite3_finalize(statement);</code></pre>
+                                <p>若要读取所有记录，请使用如下代码。</p><pre><code>public async Task<List<Post>> GetPosts()
+{
+    SQLiteAsyncConnection conn = new SQLiteAsyncConnection("blog");
+
+    var query = conn.Table<Post>();
+    var result = await query.ToListAsync();
+
+    return result;
+}</code></pre>
+                                <p>Android中对应的方法：</p><pre><code>public Cursor getPosts(SQLiteDatabase db){
+    String[] projection = { "Id", "Title", "Text" };
+
+    Cursor c = db.query(
+        "Post",
+        projection,
+        null,
+        null,
+        null,
+        null,
+        null
+    );
+
+    return c;
+}</code></pre>
+                                <h1><a name="_Toc371520298">五、另请参见</a></h1>
+                                <p>
+                                    <a href="http://www.sqlite.org/">SQLite Home
+Page</a>
+                                </p>
+                                <p>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/dn263243.aspx">SQLite
+编程（对比 Android 与 Windows 应用商店应用）</a>
+                                </p>
+                                <p>
+                                    <a
+                                        href="http://wp.qmatteoq.com/working-with-sqlite-in-windows-phone-8-a-sqlite-net-version-for-mobile/">Working
+with SQLite in Windows Phone 8: a sqlite-net version for mobile</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <!--End Content-->
+        <div style="text-align: right" class="gotoTop"><a href="javascript:scroll(0,0)"></a></div>
+        <!--Begin ProudctLinks-->
+        <div class="ms-pro-links">
+            <div class="grid-container clearfix">
+                <div class="cam-links">
+                    其它微软站点
+		<a href="http://www.microsoft.com/zh-cn/default.aspx">微软中国官方网站</a>
+                    <a href="http://www.microsoft.com/zh-cn/download/default.aspx?WT.mc_id=MSCOM_zh-cn_HP_Footer_downloads" target="_blank">微软中国下载中心</a>
+                    <a href="http://www.microsoftstore.com.cn?WT.mc_id=MSCOM_003" target="_blank">微软中国官方商城</a>
+                    <a href="http://www.microsoft.com/china/newsletter/" target="_blank">订阅电子期刊</a>
+                    <a href="https://sales.liveperson.net/hc/21661174/?cmd=file&file=visitorWantsToChat&site=21661174&byhref=1&SESSIONVAR!skill=APGC.PRC.ZH.CS.CON.PRESLS.GENERAL" target="_blank">联系微软销售代表</a>
+                    <a href="http://www.microsoft.com/zh-cn/sitemap.aspx" target="_blank">网站地图</a>
+                </div>
+            </div>
+        </div>
+        <!--End ProudctLinks-->
+        <!--Begin footer-->
+        <div class="footer">
+            <div class="grid-container">
+                <img src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-type-1x.png" alt="microsoft" class="logo">
+                <ul>
+                    <li><a href="http://www.miibeian.gov.cn/" title="">京ICP备09042378号-6</a></li>
+                    <li><a href="https://profile.microsoft.com/RegSysProfileCenter/default.aspx?lcid=2052" title="">个人信息中心</a></li>
+                    <li><a href="http://support.microsoft.com/contactus/?ws=support" title="">与我们联系</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkId=248681" title="">隐私权声明</a></li>
+                    <li><a href="http://go.microsoft.com/?linkid=4412892" title="">使用条款</a></li>
+                    <li><a href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Trademarks/EN-US.aspx" title="">商标</a></li>
+                    <li>&copy; 2013 Microsoft</li>
+                </ul>
+            </div>
+        </div>
+        <!--End footer-->
+        <!-- Begin MDA WEDCS -->
+        <script type="text/JavaScript">
+            var varSegmentation = 0;
+            var varClickTracking = 1;
+            var varCustomerTracking = 1;
+            var varAutoFirePV = 1;
+            var Route = "#";
+            var Ctrl = "#"
+            //document.write("<script type='text/javascript' src='" + window.location.protocol + "//c.microsoft.com/ms.js'><"+"/script>");
+        </script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="./assets/js/script.js"></script>
+        <script type="text/javascript" src="./js/siteSearch.js"></script>
+        <noscript>
+            <img alt="" width="1" height="1" src="http://c.microsoft.com/trans_pixel.aspx/" /></noscript>
+        <!-- Begin MDA WEDCS -->
+    </div>
+</body>
+</html>

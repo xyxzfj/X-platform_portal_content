@@ -1,0 +1,3088 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>LBS、镜头和传感器应用接口使用</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="css/templete.css" type="text/css" media="all" />
+    <meta charset="UTF-8">
+</head>
+<body class="level-2">
+    <div class="wrapper">
+        <!--Begin header-->
+        <div class="header">
+            <div class="grid-container clearfix">
+                <div class="header-left">
+                    <img alt="Microsoft" src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-lg-1x.png" width="94" height="20">
+                    <h1>X-Platform</h1>
+                </div>
+                <div id="mscom-search" class="mscom-search" style="margin-top: 37px;">
+                    <div class="search-form">
+                        <form action="" id="search-form">
+                            <div class="input-wrapper">
+                                <label class="screen-reader-text" for="search-input">搜索 Microsoft.com</label>
+                                <input id="search-input" type="text" class="input-area" autocomplete="off">
+                            </div>
+                            <button class="search-submit" id="search-btn" type="submit">
+                                <img width="16" height="16" alt="Submit" src="http://i.s-microsoft.com/global/imagestore/PublishingImages/sprites/search-button-blue.png"></button>
+                        </form>
+                    </div>
+                    <div class="search-results-box" id="results">
+                        <div class="search-scope">
+                            <ul>
+                                <li class=""><a class="checked" search="microsoft" role="search">搜索 Microsoft.com</a></li>
+                                <li class=""><a search="internet" role="search">搜索互联网</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End header-->
+        <br />
+        <!--Begin Content-->
+        <div class="content">
+            <div class="wrapper">
+                <div class="wrapper-header">
+                    <div>
+                        <a href="index.html">
+                            <img src="./assets/image/banner_1.jpg"></a>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="nav">
+                        <div class="block article-nav-block">
+                            <h2>移动应用开发生命周期</h2>
+                            <div class="menu">
+                                <h3><a href="idea.html">计划<span>Idea/Planning</span></a></h3>
+                                <ul>
+                                    <li><a href="idea_01.html">平台总览</a></li>
+                                    <li><a href="idea_02.html">开发工具、开发环境和模拟器</a></li>
+                                    <li><a href="idea_03.html">应用结构和生命周期</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="design.html">设计<span>Design</span></a></h3>
+                                <ul>
+                                    <li><a href="design_01.html">UI Layout的设计</a></li>
+                                    <li><a href="design_02.html">UI的控件</a></li>
+                                    <li><a href="design_03.html">UI页面的控制和导航</a></li>
+                                    <li><a href="design_04.html">不同屏幕尺寸和分辨率的适配</a></li>
+                                    <li><a href="design_05.html">第三方SDK</a></li>
+                                    <li><a href="design_06.html">游戏开发</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu active">
+                                <h3><a href="developing.html">开发<span>Developing</span></a></h3>
+                                <ul>
+                                    <li><a href="developing_01.html">开发语言</a></li>
+                                    <li><a href="developing_02.html">Audio、Video Player应用的开发</a></li>
+                                    <li><a href="developing_03.html">General APIs Mapping</a></li>
+                                    <li><a href="developing_04.html">IAP应用内支付</a></li>
+                                    <li><a href="developing_05.html">LBS应用</a></li>
+                                    <li><a href="developing_06.html">LBS、镜头和传感器应用接口使用</a></li>
+                                    <li><a href="developing_07.html">Native Code（C和C++）支持</a></li>
+                                    <li><a href="developing_08.html">Push Notification</a></li>
+                                    <li><a href="developing_09.html">Sharing in Social Network</a></li>
+                                    <li><a href="developing_10.html">Source Code Control</a></li>
+                                    <li><a href="developing_11.html">UI上的Data Binding</a></li>
+                                    <li><a href="developing_12.html">Windows 8.1和WP 8 Sharing应用分享功能实现</a></li>
+                                    <li><a href="developing_13.html">多媒体</a></li>
+                                    <li><a href="developing_14.html">后台任务和多任务处理</a></li>
+                                    <li><a href="developing_15.html">获取后台服务器数据</a></li>
+                                    <li><a href="developing_16.html">浏览器控件WebView</a></li>
+                                    <li><a href="developing_17.html">数据库（SQLite）</a></li>
+                                    <li><a href="developing_18.html">数据网络和数据通讯</a></li>
+                                    <li><a href="developing_19.html">通话和短信功能</a></li>
+                                    <li><a href="developing_20.html">图形处理(Drawing & Animation)</a></li>
+                                    <li><a href="developing_21.html">文件系统和应用设置</a></li>
+                                    <li><a href="developing_22.html">应用间通信</a></li>
+                                    <li><a href="developing_23.html">支付方式</a></li>
+                                    <li><a href="developing_24.html">Windows 8.1应用外设开发</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="testing.html">测试<span>Testing</span></a></h3>
+                                <ul>
+                                    <li><a href="testing_01.html">Windows 8 and WP 8开发FAQ</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu last">
+                                <h3><a href="distribute.html">发布<span>Distribute</span></a></h3>
+                                <ul>
+                                    <li><a href="distribute_01.html">应用商店(发布和更新应用)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="block success-story-nav-block">
+                            <h2>成功案例</h2>
+                        </div>
+                        <div class="block others">
+                            <a href="sample_code.html" class="left">示例代码</a>
+                            <a href="http://msdn.microsoft.com/zh-cn/dn473954" class="right">教学视频</a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3 class="title">LBS/Lens/Sensors<span><a href="index.html">返回首页&gt;</a></span></h3>
+                        <div class="article-content">
+                            <div class="WordSection1">
+                                <p class="MsoToc1"><a href="#_Toc371336463">一、 加速计</a></p>
+                                <p class="MsoToc2"><a href="#_Toc371336464">不同平台的概述</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336465">Android</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336466">IOS</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336467">Win8</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336468">WP8</a></p>
+                                <p class="MsoToc2"><a href="#_Toc371336469">获取传感器对象</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336470">Android</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336471">IOS</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336472">Win8</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336473">WP8</a></p>
+                                <p class="MsoToc2"><a href="#_Toc371336474">获取数据</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336475">Android</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336476">IOS</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336477">Win8</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336478">WP8</a></p>
+                                <p class="MsoToc1"><a href="#_Toc371336479">二、 陀螺仪</a></p>
+                                <p class="MsoToc2"><a href="#_Toc371336480">不同平台的概述</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336481">Android</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336482">Win8</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336483">WP8</a></p>
+                                <p class="MsoToc2"><a href="#_Toc371336484">获取传感器对象</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336485">Android</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336486">Win8</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336487">WP8</a></p>
+                                <p class="MsoToc2"><a href="#_Toc371336488">获取数据</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336489">Android</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336490">Win8</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336491">WP8</a></p>
+                                <p class="MsoToc1"><a href="#_Toc371336492">三、 位置传感器</a></p>
+                                <p class="MsoToc2"><a href="#_Toc371336493">不同平台的概述</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336494">Android</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336495">IOS</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336496">Win8</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336497">WP8</a></p>
+                                <p class="MsoToc2"><a href="#_Toc371336498">获取传感器对象</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336499">Android</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336500">IOS</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336501">Win8</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336502">WP8</a></p>
+                                <p class="MsoToc2"><a href="#_Toc371336503">获取用户位置</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336504">Android</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336505">IOS</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336506">Win8</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336507">WP8</a></p>
+                                <p class="MsoToc1"><a href="#_Toc371336508">四、 摄像头</a></p>
+                                <p class="MsoToc2"><a href="#_Toc371336509">不同平台的概述</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336510">Android</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336511">IOS</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336512">Win8</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336513">WP8</a></p>
+                                <p class="MsoToc2"><a href="#_Toc371336514">创建相机</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336515">Android</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336516">IOS</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336517">Win8</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336518">WP8</a></p>
+                                <p class="MsoToc2"><a href="#_Toc371336519">开始捕捉</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336520">Android</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336521">IOS</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336522">Win8</a></p>
+                                <p class="MsoToc3"><a href="#_Toc371336523">WP8</a></p>
+                                <br />
+                                <h1><a name="_Toc371336463">一、加速计</a></h1>
+                                <p>加速度计用于测量加速度。借助一个三轴加速度计可以测得一个固定平台相对地球表面的运动方向。</p>
+                                <h2><a name="_Toc371336464">不同平台的概述</a></h2>
+                                <h3><a name="_Toc371336465">Android</a></h3>
+                                <p>在运用该API常用到的两个类和一个接口：</p>
+                                <p class="MsoListParagraph">
+                                    SensorManager：传感器管理类。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    Sensor：一个描述传感器的类。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    SensorEventListener：传感器事件监听类（SensorListener类已过期）。
+                                </p>
+                                <p><b>一般运用步骤：</b></p>
+                                <p class="MsoListParagraph">
+                                    1. 通过上下文获取SensorManager的对象。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    2. 实例化一个你需要使用的sensor对象（也可以通过getSensorList()来获取所有的传感器对象，返回一个list）。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    3. 实现传感器监听接口。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    4. 注册监听。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    5. 反注册监听。
+                                </p>
+                                <h3><a name="_Toc371336466">IOS</a></h3>
+                                <p>iPhone内置的加速计是三维全方向感知的，手机平面左右两侧对应加速计x轴负正，手机上下对应y轴正负，垂直手机平面朝里朝外对应z轴正负。当 iPhone静止时，受到的重力加速度为1g，根据摆放位置分摊在三个轴上，比如z轴g ＝ －1说明手机正面朝上平放，而不管怎么放置，三轴方向的加速度都不会超过1g。但当运动状态时，就可能出现特别的数值，正是根据这些数值我们可以判断出运动方向和速度并用于应用中。</p>
+                                <h3><a name="_Toc371336467">Win8</a></h3>
+                                <p>此传感器返回有关 x、 y 和 z 轴的 G 力值。具体步骤大致如下：</p>
+                                <p class="MsoListParagraph">
+                                    1. 获取加速计对象。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    2. 注册 ReadingChanged 事件（或Shaken事件）进行处理。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    3. 反注册ReadingChanged 事件（或Shaken事件）。
+                                </p>
+                                <h3><a name="_Toc371336468">WP8</a></h3>
+                                <p>
+                                    加速度计测量在某一时刻施加于设备的力。可以使用这些力来确定用户正在向哪个方向移动设备。加速度值采用 3 维矢量表示，该矢量表示在 X、Y 和 Z 轴中的加速度分量（采用重力单位）。当设备面朝平台时，加速度的方向相对于设备以便对
+Z 轴应用 -1g，当垂直于平台顶部放置设备时，对 Y 轴应用 -1g。
+                                </p>
+                                <p>加速度计传感器检测重力以及由于手机运动而产生的任何力。使用 Motion 类访问的组合运动 API 使用多个设备传感器将重力矢量与设备加速度分离，并且允许您轻松确定设备的当前属性（yaw、pitch、roll）。</p>
+                                <h2><a name="_Toc371336469">获取传感器对象</a></h2>
+                                <h3><a name="_Toc371336470">Android</a></h3>
+                                <p class="MsoListParagraph">
+                                    1. 实现传感器监听接口：
+                                </p>
+                                <p>
+                                    public class TestAccel implements
+SensorEventListener{
+                                </p>
+                                <p>
+                                    public interface
+onShakeListener{
+                                </p>
+                                <p>
+                                    public void
+onShake();
+                                </p>
+                                <p>}</p>
+                                <p>}</p>
+                                <p class="MsoListParagraph">
+                                    2. 通过上下文获取SensorManager的对象：
+                                </p>
+                                <p>sensorManager = Context.getSystemService(Context.Sensor_service);</p>
+                                <p class="MsoListParagraph">
+                                    3. 实例化一个你需要使用的sensor对象：
+                                </p>
+                                <p>
+                                    Sensor accelerometer = <a name="OLE_LINK2"></a><a
+                                        name="OLE_LINK1">sensorManager</a>.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+                                </p>
+                                <h3><a name="_Toc371336471">IOS</a></h3>
+                                <p>UIAccelerometer类是单独存在的。要获取对此类的引用，请调用sharedAccelerometer方法，如下所示。</p>
+                                <p>
+                                    UIAccelerometer *accelerometer =
+[UIAccelerometer sharedAccelerometer];
+                                </p>
+                                <h3><a name="_Toc371336472">Win8</a></h3>
+                                <p>使用GetDefault方法建立到加速计的连接。如果未找到集成加速计，则方法返回一个 null 值。</p>
+                                <p>Accelerometer accelerometer = Accelerometer.GetDefault();</p>
+                                <h3><a name="_Toc371336473">WP8</a></h3>
+                                <p>声明一个类型为 Accelerometer 的变量。</p>
+                                <p>
+                                    Accelerometer accelerometer = new
+Accelerometer();
+                                </p>
+                                <h2><a name="_Toc371336474">获取数据</a></h2>
+                                <h3><a name="_Toc371336475">Android</a></h3>
+                                <p class="MsoListParagraph">
+                                    1. 注册监听
+                                </p>
+                                <p>if (sensor != null) {</p>
+                                <p>
+                                    this.sensorManager.registerListener(this,
+sensor, SensorManager.SENSOR_DELAY_GAME);
+                                </p>
+                                <p>}</p>
+                                <p class="MsoListParagraph">
+                                    2. 反注册监听
+                                </p>
+                                <p>if (sensorManager != null)</p>
+                                <p>sensorManager.unregisterListener(this);</p>
+                                <p class="MsoListParagraph">
+                                    3. 判断数据
+                                </p>
+                                <p>
+                                    public void onSensorChanged(SensorEvent
+event) {
+                                </p>
+                                <p>
+                                    long curTime =
+java.lang.System.currentTimeMillis();
+                                </p>
+                                <p>
+                                    if ((curTime -
+lastTime) &gt; 10) {
+                                </p>
+                                <p>
+                                    long diffTime =
+(curTime - lastTime);
+                                </p>
+                                <p>
+                                    lastTime =
+curTime;
+                                </p>
+                                <p>float x = event.values[0];</p>
+                                <p>
+                                    float y =
+event.values[1];
+                                </p>
+                                <p>
+                                    float z =
+event.values[2];
+                                </p>
+                                <p>
+                                    float speed =
+Math.abs(x + y + z - last_x - last_y - last_z) / diffTime * 10000;
+                                </p>
+                                <p>
+                                    if (speed &gt;
+SHAKE_SHRESHOLD) {
+                                </p>
+                                <p>// 检测到摇晃后执行的代码</p>
+                                <p>shakeListener.onShake();</p>
+                                <p>}</p>
+                                <p>last_x = x;</p>
+                                <p>last_y = y;</p>
+                                <p>last_z = z;</p>
+                                <p>}</p>
+                                <p>}</p>
+                                <h3><a name="_Toc371336476">IOS</a></h3>
+                                <p>
+                                    委托方法：- (void)
+accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration
+*)acceleration中的UIAcceleration是表示加速度类。包含了来自加速计UIAccelerometer的真是数据。它有3个属性的值x、y、z。iphone的加速计支持最高以每秒100次的频率进行轮询。此时是60次。
+                                </p>
+                                <p>accelerometer.delegate = self;</p>
+                                <p>accelerometer.updateInterval = 1.0/60.0;</p>
+                                <h3><a name="_Toc371336477">Win8</a></h3>
+                                <p>Accelerometer类有2个属性：</p>
+                                <p class="MsoListParagraph">
+                                    1.
+MinimumReportInterval（只读）：得到加速计最低报告间隔。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    2.
+ReportInterval（读/写）：设置或者获取当前加速度计的报告间隔。
+                                </p>
+                                <p>Accelerometer类有2个事件：</p>
+                                <p class="MsoListParagraph">
+                                    1. ReadingChanged：发生在每次传感器更新一组加速度数据。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    2. Shaken：发生在加速度计检测到电脑已经动摇了。
+                                </p>
+                                <p>
+                                    accelerometer.ReadingChanged += new
+TypedEventHandler&lt;Accelerometer,
+AccelerometerReadingChangedEventArgs&gt;(ReadingChanged);
+                                </p>
+                                <p>
+                                    accelerometer.Shaken += new
+TypedEventHandler&lt;Accelerometer, AccelerometerShakenEventArgs&gt;(Shaken);
+                                </p>
+                                <p>获取X，Y和Z的值：</p>
+                                <p class="MsoListParagraph">
+                                    1.
+在通过ReadingChanged中，使用e.Reading对象中的3个只读属性AccelerationX，AccelerationY，AccelerationZ来判断3个方向对应的值。通过e.Reading的只读属性Timestamp，可以获得数据的对应的时间戳。
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    async private
+void ReadingChanged(object sender, AccelerometerReadingChangedEventArgs e)
+                                </p>
+                                <p style='margin-left: 21.0pt'>{</p>
+                                <p style='margin-left: 31.5pt'>
+                                    await
+Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =&gt;
+                                </p>
+                                <p style='margin-left: 31.5pt'>{</p>
+                                <p style='margin-left: 42.0pt'>
+                                    AccelerometerReading
+reading = e.Reading;
+                                </p>
+                                <p style='margin-left: 42.0pt'>
+                                    ScenarioOutput_X.Text
+= String.Format(&quot;{0,5:0.00}&quot;, reading.AccelerationX);
+                                </p>
+                                <p style='margin-left: 42.0pt'>
+                                    ScenarioOutput_Y.Text
+= String.Format(&quot;{0,5:0.00}&quot;, reading.AccelerationY);
+                                </p>
+                                <p style='margin-left: 42.0pt'>
+                                    ScenarioOutput_Z.Text
+= String.Format(&quot;{0,5:0.00}&quot;, reading.AccelerationZ);
+                                </p>
+                                <p style='margin-left: 31.5pt'>});</p>
+                                <p style='margin-left: 21.0pt'>}</p>
+                                <p class="MsoListParagraph">
+                                    2.
+通过e.Reading的只读属性Timestamp，可以获得数据更新的对应的时间戳。
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    async private
+void Shaken(object sender, AccelerometerShakenEventArgs e)
+                                </p>
+                                <p style='margin-left: 21.0pt'>{</p>
+                                <p style='margin-left: 31.5pt'>
+                                    await
+Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =&gt;
+                                </p>
+                                <p style='margin-left: 31.5pt'>{</p>
+                                <p style='margin-left: 42.0pt'>_shakeCount++;</p>
+                                <p style='margin-left: 42.0pt'>
+                                    ScenarioOutputText.Text
+= “摇动次数：” + _shakeCount
++ “次”;
+                                </p>
+                                <p style='margin-left: 31.5pt'>});</p>
+                                <p style='margin-left: 21.0pt'>}</p>
+                                <h3><a name="_Toc371336478">WP8</a></h3>
+                                <p class="MsoListParagraph">
+                                    1.
+为 CurrentValueChanged 事件设置处理程序。将以下代码粘贴到空的“开始”按钮单击处理程序中。
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    if
+(accelerometer == null)
+                                </p>
+                                <p style='margin-left: 21.0pt'>{</p>
+                                <p style='margin-left: 31.5pt'>
+                                    // Instantiate
+the Accelerometer.
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    accelerometer =
+new Accelerometer();
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    accelerometer.TimeBetweenUpdates
+= TimeSpan.FromMilliseconds(20);
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    accelerometer.CurrentValueChanged
++= new
+EventHandler&lt;SensorReadingEventArgs&lt;AccelerometerReading&gt;&gt;(accelerometer_CurrentValueChanged);
+                                </p>
+                                <p style='margin-left: 21.0pt'>}</p>
+                                <p class="MsoListParagraph">
+                                    2.
+实现 <a
+    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/hh239103(v=vs.105).aspx">CurrentValueChanged</a> 事件处理程序。具有新加速度计数据的系统会以使用 <a
+        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/hh220884(v=vs.105).aspx">TimeBetweenUpdates</a> 指定的频率调用该方法。该处理程序接收包含加速度计数据的
+                            <a
+                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.devices.sensors.accelerometerreading(v=vs.105).aspx">AccelerometerReading</a> 对象。在对 UI 没有访问权限的后台线程上调用该处理程序。因此，该事件处理程序使用 Dispatcher.Invoke 方法，该方法在 UI 线程上调用指定的代码。Dispatcher.Invoke 用于调用将在下一步中定义的 UpdateUI 并传递 AccelerometerReading 对象。
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    void
+accelerometer_CurrentValueChanged(object sender,
+SensorReadingEventArgs&lt;AccelerometerReading&gt; e)
+                                </p>
+                                <p style='margin-left: 21.0pt'>{</p>
+                                <p style='margin-left: 31.5pt'>
+                                    // Call UpdateUI
+on the UI thread and pass the AccelerometerReading.
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    Dispatcher.BeginInvoke(()
+=&gt; UpdateUI(e.SensorReading));
+                                </p>
+                                <p style='margin-left: 21.0pt'>}</p>
+                                <p class="MsoListParagraph">
+                                    3.
+实现将向用户显示加速度计数据的 UpdateUI 方法。此方法首先更新状态 TextBlock 以指示正在接收数据。接下来，更新三个 TextBlock 对象以显示传感器每个轴上的加速度数值。最后，更新 Line 对象以采用图形的形式演示加速度。
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    private void
+UpdateUI(AccelerometerReading accelerometerReading)
+                                </p>
+                                <p style='margin-left: 21.0pt'>{</p>
+                                <p style='margin-left: 31.5pt'>
+                                    statusTextBlock.Text
+= &quot;getting data&quot;
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    Vector3
+acceleration = accelerometerReading.Acceleration;
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    // Show the
+numeric values.
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    xTextBlock.Text
+= &quot;X: &quot; + acceleration.X.ToString(&quot;0.00&quot;);
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    yTextBlock.Text
+= &quot;Y: &quot; + acceleration.Y.ToString(&quot;0.00&quot;);
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    zTextBlock.Text
+= &quot;Z: &quot; + acceleration.Z.ToString(&quot;0.00&quot;);
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    // Show the
+values graphically.
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    xLine.X2 =
+xLine.X1 + acceleration.X * 200;
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    yLine.Y2 =
+yLine.Y1 - acceleration.Y * 200;
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    zLine.X2 =
+zLine.X1 - acceleration.Z * 100;
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    zLine.Y2 =
+zLine.Y1 + acceleration.Z * 100;
+                                </p>
+                                <p style='margin-left: 21.0pt'>}</p>
+                                <p class="MsoListParagraph">
+                                    4.
+最后一步是实现将允许用户停止从加速度计获取数据的“停止”按钮单击处理程序。再次，如果编辑器自动添加了此处理程序，则将此处理程序的内容替换为以下内容。
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    private void
+stopButton_Click(object sender, RoutedEventArgs e)
+                                </p>
+                                <p style='margin-left: 21.0pt'>{</p>
+                                <p style='margin-left: 31.5pt'>
+                                    if
+(accelerometer != null)
+                                </p>
+                                <p style='margin-left: 31.5pt'>{</p>
+                                <p style='margin-left: 42.0pt'>
+                                    // Stop the
+accelerometer.
+                                </p>
+                                <p style='margin-left: 42.0pt'>accelerometer.Stop();</p>
+                                <p style='margin-left: 42.0pt'>
+                                    statusTextBlock.Text
+= &quot;accelerometer stopped.&quot;
+                                </p>
+                                <p style='margin-left: 31.5pt'>}</p>
+                                <p style='margin-left: 21.0pt'>}</p>
+                                <h1><a name="_Toc368566523"></a><a
+                                    name="_Toc371336479">二、&nbsp;
+陀螺仪</a></h1>
+                                <p>陀螺仪能够测出绕轴旋转的角速率值。</p>
+                                <h2><a name="_Toc371336480"></a><a name="OLE_LINK8"></a><a name="OLE_LINK7">不同平台的概述</a></h2>
+                                <h3><a name="_Toc371336481">Android</a></h3>
+                                <p>在运用该API常用到的两个类和一个接口：</p>
+                                <p class="MsoListParagraph">
+                                    SensorManager：传感器管理类。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    Sensor：一个描述传感器的类。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    SensorEventListener：传感器事件监听类（SensorListener类已过期）。
+                                </p>
+                                <p><b>一般运用步骤：</b></p>
+                                <p class="MsoListParagraph">
+                                    1. 通过上下文获取SensorManager的对象。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    2. 实例化一个你需要使用的sensor对象（也可以通过getSensorList()来获取所有的传感器对象，返回一个list）。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    3. 实现传感器监听接口。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    4. 注册监听。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    5. 反注册监听。
+                                </p>
+                                <h3><a name="_Toc371336482">Win8</a></h3>
+                                <p>此传感器返回有关 x、 y 和 z 轴的角速度值。具体步骤大致如下：</p>
+                                <p class="MsoListParagraph">
+                                    1. 获取加速计对象。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    2. 注册 ReadingChanged 事件进行处理。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    3. 反注册ReadingChanged 事件。
+                                </p>
+                                <h3><a name="_Toc371336483">WP8</a></h3>
+                                <p>陀螺仪传感器测量设备沿着其三个主轴的旋转速度。当设备静止时，所有轴的陀螺仪读数都为零。如果设备面向您围绕其中心点旋转，就像飞机螺旋桨一样，那么 Z 轴上的旋转速度值将大于零，设备旋转的速度越快，该值越大。旋转速度的测量以弧度/秒为单位，其中 2 * Pi 弧度就是全程旋转。</p>
+                                <p>
+                                    如果您想确定设备在空间的绝对方向（yaw、pitch、roll），我们建议您使用组合运动 API，可以使用 Motion 类访问此 API。有关更多信息，请参见<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/hh202984(v=vs.105).aspx">如何使用
+Windows Phone 的组合运动 API</a>。
+                                </p>
+                                <h2><a name="_Toc371336484">获取传感器对象</a></h2>
+                                <h3><a name="_Toc371336485">Android</a></h3>
+                                <p class="MsoListParagraph">
+                                    1. 实现传感器监听接口
+                                </p>
+                                <p>
+                                    public class TestGryo implements
+SensorEventListener{
+                                </p>
+                                <p>
+                                    public interface
+onShakeListener{
+                                </p>
+                                <p>
+                                    public void
+onShake();
+                                </p>
+                                <p>}</p>
+                                <p>}</p>
+                                <p class="MsoListParagraph">
+                                    2. 通过上下文获取SensorManager的对象。
+                                </p>
+                                <p>
+                                    sensorManager =
+Context.getSystemService(Context.Sensor_service);
+                                </p>
+                                <p class="MsoListParagraph">
+                                    3. 实例化一个你需要使用的sensor对象。
+                                </p>
+                                <p>
+                                    Sensor gyro =
+sensorManager.getDefaultSensor(Sensor. TYPE_GYROSCOPE);
+                                </p>
+                                <h3><a name="_Toc371336486">Win8</a></h3>
+                                <p>使用 GetDefault 方法建立到陀螺仪的连接。如果未找到集成陀螺仪，则方法返回一个 null 值。</p>
+                                <p>Gyrometer gyrometer = Gyrometer.GetDefault();</p>
+                                <h3><a name="_Toc371336487">WP8</a></h3>
+                                <p>声明Gyroscope 类型的对象</p>
+                                <p>Gyroscope gyroscope = new Gyroscope();</p>
+                                <h2><a name="_Toc371336488">获取数据</a></h2>
+                                <h3><a name="_Toc371336489">Android</a></h3>
+                                <p class="MsoListParagraph">
+                                    1. 注册传感器
+                                </p>
+                                <p>if (sensor != null) {</p>
+                                <p>
+                                    this.sensorManager.registerListener(this,
+sensor, SensorManager.SENSOR_DELAY_GAME);
+                                </p>
+                                <p>}</p>
+                                <p class="MsoListParagraph">
+                                    2. 反注册传感器
+                                </p>
+                                <p>if (sensorManager != null)</p>
+                                <p>sensorManager.unregisterListener(this);</p>
+                                <p class="MsoListParagraph">
+                                    3. 数据判断
+                                </p>
+                                <p>
+                                    public void onSensorChanged(SensorEvent
+event) {
+                                </p>
+                                <p>
+                                    long curTime =
+java.lang.System.currentTimeMillis();
+                                </p>
+                                <p>
+                                    if ((curTime -
+lastTime) &gt; 10) {
+                                </p>
+                                <p>
+                                    long diffTime =
+(curTime - lastTime);
+                                </p>
+                                <p>
+                                    lastTime =
+curTime;
+                                </p>
+                                <p>
+                                    magnetic.x += event.data[0]
+* dT;
+                                </p>
+                                <p>
+                                    magnetic.y +=
+event.data[1] * dT;
+                                </p>
+                                <p>
+                                    magnetic..z +=
+event.data[2] * dT;
+                                </p>
+                                <p>&nbsp;</p>
+                                <p>
+                                    float azimuth =
+atan2((float)(data-&gt;magnetic.x ), (float)(data-&gt;magnetic.y));
+                                </p>
+                                <p>
+                                    float roll =
+atan2((float)(data-&gt;magnetic.x ), (float)(data-&gt;magnetic.z))*180/PI;
+                                </p>
+                                <p>&nbsp;</p>
+                                <p>if(…){</p>
+                                <p>&nbsp;//todo</p>
+                                <p>}</p>
+                                <p>}</p>
+                                <p>}</p>
+                                <h3><a name="_Toc371336490">Win8</a></h3>
+                                <p>Gyrometer类有2个属性：</p>
+                                <p class="MsoListParagraph">
+                                    1.
+MinimumReportInterval（只读）：得到陀螺仪最低报告间隔。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    2.
+ReportInterval（读/写）：设置或者获取当前陀螺仪的报告间隔。
+                                </p>
+                                <p>Gyrometer类有1个事件：</p>
+                                <p class="MsoListParagraph">
+                                    1. ReadingChanged：发生在每次传感器更新一组加速度数据。
+                                </p>
+                                <p>
+                                    gyrometer.ReadingChanged
++= new TypedEventHandler&lt;Gyrometer,
+GyrometerReadingChangedEventArgs&gt;(ReadingChanged);
+                                </p>
+                                <p>判断数据：</p>
+                                <p>
+                                    在通过ReadingChanged中，使用e.Reading对象中的3个只读属性AngularVelocityX，
+AngularVelocityY， AngularVelocityZ来判断3个方向对应的值。通过e.Reading的只读属性Timestamp，可以获得数据的对应的时间戳。
+                                </p>
+                                <p>
+                                    async private void ReadingChanged(object
+sender, GyrometerReadingChangedEventArgs e)
+                                </p>
+                                <p>{</p>
+                                <p>
+                                    await
+Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =&gt;
+                                </p>
+                                <p>{</p>
+                                <p>
+                                    GyrometerReading reading = e.Reading;
+                                </p>
+                                <p>
+                                    ScenarioOutput_X.Text = String.Format(&quot;{0,5:0.00}&quot;,
+reading.AngularVelocityX);
+                                </p>
+                                <p>
+                                    ScenarioOutput_Y.Text = String.Format(&quot;{0,5:0.00}&quot;,
+reading.AngularVelocityY);
+                                </p>
+                                <p>
+                                    ScenarioOutput_Z.Text = String.Format(&quot;{0,5:0.00}&quot;,
+reading.AngularVelocityZ);
+                                </p>
+                                <p>});</p>
+                                <p>}</p>
+                                <h3><a name="_Toc371336491">WP8</a></h3>
+                                <p class="MsoListParagraph">
+                                    1.
+定义一个计时器
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    timer = new
+DispatcherTimer();
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    timer.Interval =
+TimeSpan.FromMilliseconds(60);
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    timer.Tick +=
+new EventHandler(timer_Tick);
+                                </p>
+                                <p class="MsoListParagraph">
+                                    2.
+为陀螺仪具有新数据时引发的 CurrentValueChanged 事件添加一个事件处理程序。将该代码粘贴到按钮单击处理程序中，放置在之前的代码部分之后。
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    if (gyroscope ==
+null)
+                                </p>
+                                <p style='margin-left: 21.0pt'>{</p>
+                                <p style='margin-left: 31.5pt'>
+                                    // Instantiate
+the Gyroscope.
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    gyroscope = new
+Gyroscope();
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    // Specify the
+desired time between updates. The sensor accepts
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    // intervals in
+multiples of 20 ms.
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    gyroscope.TimeBetweenUpdates
+= TimeSpan.FromMilliseconds(20);
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    // The sensor
+may not support the requested time between updates.
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    // The
+TimeBetweenUpdates property reflects the actual rate.
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    timeBetweenUpdatesTextBlock.Text
+= &quot;time between updates: &quot; +
+gyroscope.TimeBetweenUpdates.TotalMilliseconds + &quot; ms&quot;
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    gyroscope.CurrentValueChanged
++= new
+EventHandler&lt;SensorReadingEventArgs&lt;GyroscopeReading&gt;&gt;(gyroscope_CurrentValueChanged);
+                                </p>
+                                <p style='margin-left: 21.0pt'>}</p>
+                                <p class="MsoListParagraph">
+                                    3.
+使用
+Start() 方法启动陀螺仪。调用 Start 有可能会失败，因此您应该将此调用放置在一个 try 块中。在 catch 块中，您可以警告用户陀螺仪可能无法启动。然后启动
+计时器timer。
+                                </p>
+                                <p style='margin-left: 21.0pt'>try</p>
+                                <p style='margin-left: 21.0pt'>{</p>
+                                <p style='margin-left: 31.5pt'>
+                                    statusTextBlock.Text
+= &quot;starting gyroscope.&quot;
+                                </p>
+                                <p style='margin-left: 31.5pt'>gyroscope.Start();</p>
+                                <p style='margin-left: 31.5pt'>timer.Start();</p>
+                                <p style='margin-left: 21.0pt'>}</p>
+                                <p style='margin-left: 21.0pt'>
+                                    catch
+(InvalidOperationException ex)
+                                </p>
+                                <p style='margin-left: 21.0pt'>{</p>
+                                <p style='margin-left: 31.5pt'>
+                                    statusTextBlock.Text
+= &quot;unable to start gyroscope.&quot;
+                                </p>
+                                <p style='margin-left: 21.0pt'>}</p>
+                                <p class="MsoListParagraph">
+                                    4.
+实现
+CurrentValueChanged 事件处理程序。具有新陀螺仪数据的系统会以使用
+TimeBetweenUpdates 指定的频率调用该方法。该处理程序接收包含陀螺仪数据的
+GyroscopeReading 对象。在对 UI 没有访问权限的后台线程上调用该处理程序。因此，如果您想通过该方法修改 UI，则必须使用 Dispatcher.Invoke 方法在 UI 线程上调用指定的代码。
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    void
+gyroscope_CurrentValueChanged(object sender,
+SensorReadingEventArgs&lt;GyroscopeReading&gt; e)
+                                </p>
+                                <p style='margin-left: 21.0pt'>{</p>
+                                <p style='margin-left: 31.5pt'>
+                                    // Note that
+this event handler is called from a background thread
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    // and therefore
+does not have access to the UI thread. To update
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    // the UI from
+this handler, use Dispatcher.BeginInvoke() as shown.
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    //
+Dispatcher.BeginInvoke(() =&gt; { statusTextBlock.Text = &quot;in
+CurrentValueChanged&quot; });
+                                </p>
+                                <p style='margin-left: 31.5pt'>&nbsp;</p>
+                                <p style='margin-left: 31.5pt'>
+                                    isDataValid =
+gyroscope.IsDataValid;
+                                </p>
+                                <p style='margin-left: 31.5pt'>&nbsp;</p>
+                                <p style='margin-left: 31.5pt'>
+                                    if
+(lastUpdateTime.Equals(DateTimeOffset.MinValue))
+                                </p>
+                                <p style='margin-left: 31.5pt'>{</p>
+                                <p style='margin-left: 42.0pt'>
+                                    // If this is
+the first time CurrentValueChanged was raised,
+                                </p>
+                                <p style='margin-left: 42.0pt'>
+                                    // only update the
+lastUpdateTime variable.
+                                </p>
+                                <p style='margin-left: 42.0pt'>
+                                    lastUpdateTime =
+e.SensorReading.Timestamp;
+                                </p>
+                                <p style='margin-left: 31.5pt'>}</p>
+                                <p style='margin-left: 31.5pt'>else</p>
+                                <p style='margin-left: 31.5pt'>{</p>
+                                <p style='margin-left: 42.0pt'>
+                                    // Get the
+current rotation rate. This value is in
+                                </p>
+                                <p style='margin-left: 42.0pt'>
+                                    // radians per
+second.
+                                </p>
+                                <p style='margin-left: 42.0pt'>
+                                    currentRotationRate
+= e.SensorReading.RotationRate;
+                                </p>
+                                <p style='margin-left: 42.0pt'>&nbsp;</p>
+                                <p style='margin-left: 42.0pt'>
+                                    // Subtract the
+previous timestamp from the current one
+                                </p>
+                                <p style='margin-left: 42.0pt'>
+                                    // to determine
+the time between readings
+                                </p>
+                                <p style='margin-left: 42.0pt'>
+                                    TimeSpan
+timeSinceLastUpdate = e.SensorReading.Timestamp - lastUpdateTime;
+                                </p>
+                                <p style='margin-left: 42.0pt'>&nbsp;</p>
+                                <p style='margin-left: 42.0pt'>
+                                    // Obtain the
+amount the device rotated since the last update
+                                </p>
+                                <p style='margin-left: 42.0pt'>
+                                    // by
+multiplying by the rotation rate by the time since the last update.
+                                </p>
+                                <p style='margin-left: 42.0pt'>
+                                    //
+(radians/second) * secondsSinceLastReading = radiansSinceLastReading
+                                </p>
+                                <p style='margin-left: 42.0pt'>
+                                    cumulativeRotation
++= currentRotationRate * (float)(timeSinceLastUpdate.TotalSeconds);
+                                </p>
+                                <p style='margin-left: 42.0pt'>&nbsp;</p>
+                                <p style='margin-left: 42.0pt'>
+                                    lastUpdateTime =
+e.SensorReading.Timestamp;
+                                </p>
+                                <p style='margin-left: 31.5pt'>}</p>
+                                <p style='margin-left: 21.0pt'>}</p>
+                                <p class="MsoListParagraph">
+                                    5.
+实现将向用户显示陀螺仪数据的 DispatcherTimer Tick 事件处理程序。此方法首先更新状态
+TextBlock 以指示正在接收数据。接下来，更新 TextBlock 对象以显示围绕传感器每个轴的旋转加速度数值以及累积旋转。最后，更新 Line 对象以采用图形的形式演示加速度和旋转。
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    void
+timer_Tick(object sender, EventArgs e)
+                                </p>
+                                <p style='margin-left: 21.0pt'>{</p>
+                                <p style='margin-left: 31.5pt'>if (isDataValid)</p>
+                                <p style='margin-left: 31.5pt'>{</p>
+                                <p style='margin-left: 31.5pt;'>statusTextBlock.Text = &quot;receiving data from gyroscope.&quot;</p>
+                                <p style='margin-left: 31.5pt'>}</p>
+                                <p style='margin-left: 31.5pt'>
+                                    currentXTextBlock.Text
+= currentRotationRate.X.ToString(&quot;0.000&quot;);
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    currentYTextBlock.Text
+= currentRotationRate.Y.ToString(&quot;0.000&quot;);
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    currentZTextBlock.Text
+= currentRotationRate.Z.ToString(&quot;0.000&quot;);
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    cumulativeXTextBlock.Text
+=
+                                </p>
+                                <p style='margin-left: 31.5pt'>MathHelper.ToDegrees(cumulativeRotation.X).ToString(&quot;0.00&quot;);</p>
+                                <p style='margin-left: 31.5pt'>
+                                    cumulativeYTextBlock.Text
+=
+                                </p>
+                                <p style='margin-left: 31.5pt'>MathHelper.ToDegrees(cumulativeRotation.Y).ToString(&quot;0.00&quot;);</p>
+                                <p style='margin-left: 31.5pt'>
+                                    cumulativeZTextBlock.Text
+=
+                                </p>
+                                <p style='margin-left: 31.5pt'>MathHelper.ToDegrees(cumulativeRotation.Z).ToString(&quot;0.00&quot;);</p>
+                                <p style='margin-left: 31.5pt'>
+                                    double centerX =
+cumulativeGrid.ActualWidth / 2.0;
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    double centerY =
+cumulativeGrid.ActualHeight / 2.0;
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    currentXLine.X2
+= centerX + currentRotationRate.X * 100;
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    currentYLine.X2
+= centerX + currentRotationRate.Y * 100;
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    currentZLine.X2
+= centerX + currentRotationRate.Z * 100;
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    cumulativeXLine.X2
+= centerX - centerY * Math.Sin(cumulativeRotation.X);
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    cumulativeXLine.Y2
+= centerY - centerY * Math.Cos(cumulativeRotation.X);
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    cumulativeYLine.X2
+= centerX - centerY * Math.Sin(cumulativeRotation.Y);
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    cumulativeYLine.Y2
+= centerY - centerY * Math.Cos(cumulativeRotation.Y);
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    cumulativeZLine.X2
+= centerX - centerY * Math.Sin(cumulativeRotation.Z);
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    cumulativeZLine.Y2
+= centerY - centerY * Math.Cos(cumulativeRotation.Z);
+                                </p>
+                                <p style='margin-left: 21.0pt'>}</p>
+                                <h1><a name="_Toc371336492"></a><a>三、&nbsp;
+位置传感器</a></h1>
+                                <p>位置传感器通常用来决定一个设备在世界参考坐标的物理位置。</p>
+                                <h2><a name="_Toc371336493">不同平台的概述</a></h2>
+                                <h3><a name="_Toc371336494">Android</a></h3>
+                                <p>在运用该API常用到的两个类和一个接口：</p>
+                                <p class="MsoListParagraph">
+                                    SensorManager：传感器管理类。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    Sensor：一个描述传感器的类。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    SensorEventListener：传感器事件监听类（SensorListener类已过期）。
+                                </p>
+                                <p><b>一般运用步骤：</b></p>
+                                <p class="MsoListParagraph">
+                                    1. 通过上下文获取SensorManager的对象。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    2. 实例化一个你需要使用的sensor对象（也可以通过getSensorList()来获取所有的传感器对象，返回一个list）。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    3. 实现传感器监听接口。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    4. 注册监听。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    5. 反注册监听。
+                                </p>
+                                <h3><a name="_Toc371336495">IOS</a></h3>
+                                <p>
+                                    iPhone SDK提供了三个类来管理位置信息：CLLocation
+CLLocationManager 和 CLLHeading(不常用)。除了使用GPS来获取当前的位置信息外，iPhone也可以基于WiFi基站和无线发射塔来获得位置信息。GPS的精度最高，可以精确到米级别，但是也最耗电。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    1. 启动定位服务
+                                </p>
+                                <p class="MsoListParagraph">
+                                    2. 获得位置信息
+                                </p>
+                                <h3><a name="_Toc371336496">Win8</a></h3>
+                                <p>本部分包括一些有关检测用户地理位置的操作方法主题和指南。有关使用位置和地图的详细信息，请<a href="http://go.microsoft.com/fwlink/p/?LinkID=265754">Bing 地图 SDK 样例</a>。</p>
+                                <h3><a name="_Toc371336497">WP8</a></h3>
+                                <p>
+                                    在 Windows&nbsp;Phone&nbsp;8 中，您可以创建利用手机的物理位置的应用程序。位置感知应用程序的方案包括使用用户的即时位置将用户记入 Web 服务，以及跟踪一段时间内用户位置的变化。手机提供的位置数据来自多个来源，包括
+GPS、Wi-Fi 和移动电话。有两组不同的 API 可用于将位置数据引入应用程序。本主题将帮助您决定哪个位置 API 适合您的应用程序。
+                                </p>
+                                <p>Windows Phone 运行时 位置 API 在 Windows Phone 8 中首次出现。它具有以下功能：</p>
+                                <p style='margin-left: 36.0pt;'>
+                                    ●
+可以从托管代码和本机代码访问。如果您正在编写 Direct3D 应用 应用程序，您必须使用此位置 API。如果您正在创建托管的应用，同样建议您使用此 API。
+                                </p>
+                                <p style='margin-left: 36.0pt;'>
+                                    ●
+对单触发位置获取的更多支持。API 允许应用指定所需的位置结果精度以及获取结果的所需最长时间，以便平衡精度和响应速度。当不需要跟踪时，建议应用程序使用单触发位置。这有利于电池寿命，从而提供更好的用户体验。
+                                </p>
+                                <p style='margin-left: 36.0pt;'>
+                                    ●
+当跟踪位置时，应用可以请求在特定时间间隔后或在设备从先前位置移动至少指定距离后接收位置更新。
+                                </p>
+                                <p style='margin-left: 36.0pt;'>
+                                    ●
+与 Windows 8 的交汇。尽管两个平台之间有细微不同，如果同时面向手机和桌面进行开发，此 API 将允许您重复使用大部分的位置代码。
+                                </p>
+                                <h2><a name="_Toc371336498">获取传感器对象</a></h2>
+                                <h3><a name="_Toc371336499">Android</a></h3>
+                                <p class="MsoListParagraph">
+                                    1. 实现传感器监听接口
+                                </p>
+                                <p>
+                                    public class TestGryo implements
+SensorEventListener{
+                                </p>
+                                <p>
+                                    public interface
+onShakeListener{
+                                </p>
+                                <p>
+                                    public void
+onShake();
+                                </p>
+                                <p>}</p>
+                                <p>}</p>
+                                <p class="MsoListParagraph">
+                                    2. 通过上下文获取SensorManager的对象。
+                                </p>
+                                <p>
+                                    sensorManager =
+Context.getSystemService(Context.Sensor_service);
+                                </p>
+                                <p class="MsoListParagraph">
+                                    3. 实例化一个你需要使用的sensor对象。
+                                </p>
+                                <p>
+                                    Sensor gyro =
+sensorManager.getDefaultSensor(Sensor. TYPE_ORIENTATION);
+                                </p>
+                                <h3><a name="_Toc371336500">IOS</a></h3>
+                                <p>启动定位服务</p>
+                                <p>
+                                    CLLocationManager *locManager =
+[[CLLocationManager alloc] init];
+                                </p>
+                                <p>locManager.delegate = self;</p>
+                                <p>[locManager startUpdatingLocation];</p>
+                                <h3><a name="_Toc371336501">Win8</a></h3>
+                                <p>
+                                    Geoposition pos = await
+geo.GetGeopositionAsync();
+                                </p>
+                                <h3><a name="_Toc371336502">WP8</a></h3>
+                                <p>Geolocator geolocator = new Geolocator();</p>
+                                <h2><a name="_Toc371336503">获取用户位置</a></h2>
+                                <h3><a name="_Toc371336504">Android</a></h3>
+                                <p class="MsoListParagraph">
+                                    1. 注册传感器
+                                </p>
+                                <p>if (sensor != null) {</p>
+                                <p>
+                                    this.sensorManager.registerListener(this,
+sensor, SensorManager.SENSOR_DELAY_GAME);
+                                </p>
+                                <p>}</p>
+                                <p class="MsoListParagraph">
+                                    2. 反注册传感器
+                                </p>
+                                <p>if (sensorManager != null)</p>
+                                <p>sensorManager.unregisterListener(this);</p>
+                                <p class="MsoListParagraph">
+                                    3. 实现onSensorChanged事件
+                                </p>
+                                <p>
+                                    public void onSensorChanged(SensorEvent
+event) {
+                                </p>
+                                <p>
+                                    float
+azimuth_angle = event.values[0];
+                                </p>
+                                <p>
+                                    float
+pitch_angle = event.values[1];
+                                </p>
+                                <p>
+                                    float roll_angle
+= event.values[2];
+                                </p>
+                                <p>}</p>
+                                <h3><a name="_Toc371336505">IOS</a></h3>
+                                <p>
+                                    -(void)locationManager:(CLLocationManager
+*)manager
+                                </p>
+                                <p>
+                                    didUpdateToLocation:(CLLocation
+*)newLocation fromLocation: (CLLocation *)oldLocation
+                                </p>
+                                <p>{</p>
+                                <p>
+                                    NSTimeInterval howRecent =
+[newLocation.timestamp timeIntervalSinceNow];
+                                </p>
+                                <p>if(howRecent &lt; -10) return ； //离上次更新的时间少于10秒</p>
+                                <p>
+                                    if(newLocation.horizontalAccuracy &gt; 100)
+return; //精度&gt;
+100米
+                                </p>
+                                <p>//经度和纬度</p>
+                                <p>
+                                    double lat =
+newLocation.coordinate.latitude;
+                                </p>
+                                <p>
+                                    double lon =
+newLocation.coordinate.longitude;
+                                </p>
+                                <p>}</p>
+                                <h3><a name="_Toc371336506">Win8</a></h3>
+                                <p class="MsoListParagraph">
+                                    1. 打开 Microsoft Visual
+Studio 2012
+                                </p>
+                                <p>打开 Visual Studio 2012。</p>
+                                <p class="MsoListParagraph">
+                                    2. 创建一个新项目
+                                </p>
+                                <p>创建新项目，从“Visual C#”&gt;“Windows 应用商店”项目类型中选择一个“应用程序”。</p>
+                                <p class="MsoListParagraph">
+                                    3.&nbsp;
+在应用中插入 C# 代码
+                                </p>
+                                <p>打开你的项目的 MainPage.xaml.cs 文件并将现有的代码替换为下面的代码。</p>
+                                <p>using System;</p>
+                                <p>using System.Collection.Generic;</p>
+                                <p>using System.Linq;</p>
+                                <p>using System.Threading.Tasks;</p>
+                                <p>using Windows.Foundation;</p>
+                                <p>using Windows.UI.DirectUI;</p>
+                                <p>using Windows.UI.DirectUI.Controls;</p>
+                                <p>using Windows.UI.DirectUI.Data;</p>
+                                <p>using Windows.Devices.Geolocation;</p>
+                                <br />
+                                <p>namespace GeolocationSample</p>
+                                <p>{</p>
+                                <p style='margin-left: 10.5pt'>
+                                    partial class
+MainPage
+                                </p>
+                                <p style='margin-left: 10.5pt'>{</p>
+                                <p style='margin-left: 21.0pt'>
+                                    Geolocator geo =
+null;
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    public
+MainPage()
+                                </p>
+                                <p style='margin-left: 21.0pt'>{</p>
+                                <p style='margin-left: 31.5pt'>InitializeComponent();</p>
+                                <p style='margin-left: 21.0pt'>}</p>
+                                <p style='margin-left: 21.0pt'>
+                                    private async
+void button1_Click(object sender, RoutedEventArgs e)
+                                </p>
+                                <p style='margin-left: 21.0pt'>{</p>
+                                <p style='margin-left: 31.5pt'>if (geo == null)</p>
+                                <p style='margin-left: 31.5pt'>{</p>
+                                <p style='margin-left: 31.5pt;'>geo = new Geolocator();</p>
+                                <p style='margin-left: 31.5pt'>}</p>
+                                <p style='margin-left: 31.5pt'>
+                                    Geoposition pos
+= await
+geo.GetGeopositionAsync();&nbsp;
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    textblockLatitude.Text
+= &quot;Latitude: &quot; + pos.Coordinate.Latitude.ToString();
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    textblockLongitude.Text
+= &quot;Longitude: &quot; + pos.Coordinate.Longitude.ToString();
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    textblockAccuracy.Text
+= &quot;Accuracy: &quot; + pos.Coordinate.Accuracy.ToString();
+                                </p>
+                                <p style='margin-left: 21.0pt'>}</p>
+                                <p style='margin-left: 10.5pt'>}</p>
+                                <p>}</p>
+                                <p>你将需要用你的应用的类名称替换上面的代码片段中的类名称。例如，如果你创建了一个名为“Application1”的项目，则需要将：</p>
+                                <p>namespace GeolocationSample</p>
+                                <p>替换为</p>
+                                <p>namespace Application1</p>
+                                <p class="MsoListParagraph">
+                                    4. 在应用中插入 XAML 代码
+                                </p>
+                                <p>打开名为 MainPage.xaml 的文件，然后将下面的 XML 复制到此文件中（替换原来的内容）。</p>
+                                <p>&lt;UserControl x:Class=&quot;GeolocationSample.MainPage&quot;</p>
+                                <p style='margin-left: 10.5pt'>xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;</p>
+                                <p style='margin-left: 10.5pt'>xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;</p>
+                                <p style='margin-left: 10.5pt'>xmlns:d=&quot;http://schemas.microsoft.com/expression/blend/2008&quot;</p>
+                                <p style='margin-left: 10.5pt'>xmlns:mc=&quot;http://schemas.openxmlformats.org/markup-compatibility/2006&quot;</p>
+                                <p style='margin-left: 10.5pt'>mc:Ignorable=&quot;d&quot;</p>
+                                <p style='margin-left: 10.5pt'>
+                                    d:DesignHeight=&quot;768&quot;
+d:DesignWidth=&quot;1366&quot;&gt;
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    &lt;Grid
+x:Name=&quot;LayoutRoot&quot; Background=&quot;Gray&quot;&gt;
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    &lt;Button
+Content=&quot;Get Location Async&quot; Click=&quot;button1_Click&quot;
+Height=&quot;23&quot;
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    HorizontalAlignment=&quot;Left&quot;
+Margin=&quot;12,180,0,0&quot; Name=&quot;button3&quot;
+VerticalAlignment=&quot;Top&quot; Width=&quot;120&quot; /&gt;
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    &lt;TextBlock
+Margin=&quot;14,220,0,0&quot; Text=&quot;Latitude&quot;
+Name=&quot;textLatitude&quot; /&gt;
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    &lt;TextBlock
+Margin=&quot;14,260,0,0&quot; Text=&quot;Longitude&quot;
+Name=&quot;textLongitude&quot; /&gt;
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    &lt;TextBlock
+Margin=&quot;14,300,0,0&quot; Text=&quot;Accuracy&quot;
+Name=&quot;textAccuracy&quot; /&gt;
+                                </p>
+                                <p style='margin-left: 10.5pt'>&lt;/Grid&gt;</p>
+                                <p>&lt;/UserControl&gt;</p>
+                                <p>你将需要用你的应用的类名称替换上面的代码片段中类名称的第一部分。例如，如果你创建了一个名为“Application1”的项目，则需要将：</p>
+                                <p>&lt;UserControl x:Class=&quot;GeolocationSample.MainPage&quot;</p>
+                                <p>替换为</p>
+                                <p>&lt;UserControl x:Class=&quot;Application1.MainPage&quot;</p>
+                                <p class="MsoListParagraph">
+                                    5. 生成应用
+                                </p>
+                                <p>选择“生成”&gt;“生成解决方案”以生成项目。</p>
+                                <p class="MsoListParagraph">
+                                    6. 测试应用
+                                </p>
+                                <p class="MsoListParagraph">
+                                    1) 在“调试”菜单上，单击“开始调试”测试该解决方案。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    2) 首次运行该示例时，你会收到一个提示，询问是否可以让应用使用你的位置数据。选择“允许”选项。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    3) 单击“获取位置”按钮获取当前的位置。
+                                </p>
+                                <p>注意&nbsp; 如果位置数据未显示，则检查以下内容：</p>
+                                <p style='margin-left: 36.0pt;'>
+                                    ●
+确保已启用对位置的访问权限，方法是在解决方案资源管理器中打开
+package.appxmanifest 并在“功能”选项卡中选中“位置”。
+                                </p>
+                                <p style='margin-left: 36.0pt;'>
+                                    ●
+如果管理员已禁用定位服务，则你的应用将无法访问用户的位置。在桌面控制面板中，打开“更改位置设置”并检查是否已选中“打开 Windows 位置平台”。
+                                </p>
+                                <p>前面的示例说明，只需编写少量代码即可在应用中集成地理位置功能。</p>
+                                <p>应用会在 button1_Click 方法中发出获取地理位置信息的异步请求。这通过下面一行实现：</p>
+                                <p>
+                                    Geoposition pos = await
+geo.GetGeopositionAsync();
+                                </p>
+                                <p>后面几行将捕获新的地理位置数据：</p>
+                                <p>
+                                    textblockLatitude.Text = &quot;Latitude:
+&quot; + pos.Coordinate.Latitude.ToString();
+                                </p>
+                                <p>
+                                    textblockLongitude.Text = &quot;Longitude:
+&quot; + pos.Coordinate.Longitude.ToString();
+                                </p>
+                                <p>
+                                    textblockAccuracy.Text = &quot;Accuracy:
+&quot; + pos.Coordinate.Accuracy.ToString();
+                                </p>
+                                <p>以下新值将写入项目 XAML 中的三个 TextBlock 中。</p>
+                                <p>
+                                    &lt;TextBlock Margin=&quot;14,220,0,0&quot;
+Text=&quot;Latitude&quot; Name=&quot;textLatitude&quot; /&gt;
+                                </p>
+                                <p>
+                                    &lt;TextBlock Margin=&quot;14,260,0,0&quot;
+Text=&quot;Longitude&quot; Name=&quot;textLongitude&quot; /&gt;
+                                </p>
+                                <p>
+                                    &lt;TextBlock Margin=&quot;14,300,0,0&quot;
+Text=&quot;Accuracy&quot; Name=&quot;textAccuracy&quot; /&gt;
+                                </p>
+                                <h3><a name="_Toc371336507">WP8</a></h3>
+                                <p class="MsoListParagraph">
+                                    1.&nbsp;
+在
+Visual Studio 中创建新的 Windows Phone 应用。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    2. 在“解决方案资源管理器”中，展开“属性”文件夹，然后双击 WMAppManifest.xml。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    3. 在清单设计器的“功能”选项卡上，选中“ID_CAP_LOCATION”旁边的复选框。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    4. 在 MainPage.xaml 中，将下列 XAML 代码粘贴到现有的名为 ContentPanel 的 Grid 元素上。此代码定义一个将启动位置 API 的按钮，以及一些文本块来显示维度、经度和应用的状态。
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    &lt;Grid
+x:Name=&quot;ContentPanel&quot; Grid.Row=&quot;1&quot;
+Margin=&quot;12,0,12,0&quot;&gt;
+                                </p>
+                                <p style='margin-left: 31.5pt'>&lt;StackPanel&gt;</p>
+                                <p style='margin-left: 42.0pt'>
+                                    &lt;Button
+x:Name=&quot;OneShotLocationButton&quot;
+Click=&quot;OneShotLocation_Click&quot; Content=&quot;get one-shot
+location&quot;/&gt;
+                                </p>
+                                <p style='margin-left: 42.0pt'>
+                                    &lt;TextBlock
+x:Name=&quot;LatitudeTextBlock&quot;/&gt;
+                                </p>
+                                <p style='margin-left: 42.0pt'>
+                                    &lt;TextBlock
+x:Name=&quot;LongitudeTextBlock&quot;/&gt;
+                                </p>
+                                <p style='margin-left: 42.0pt'>
+                                    &lt;TextBlock
+x:Name=&quot;StatusTextBlock&quot;/&gt;
+                                </p>
+                                <p style='margin-left: 31.5pt'>&lt;/StackPanel&gt;</p>
+                                <p style='margin-left: 21.0pt'>&lt;/Grid&gt;</p>
+                                <p class="MsoListParagraph">
+                                    5. 在 MainPage.xaml.cs 文件的顶部添加以下 using 语句。
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    using
+System.Threading.Tasks;
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    using
+Windows.Devices.Geolocation;
+                                </p>
+                                <p class="MsoListParagraph">
+                                    6. 添加同意提示以允许用户选择不让您的应用访问其位置。所有应用在使用位置 API 之前，应取得用户同意。本例检查 MainPage 类的 OnNavigatedTo(NavigationEventArgs) 方法中的用户同意，只要应用启动，就会调用它。代码首先检查 ApplicationSettings 字典，以了解是否存在“LocationConsent”密钥。如果发现该密钥，则意味着用户已经选择或退出位置，因此该方法立即返回。如果未发现该密钥，那么将显示 MessageBox，寻求用户同意。MessageBox 操作的结果受到检查，指示用户同意状态的布尔值存储在 ApplicationSettings 中的“LocationConsent”密钥内。在应用尝试访问用户位置之前，此密钥将受到检查。
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    protected
+override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
+                                </p>
+                                <p style='margin-left: 21.0pt'>{</p>
+                                <p style='margin-left: 31.5pt'>
+                                    if
+(IsolatedStorageSettings.ApplicationSettings.Contains(&quot;LocationConsent&quot;))
+                                </p>
+                                <p style='margin-left: 31.5pt'>{</p>
+                                <p style='margin-left: 42.0pt'>
+                                    // User has
+opted in or out of Location
+                                </p>
+                                <p style='margin-left: 42.0pt'>return;</p>
+                                <p style='margin-left: 31.5pt'>}</p>
+                                <p style='margin-left: 31.5pt'>else</p>
+                                <p style='margin-left: 31.5pt'>{</p>
+                                <p style='margin-left: 42.0pt'>
+                                    MessageBoxResult
+result =
+                                </p>
+                                <p style='margin-left: 42.0pt'>
+                                    MessageBox.Show(&quot;This
+app accesses your phone's location. Is that ok?&quot;, &quot;Location&quot;,MessageBoxButton.OKCancel);
+                                </p>
+                                <p style='margin-left: 42.0pt'>
+                                    if (result ==
+MessageBoxResult.OK)
+                                </p>
+                                <p style='margin-left: 42.0pt'>{</p>
+                                <p style='margin-left: 42.0pt;'>
+                                    IsolatedStorageSettings.ApplicationSettings[&quot;LocationConsent&quot;]
+= true;
+                                </p>
+                                <p style='margin-left: 42.0pt'>}else</p>
+                                <p style='margin-left: 42.0pt'>{</p>
+                                <p style='margin-left: 42.0pt;'>
+                                    IsolatedStorageSettings.ApplicationSettings[&quot;LocationConsent&quot;]
+= false;
+                                </p>
+                                <p style='margin-left: 42.0pt'>}</p>
+                                <p style='margin-left: 42.0pt'>IsolatedStorageSettings.ApplicationSettings.Save();</p>
+                                <p style='margin-left: 31.5pt'>}</p>
+                                <p style='margin-left: 21.0pt'>}</p>
+                                <p class="MsoListParagraph">
+                                    7. 将下列处理程序粘贴到用于按钮单击事件的
+MainPage.xaml.cs 中。该方法首先检查 ApplicationSettings 字典中用户同意的状态。如果值为 false，则该方法立即退出。一旦确定用户同意，则该方法初始化 Geolocator 对象，并设置 DesiredAccuracyInMeters 属性。随后，将调用
+GetGeopositionAsync 方法。此方法尝试获取手机的当前位置。此为异步操作，因此在获取位置时不会阻止 UI 线程。您可以使用 await 操作符将代码置于异步调用之后，将在调用完成后执行。这需要该处理程序方法被申明为 async。因为可以确保使用 await 发起的调用返回在调用开始的线程上，而且 await 调用从 UI 线程发起，因此代码可以在调用返回时，直接访问并修改 UI。
+                                </p>
+                                <p>整个位置操作都包装在 try 块中，以防止引发任何异常。如果在开发时引发 UnauthorizedAccessException 异常，可能意味着您的应用清单中未包含 ID_CAP_LOCATION。如果在已经部署应用之后发生这种情况，则可能意味着用户已在手机“设置”中禁用了此应用的位置。</p>
+                                <p style='margin-left: 21.0pt'>
+                                    private async
+void OneShotLocation_Click(object sender, RoutedEventArgs e)
+                                </p>
+                                <p style='margin-left: 21.0pt'>{</p>
+                                <p style='margin-left: 31.5pt'>
+                                    if
+((bool)IsolatedStorageSettings.ApplicationSettings[&quot;LocationConsent&quot;]
+!= true)
+                                </p>
+                                <p style='margin-left: 31.5pt'>{</p>
+                                <p style='margin-left: 42.0pt'>
+                                    // The user has
+opted out of Location.
+                                </p>
+                                <p style='margin-left: 42.0pt'>return;</p>
+                                <p style='margin-left: 31.5pt'>}</p>
+                                <p style='margin-left: 31.5pt'>
+                                    Geolocator
+geolocator = new Geolocator();
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    geolocator.DesiredAccuracyInMeters
+= 50;
+                                </p>
+                                <p style='margin-left: 31.5pt'>try</p>
+                                <p style='margin-left: 31.5pt'>{</p>
+                                <p style='margin-left: 42.0pt'>
+                                    Geoposition
+geoposition = await geolocator.GetGeopositionAsync(
+                                </p>
+                                <p style='margin-left: 52.5pt'>
+                                    maximumAge:
+TimeSpan.FromMinutes(5),
+                                </p>
+                                <p style='margin-left: 52.5pt'>
+                                    timeout:
+TimeSpan.FromSeconds(10)
+                                </p>
+                                <p style='margin-left: 31.5pt;'>);</p>
+                                <p style='margin-left: 42.0pt'>
+                                    LatitudeTextBlock.Text
+= geoposition.Coordinate.Latitude.ToString(&quot;0.00&quot;);
+                                </p>
+                                <p style='margin-left: 42.0pt'>
+                                    LongitudeTextBlock.Text
+= geoposition.Coordinate.Longitude.ToString(&quot;0.00&quot;);
+                                </p>
+                                <p style='margin-left: 31.5pt'>}</p>
+                                <p style='margin-left: 31.5pt'>
+                                    catch (Exception
+ex)
+                                </p>
+                                <p style='margin-left: 31.5pt'>{</p>
+                                <p style='margin-left: 42.0pt'>
+                                    if
+((uint)ex.HResult == 0x80004004)
+                                </p>
+                                <p style='margin-left: 42.0pt'>{</p>
+                                <p style='margin-left: 52.5pt'>
+                                    // the
+application does not have the right capability or the location master switch is
+off
+                                </p>
+                                <p style='margin-left: 52.5pt'>
+                                    StatusTextBlock.Text
+= &quot;location&nbsp; is disabled in phone settings.&quot;
+                                </p>
+                                <p style='margin-left: 42.0pt'>}</p>
+                                <p style='margin-left: 42.0pt'>//else</p>
+                                <p style='margin-left: 42.0pt'>{</p>
+                                <p style='margin-left: 42.0pt;'>// something else happened acquring the location</p>
+                                <p style='margin-left: 42.0pt'>}</p>
+                                <p style='margin-left: 31.5pt'>}</p>
+                                <p style='margin-left: 21.0pt'>}</p>
+                                <h1><a name="_Toc371336508">四、&nbsp;
+摄像头</a></h1>
+                                <p>可以有效支持设备上的各种照相机和相机功能。</p>
+                                <h2><a name="_Toc371336509">不同平台的概述</a></h2>
+                                <h3><a name="_Toc371336510">Android</a></h3>
+                                <p>对于在Android手机系统上进行Camera的开发，我们可以使用两类方法<b>：</b></p>
+                                <p class="MsoListParagraph">
+                                    1. 借助Intent和MediaStroe调用系统Camera App程序来实现拍照和摄像功能。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    2. 根据Camera API自写Camera程序。
+                                </p>
+                                <p><b>注：</b>本文主要讲述第一种方式。</p>
+                                <h3><a name="_Toc371336511">IOS</a></h3>
+                                <p>想要将摄像头进行视频录制或者拍照可以用UIImagePickerController，不过UIImagePickerController会弹出一个自己的界面，可是有时候我们不想要弹出的这个界面，那么就可以用另一种方法来获取摄像头得到的数据了。</p>
+                                <h3><a name="_Toc371336512">Win8</a></h3>
+                                <p>
+                                    在使用 C++、C# 或 Visual Basic 的 Windows 应用商店应用中，用来捕获、播放和呈现媒体的控件是
+                            <a
+                                href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.captureelement.aspx">CaptureElement</a>、<a
+                                    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.mediaelement.aspx">MediaElement</a> 和 <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.image.aspx">Image</a>。 这些控件是在 <a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.aspx">Windows.UI.Xaml.Controls</a> 命名空间中定义的。
+                                </p>
+                                <p>
+                                    对于有关在使用 C++、C# 或 Visual Basic 的 Windows 应用商店应用中使用音频和视频的性能指南，请参阅<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh994642.aspx">优化媒体资源</a>。
+                                </p>
+                                <h3><a name="_Toc371336513">WP8</a></h3>
+                                <p>在Windows Phone中有两组 API 可供您的应用使用。</p>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p style='text-align: center'><b>类</b></p>
+                                        </td>
+                                        <td>
+                                            <p style='text-align: center'><b>说明</b></p>
+                                        </td>
+                                        <td>
+                                            <p style='text-align: center'><b>在 Windows Phone OS 7.1 上是否受支持</b></p>
+                                        </td>
+                                        <td>
+                                            <p style='text-align: center'><b>在 Windows Phone 8 上是否受支持</b></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>PhotoCamera</p>
+                                        </td>
+                                        <td>
+                                            <p>使用此类来捕获照片和访问预览缓冲区。</p>
+                                        </td>
+                                        <td>
+                                            <p class="imgp">
+                                                <img border="0"
+                                                    width="17" height="17" id="图片 42" src="images/developing_06/image001.png"
+                                                    alt="green check mark">
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p class="imgp">
+                                                <img border="0"
+                                                    width="17" height="17" id="图片 43" src="images/developing_06/image001.png"
+                                                    alt="green check mark">
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>PhotoCaptureDevice</p>
+                                        </td>
+                                        <td>
+                                            <p>使用此类以用于高级相片捕获和访问预览缓冲区。</p>
+                                        </td>
+                                        <td>
+                                            <p class="imgp">
+                                                <img border="0"
+                                                    width="17" height="17" id="图片 45" src="images/developing_06/image002.png"
+                                                    alt="red x">
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p class="imgp">
+                                                <img border="0"
+                                                    width="17" height="17" id="图片 44" src="images/developing_06/image001.png"
+                                                    alt="green check mark">
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <p>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.devices.photocamera(v=vs.105).aspx">Microsoft.Devices.PhotoCamera</a> 类提供以编程方式捕获照片的功能。您可以使用此类指定照片分辨率和闪光灯设置并触发自动对焦。
+                                </p>
+                                <p>
+                                    对于高级照片捕获，<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/windows.phone.media.capture.photocapturedevice(v=vs.105).aspx">Windows.Phone.Media.Capture.PhotoCaptureDevice</a> 类提供一组扩展的功能和更好的性能。使用此类控制照片属性。
+                                </p>
+                                <p><b>注：</b>本文主要介绍PhotoCamera的使用方法。</p>
+                                <p>本主题涉及以下步骤：</p>
+                                <p class="MsoListParagraph">
+                                    1. 创建相机 UI
+                                </p>
+                                <p class="MsoListParagraph">
+                                    2. 实现基于取景器和相机的事件
+                                </p>
+                                <p class="MsoListParagraph">
+                                    3. 保存到媒体库和本地文件夹
+                                </p>
+                                <h2><a name="_Toc371336514">创建相机</a></h2>
+                                <h3><a name="_Toc371336515">Android</a></h3>
+                                <h4>准备工作</h4>
+                                <p>这里用Camera API，就必须在manifest内声明使用权限，通常由以下三项</p>
+                                <p>
+                                    &lt;uses-permission android:name =
+&quot;android.permission.CAMERA&quot; /&gt;
+                                </p>
+                                <p>
+                                    &lt;uses-feature android:name =
+&quot;android.hardware.camera&quot; /&gt;
+                                </p>
+                                <p>
+                                    &lt;uses-feature android:name =
+&quot;android.hardware.camera.autofocus&quot; /&gt;
+                                </p>
+                                <p>一般拍照和摄像的时候需要写到sd卡上，所以还有一向权限声明如下 </p>
+                                <p>
+                                    &lt;uses-permission
+android:name=&quot;android.permission.WRITE_EXTERNAL_STORAGE&quot;/&gt;
+                                </p>
+                                <p>
+                                    真做摄像功能时，需要音频录制和视频录制功能，所以又需要下面两项权限声明
+                                </p>
+                                <p>
+                                    &lt;uses-permission
+android:name=&quot;android.permission.RECORD_VIDEO&quot;/&gt;
+                                </p>
+                                <p>
+                                    &lt;uses-permission android:name=&quot;android.permission.RECORD_AUDIO&quot;/&gt;
+                                </p>
+                                <p>另外使用Camera API拍照或摄像，都需要用到预览，预览就要用到SurfaceView，为此Activity的布局中必须有SurfaceView。 </p>
+                                <h4>拍照流程</h4>
+                                <p class="MsoListParagraph">
+                                    1. 在Activity的OnCreate函数中设置好SurfaceView，包括设置SurfaceHolder.Callback对象和SurfaceHolder对象的类型，具体如下
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    SurfaceView
+mpreview = (SurfaceView) this.findViewById(R.id.camera_preview);
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    SurfaceHolder
+mSurfaceHolder = mpreview.getHolder();
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    mSurfaceHolder.addCallback(this);
+                                </p>
+                                <p style='margin-left: 21.0pt'>mSurfaceHolder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);</p>
+                                <p class="MsoListParagraph">
+                                    2. 在SurfaceHolder.Callback的surfaceCreated函数中，使用Camera的Open函数开机摄像头硬件，这个API在SDK
+2.3之前，是没有参数的，2.3以后支持多摄像头，所以开启前可以通过getNumberOfCameras先获取摄像头数目，再通过getCameraInfo得到需要开启的摄像头id，然后传入Open函数开启摄像头，假如摄像头开启成功则返回一个Camera对象，否则就抛出异常；
+                                </p>
+                                <h3><a name="_Toc371336516">IOS</a></h3>
+                                <p>首先需要引入一个包#import &lt;AVFoundation/AVFoundation.h&gt;，接下来你的类需要实现AVCaptureVideoDataOutputSampleBufferDelegate这个协议，只需要实现协议中的一个方法就可以得到摄像头捕获的数据了。</p>
+                                <p>
+                                    - (void)captureOutput:(AVCaptureOutput
+*)captureOutput
+                                </p>
+                                <p>didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer</p>
+                                <p>
+                                    fromConnection:(AVCaptureConnection
+*)connection
+                                </p>
+                                <p>{</p>
+                                <p style='margin-left: 10.5pt'>
+                                    // Create a
+UIImage from the sample buffer data
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    UIImage *image =
+[self imageFromSampleBuffer:sampleBuffer];
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    mData =
+UIImageJPEGRepresentation(image, 0.5);
+                                </p>
+                                <p>}</p>
+                                <h3><a name="_Toc371336517">Win8</a></h3>
+                                <p class="MsoListParagraph">
+                                    1. 在应用部件清单 (manifest) 中设置设备功能
+                                </p>
+                                <p>
+                                    若要启用摄像机访问，应用必须在应用清单中包含 Webcam <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/br211430.aspx">DeviceCapability</a>。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    1) 在 Microsoft Visual
+Studio Express&nbsp;2012 for Windows&nbsp;8 的解决方案资源管理器中，通过双击 package.appxmanifest 项打开应用程序清单设计器。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    2) 单击“功能”。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    3) 选中“摄像机”。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    2. 创建 CaptureElement
+                                </p>
+                                <p>
+                                    使用XAML创建 <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.captureelement.aspx">CaptureElement</a>。并使它呈现到显示器上。
+                                </p>
+                                <p>
+                                    &lt;CaptureElement
+Name=&quot;capturePreview&quot; Height=&quot;400&quot; /&gt;
+                                </p>
+                                <p class="MsoListParagraph">
+                                    3. 创建 MediaCapture 对象。
+                                </p>
+                                <p>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.media.capture.mediacapture.aspx">MediaCapture</a> 类包含用于管理所捕获视频的方法和属性。 要从相机捕获和旋转视频，你需要使用 <a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.media.capture.mediacapture.initializeasync.aspx">InitializeAsync</a>、<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.media.capture.mediacapture.startpreviewasync.aspx">StartPreviewAsync</a> 和 <a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.media.capture.mediacapture.setpreviewrotation.aspx">SetPreviewRotation</a>。使用 <a
+                                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.media.capture.mediacapture.setrecordrotation.aspx">SetRecordRotation</a> 可为正在录制的视频设置旋转。
+                                </p>
+                                <p>
+                                    实例化一个新的 <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.media.capture.mediacapture.aspx">MediaCapture</a>对象，并调用 InitializeAsync
+以初始化 MediaCapture 对象为默认设置。 你可以将 <a
+    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.media.capture.mediacaptureinitializationsettings.aspx">MediaCaptureInitializationSettings</a>对象传入 InitializeAsync 以设置特定设置。
+                                </p>
+                                <p>
+                                    MediaCapture captureMgr = new
+MediaCapture();
+                                </p>
+                                <p>await captureMgr.InitializeAsync();</p>
+                                <h3><a name="_Toc371336518">WP8</a></h3>
+                                <h4>创建相机 UI 的步骤</h4>
+                                <p class="MsoListParagraph">
+                                    1. 若使用
+Windows&nbsp;Phone&nbsp;SDK，则使用 Windows&nbsp;Phone 应用
+模板创建新项目。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    2. 创建项目后，从“项目”菜单中，选择“添加引用”。在 .NET 标签上，选择 Microsoft.XNA.Framework，然后单击“确定”。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    3. 在 MainPage.xaml 文件中，更新 phone:PhoneApplicationPage 元素，如以下代码中所示。
+                                </p>
+                                <p>
+                                    SupportedOrientations=&quot;Landscape&quot;
+Orientation=&quot;LandscapeLeft&quot; shell:SystemTray.IsVisible=&quot;False&quot;
+                                </p>
+                                <p>这将配置横向的页面以及隐藏系统托盘。</p>
+                                <p class="MsoListParagraph">
+                                    4. 在 MainPage.xaml 中，将名为 LayoutRoot 的 Grid 替换为以下代码。
+                                </p>
+                                <p>
+                                    &lt;!--LayoutRoot is the root grid where
+all page content is placed--&gt;
+                                </p>
+                                <p>
+                                    &lt;Grid x:Name=&quot;LayoutRoot&quot;
+Background=&quot;Transparent&quot;&gt;
+                                </p>
+                                <p style='margin-left: 10.5pt'>&lt;Grid.ColumnDefinitions&gt;</p>
+                                <p style='margin-left: 21.0pt'>
+                                    &lt;ColumnDefinition
+Width=&quot;640&quot; /&gt;
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    &lt;ColumnDefinition
+Width=&quot;160&quot; /&gt;
+                                </p>
+                                <p style='margin-left: 10.5pt'>&lt;/Grid.ColumnDefinitions&gt;</p>
+                                <p style='margin-left: 10.5pt'>
+                                    &lt;Canvas
+x:Name=&quot;viewfinderCanvas&quot; Width=&quot;640&quot;
+Height=&quot;480&quot;
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    HorizontalAlignment=&quot;Left&quot; &gt;
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    &lt;!--Camera
+viewfinder --&gt;
+                                </p>
+                                <p style='margin-left: 21.0pt'>&lt;Canvas.Background&gt;</p>
+                                <p>&lt;VideoBrush x:Name=&quot;viewfinderBrush&quot; /&gt;</p>
+                                <p style='margin-left: 21.0pt'>&lt;/Canvas.Background&gt;</p>
+                                <p style='margin-left: 10.5pt'>&lt;/Canvas&gt;</p>
+                                <p style='margin-left: 10.5pt'>
+                                    &lt;!--Button
+StackPanel to the right of viewfinder&gt;--&gt;
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    &lt;StackPanel
+Grid.Column=&quot;1&quot; &gt;
+                                </p>
+                                <p style='margin-left: 10.5pt;'>
+                                    &lt;Button x:Name=&quot;ShutterButton&quot; Content=&quot;SH&quot;
+Click=&quot;ShutterButton_Click&quot; FontSize=&quot;26&quot; FontWeight=&quot;ExtraBold&quot;
+Height=&quot;75&quot; /&gt;
+                                </p>
+                                <p style='margin-left: 10.5pt'>&lt;/StackPanel&gt;</p>
+                                <p style='margin-left: 10.5pt'>
+                                    &lt;!--Used for
+debugging &gt;--&gt;
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    &lt;TextBlock
+Height=&quot;40&quot; HorizontalAlignment=&quot;Left&quot;
+Margin=&quot;8,428,0,0&quot; Name=&quot;txtDebug&quot;
+VerticalAlignment=&quot;Top&quot; Width=&quot;626&quot; FontSize=&quot;24&quot;
+FontWeight=&quot;ExtraBold&quot; /&gt;
+                                </p>
+                                <p>&lt;/Grid&gt;</p>
+                                <p>该代码创建一个 640&nbsp;x&nbsp;480 取景器区域，该区域具有一个包含快门按钮 SH 的StackPanel控件。在以下部分中实现 ShutterButton_Click 事件。</p>
+                                <p>
+                                    <b>说明：</b>本练习中的软件快门按钮只是为了演示采用编程方式访问 <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.devices.photocamera(v=vs.105).aspx">PhotoCamera</a><u> API</u>。若要优化用户的体验，我们建议您的应用使用相机上的硬件快门按钮。有关如何实现硬件快门按钮的信息，请参见<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/hh202963(v=vs.105).aspx">如何访问 Windows Phone 中的硬件相机快门按钮</a>。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    5. 打开主页的代码隐藏文件
+MainPage.xaml.cs，在该页面的顶部添加以下指令。
+                                </p>
+                                <p>// Directives</p>
+                                <p>using Microsoft.Devices;</p>
+                                <p>using System.IO;</p>
+                                <p>using System.IO.IsolatedStorage;</p>
+                                <p>using Microsoft.Xna.Framework.Media;</p>
+                                <p class="MsoListParagraph">
+                                    6. 在 MainPage.xaml.cs 的 MainPage 类中，在 MainPage 类的构造函数前面添加以下变量声明。
+                                </p>
+                                <p>// Variables</p>
+                                <p>private int savedCounter = 0;</p>
+                                <p>PhotoCamera cam;</p>
+                                <p>MediaLibrary library = new MediaLibrary();</p>
+                                <p class="MsoListParagraph">
+                                    7. 若要创建相机应用程序，必须在应用清单文件中声明相机功能。如果没有相机功能，该应用将无法工作。打开 WMAppManifest.xml 并确认存在以下功能元素。
+                                </p>
+                                <p>
+                                    &lt;Capability
+Name=&quot;ID_CAP_ISV_CAMERA&quot;/&gt;
+                                </p>
+                                <p>
+                                    如果您的 Windows&nbsp;Phone&nbsp;8 应用要求具有背面相机，则使用 ID_REQ_BACKCAMERA 硬件要求防止用户在没有背面相机的情况下下载您的应用。有关功能和要求的更多信息，请参见
+                            <a
+                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/jj206936(v=vs.105).aspx">Windows Phone 应用的功能和硬件要求</a>。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    8. 要访问媒体库，必须在应用清单文件中声明媒体库功能。若没有该功能，应用无法将文件保存到媒体库。根据应用针对的 Windows&nbsp;Phone 版本，添加以下功能：
+                                </p>
+                                <p style='margin-left: 36.0pt;'>
+                                    ●
+ID_CAP_MEDIALIB：Windows
+Phone OS 7.1 应用可以使用此功能访问媒体库。
+                                </p>
+                                <p style='margin-left: 36.0pt;'>
+                                    ●
+ID_CAP_MEDIALIB_PHOTO：Windows
+Phone 8 应用可以使用此功能将照片保存到媒体库。
+                                </p>
+                                <p>
+                                    Windows&nbsp;Phone&nbsp;8 应用需要使用其他功能访问媒体库中的视频和音频。有关更多信息，请参见 <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/jj206936(v=vs.105).aspx">Windows Phone 应用的功能和硬件要求</a>。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    9. （可选）如果您的应用功能要求具有正面相机，那么也可以将正面相机功能或硬件要求添加至应用清单文件中，具体取决于您的应用面向何种版本的 Windows&nbsp;Phone：
+                                </p>
+                                <p style='margin-left: 36.0pt;'>
+                                    ●
+ID_HW_FRONTCAMERA：Windows
+Phone OS 7.1 应用可以使用此功能。通过该功能，没有正面相机的用户将被告知，您的应用的部分功能无法在其手机上使用，但他们仍可以选择下载它。
+                                </p>
+                                <p style='margin-left: 36.0pt;'>
+                                    ●
+ID_REQ_FRONTCAMERA：Windows
+Phone 8 应用可以使用该硬件要求。借助此要求，不具有正面相机的用户将无法下载应用。
+                                </p>
+                                <p>
+                                    有关功能和要求的更多信息，请参见 <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/jj206936(v=vs.105).aspx">Windows Phone 应用的功能和硬件要求</a>。
+                                </p>
+                                <h2><a name="_Toc371336519">开始捕捉</a></h2>
+                                <h3><a name="_Toc371336520">Android</a></h3>
+                                <p class="MsoListParagraph">
+                                    1. 开启成功的情况下，在SurfaceHolder.Callback的surfaceChanged函数中调用getParameters函数得到已打开的摄像头的配置参数Parameters对象，如果有需要就修改对象的参数，然后调用setParameters函数设置进去（SDK2.2以后，还可以通过Camera：：setDisplayOrientation设置方向）；
+                                </p>
+                                <p class="MsoListParagraph">
+                                    2. 同样在surfaceChanged函数中，通过Camera：：setPreviewDisplay为摄像头设置SurfaceHolder对象，设置成功后调用Camera::startPreview函数开启预览功能，上面3，4两步的代码可以如下所示
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    public void
+surfaceChanged(SurfaceHolder holder, int format, int w, int h)
+                                </p>
+                                <p style='margin-left: 21.0pt'>{</p>
+                                <p style='margin-left: 31.5pt'>//已经获得Surface的width和height，设置Camera的参数 </p>
+                                <p style='margin-left: 31.5pt'>
+                                    Camera.Parameters
+parameters = camera.getParameters();
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    parameters.setPreviewSize(w,
+h);
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    List&lt;Size&gt;
+vSizeList = parameters.getSupportedPictureSizes();
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    for(int num = 0;
+num &lt; vSizeList.size(); num++)
+                                </p>
+                                <p style='margin-left: 31.5pt'>{</p>
+                                <p style='margin-left: 31.5pt;'>Size vSize = vSizeList.get(num);</p>
+                                <p style='margin-left: 31.5pt'>}</p>
+                                <p style='margin-left: 31.5pt'>
+                                    if(this.getResources().getConfiguration().orientation
+!= Configuration.ORIENTATION_LANDSCAPE)
+                                </p>
+                                <p style='margin-left: 31.5pt'>{</p>
+                                <p style='margin-left: 42.0pt'>//如果是竖屏</p>
+                                <p style='margin-left: 42.0pt'>
+                                    parameters.set(&quot;orientation&quot;,
+&quot;portrait&quot;);
+                                </p>
+                                <p style='margin-left: 42.0pt'>//在2.2以上可以使用</p>
+                                <p style='margin-left: 42.0pt'>//camera.setDisplayOrientation(90);</p>
+                                <p style='margin-left: 31.5pt'>}</p>
+                                <p style='margin-left: 31.5pt'>else</p>
+                                <p style='margin-left: 31.5pt'>{</p>
+                                <p style='margin-left: 42.0pt'>
+                                    parameters.set(&quot;orientation&quot;,
+&quot;landscape&quot;);
+                                </p>
+                                <p style='margin-left: 42.0pt'>//在2.2以上可以使用</p>
+                                <p style='margin-left: 42.0pt'>//camera.setDisplayOrientation(0);</p>
+                                <p style='margin-left: 31.5pt'>}</p>
+                                <p>camera.setParameters(parameters);</p>
+                                <p style='margin-left: 31.5pt'>try {</p>
+                                <p style='margin-left: 42.0pt'>//设置显示</p>
+                                <p style='margin-left: 42.0pt'>camera.setPreviewDisplay(holder);</p>
+                                <p style='margin-left: 31.5pt'>
+                                    } catch
+(IOException exception) {
+                                </p>
+                                <p style='margin-left: 42.0pt'>camera.release();</p>
+                                <p style='margin-left: 42.0pt'>camera = null;</p>
+                                <p style='margin-left: 31.5pt'>}</p>
+                                <p style='margin-left: 31.5pt'>//开始预览</p>
+                                <p style='margin-left: 31.5pt'>camera.startPreview();</p>
+                                <p style='margin-left: 21.0pt'>}</p>
+                                <p class="MsoListParagraph">
+                                    3. 假设要支持自动对焦功能，则在需要的情况下，或者在上述surfaceChanged调用完startPreview函数后，可以调用Camera::autoFocus函数来设置自动对焦回调函数，该步是可选操作，有些设备可能不支持，可以通过Camera::getFocusMode函数查询。代码可以参考如下：
+                                </p>
+                                <p style='margin-left: 21.0pt'>// 自动对焦 </p>
+                                <p style='margin-left: 21.0pt'>
+                                    camera.autoFocus(new
+AutoFocusCallback()
+                                </p>
+                                <p style='margin-left: 21.0pt'>{</p>
+                                <p style='margin-left: 31.5pt'>@Override </p>
+                                <p style='margin-left: 31.5pt'>
+                                    public void
+onAutoFocus(boolean success, Camera camera)
+                                </p>
+                                <p style='margin-left: 31.5pt'>{</p>
+                                <p style='margin-left: 42.0pt'>if (success)</p>
+                                <p style='margin-left: 42.0pt'>{</p>
+                                <p style='margin-left: 52.5pt'>// success为true表示对焦成功，改变对焦状态图像</p>
+                                <p style='margin-left: 52.5pt'>ivFocus.setImageResource(R.drawable.focus2);</p>
+                                <p style='margin-left: 42.0pt'>}</p>
+                                <p style='margin-left: 31.5pt'>}</p>
+                                <p style='margin-left: 21.0pt'>});</p>
+                                <p class="MsoListParagraph">
+                                    4. 在需要拍照的时候，调用takePicture(Camera.ShutterCallback,
+Camera.PictureCallback, Camera.PictureCallback, Camera.PictureCallback)函数来完成拍照，这个函数中可以四个回调接口，ShutterCallback是快门按下的回调，在这里我们可以设置播放“咔嚓”声之类的操作，后面有三个PictureCallback接口，分别对应三份图像数据，分别是原始图像、缩放和压缩图像和JPG图像，图像数据可以在PictureCallback接口的void onPictureTaken(byte[] data, Camera camera)中获得，三份数据相应的三个回调正好按照参数顺序调用，通常我们只关心JPG图像数据，此时前面两个PictureCallback接口参数可以直接传null；
+                                </p>
+                                <p class="MsoListParagraph">
+                                    5. 每次调用takePicture获取图像后，摄像头会停止预览，假如需要继续拍照，则我们需要在上面的PictureCallback的onPictureTaken函数末尾，再次掉哟更Camera::startPreview函数；
+                                </p>
+                                <p class="MsoListParagraph">
+                                    6. 在不需要拍照的时候，我们需要主动调用Camera::stopPreview函数停止预览功能，并且调用Camera::release函数释放Camera，以便其他应用程序调用。SDK中建议放在Activity的Pause函数中，但是我觉得放在surfaceDestroyed函数中更好，示例代码如下
+                                </p>
+                                <p style='margin-left: 21.0pt'>// 停止拍照时调用该方法</p>
+                                <p style='margin-left: 21.0pt'>
+                                    public void
+surfaceDestroyed(SurfaceHolder holder)
+                                </p>
+                                <p style='margin-left: 21.0pt'>{</p>
+                                <p style='margin-left: 31.5pt'>// 释放手机摄像头</p>
+                                <p style='margin-left: 31.5pt'>camera.release();</p>
+                                <p style='margin-left: 21.0pt'>}</p>
+                                <h3><a name="_Toc371336521">IOS</a></h3>
+                                <p>下面是imageFromSampleBuffer方法，方法经过一系列转换，将CMSampleBufferRef转为UIImage对象，并返回这个对象：</p>
+                                <p>
+                                    // Create a UIImage from sample buffer
+data&nbsp;
+                                </p>
+                                <p>
+                                    - (UIImage *) imageFromSampleBuffer:(CMSampleBufferRef)
+sampleBuffer
+                                </p>
+                                <p>{</p>
+                                <p style='margin-left: 10.5pt'>
+                                    // Get a
+CMSampleBuffer's Core Video image buffer for the media data
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    CVImageBufferRef
+imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    // Lock the base
+address of the pixel buffer
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    CVPixelBufferLockBaseAddress(imageBuffer,
+0);
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    // Get the
+number of bytes per row for the pixel buffer
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    void
+*baseAddress = CVPixelBufferGetBaseAddress(imageBuffer);
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    // Get the
+number of bytes per row for the pixel buffer
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    size_t
+bytesPerRow = CVPixelBufferGetBytesPerRow(imageBuffer);
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    // Get the pixel
+buffer width and height
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    size_t width =
+CVPixelBufferGetWidth(imageBuffer);
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    size_t height =
+CVPixelBufferGetHeight(imageBuffer);
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    // Create a
+device-dependent RGB color space
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    CGColorSpaceRef
+colorSpace = CGColorSpaceCreateDeviceRGB();
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    // Create a
+bitmap graphics context with the sample buffer data
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    CGContextRef
+context = CGBitmapContextCreate(baseAddress, width, height, 8, bytesPerRow,
+colorSpace, kCGBitmapByteOrder32Little | kCGImageAlphaPremultipliedFirst);
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    // Create a
+Quartz image from the pixel data in the bitmap graphics context
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    CGImageRef
+quartzImage = CGBitmapContextCreateImage(context);
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    // Unlock the
+pixel buffer
+                                </p>
+                                <p style='margin-left: 10.5pt'>CVPixelBufferUnlockBaseAddress(imageBuffer,0);</p>
+                                <p style='margin-left: 10.5pt'>
+                                    // Free up the
+context and color space
+                                </p>
+                                <p style='margin-left: 10.5pt'>CGContextRelease(context);</p>
+                                <p style='margin-left: 10.5pt'>CGColorSpaceRelease(colorSpace);</p>
+                                <p style='margin-left: 10.5pt'>
+                                    // Create an
+image object from the Quartz image
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    //UIImage *image
+= [UIImage imageWithCGImage:quartzImage];
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    UIImage *image =
+[UIImage imageWithCGImage:quartzImage scale:1.0f
+orientation:UIImageOrientationRight];
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    // Release the
+Quartz image
+                                </p>
+                                <p style='margin-left: 10.5pt'>CGImageRelease(quartzImage);</p>
+                                <p style='margin-left: 10.5pt'>return (image);</p>
+                                <p>}</p>
+                                <p>还需加入代码</p>
+                                <p>
+                                    // Create and configure a capture session
+and start it running
+                                </p>
+                                <p>- (void)setupCaptureSession </p>
+                                <p>{</p>
+                                <p style='margin-left: 10.5pt'>
+                                    NSError *error =
+nil;
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    // Create the
+session
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    AVCaptureSession
+*session = [[[AVCaptureSession alloc] init] autorelease];
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    // Configure the
+session to produce lower resolution video frames, if your
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    // processing
+algorithm can cope. We'll specify medium quality for the
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    // chosen
+device.
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    session.sessionPreset
+= AVCaptureSessionPresetMedium;
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    // Find a
+suitable AVCaptureDevice
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    AVCaptureDevice
+*device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];//这里默认是使用后置摄像头，你可以改成前置摄像头
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    // Create a
+device input with the device and add it to the session.
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    AVCaptureDeviceInput
+*input = [AVCaptureDeviceInput deviceInputWithDevice:device
+                                </p>
+                                <p style='margin-left: 10.5pt'>&nbsp; error:&amp;error];</p>
+                                <p style='margin-left: 10.5pt'>if (!input) {</p>
+                                <p style='margin-left: 10.5pt;'>// Handling the error appropriately.</p>
+                                <p style='margin-left: 10.5pt'>}</p>
+                                <p style='margin-left: 10.5pt'>
+                                    [session
+addInput:input];
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    // Create a
+VideoDataOutput and add it to the session
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    AVCaptureVideoDataOutput
+*output = [[[AVCaptureVideoDataOutput alloc] init] autorelease];
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    [session
+addOutput:output];
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    // Configure
+your output.
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    dispatch_queue_t
+queue = dispatch_queue_create(&quot;myQueue&quot;, NULL);
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    [output
+setSampleBufferDelegate:self queue:queue];
+                                </p>
+                                <p style='margin-left: 10.5pt'>dispatch_release(queue);</p>
+                                <p style='margin-left: 10.5pt'>
+                                    // Specify the
+pixel format
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    output.videoSettings
+= [NSDictionary dictionaryWithObjectsAndKeys: [NSNumber
+numberWithInt:kCVPixelFormatType_32BGRA], kCVPixelBufferPixelFormatTypeKey,
+[NSNumber numberWithInt: 320], (id)kCVPixelBufferWidthKey, &nbsp;[NSNumber
+numberWithInt: 240], (id)kCVPixelBufferHeightKey, nil];
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    AVCaptureVideoPreviewLayer*
+preLayer = [AVCaptureVideoPreviewLayer layerWithSession: session];
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    //preLayer =
+[AVCaptureVideoPreviewLayer layerWithSession:session];
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    preLayer.frame =
+CGRectMake(0, 0, 320, 240);
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    preLayer.videoGravity
+= AVLayerVideoGravityResizeAspectFill;&nbsp;
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    [self.view.layer
+addSublayer:preLayer];
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    // If you wish
+to cap the frame rate to a known value, such as 15 fps, set
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    //
+minFrameDuration.
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    output.minFrameDuration
+= CMTimeMake(1, 15);
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    // Start the
+session running to start the flow of data
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    [session
+startRunning];
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    // Assign
+session to an ivar.
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    //[self
+setSession:session];
+                                </p>
+                                <p>}</p>
+                                <h3><a name="_Toc371336522">Win8</a></h3>
+                                <p class="MsoListParagraph">
+                                    1. 开始视频预览
+                                </p>
+                                <p>
+                                    要执行的最后一项操作是将 <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.captureelement.source.aspx">CaptureElement.Source</a> 设置为 <a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.media.capture.mediacapture.aspx">MediaCapture</a> 对象，并使用 <a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.media.capture.mediacapture.startpreviewasync.aspx">StartPreviewAsync</a> 开始预览。
+                                </p>
+                                <p>// Start capture preview.</p>
+                                <p>
+                                    // capturePreview is a CaptureElement
+defined in XAML.
+                                </p>
+                                <p>capturePreview.Source = captureMgr;</p>
+                                <p>await captureMgr.StartPreviewAsync();</p>
+                                <p class="MsoListParagraph">
+                                    2. 旋转摄像头
+                                </p>
+                                <p>
+                                    若要为预览设置视频旋转，请将 <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.media.capture.videorotation.aspx">Windows.Media.Capture.VideoRotation</a> 枚举值传递到 <a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.media.capture.mediacapture.setpreviewrotation.aspx">SetPreviewRotation</a>。 <u>VideoRotation</u> 枚举指定旋转视频的量，其中包含 无 (0)、90、180 和 270 度值。
+                                </p>
+                                <p>captureMgr.SetPreviewRotation(VideoRotation.Clockwise90Degrees);</p>
+                                <p>
+                                    若要为录制设置视频旋转，请将 <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.media.capture.videorotation.aspx">Windows.Media.Capture.VideoRotation</a> 枚举值传递到 <a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.media.capture.mediacapture.setrecordrotation.aspx">SetRecordRotation</a>。
+                                </p>
+                                <p>captureMgr.SetRecordRotation(VideoRotation.Clockwise90Degrees);</p>
+                                <p class="MsoListParagraph">
+                                    3. 获取旋转值
+                                </p>
+                                <p>若要获取将用于预览的旋转值，请调用 GetPreviewRotation。此方法返回 VideoRotation 枚举值。</p>
+                                <p>若要获取将用于录制的旋转值，请调用 GetRecordRotation。此方法返回 VideoRotation 枚举值。</p>
+                                <p>以下示例获取预览旋转值。</p>
+                                <p>
+                                    VideoRotation previewRotation =
+captureMgr.GetPreviewRotation();
+                                </p>
+                                <p class="MsoListParagraph">
+                                    4. 在实时捕获期间添加视频防抖动效果
+                                </p>
+                                <p>
+                                    若要在实时捕获期间添加防抖动效果，请使用 <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/br211961.aspx">MediaCapture.AddEffectAsync</a> 方法。此方法使用以下参数：
+                                </p>
+                                <p style='margin-left: 36.0pt;'>
+                                    ●
+MediaStreamType
+- 指定流用于视频录制、视频预览、音频还是照片的
+                            <a
+                                href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.media.capture.mediastreamtype.aspx">MediaStreamType</a>枚举值之一。
+                                </p>
+                                <p style='margin-left: 36.0pt;'>
+                                    ●
+effectActivationID
+- 实现该效果的可激活运行时类的类标识符。此运行时类必须实现
+                            <a
+                                href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.media.imediaextension.aspx">IMediaExtension</a>接口。 <a
+                                    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.media.aspx">Windows.Media</a> 命名空间提供 <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh700862.aspx">VideoEffects</a>类。
+                                </p>
+                                <p style='margin-left: 36.0pt;'>
+                                    ●
+effectSettings
+- 包含用于该效果的其他配置参数的
+                            <a
+                                href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.foundation.collections.ipropertyset.aspx">IPropertySet</a>。如果不需要为该效果使用任何其他配置，则此参数应该为 null。
+                                </p>
+                                <p>你可以多次调用此方法以添加多个效果。</p>
+                                <p>
+                                    此示例将 <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh700862.aspx">VideoStabilization</a> 效果添加到效果链（附加到从设备源出来的源流中）。<a
+                                            name="CodeSnippetCopyLink"></a>
+                                </p>
+                                <p>
+                                    MediaCapture captureMgr = new
+MediaCapture();
+                                </p>
+                                <p>await captureMgr.InitializeAsync();</p>
+                                <p>await captureMgr.AddEffectAsync(</p>
+                                <p>
+                                    MediaStreamType.VideoRecord,
+                                </p>
+                                <p>
+                                    Windows.Media.VideoEffects.VideoStabilization,
+                                </p>
+                                <p>null);</p>
+                                <p>
+                                    调用 <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.media.capture.mediacapture.cleareffectsasync.aspx">ClearEffectsAsync</a> 方法将从流中清除所有效果。
+                                </p>
+                                <p>// captureMgr is of type MediaCapture.</p>
+                                <p>
+                                    await
+captureMgr.ClearEffectsAsync(MediaStreamType.VideoRecord);
+                                </p>
+                                <p class="MsoListParagraph">
+                                    5. 在转码期间添加视频防抖动效果
+                                </p>
+                                <p>
+                                    若要在转码期间添加防抖动效果，请使用 <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.media.transcoding.mediatranscoder.addvideoeffect.aspx">MediaTranscoder.AddVideoEffect</a> 方法并提供实现该效果的可激活运行时类的类标识符。你可以多次调用 AddVideoEffect 以添加多个效果。
+                                </p>
+                                <p>
+                                    此示例将 <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh700862.aspx">VideoStabilization</a> 效果添加到 <a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.media.transcoding.mediatranscoder.aspx">MediaTranscoder</a> 对象。
+                                </p>
+                                <p>
+                                    MediaTranscoder transcoder = new
+MediaTranscoder();
+                                </p>
+                                <p>transcoder.AddVideoEffect(&quot;Windows.Media.VideoEffects.VideoStabilization&quot;);</p>
+                                <p>
+                                    调用 <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.media.capture.mediacapture.cleareffectsasync.aspx">MediaTranscoder.ClearEffects</a> 方法将从转码器中清除所有效果。
+                                </p>
+                                <p>
+                                    MediaTranscoder transcoder = new
+MediaTranscoder();
+                                </p>
+                                <p>transcoder.AddVideoEffect(&quot;Windows.Media.VideoEffects.VideoStabilization&quot;);</p>
+                                <h3><a name="_Toc371336523">WP8</a></h3>
+                                <p>在本节中，创建相机 UI，它包含一个用于显示所拍摄帧的取景器区域和一个用于拍摄图像的快门按钮。</p>
+                                <h4>实现基于取景器和相机的事件</h4>
+                                <p>若要实现取景器，请将 viewfinderBrush 源设置为 Windows Phone 相机。还实现多个基于相机的事件，如相机初始化、完成拍摄以及图像可用性。</p>
+                                <p class="MsoListParagraph">
+                                    1. 在 MainPage.xaml.cs 中，向 MainPage 类中添加以下代码。
+                                </p>
+                                <p>
+                                    //Code for initialization, capture
+completed, image availability events; also setting the source for the
+viewfinder.
+                                </p>
+                                <p>
+                                    protected override void
+OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
+                                </p>
+                                <p>{</p>
+                                <p style='margin-left: 10.5pt'>
+                                    // Check to see
+if the camera is available on the phone.
+                                </p>
+                                <p style='margin-left: 10.5pt'>
+                                    if
+((PhotoCamera.IsCameraTypeSupported(CameraType.Primary) == true) ||
+                                </p>
+                                <p style='margin-left: 10.5pt;'>(PhotoCamera.IsCameraTypeSupported(CameraType.FrontFacing) == true))</p>
+                                <p style='margin-left: 10.5pt'>{</p>
+                                <p style='margin-left: 21.0pt'>
+                                    // Initialize
+the camera, when available.
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    if
+(PhotoCamera.IsCameraTypeSupported(CameraType.FrontFacing))
+                                </p>
+                                <p style='margin-left: 21.0pt'>{</p>
+                                <p style='margin-left: 31.5pt'>
+                                    // Use
+front-facing camera if available.
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    cam = new
+Microsoft.Devices.PhotoCamera(CameraType.FrontFacing);
+                                </p>
+                                <p>}</p>
+                                <p style='margin-left: 21.0pt'>else</p>
+                                <p style='margin-left: 21.0pt'>{</p>
+                                <p style='margin-left: 31.5pt'>
+                                    // Otherwise,
+use standard camera on back of phone.
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    cam = new
+Microsoft.Devices.PhotoCamera(CameraType.Primary);
+                                </p>
+                                <p style='margin-left: 21.0pt'>}</p>
+                                <p style='margin-left: 21.0pt'>
+                                    // Event is
+fired when the PhotoCamera object has been initialized.
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    cam.Initialized
++= new EventHandler&lt;Microsoft.Devices.CameraOperationCompletedEventArgs&gt;(cam_Initialized);
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    // Event is
+fired when the capture sequence is complete.
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    cam.CaptureCompleted
++= new EventHandler&lt;CameraOperationCompletedEventArgs&gt;(cam_CaptureCompleted);
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    // Event is
+fired when the capture sequence is complete and an image is available.
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    cam.CaptureImageAvailable
++= new
+EventHandler&lt;Microsoft.Devices.ContentReadyEventArgs&gt;(cam_CaptureImageAvailable);
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    // Event is
+fired when the capture sequence is complete and a thumbnail image is available.
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    cam.CaptureThumbnailAvailable
++= new EventHandler&lt;ContentReadyEventArgs&gt;(cam_CaptureThumbnailAvailable);
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    //Set the
+VideoBrush source to the camera.
+                                </p>
+                                <p style='margin-left: 21.0pt'>viewfinderBrush.SetSource(cam);</p>
+                                <p style='margin-left: 10.5pt'>}</p>
+                                <p style='margin-left: 10.5pt'>else</p>
+                                <p style='margin-left: 10.5pt'>{</p>
+                                <p style='margin-left: 21.0pt'>
+                                    // The camera is
+not supported on the phone.
+                                </p>
+                                <p style='margin-left: 21.0pt'>this.Dispatcher.BeginInvoke(delegate()</p>
+                                <p style='margin-left: 21.0pt'>{</p>
+                                <p style='margin-left: 31.5pt'>// Write message.</p>
+                                <p style='margin-left: 31.5pt'>
+                                    txtDebug.Text =
+&quot;A Camera is not available on this phone.&quot;
+                                </p>
+                                <p style='margin-left: 21.0pt'>});</p>
+                                <p style='margin-left: 21.0pt'>// Disable UI.</p>
+                                <p style='margin-left: 21.0pt'>
+                                    ShutterButton.IsEnabled
+= false;
+                                </p>
+                                <p>}</p>
+                                <p>}</p>
+                                <br />
+                                <p>
+                                    protected override void
+OnNavigatingFrom(NavigatingCancelEventArgs e)
+                                </p>
+                                <p>{</p>
+                                <p style='margin-left: 10.5pt'>if (cam != null)</p>
+                                <p style='margin-left: 10.5pt'>{</p>
+                                <p style='margin-left: 21.0pt'>
+                                    // Dispose
+camera to minimize power consumption and to expedite shutdown.
+                                </p>
+                                <p style='margin-left: 21.0pt'>cam.Dispose();</p>
+                                <p style='margin-left: 21.0pt'>
+                                    // Release
+memory, ensure garbage collection.
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    cam.Initialized
+-= cam_Initialized;
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    cam.CaptureCompleted
+-= cam_CaptureCompleted;
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    cam.CaptureImageAvailable
+-= cam_CaptureImageAvailable;
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    cam.CaptureThumbnailAvailable
+-= cam_CaptureThumbnailAvailable;
+                                </p>
+                                <p style='margin-left: 10.5pt'>}</p>
+                                <p>}</p>
+                                <p>
+                                    该代码使用 <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.page.onnavigatedto(v=vs.105).aspx">OnNavigatedTo(NavigationEventArgs)</a>方法创建名为 cam 的 PhotoCamera 对象并配置多个事件。该代码还将 VideoBrush 源设置为手机相机对象 cam。
+                                </p>
+                                <p>
+                                    如果除了主相机之外，手机还有一个正面相机，则应用将使用此正面相机。并非所有手机都有正面相机，因此 <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.devices.camera.iscameratypesupported(v=vs.105).aspx">IsCameraTypeSupported(CameraType)</a> 方法还用于在创建 PhotoCamera 对象之前检查该对象是否可用。还有可能手机没有任何类型的相机。这种情况下，会禁用 UI 并且显示一条消息。
+                                </p>
+                                <p>
+                                    为了说明 Windows&nbsp;Phone 执行模型，在 <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.page.onnavigatedto(v=vs.105).aspx">OnNavigatedTo(NavigationEventArgs)</a><u> </u>方法中初始化 PhotoCamera 对象并在
+                            <a
+                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.page.onnavigatingfrom(v=vs.105).aspx">OnNavigatingFrom(NavigatingCancelEventArgs)</a> 方法期间进行显式释放。在 <a
+                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.page.onnavigatedto(v=vs.105).aspx">OnNavigatedTo(NavigationEventArgs)</a> 中添加 PhotoCamera 事件的事件处理程序并在
+                            <a
+                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/system.windows.controls.page.onnavigatingfrom(v=vs.105).aspx">OnNavigatingFrom(NavigatingCancelEventArgs)</a> 中删除以帮助释放内存。
+                                </p>
+                                <p>
+                                    <b>说明：</b>有关如何从相机预览缓冲区分析和处理单个帧的信息，请参见<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/hh202982(v=vs.105).aspx">如何在 Windows Phone 的相机应用中使用灰度</a>。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    2. 在 MainPage.xaml.cs 中，向 MainPage 类中添加以下代码。
+                                </p>
+                                <p>
+                                    // Update the UI if initialization
+succeeds.
+                                </p>
+                                <p>
+                                    void cam_Initialized(object sender,
+Microsoft.Devices.CameraOperationCompletedEventArgs e)
+                                </p>
+                                <p>{</p>
+                                <p style='margin-left: 10.5pt'>if (e.Succeeded)</p>
+                                <p style='margin-left: 10.5pt'>{</p>
+                                <p style='margin-left: 21.0pt'>this.Dispatcher.BeginInvoke(delegate()</p>
+                                <p style='margin-left: 21.0pt'>{</p>
+                                <p style='margin-left: 31.5pt'>
+                                    // Write
+message.
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    txtDebug.Text =
+&quot;Camera initialized.&quot;
+                                </p>
+                                <p style='margin-left: 21.0pt'>});</p>
+                                <p style='margin-left: 10.5pt'>}</p>
+                                <p>}</p>
+                                <p>
+                                    该代码使用相机 <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.devices.camera.initialized(v=vs.105).aspx">Initialized</a> 事件更新名为 txtDebug 的 TextBlock。需要使用 BeginInvoke 方法更新状态，因为应用 UI 在另一个线程上运行。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    3. 在 MainPage.xaml.cs 中，向 MainPage 类中添加以下代码。
+                                </p>
+                                <p>
+                                    // Ensure that the viewfinder is upright in
+LandscapeRight.
+                                </p>
+                                <p>
+                                    protected override void
+OnOrientationChanged(OrientationChangedEventArgs e)
+                                </p>
+                                <p>{</p>
+                                <p style='margin-left: 10.5pt'>if (cam != null)</p>
+                                <p style='margin-left: 10.5pt'>{</p>
+                                <p style='margin-left: 21.0pt'>
+                                    //
+LandscapeRight rotation when camera is on back of phone.
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    int
+landscapeRightRotation = 180;
+                                </p>
+                                <p style='margin-left: 21.0pt'>&nbsp;</p>
+                                <p style='margin-left: 21.0pt'>
+                                    // Change
+LandscapeRight rotation for front-facing camera.
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    if
+(cam.CameraType == CameraType.FrontFacing) landscapeRightRotation = -180;
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    // Rotate video
+brush from camera.
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    if
+(e.Orientation == PageOrientation.LandscapeRight)
+                                </p>
+                                <p style='margin-left: 21.0pt'>{</p>
+                                <p style='margin-left: 31.5pt'>
+                                    // Rotate for
+LandscapeRight orientation.
+                                </p>
+                                <p style='margin-left: 31.5pt'>
+                                    viewfinderBrush.RelativeTransform
+= new CompositeTransform() { CenterX = 0.5, CenterY = 0.5, Rotation =
+landscapeRightRotation };
+                                </p>
+                                <p style='margin-left: 21.0pt'>}</p>
+                                <p style='margin-left: 21.0pt'>else</p>
+                                <p style='margin-left: 21.0pt'>{</p>
+                                <p>// Rotate for standard landscape orientation.</p>
+                                <p style='margin-left: 31.5pt'>
+                                    viewfinderBrush.RelativeTransform
+=new CompositeTransform() { CenterX = 0.5, CenterY = 0.5, Rotation = 0 };
+                                </p>
+                                <p style='margin-left: 21.0pt'>}</p>
+                                <p style='margin-left: 10.5pt'>}</p>
+                                <p style='margin-left: 10.5pt'>base.OnOrientationChanged(e);</p>
+                                <p>}</p>
+                                <p>该代码确保当相机面朝下（LandscapeRight 方向）时取景器 viewfinderBrush 是直立的。如果相机是正面相机，则需要按照与相机位于手机背面时相反的方向旋转相应的画笔。</p>
+                                <p><b>说明：</b>尽管向任一方向将视频画笔旋转 180 度都会得到相同的结果，但该代码提供了 UI 方向如何基于相机类型的示例。</p>
+                                <p class="MsoListParagraph">
+                                    4. 在 MainPage.xaml.cs 中，向 MainPage 类中添加以下代码。
+                                </p>
+                                <p>
+                                    private void ShutterButton_Click(object
+sender, RoutedEventArgs e)
+                                </p>
+                                <p>{</p>
+                                <p style='margin-left: 10.5pt'>if (cam != null)</p>
+                                <p style='margin-left: 10.5pt'>{</p>
+                                <p style='margin-left: 21.0pt'>try</p>
+                                <p style='margin-left: 21.0pt'>{</p>
+                                <p style='margin-left: 21.0pt'>
+                                    // Start image
+capture.
+                                </p>
+                                <p style='margin-left: 21.0pt'>cam.CaptureImage();</p>
+                                <p style='margin-left: 21.0pt'>}</p>
+                                <p style='margin-left: 21.0pt'>
+                                    catch (Exception
+ex)
+                                </p>
+                                <p style='margin-left: 21.0pt'>{</p>
+                                <p style='margin-left: 31.5pt'>this.Dispatcher.BeginInvoke(delegate()</p>
+                                <p style='margin-left: 31.5pt'>{</p>
+                                <p style='margin-left: 42.0pt'>
+                                    // Cannot
+capture an image until the previous capture has completed.
+                                </p>
+                                <p style='margin-left: 42.0pt'>
+                                    txtDebug.Text =
+ex.Message;
+                                </p>
+                                <p style='margin-left: 31.5pt'>});</p>
+                                <p style='margin-left: 21.0pt'>}</p>
+                                <p style='margin-left: 10.5pt'>}</p>
+                                <p>}</p>
+                                <p>
+                                    void cam_CaptureCompleted(object sender,
+CameraOperationCompletedEventArgs e)
+                                </p>
+                                <p>{</p>
+                                <p style='margin-left: 10.5pt'>
+                                    // Increments
+the savedCounter variable used for generating JPEG file names.
+                                </p>
+                                <p style='margin-left: 10.5pt'>savedCounter++;</p>
+                                <p>}</p>
+                                <p>
+                                    该代码实现快门按钮和完成拍摄事件。快门按钮是使用 XAML 代码创建的软件按钮，用于拍摄静止图像。在此项目中使用
+                            <a
+                                href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.devices.photocamera.capturecompleted(v=vs.105).aspx">CaptureCompleted</a> 事件来递增 savedCounter 变量。在下一节中它用于 JPEG 命名。
+                                </p>
+                                <h4>保存到媒体库和本地文件夹</h4>
+                                <p>照相时拍摄两个图像。一个是高分辨率图像，另一个是用于在库视图中提供高分辨率照片的缩略图图像。本节演示如何将高分辨率图像放置到手机媒体库中。还演示如何将高分辨率图像和缩略图图像保存到本地文件夹。</p>
+                                <p>将图像保存到媒体库和本地文件夹的步骤：</p>
+                                <p class="MsoListParagraph">
+                                    1. 在 MainPage.xaml.cs 中，向 MainPage 类中添加以下代码。
+                                </p>
+                                <p>
+                                    // Informs when full resolution photo has
+been taken, saves to local media library and the local folder.
+                                </p>
+                                <p>
+                                    void cam_CaptureImageAvailable(object
+sender, Microsoft.Devices.ContentReadyEventArgs e)
+                                </p>
+                                <p>{</p>
+                                <p>
+                                    string fileName
+= savedCounter + &quot;.jpg&quot;
+                                </p>
+                                <p style='margin-left: 10.5pt'>try</p>
+                                <p style='margin-left: 10.5pt'>{</p>
+                                <p style='margin-left: 10.5pt;'>// Write message to the UI thread.</p>
+                                <p style='margin-left: 10.5pt;'>Deployment.Current.Dispatcher.BeginInvoke(delegate()</p>
+                                <p style='margin-left: 21.0pt'>{</p>
+                                <p>txtDebug.Text = &quot;Captured image available, saving photo.&quot;</p>
+                                <p style='margin-left: 21.0pt'>});</p>
+                                <p style='margin-left: 21.0pt'>
+                                    // Save photo to
+the media library camera roll.
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    library.SavePictureToCameraRoll(fileName,
+e.ImageStream);
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    // Write message
+to the UI thread.
+                                </p>
+                                <p style='margin-left: 10.5pt;'>Deployment.Current.Dispatcher.BeginInvoke(delegate()</p>
+                                <p style='margin-left: 21.0pt'>{</p>
+                                <p>txtDebug.Text = &quot;Photo has been saved to camera roll.&quot;</p>
+                                <p style='margin-left: 21.0pt'>});</p>
+                                <p style='margin-left: 21.0pt'>
+                                    // Set the
+position of the stream back to start
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    e.ImageStream.Seek(0,
+SeekOrigin.Begin);
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    // Save photo as
+JPEG to the local folder.
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    using
+(IsolatedStorageFile isStore = IsolatedStorageFile.GetUserStoreForApplication())
+                                </p>
+                                <p style='margin-left: 21.0pt'>{</p>
+                                <p style='margin-left: 31.5pt'>
+                                    using
+(IsolatedStorageFileStream targetStream = isStore.OpenFile(fileName,
+FileMode.Create, FileAccess.Write))
+                                </p>
+                                <p style='margin-left: 31.5pt'>{</p>
+                                <p style='margin-left: 42.0pt'>
+                                    // Initialize
+the buffer for 4KB disk pages.
+                                </p>
+                                <p style='margin-left: 42.0pt'>
+                                    byte[]
+readBuffer = new byte[4096];
+                                </p>
+                                <p style='margin-left: 42.0pt'>
+                                    int bytesRead =
+-1;
+                                </p>
+                                <p style='margin-left: 31.5pt;'>// Copy the image to the local folder. </p>
+                                <p style='margin-left: 42.0pt'>
+                                    while
+((bytesRead = e.ImageStream.Read(readBuffer, 0, readBuffer.Length)) &gt; 0)
+                                </p>
+                                <p style='margin-left: 42.0pt'>{</p>
+                                <p style='margin-left: 42.0pt;'>targetStream.Write(readBuffer, 0, bytesRead);</p>
+                                <p style='margin-left: 42.0pt'>}</p>
+                                <p style='margin-left: 31.5pt'>}</p>
+                                <p style='margin-left: 21.0pt'>}</p>
+                                <p style='margin-left: 10.5pt;'>// Write message to the UI thread.</p>
+                                <p style='margin-left: 21.0pt'>Deployment.Current.Dispatcher.BeginInvoke(delegate()</p>
+                                <p style='margin-left: 21.0pt'>{</p>
+                                <p>
+                                    txtDebug.Text = &quot;Photo has been saved to the local
+folder.&quot;
+                                </p>
+                                <p style='margin-left: 21.0pt'>});</p>
+                                <p style='margin-left: 10.5pt'>}</p>
+                                <p style='margin-left: 10.5pt'>finally</p>
+                                <p style='margin-left: 10.5pt'>{</p>
+                                <p style='margin-left: 21.0pt'>
+                                    // Close image
+stream
+                                </p>
+                                <p style='margin-left: 21.0pt'>e.ImageStream.Close();</p>
+                                <p style='margin-left: 10.5pt'>}</p>
+                                <p>}</p>
+                                <br />
+                                <p>
+                                    // Informs when thumbnail photo has been
+taken, saves to the local folder
+                                </p>
+                                <p>
+                                    // User will select this image in the
+Photos Hub to bring up the full-resolution.
+                                </p>
+                                <p>
+                                    public void
+cam_CaptureThumbnailAvailable(object sender, ContentReadyEventArgs e)
+                                </p>
+                                <p>{</p>
+                                <p style='margin-left: 10.5pt'>
+                                    string fileName
+= savedCounter + &quot;_th.jpg&quot;
+                                </p>
+                                <p style='margin-left: 10.5pt'>&nbsp;</p>
+                                <p style='margin-left: 10.5pt'>try</p>
+                                <p style='margin-left: 10.5pt'>{</p>
+                                <p style='margin-left: 10.5pt;'>// Write message to UI thread.</p>
+                                <p style='margin-left: 21.0pt'>Deployment.Current.Dispatcher.BeginInvoke(delegate()</p>
+                                <p style='margin-left: 21.0pt'>{</p>
+                                <p>
+                                    txtDebug.Text = &quot;Captured image available, saving
+thumbnail.&quot;
+                                </p>
+                                <p style='margin-left: 21.0pt'>});</p>
+                                <p style='margin-left: 21.0pt'>
+                                    // Save
+thumbnail as JPEG to the local folder.
+                                </p>
+                                <p style='margin-left: 21.0pt'>
+                                    using
+(IsolatedStorageFile isStore =
+IsolatedStorageFile.GetUserStoreForApplication())
+                                </p>
+                                <p style='margin-left: 21.0pt'>{</p>
+                                <p style='margin-left: 31.5pt'>
+                                    using
+(IsolatedStorageFileStream targetStream = isStore.OpenFile(fileName,
+FileMode.Create, FileAccess.Write))
+                                </p>
+                                <p style='margin-left: 31.5pt'>{</p>
+                                <p style='margin-left: 42.0pt'>
+                                    // Initialize
+the buffer for 4KB disk pages.
+                                </p>
+                                <p style='margin-left: 42.0pt'>
+                                    byte[]
+readBuffer = new byte[4096];
+                                </p>
+                                <p style='margin-left: 42.0pt'>
+                                    int bytesRead =
+-1;
+                                </p>
+                                <p style='margin-left: 42.0pt'>
+                                    // Copy the
+thumbnail to the local folder.
+                                </p>
+                                <p style='margin-left: 42.0pt'>
+                                    while
+((bytesRead = e.ImageStream.Read(readBuffer, 0, readBuffer.Length)) &gt; 0)
+                                </p>
+                                <p style='margin-left: 42.0pt'>{</p>
+                                <p style='margin-left: 42.0pt;'>targetStream.Write(readBuffer, 0, bytesRead);</p>
+                                <p style='margin-left: 42.0pt'>}</p>
+                                <p style='margin-left: 31.5pt'>}</p>
+                                <p style='margin-left: 21.0pt'>}</p>
+                                <p style='margin-left: 21.0pt'>
+                                    // Write message
+to UI thread.
+                                </p>
+                                <p style='margin-left: 21.0pt'>Deployment.Current.Dispatcher.BeginInvoke(delegate()</p>
+                                <p style='margin-left: 21.0pt'>{</p>
+                                <p>
+                                    txtDebug.Text = &quot;Thumbnail has been saved to the local
+folder.&quot;
+                                </p>
+                                <p style='margin-left: 21.0pt'>});</p>
+                                <p style='margin-left: 10.5pt'>}</p>
+                                <p style='margin-left: 10.5pt'>finally</p>
+                                <p style='margin-left: 10.5pt'>{</p>
+                                <p style='margin-left: 21.0pt'>
+                                    // Close image
+stream
+                                </p>
+                                <p style='margin-left: 21.0pt'>e.ImageStream.Close();</p>
+                                <p style='margin-left: 10.5pt'>}</p>
+                                <p>}</p>
+                                <p>
+                                    该代码实现 <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.devices.photocamera.captureimageavailable(v=vs.105).aspx">CaptureImageAvailable</a> 和 <a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.devices.photocamera.capturethumbnailavailable(v=vs.105).aspx">CaptureThumbnailAvailable</a> 事件。第一个方法将高分辨率图像保存到媒体库和本地文件夹。第二个方法演示如何将缩略图图像保存到本地文件夹。
+                                </p>
+                                <p>
+                                    <b>说明：</b>若要将照片保存到照片中心的“保存的图片”相册中，请使用 <a
+                                        href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/microsoft.xna.framework.media.medialibrary.savepicture(v=xnagamestudio.42).aspx">SavePicture()</a> 方法。此示例中使用的 <a
+                                            href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/microsoft.xna.framework.media.medialibrary.savepicturetocameraroll(v=xnagamestudio.42).aspx">SavePictureToCameraRoll()</a> 方法将图像保存到“本机拍照”相册中。
+                                </p>
+                                <p class="MsoListParagraph">
+                                    2. 在手机上，通过选择“调试 | 启动调试”菜单命令来运行应用。通过按 SH 按钮测试应用。txtDebug TextBlock 将指示保存到本地文件夹的保存操作的状态。退出应用之后，您可以在照片中心的“本机拍照”文件夹中找到使用该应用拍摄的照片。
+                                </p>
+                                <p>以下示例演示此时如何显示 UI。</p>
+                                <p class="imgp">
+                                    <img border="0" width="375" height="284"
+                                        id="图片 50" src="images/developing_06/image003.png" alt="AP_Con_CameraWireFrame">
+                                </p>
+                                <p>在此示例中，软件快门按钮 SH 显示在 UI 的右上角。Mango 的照片出现在名为 viewfinderCanvas 的 Canvas 控件中。</p>
+                                <p class="MsoListParagraph">
+                                    3. 既然您已完成了这个基本相机应用，那么您可以使用它来完成以下主题：
+                                </p>
+                                <p style='margin-left: 36.0pt;'>
+                                    ●
+                            <u>如何在 Windows Phone 的应用中使用相机闪光灯</u>
+                                </p>
+                                <p style='margin-left: 36.0pt;'>
+                                    ●
+                            <u>如何在 Windows Phone 的应用中使用相机对焦</u>
+                                </p>
+                                <p style='margin-left: 36.0pt;'>
+                                    ●
+                            <u>如何在 Windows Phone 应用中调整所捕获照片的分辨率</u>
+                                </p>
+                                <p style='margin-left: 36.0pt;'>
+                                    ●
+                            <u>如何访问 Windows Phone 中的硬件相机快门按钮</u>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <!--End Content-->
+        <div style="text-align: right" class="gotoTop"><a href="javascript:scroll(0,0)"></a></div>
+        <!--Begin ProudctLinks-->
+        <div class="ms-pro-links">
+            <div class="grid-container clearfix">
+                <div class="cam-links">
+                    其它微软站点
+                    <a href="http://www.microsoft.com/zh-cn/default.aspx">微软中国官方网站</a>
+                    <a href="http://www.microsoft.com/zh-cn/download/default.aspx?WT.mc_id=MSCOM_zh-cn_HP_Footer_downloads" target="_blank">微软中国下载中心</a>
+                    <a href="http://www.microsoftstore.com.cn?WT.mc_id=MSCOM_003" target="_blank">微软中国官方商城</a>
+                    <a href="http://www.microsoft.com/china/newsletter/" target="_blank">订阅电子期刊</a>
+                    <a href="https://sales.liveperson.net/hc/21661174/?cmd=file&file=visitorWantsToChat&site=21661174&byhref=1&SESSIONVAR!skill=APGC.PRC.ZH.CS.CON.PRESLS.GENERAL" target="_blank">联系微软销售代表</a>
+                    <a href="http://www.microsoft.com/zh-cn/sitemap.aspx" target="_blank">网站地图</a>
+                </div>
+            </div>
+        </div>
+        <!--End ProudctLinks-->
+        <!--Begin footer-->
+        <div class="footer">
+            <div class="grid-container">
+                <img src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-type-1x.png" alt="microsoft" class="logo">
+                <ul>
+                    <li><a href="http://www.miibeian.gov.cn/" title="">京ICP备09042378号-6</a></li>
+                    <li><a href="https://profile.microsoft.com/RegSysProfileCenter/default.aspx?lcid=2052" title="">个人信息中心</a></li>
+                    <li><a href="http://support.microsoft.com/contactus/?ws=support" title="">与我们联系</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkId=248681" title="">隐私权声明</a></li>
+                    <li><a href="http://go.microsoft.com/?linkid=4412892" title="">使用条款</a></li>
+                    <li><a href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Trademarks/EN-US.aspx" title="">商标</a></li>
+                    <li>&copy; 2013 Microsoft</li>
+                </ul>
+            </div>
+        </div>
+        <!--End footer-->
+        <!-- Begin MDA WEDCS -->
+        <script type="text/JavaScript">
+            var varSegmentation = 0;
+            var varClickTracking = 1;
+            var varCustomerTracking = 1;
+            var varAutoFirePV = 1;
+            var Route = "#";
+            var Ctrl = "#"
+            //document.write("<script type='text/javascript' src='" + window.location.protocol + "//c.microsoft.com/ms.js'><"+"/script>");
+        </script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="./assets/js/script.js"></script>
+        <script type="text/javascript" src="./js/siteSearch.js"></script>
+        <noscript>
+            <img alt="" width="1" height="1" src="http://c.microsoft.com/trans_pixel.aspx/" />
+        </noscript>
+        <!-- Begin MDA WEDCS -->
+    </div>
+</body>
+</html>

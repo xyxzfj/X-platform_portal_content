@@ -1,0 +1,827 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Native Code（C和C++）支持</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="css/templete.css" type="text/css" media="all" />
+    <meta charset="UTF-8">
+</head>
+<body class="level-2">
+    <div class="wrapper">
+        <!--Begin header-->
+        <div class="header">
+            <div class="grid-container clearfix">
+                <div class="header-left">
+                    <img alt="Microsoft" src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-lg-1x.png" width="94" height="20">
+                    <h1>X-Platform</h1>
+                </div>
+                <div id="mscom-search" class="mscom-search" style="margin-top: 37px;">
+                    <div class="search-form">
+                        <form action="" id="search-form">
+                            <div class="input-wrapper">
+                                <label class="screen-reader-text" for="search-input">搜索 Microsoft.com</label>
+                                <input id="search-input" type="text" class="input-area" autocomplete="off">
+                            </div>
+                            <button class="search-submit" id="search-btn" type="submit">
+                                <img width="16" height="16" alt="Submit" src="http://i.s-microsoft.com/global/imagestore/PublishingImages/sprites/search-button-blue.png"></button>
+                        </form>
+                    </div>
+                    <div class="search-results-box" id="results">
+                        <div class="search-scope">
+                            <ul>
+                                <li class=""><a class="checked" search="microsoft" role="search">搜索 Microsoft.com</a></li>
+                                <li class=""><a search="internet" role="search">搜索互联网</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End header-->
+        <br />
+        <!--Begin Content-->
+        <div class="content">
+            <div class="wrapper">
+                <div class="wrapper-header">
+                    <div>
+                        <a href="index.html">
+                            <img src="./assets/image/banner_1.jpg"></a>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="nav">
+                        <div class="block article-nav-block">
+                            <h2>移动应用开发生命周期</h2>
+                            <div class="menu">
+                                <h3><a href="idea.html">计划<span>Idea/Planning</span></a></h3>
+                                <ul>
+                                    <li><a href="idea_01.html">平台总览</a></li>
+                                    <li><a href="idea_02.html">开发工具、开发环境和模拟器</a></li>
+                                    <li><a href="idea_03.html">应用结构和生命周期</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="design.html">设计<span>Design</span></a></h3>
+                                <ul>
+                                    <li><a href="design_01.html">UI Layout的设计</a></li>
+                                    <li><a href="design_02.html">UI的控件</a></li>
+                                    <li><a href="design_03.html">UI页面的控制和导航</a></li>
+                                    <li><a href="design_04.html">不同屏幕尺寸和分辨率的适配</a></li>
+                                    <li><a href="design_05.html">第三方SDK</a></li>
+                                    <li><a href="design_06.html">游戏开发</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu active">
+                                <h3><a href="developing.html">开发<span>Developing</span></a></h3>
+                                <ul>
+                                    <li><a href="developing_01.html">开发语言</a></li>
+                                    <li><a href="developing_02.html">Audio、Video Player应用的开发</a></li>
+                                    <li><a href="developing_03.html">General APIs Mapping</a></li>
+                                    <li><a href="developing_04.html">IAP应用内支付</a></li>
+                                    <li><a href="developing_05.html">LBS应用</a></li>
+                                    <li><a href="developing_06.html">LBS、镜头和传感器应用接口使用</a></li>
+                                    <li><a href="developing_07.html">Native Code（C和C++）支持</a></li>
+                                    <li><a href="developing_08.html">Push Notification</a></li>
+                                    <li><a href="developing_09.html">Sharing in Social Network</a></li>
+                                    <li><a href="developing_10.html">Source Code Control</a></li>
+                                    <li><a href="developing_11.html">UI上的Data Binding</a></li>
+                                    <li><a href="developing_12.html">Windows 8.1和WP 8 Sharing应用分享功能实现</a></li>
+                                    <li><a href="developing_13.html">多媒体</a></li>
+                                    <li><a href="developing_14.html">后台任务和多任务处理</a></li>
+                                    <li><a href="developing_15.html">获取后台服务器数据</a></li>
+                                    <li><a href="developing_16.html">浏览器控件WebView</a></li>
+                                    <li><a href="developing_17.html">数据库（SQLite）</a></li>
+                                    <li><a href="developing_18.html">数据网络和数据通讯</a></li>
+                                    <li><a href="developing_19.html">通话和短信功能</a></li>
+                                    <li><a href="developing_20.html">图形处理(Drawing & Animation)</a></li>
+                                    <li><a href="developing_21.html">文件系统和应用设置</a></li>
+                                    <li><a href="developing_22.html">应用间通信</a></li>
+                                    <li><a href="developing_23.html">支付方式</a></li>
+                                    <li><a href="developing_24.html">Windows 8.1应用外设开发</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="testing.html">测试<span>Testing</span></a></h3>
+                                <ul>
+                                    <li><a href="testing_01.html">Windows 8 and WP 8开发FAQ</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu last">
+                                <h3><a href="distribute.html">发布<span>Distribute</span></a></h3>
+                                <ul>
+                                    <li><a href="distribute_01.html">应用商店(发布和更新应用)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="block success-story-nav-block">
+                            <h2>成功案例</h2>
+                        </div>
+                        <div class="block others">
+                            <a href="sample_code.html" class="left">示例代码</a>
+                            <a href="http://msdn.microsoft.com/zh-cn/dn473954" class="right">教学视频</a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3 class="title">Native code support<span><a href="index.html">返回首页&gt;</a></span></h3>
+                        <div class="article-content">
+                            <div class="WordSection1">
+                                <p class="MsoToc1">
+                                    <a href="#_Toc372730367">1.&nbsp; WP
+8和Win 8之间共享native代码</a>
+                                </p>
+                                <p class="MsoToc1">
+                                    <a href="#_Toc372730368">2.&nbsp; Windows
+Runtime Native代码支持</a>
+                                </p>
+                                <p class="MsoToc2"><a href="#_Toc372730369">2.1&nbsp; 做出决定</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372730370">2.2&nbsp; 仔细看看什么是可用的</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372730371">2.3&nbsp; 关于代码间调用</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372730372">2.4&nbsp; 一个实际的示例</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372730373">1.5 C# 调用WinRT 组件</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372730374">1.6 限制和机会</a></p>
+                                <p class="MsoToc1"><a href="#_Toc372730375">2. Android NDK开发</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372730376">2.1概述</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372730377">2.2要求</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372730378">2.3实现</a></p>
+                                <p class="MsoToc1"><a href="#_Toc372730379">3.Object-C中调用C++代码</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372730380">3.1 Objective-C和C++混编的要点</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372730381">3.2 C++词汇歧义和冲突</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372730382">3.3 限制</a></p>
+                                <br />
+                            </div>
+                            <div class="WordSection2">
+                                <h1 style='margin-left: 18.0pt;'><a name="_Toc372730367">1. WP 8和Win 8之间共享native代码</a></h1>
+                                <p>通过 Windows 运行时组件，可以在 Windows 应用商店和 Windows Phone 应用程序之间共享Native coad。由于windows phone 8和Windows 8没有共享所有的Windows运行时API，所以需要创建内容相似的 Windows 运行时和 Windows Phone 运行时组件项目，以利用跨这两个平台的代码。虽然不得不在解决方案中包含 Windows 运行时组件和 Windows Phone 运行时组件项目，但是这两个项目均以相同的 C++ 源文件构建。</p>
+                                <p>
+                                    Windows 8 和 Windows Phone 8 公开了 Windows 运行时 API 的一个子集。如果不想对两种平台分别写windows运行时组件，可针对该子集编写代码，然后借助VS提供的“添加为链接”功能在两种应用程序间共享。有关windows phone 8和Windows 8之间共享的Windows 运行时 API子集的详细信息参见<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/jj207212(v=vs.105).aspx">Windows Phone 运行时 API</a>，有关VS添加为链接功能参见<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/jj714082(v=vs.105).aspx">使用“添加为链接”共享代码</a>
+                                </p>
+                                <p>
+                                    Windows
+运行时组件能够在
+Windows 应用商店和 Windows Phone 应用程序之间共享本机 C++ 代码，是采用 C++ 编写计算密集型操作以实现最佳性能的理想选择。
+                                </p>
+                                <p>
+                                    .winmd
+文件中包含的元数据公开了 Windows 运行时组件中的 API 定义。借助这些元数据，语言投射能够让所采用的语言自行决定如何在该语言中使用这些 API。下图列出了支持创建和使用 Windows 运行时组件的语言：
+                                </p>
+                                <p class="imgp">
+                                    <img
+                                        border="0" width="554" height="117" id="图片 5" src="images/developing_07/image001.png">
+                                </p>
+                                <h1 style='margin-left: 18.0pt;'><a name="_Toc372730368">2. Windows Runtime Native代码支持</a></h1>
+                                <p>开发 Windows Runtime 的软件一般情况下都意味着开发的是托管代码。无论是在Silverlight中进行传统的应用程序开发，或者你决定在XNA中创建游戏，你从未离开过托管代码为您带来的舒适环境。虽然在通常情况下这会给你更多好处而非缺点，但是在有些情况下使用非托管的代码或许会是更加理想的。不幸的是，直到现在对于是否使用托管代码都不是一个开发者人员能够做出的决定，而是你的开发平台强加给你限制。</p>
+                                <p>在Windows Phone 8和Windows 8中，Microsoft 开放了平台上对于非托管的第三方代码的限制，您可以使用 C++ 进行开发。介绍一下新平台的基础结构简化概要：</p>
+                                <p class="imgp">
+                                    <img border="0"
+                                        width="410" height="267" id="图片 1" src="images/developing_07/image002.png"
+                                        alt="image_thumb3">
+                                </p>
+                                <p>就像你所看到的那样，传统的 .NET开发(或者，就像它当时被称呼的那样，Silverlight) 是唯一的选项。现在，我们手头上拥有了一整套原生 API可以使用，我们可以自由选择何种编程模型最匹配我们的情况和要求。</p>
+                                <h2><a name="_Toc372730369">2.1&nbsp; 做出决定</a></h2>
+                                <p>当我在工作或者培训的时候问别人有关他们对应该使用native代码而不是托管代码的背后原因时，90%的时候提到的第一个答案是性能。直到现在，开发者们还是认为使用native代码而不是使用C#进行开发的首要动机是性能。有趣的是，开发背景的差异似乎对这个判断没有多少影响。不光是那些C++背景的人这么想，还有那些比较初级的、没有在实际项目中用到过c++的人也这么认为。的确托管代码有它性能上的缺陷，在有些时候确实是我们做出决定时要考虑的因素。但是，事实上开发者们经常过高估计了使用native代码带来的好处。通常造成性能问题的不是托管代码和底层的runtime，而是因为糟糕的架构和软件的设计。在你要做的每一个方面都重新思考一下你的软件架构，并且仅仅通过转向另一种程序模型无法给你的应用程序带来显著的性能提升的时候，如果你认为用原生的C++来代替你Windows Phone/Windows8中的C#代码就能获得性能提升的话，请你最好三思。那绝对不是你应该做的事情，因为结果一定会让你大失所望。</p>
+                                <p>这样，你可能会问自己使用native代码的可能的理由会是什么吗？下面是按降序优先级的排序列表。当然你的想法可能会有所不同，但它或多或少总是归结为的这些原因：</p>
+                                <p class="MsoListParagraph" style='margin-left: 39.0pt;'>
+
+                                    <b>可重用性</b>： 你有一些旧式类似的代码，你真的不想重写他们，但仍然想在您的应用程序中使用。
+                                </p>
+                                <p class="MsoListParagraph" style='margin-left: 39.0pt;'>
+
+                                    <b>可移植性</b>： 你想要在多个平台上使用你的代码。
+                                </p>
+                                <p class="MsoListParagraph" style='margin-left: 39.0pt;'>
+
+                                    <b>个人喜好</b>： 您是一个真心非常喜欢C++而不是C#的开发人员，并且你在C++中会更好的施展你的技能。
+                                </p>
+                                <p class="MsoListParagraph" style='margin-left: 39.0pt;'>
+
+                                    <b>性能</b>： 你真心需要者最后一点性能提升，并且知道自己正在做什么。
+                                </p>
+                                <p>现在，我们已经谈了为什么时候native代码，下面该到了详细介绍如何使用它们的时候了。</p>
+                                <h2><a name="_Toc372730370">2.2&nbsp; 仔细看看什么是可用的</a></h2>
+                                <p>首先，让我们看看我们在 Visual Studio 中的选项。当您查看 Windows Phone 和 C++ 的可用模板时，您可以看到的那些创建新应用程序非常侧重 Direct3D：</p>
+                                <p class="imgp">
+                                    <img border="0"
+                                        width="554" height="383" id="图片 2" src="images/developing_07/image003.png"
+                                        alt="_________________image_2.png (955×660)">
+                                </p>
+                                <p>
+                                    出人意料的是，创建一个&quot;Direct3D 与 XAML&quot; 的C++ 应用程序实际上会创建一个 C# 的主项目和一个单独的C++ Windows 运行时组件。这里的基本想法非常类似于在Windows Phone7中创建 XNA 和 Silverlight的混合程序： Silverlight 发挥了主要作用，并允许您在独立的页面上嵌入 XNA。就像Windows Phone 8 中提及的模板那样，主应用程序是基于Windows Phone上的.NET的，并使用XAML 中的特定控件(尤其是
+DrawingSurfaceBackgroundGrid) 以类似的方式嵌入 Direct3D。然后在该示例中的实际呈现被传递给native组件。这种混合技术可能是典型使用案例： 它允许您既从XAML与托管代码的灵活性（例如用于菜单和其他详细信息）中受益，也同时从native代码中受益。
+                                </p>
+                                <p>
+                                    如果您想要创建一个与C#和托管代码没有任何关系的应用程序，您可以选择第二个模板，那个模板的名字上面已经有了&quot;native only&quot;的字样，然后就会创建出一个纯净的非托管应用程序。那里还有其他可用的 C++ 模板来创建库，可以动态或静态的链接到工程中，或者单独的 Windows
+Phone 运行时组件，我们接下来将会仔细研究。
+                                </p>
+                                <h2><a name="_Toc372730371"></a><a
+                                    name="_Toc371676061">2.3&nbsp;
+关于代码间调用</a></h2>
+                                <p>关于在托管和非托管代码之间的通信，就像在 Windows 8 中，Windows Runtime使您可以让不同的技术以非常自然的方式互相交流。特别是，我们可以通过创建 Windows Runtime的简单包装，实现将非托管 c + + 实现集成到托管的应用程序中。他们可以很容易的融合与C#，并且非常像.net中的东西。</p>
+                                <p class="imgp">
+                                    <img border="0"
+                                        width="313" height="366" id="图片 13" src="images/developing_07/image004.png"
+                                        alt="_____image_12.png (313×366)">
+                                </p>
+                                <p>当你使用WinRT组件并与之交互时，几乎与使用正常的.NET类和对象一样。因为你不必再使用传统的像互操作或 COM 通信那种方法。</p>
+                                <h2><a name="_Toc372730372"></a><a
+                                    name="_Toc371676062">2.4&nbsp;
+一个实际的示例</a></h2>
+                                <p>以下是利用这种 Windows 运行时组件的示例，你会看到如何可以轻松地集成现有的 c + + 代码到托管的 C# 应用程序中。首先，因为 c + + 应用程序模板非常侧重于 Direct3D，创建一个新的 C# XAML 应用程序。</p>
+                                <p class="imgp">
+                                    <img border="0"
+                                        width="514" height="355" id="图片 14" src="images/developing_07/image005.png"
+                                        alt="____________image_6.png (955×660)">
+                                </p>
+                                <p>
+                                    然后，在第二个步骤中，我只是将另一个项目添加到我的解决方案中，但这次我选择c + +
+&quot;Windows Phone 运行时组件&quot;模板。在这个项目被创建之后，我们将其引用添加到主项目。
+                                </p>
+                                <p class="imgp">
+                                    <img border="0"
+                                        width="554" height="382" id="图片 15" src="images/developing_07/image006.png"
+                                        alt="____________image_8.png (955×660)">
+                                </p>
+                                <p>你们可以从截图中看到，我要重新使用现有的使用C++编写的Mandelbrot算法。这背后的动机可能是任何上述提到的各种原因： 此处是因为我发现了一些现有的代码，并且我简单地重复使用它来进行示范。但它很可能是一个我想要集成的、运算速度特别快算法，或者是一些我想要在多个平台之间共享的代码。</p>
+                                <p>使用Windows Phone Runtime组件的代码是很容易解释的：</p>
+                                <p class="imgp">
+                                    <img border="0"
+                                        width="554" height="174" id="图片 16" src="images/developing_07/image007.jpg"
+                                        alt="winrt_component_2.png (655×206)">
+                                </p>
+                                <p>
+                                    在第 3 行，包括现有的native代码希望使用的头文件。在 13 行，我声明了一个稍后可以使用的传统类型的成员。这两件事可能是任何其他 c + +
+代码的一部分。
+                                </p>
+                                <p>有关 Windows Runtime组件的更详细信息在第 7 行和第 11 行中突出显示。第一，类需要用&quot;ref&quot;关键字修饰，并且是一个sealed类。第一个告诉编译器这是一个需要特殊对待的 WinRT 类，后者只是对这类组件的一个技术限制。在行 11 您可以看到我之前说个的被包装的方法，他只是调用&quot;Mandelbrot&quot;算法的现有实现，其他什么也不做。但是，参数类型需要一些评论。正如您所看到的我正在使用的&quot;WriteOnlyArray&quot;是一种特殊类型，它确保native代码将能够写入该数组。该类型后面是一个类似与帽子的符号 (^)，可能会提醒你的托管 c + +。这是WinRT 类型自动引用计数符号。</p>
+                                <p>很明显，当我将该调用传到原始的native实现时，将无法使用 WinRT 类型，因为原有代码根本不知道winrt类型。因此，我使用“数据”成员去访问我的原有代码能够理解的底层类型（此处是 double *）</p>
+                                <p class="imgp">
+                                    <img border="0" width="553" height="97" id="图片 18"
+                                        src="images/developing_07/image008.png" alt="___image_14.png (600×105)">
+                                </p>
+                                <p>基本上是所有你所要做的：</p>
+                                <p class="MsoListParagraph" style='margin-left: 39.0pt;'>
+                                    创建您想要公开的所有功能的包装方法
+                                </p>
+                                <p class="MsoListParagraph" style='margin-left: 39.0pt;'>
+                                    请确保您的组件只使用公共 API中兼容的 WinRT 类型
+                                </p>
+                                <p>后者，你应该看看映射的适当类型的可用文档，当然，编译器还会提示你在代码中的错误。</p>
+                                <h2><a name="_Toc372730373"></a><a name="_Toc371676063">1.5 C#
+                        调用WinRT 组件</a></h2>
+                                <p>正如前面提到，winRT组件使用者会感觉到管理开发是非常简单可自然的。您只需要添加引用到包含您的 Windows 运行时组件的项目，然后可以开始马上使用您的组件：</p>
+                                <p class="imgp">
+                                    <img border="0" width="452" height="120"
+                                        id="图片 19" src="images/developing_07/image009.png"
+                                        alt="csharp_invocation_2.png (452×120)">
+                                </p>
+                                <p>
+                                    第一个突出显示的行 (1.) 创建 Windows
+运行时组件的新实例，第二个标记的线 （2.）调用包装之后的方法，在被包装的方法内部调用原始的实现。这与使用普通的.NET 类型几乎没有区别 — — 这是在幕后为你把一切都译成普通的.NET 类型的 WinRT 的投影层的魔法。
+                                </p>
+                                <p>在示例中，我继续把本地调用结果转换到 WriteableBitmap，然后在 XAML 页上显示</p>
+                                <p class="imgp">
+                                    <img border="0"
+                                        width="231" height="384" id="图片 20" src="images/developing_07/image010.png"
+                                        alt="mandelbrot_2.png (461×768)">
+                                </p>
+                                <h2><a name="_Toc372730374"></a><a name="_Toc371676064">1.6 限制和机会</a></h2>
+                                <p>要注意的一件事是，显然不能使用在 Windows Phone 上不支持的具有特定的不兼容的依赖项的native代码，这在一定程度上限制了重用现有代码的可能性，尤其是当这些代码设计得并不是很好的时候。然而，可以使用native代码的能力也带来了很多之前被认为不可能的新的机会，例如，现在在这个平台上很容易创建一个像unity 3D 引擎这样有趣的工程，这反过来也使得该平台对开发者来说更具有吸引力。</p>
+                                <h1><a name="_Toc372730375"></a><a name="_Toc371676065">2. Android
+NDK开发</a></h1>
+                                <h2><a name="_Toc372730376"></a><a name="_Toc371676066">2.1概述</a></h2>
+                                <p>对于大部分应用开发者来说可能都不怎么接触到NDK，但如果涉及到硬件操作的话就不得不使用NDK了。使用NDK还有另一个原因，就是C/C++的效率比较高，因此我们可以把一些耗时的操作放在NDK中实现。</p>
+                                <p>关于java与c/c++的互相调用，网上有一大堆的文章介绍。但仔细观察可以发现，基本都是讲在java中调用一个本地方法，然后由该本地方法直接返回一个参数给java（例如，在java中定义的本地方法为private int callJNI(int i)）。但在大多数时候要求的并不是由开发者在java层主动去调JNI中的函数来返回想要的数据，而是由JNI主动去调java中的函数。举个最简单的例子，Android中的Camera，图像数据由内核一直往上传到java层，然而这些数据的传递并不需要开发者每一次主动去调用来JNI中的函数来获取，而是由JNI主动传给用java中方法，这类似于Linux驱动机制中的异步通知。</p>
+                                <h2><a name="_Toc372730377"></a><a name="_Toc371676067">2.2要求</a></h2>
+                                <p>用NDK实现Java与C/C++互调，实现int，string，byte[]这三种类型的互相传递。</p>
+                                <h2><a name="_Toc372730378"></a><a name="_Toc371676068">2.3实现</a></h2>
+                                <p>下面的实现中，每次java调用JNI中的某个函数时，最后会在该函数里回调java中相应的方法而不是直接返回一个参数。可能你会觉得这不还是每次都是由开发者来主动调用吗，其实这只是为了讲解而已，在实际应用中，回调java中的方法应该由某个事件（非java层）来触发。</p>
+                                <p>新建工程MyCallback，修改main.xml文件，在里面添加3个Button，分别对应3种类型的调用和3个TextView分别显示由JNI回调java时传给java的数据。完整的main.xml文件如下：</p>
+                                <textarea>1 <?xml version="1.0" encoding="utf-8"?>
+ 2 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ 3     android:layout_width="fill_parent"
+ 4     android:layout_height="fill_parent"
+ 5     android:orientation="vertical" >
+ 6 
+ 7     <Button 
+ 8         android:id="@+id/intbutton"
+ 9         android:layout_width="fill_parent"
+10         android:layout_height="wrap_content"
+11         android:text="传给JNI一个整数1"
+12         /> 
+13     
+14     <TextView
+15         android:id="@+id/inttextview"
+16         android:layout_width="fill_parent"
+17         android:layout_height="wrap_content"
+18         android:text="接收到的整数：" 
+19         />
+20     
+21     <Button 
+22         android:id="@+id/stringbutton"
+23         android:layout_width="fill_parent"
+24         android:layout_height="wrap_content"
+25         android:text="传给JNI一个字符A"
+26         /> 
+27     
+28     <TextView
+29         android:id="@+id/stringtextview"
+30         android:layout_width="fill_parent"
+31         android:layout_height="wrap_content"
+32         android:text="接收到的字符：" 
+33         />
+34     
+35     <Button 
+36         android:id="@+id/arraybutton"
+37         android:layout_width="fill_parent"
+38         android:layout_height="wrap_content"
+39         android:text="传给JNI一个数组12345"
+40         /> 
+41     
+42     <TextView
+43         android:id="@+id/arraytextview"
+44         android:layout_width="fill_parent"
+45         android:layout_height="wrap_content"
+46         android:text="接收到的数组：" 
+47         />
+48     
+49 
+50 </LinearLayout></textarea>
+                                <p>修改MyCallbackActivity.java文件，定义了一个Handler，当JNI回调java的方法时，用来发送消息；实现3个Button的监听。如下：</p>
+                                <pre><code>1 package com.nan.callback;
+  2 
+  3 import android.app.Activity;
+  4 import android.os.Bundle;
+  5 import android.os.Handler;
+  6 import android.os.Message;
+  7 import android.view.View;
+  8 import android.widget.Button;
+  9 import android.widget.TextView;
+ 10 
+ 11 
+ 12 public class MyCallbackActivity extends Activity 
+ 13 {
+ 14     private Button intButton = null;
+ 15     private Button stringButton = null;
+ 16     private Button arrayButton = null;
+ 17     private TextView intTextView = null; 
+ 18     private TextView stringTextView = null; 
+ 19     private TextView arrayTextView = null; 
+ 20     
+ 21     private Handler mHandler = null;
+ 22     
+ 23     
+ 24     /** Called when the activity is first created. */
+ 25     @Override
+ 26     public void onCreate(Bundle savedInstanceState) 
+ 27     {
+ 28         super.onCreate(savedInstanceState);
+ 29         setContentView(R.layout.main);
+ 30         
+ 31         intButton = (Button)this.findViewById(R.id.intbutton);
+ 32         //注册按钮监听
+ 33         intButton.setOnClickListener(new ClickListener());
+ 34         stringButton = (Button)this.findViewById(R.id.stringbutton);
+ 35         //注册按钮监听
+ 36         stringButton.setOnClickListener(new ClickListener());
+ 37         arrayButton = (Button)this.findViewById(R.id.arraybutton);
+ 38         //注册按钮监听
+ 39         arrayButton.setOnClickListener(new ClickListener());
+ 40         
+ 41         intTextView = (TextView)this.findViewById(R.id.inttextview);
+ 42         stringTextView = (TextView)this.findViewById(R.id.stringtextview);
+ 43         arrayTextView = (TextView)this.findViewById(R.id.arraytextview);
+ 44         
+ 45         //消息处理      
+ 46         mHandler = new Handler()
+ 47         {
+ 48             @Override
+ 49             public void handleMessage(Message msg)
+ 50             {
+ 51                 switch(msg.what)
+ 52                 {
+ 53                     //整型
+ 54                     case 0:
+ 55                     {
+ 56                         intTextView.setText(msg.obj.toString());
+ 57                         break;
+ 58                     }
+ 59                     //字符串
+ 60                     case 1:
+ 61                     {
+ 62                         stringTextView.setText(msg.obj.toString());
+ 63                         break;
+ 64                     }
+ 65                     //数组
+ 66                     case 2:
+ 67                     {   byte[] b = (byte[])msg.obj;                  
+ 68                         arrayTextView.setText(Byte.toString(b[0])+Byte.toString(b[1])+Byte.toString(b[2])+Byte.toString(b[3])+Byte.toString(b[4]));                     
+ 69                         break;
+ 70                     }
+ 71                 }
+ 72                                
+ 73             }       
+ 74             
+ 75         };
+ 76         
+ 77         
+ 78     }
+ 79             
+ 80     //按钮监听实现
+ 81     public class ClickListener implements View.OnClickListener
+ 82     {
+ 83 
+ 84         @Override
+ 85         public void onClick(View v) 
+ 86         {
+ 87             // TODO Auto-generated method stub
+ 88             switch(v.getId())
+ 89             {
+ 90                 case R.id.intbutton:
+ 91                 {
+ 92                     //调用JNI中的函数
+ 93                     callJNIInt(1);      
+ 94                     break;
+ 95                 }
+ 96                 case R.id.stringbutton:
+ 97                 {
+ 98                     //调用JNI中的函数
+ 99                     callJNIString("你好A");             
+100                     break;
+101                 }
+102                 case R.id.arraybutton:
+103                 {                
+104                     //调用JNI中的函数
+105                     callJNIByte(new byte[]{1,2,3,4,5});               
+106                     break;
+107                 }
+108             }
+109         }
+110         
+111     }
+112   
+113     
+114     //被JNI调用，参数由JNI传入
+115     private void callbackInt(int i)
+116     {
+117         Message msg = new Message();
+118         //消息类型
+119         msg.what = 0;
+120         //消息内容
+121         msg.obj = i;
+122         //发送消息
+123         mHandler.sendMessage(msg);
+124     }
+125     
+126     //被JNI调用，参数由JNI传入
+127     private void callbackString(String s)
+128     {
+129         Message msg = new Message();
+130         //消息类型
+131         msg.what = 1;
+132         //消息内容
+133         msg.obj = s;
+134         //发送消息
+135         mHandler.sendMessage(msg);
+136     }
+137     
+138     //被JNI调用，参数由JNI传入
+139     private void callbackByte(byte[] b)
+140     {
+141         Message msg = new Message();
+142         //消息类型
+143         msg.what = 2;
+144         //消息内容
+145         msg.obj = b;     
+146         //发送消息
+147         mHandler.sendMessage(msg);
+148     }
+149     
+150     //本地方法，由java调用
+151     private native void callJNIInt(int i);
+152     private native void callJNIString(String s);
+153     private native void callJNIByte(byte[] b);
+154     
+155     static
+156     {
+157         //加载本地库
+158         System.loadLibrary("myjni");
+159     }
+160     
+161 }</code></pre>
+                                <p>
+                                    最后就是本篇随笔的“重头戏”，在工程的根目录下新建jni文件夹，在里面添加一个Android.mk文件和一个callback.c文件，Android.mk文件如下：
+                                </p>
+                                <pre><code>1 LOCAL_PATH := $(call my-dir)
+ 2 
+ 3 include $(CLEAR_VARS)
+ 4 
+ 5 LOCAL_MODULE    := myjni
+ 6 LOCAL_SRC_FILES := callback.c
+ 7 
+ 8 LOCAL_LDLIBS    := -llog
+ 9 
+10 include $(BUILD_SHARED_LIBRARY)</code></pre>
+                                <p>
+                                    callback.c文件如下：
+                                </p>
+                                <pre><code>1 #include <string.h>
+ 2 #include <stdio.h>
+ 3 #include <stdlib.h>
+ 4 #include <unistd.h>
+ 5 #include <sys/ioctl.h>
+ 6 #include <sys/types.h>
+ 7 #include <sys/stat.h>
+ 8 #include <fcntl.h>
+ 9 
+10 #include <jni.h>
+11 #include <android/log.h>
+12 
+13 #define LOGI(...) ((void)__android_log_print(ANDROID_LOG_INFO, "native-activity", __VA_ARGS__))
+14 #define LOGW(...) ((void)__android_log_print(ANDROID_LOG_WARN, "native-activity", __VA_ARGS__))
+15 
+16 
+17 
+18 /**********传输整数*************
+19 
+20 */
+21 JNIEXPORT void JNICALL Java_com_nan_callback_MyCallbackActivity_callJNIInt( JNIEnv* env, jobject obj , jint i)
+22 {
+23     //找到java中的类
+24     jclass cls = (*env)->FindClass(env, "com/nan/callback/MyCallbackActivity");
+25     //再找类中的方法
+26     jmethodID mid = (*env)->GetMethodID(env, cls, "callbackInt", "(I)V");
+27     if (mid == NULL) 
+28     {
+29         LOGI("int error");
+30         return;  
+31     }
+32     //打印接收到的数据
+33     LOGI("from java int: %d",i);
+34     //回调java中的方法
+35     (*env)->CallVoidMethod(env, obj, mid ,i);
+36         
+37 }    
+38 
+39 /********传输字符串*************
+41 */
+42 JNIEXPORT void JNICALL Java_com_nan_callback_MyCallbackActivity_callJNIString( JNIEnv* env, jobject obj , jstring s)
+43 {
+44     //找到java中的类
+45     jclass cls = (*env)->FindClass(env, "com/nan/callback/MyCallbackActivity");
+46     //再找类中的方法
+47     jmethodID mid = (*env)->GetMethodID(env, cls, "callbackString", "(Ljava/lang/String;)V");
+48     if (mid == NULL) 
+49     {
+50         LOGI("string error");
+51         return;  
+52     }
+53     const char *ch;
+54     //获取由java传过来的字符串
+55     ch = (*env)->GetStringUTFChars(env, s, NULL);
+56     //打印
+57     LOGI("from java string: %s",ch);
+58     (*env)->ReleaseStringUTFChars(env, s, ch);    
+59     //回调java中的方法
+60     (*env)->CallVoidMethod(env, obj, mid ,(*env)->NewStringUTF(env,"你好haha"));
+61 
+62 }
+63 
+64 /********传输数组(byte[])*************
+65 */
+66 JNIEXPORT void JNICALL Java_com_nan_callback_MyCallbackActivity_callJNIByte( JNIEnv* env, jobject obj , jbyteArray b)
+67 {
+68     //找到java中的类
+69     jclass cls = (*env)->FindClass(env, "com/nan/callback/MyCallbackActivity");
+70     //再找类中的方法
+71     jmethodID mid = (*env)->GetMethodID(env, cls, "callbackByte", "([B)V");
+72     if (mid == NULL) 
+73     {
+74         LOGI("byte[] error");
+75         return;  
+76     }
+77     
+78     //获取数组长度
+79     jsize length = (*env)->GetArrayLength(env,b);
+80     LOGI("length: %d",length);    
+81     //获取接收到的数据
+82     int i;
+83     jbyte* p = (*env)->GetByteArrayElements(env,b,NULL);
+84     //打印
+85     for(i=0;i<length;i++)
+86     {
+87         LOGI("%d",p[i]);    
+88     }
+89 
+90     char c[5];
+91     c[0] = 1;c[1] = 2;c[2] = 3;c[3] = 4;c[4] = 5;
+92     //构造数组
+93     jbyteArray carr = (*env)->NewByteArray(env,length);
+94     (*env)->SetByteArrayRegion(env,carr,0,length,c);
+95     //回调java中的方法
+96     (*env)->CallVoidMethod(env, obj, mid ,carr);
+97 }</code></pre>
+                                <p>
+                                    利用ndk-build编译生成相应的库。代码都非常简单，思路在一开始的时候已经说明了，下面看运行结果。
+                                </p>
+                                <p class="MsoListParagraph" style='margin-left: 21.75pt;'>
+                                    分别点击三个按钮，效果如下：
+                                </p>
+                                <p class="imgp">
+                                    <img
+                                        border="0" width="320" height="480" id="图片 4" src="images/developing_07/image011.png"
+                                        alt="http://pic002.cnblogs.com/images/2012/247269/2012031318350127.png">
+                                </p>
+                                <p class="MsoListParagraph" style='margin-left: 21.75pt;'>
+                                    再看看LogCat输出：
+                                </p>
+                                <p class="imgp">
+                                    <img
+                                        border="0" width="762" height="136" id="图片 3" src="images/developing_07/image012.png"
+                                        alt="http://pic002.cnblogs.com/images/2012/247269/2012031318384097.png">
+                                </p>
+                                <p class="MsoListParagraph" style='margin-left: 21.75pt;'>
+                                    可见两个方向（java&lt;---&gt;JNI）传输的数据都正确。
+                                </p>
+                                <h1><a name="_Toc372730379"></a><a name="_Toc371676069">3.Object-C中调用C++代码</a></h1>
+                                <p>苹果的Objective-C编译器允许用户在同一个源文件里自由地混合使用C++和Objective-C，混编后的语言叫Objective-C++。有了它，你就可以在Objective-C应用程序中使用已有的C++类库。</p>
+                                <h2><a name="_Toc372730380"></a><a name="_Toc371676070">3.1 Objective-C和C++混编的要点</a></h2>
+                                <p>
+                                    在
+Objective-C++中，可以用C++代码调用方法，也可以从Objective-C调用方法。在这两种语言里对象都是指针，可以在任何地方使用。例 如，C++类可以使用Objective-C对象的指针作为数据成员，Objective-C类也可以有C++对象指针做实例变量。下例说明了这一点。
+                                </p>
+                                <pre><code>1.	/* Hello.mm
+2.	 * Compile with: g++ -x objective-c++ -framework Foundation Hello.mm  -o hello
+3.	 */
+4.	
+5.	#import <Foundation/Foundation.h>
+6.	class Hello {
+7.	private:
+8.	    id greeting_text;  // holds an NSString
+9.	public:
+10.	    Hello() {
+11.	        greeting_text = @"Hello, world!";
+12.	    }
+13.	    Hello(const char* initial_greeting_text) {
+14.	        greeting_text = [[NSString alloc] initWithUTF8String:initial_greeting_text];
+15.	    }
+16.	    void say_hello() {
+17.	        printf("%s\n", [greeting_text UTF8String]);
+18.	    }
+19.	};
+20.	
+21.	@interface Greeting : NSObject {
+22.	@private
+23.	    Hello *hello;
+24.	}
+25.	- (id)init;
+26.	- (void)dealloc;
+27.	- (void)sayGreeting;
+28.	- (void)sayGreeting:(Hello*)greeting;
+29.	@end
+30.	
+31.	@implementation Greeting
+32.	- (id)init {
+33.	    if (self = [super init]) {
+34.	        hello = new Hello();
+35.	    }
+36.	    return self;
+37.	}
+38.	- (void)dealloc {
+39.	    delete hello;
+40.	    [super dealloc];
+41.	}
+42.	- (void)sayGreeting {
+43.	    hello->say_hello();
+44.	}
+45.	- (void)sayGreeting:(Hello*)greeting {
+46.	    greeting->say_hello();
+47.	}
+48.	@end
+49.	
+50.	int main() {
+51.	    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+52.	   
+53.	    Greeting *greeting = [[Greeting alloc] init];
+54.	    [greeting sayGreeting];                         // > Hello,  world!
+55.	   
+56.	    Hello *hello = new Hello("Bonjour, monde!");
+57.	    [greeting sayGreeting:hello];                   // > Bonjour,  monde!
+58.	   
+59.	    delete hello;
+60.	    [greeting release];
+61.	    [pool release];
+62.	    return 0;63.	}</code></pre>
+                                <p>正如你可以在OC接口中声明C结构一样，你也可以在OC接口中声明C++类。跟C结构一样，OC接口中定义的C++类是全局范围的，不是OC类的内嵌类（这与标准C（尽管不是C++）提升嵌套结构定义为文件范围是一致的）。</p>
+                                <p>为了允许你基于语言变种条件化地编写代码，OC++编译器定义了__cplusplus和__OBJC__预处理器常量，分别指定C++和OC。如前所述，OC++不允许C++类继承自OC对象，也不允许OC类继承自C++对象。</p>
+                                <pre><code>1.	class Base { /* ... */ };
+2.	@interface ObjCClass: Base ... @end // ERROR!
+3.	class Derived: public ObjCClass ... // ERROR!</code></pre>
+                                <p>与 OC不同的是，C++对象是静态类型的，有运行时多态是特殊情况。两种语言的对象模型因此不能直接兼容。更根本的，OC和C++对象在内存中的布局是互不 相容的，也就是说，一般不可能创建一个对象实例从两种语言的角度来看都是有效的。因此，两种类型层次结构不能被混合。</p>
+                                <p>你可以在OC类内部声明C++类，编译器把这些类当作已声明在全局名称空间来对待。就像下面：</p>
+                                <pre><code>1.	@interface Foo {
+2.	    class Bar { ... } // OK
+3.	}
+4.	@end
+5.	
+6.	Bar *barPtr; // OK</code></pre>
+                                <p>OC允许C结构作为实例变量，不管它是否声明在OC声明内部。</p>
+                                <pre><code>1.	@interface Foo {
+2.	   struct CStruct { ... };
+3.	   struct CStruct bigIvar; // OK
+4.	} ... @end</code></pre>
+                                <p>
+                                    Mac OS X 10.4以后，如果你设置fobjc-
+call-cxx-cdtors编译器标志，你就可以使用包含虚函数和有意义的用户自定义零参数构造函数、析构函数的C++类实例来做为实例变量
+（gcc-4.2默认设置编译器标志fobjc-call-cpp-cdtors）。OC成员变量alloc完以后，alloc函数会按声明顺序调用构造
+器。构造器使用公共无参数恰当的构造函数。OC成员变量dealloc之前，dealloc方法按声明顺序反序调用调用析构函数。&nbsp;
+&nbsp;OC没有名称空间得概念。不能在C++名称空间内部声明OC类，也不能在OC类里声明名称空间。<br>
+                                    OC类，协议，分类不能声明在C++ template里，C++
+template也不能声明在OC接口，协议，分类的范围内。<br>
+                                    但是，OC类可以做C++ template的参数，C++ template参数也可以做OC消息表达式的接收者或参数（不能通过selector）。
+                                </p>
+                                <h2><a name="_Toc372730381"></a><a name="_Toc371676071">3.2 C++词汇歧义和冲突</a></h2>
+                                <p>OC头文件中定义了一些标识符，所有的OC程序都必须包含，这些标识符识有id，Class，SEL，IMP和BOOL。</p>
+                                <p>OC方法内，编译器预声明了标识符self和super，就像C++中的关键字this。跟C++的this不同的是，self和super是上下文相关的；除OC方法外他们还可以用于普通标识符。</p>
+                                <p>协议内方法的参数列表有5个上下文相关的关键字（oneway，in，out，inout，bycopy）。这些在其他内容中不是关键字。</p>
+                                <p>从 OC程序员的角度来看，C++增加了不少新的关键字。你仍然可以使用C++的关键字做OC selector的一部分，所以影响并不严重，但你不能使用他们命名OC类和实例变量。例如，尽管class是C++的关键字，但是你仍然能够使用 NSObject的方法class：</p>
+                                <pre><code>1.	 [foo class]; // OK</code></pre>
+                                <p>然而，因为它是一个关键字，你不能用class做变量名称：</p>
+                                <pre><code>1.	NSObject *class; // Error</code></pre>
+                                <p>
+                                    OC里类名和分类名有单独的命名空间。@interface foo和@interface(foo)能够同时存在在一个源代码中。OC++里，你也能用C++中的类名或结构名来命名你的分类。<br>
+                                    协议和template标识符使用语法相同但目的不同：
+                                </p>
+                                <pre><code>1.	id<someProtocolName> foo;
+2.	TemplateType<SomeTypeName> bar;</code></pre>
+                                <p>为了避免这种含糊之处，编译器不允许把id做template名称。最后，C++有一个语法歧义，当一个label后面跟了一个表达式表示一个全局名称时，就像下面：</p>
+                                <pre><code>1.	receiver selector: ::global_c++_name;</code></pre>
+                                <p>第一个冒号后面需要空格。OC++有类似情况，也需要一个空格：</p>
+                                <pre><code>1.	label: ::global_name = 3;</code></pre>
+                                <h2><a name="_Toc372730382"></a><a name="_Toc371676072">3.3 限制</a></h2>
+                                <p>
+                                    OC++ 没有为OC类增加C++的功能，也没有为C++类增加OC的功能。例如，你不能用OC语法调用C++对象，也不能为OC对象增加构造函数和析构函数，也不
+能将this和self互相替换使用。类的体系结构是独立的。C++类不能继承OC类，OC类也不能继承C++类。另外，多语言异常处理是不支持的。也就 是说，一个OC抛出的异常不能被C++代码捕获，反过来C++代码抛出的异常不能被OC代码捕获。
+                                </p>
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <!--End Content-->
+        <div style="text-align: right" class="gotoTop"><a href="javascript:scroll(0,0)"></a></div>
+        <!--Begin ProudctLinks-->
+        <div class="ms-pro-links">
+            <div class="grid-container clearfix">
+                <div class="cam-links">
+                    其它微软站点
+		<a href="http://www.microsoft.com/zh-cn/default.aspx">微软中国官方网站</a>
+                    <a href="http://www.microsoft.com/zh-cn/download/default.aspx?WT.mc_id=MSCOM_zh-cn_HP_Footer_downloads" target="_blank">微软中国下载中心</a>
+                    <a href="http://www.microsoftstore.com.cn?WT.mc_id=MSCOM_003" target="_blank">微软中国官方商城</a>
+                    <a href="http://www.microsoft.com/china/newsletter/" target="_blank">订阅电子期刊</a>
+                    <a href="https://sales.liveperson.net/hc/21661174/?cmd=file&file=visitorWantsToChat&site=21661174&byhref=1&SESSIONVAR!skill=APGC.PRC.ZH.CS.CON.PRESLS.GENERAL" target="_blank">联系微软销售代表</a>
+                    <a href="http://www.microsoft.com/zh-cn/sitemap.aspx" target="_blank">网站地图</a>
+                </div>
+            </div>
+        </div>
+        <!--End ProudctLinks-->
+        <!--Begin footer-->
+        <div class="footer">
+            <div class="grid-container">
+                <img src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-type-1x.png" alt="microsoft" class="logo">
+                <ul>
+                    <li><a href="http://www.miibeian.gov.cn/" title="">京ICP备09042378号-6</a></li>
+                    <li><a href="https://profile.microsoft.com/RegSysProfileCenter/default.aspx?lcid=2052" title="">个人信息中心</a></li>
+                    <li><a href="http://support.microsoft.com/contactus/?ws=support" title="">与我们联系</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkId=248681" title="">隐私权声明</a></li>
+                    <li><a href="http://go.microsoft.com/?linkid=4412892" title="">使用条款</a></li>
+                    <li><a href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Trademarks/EN-US.aspx" title="">商标</a></li>
+                    <li>&copy; 2013 Microsoft</li>
+                </ul>
+            </div>
+        </div>
+        <!--End footer-->
+        <!-- Begin MDA WEDCS -->
+        <script type="text/JavaScript">
+            var varSegmentation = 0;
+            var varClickTracking = 1;
+            var varCustomerTracking = 1;
+            var varAutoFirePV = 1;
+            var Route = "#";
+            var Ctrl = "#"
+            //document.write("<script type='text/javascript' src='" + window.location.protocol + "//c.microsoft.com/ms.js'><"+"/script>");
+        </script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="./assets/js/script.js"></script>
+        <script type="text/javascript" src="./js/siteSearch.js"></script>
+        <noscript>
+            <img alt="" width="1" height="1" src="http://c.microsoft.com/trans_pixel.aspx/" />
+        </noscript>
+        <!-- Begin MDA WEDCS -->
+    </div>
+</body>
+</html>

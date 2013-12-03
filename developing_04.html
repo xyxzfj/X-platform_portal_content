@@ -1,0 +1,791 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>IAP应用内支付</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="css/templete.css" type="text/css" media="all" />
+    <meta charset="UTF-8">
+</head>
+<body class="level-2">
+    <div class="wrapper">
+        <!--Begin header-->
+        <div class="header">
+            <div class="grid-container clearfix">
+                <div class="header-left">
+                    <img alt="Microsoft" src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-lg-1x.png" width="94" height="20">
+                    <h1>X-Platform</h1>
+                </div>
+                <div id="mscom-search" class="mscom-search" style="margin-top: 37px;">
+                    <div class="search-form">
+                        <form action="" id="search-form">
+                            <div class="input-wrapper">
+                                <label class="screen-reader-text" for="search-input">搜索 Microsoft.com</label>
+                                <input id="search-input" type="text" class="input-area" autocomplete="off">
+                            </div>
+                            <button class="search-submit" id="search-btn" type="submit">
+                                <img width="16" height="16" alt="Submit" src="http://i.s-microsoft.com/global/imagestore/PublishingImages/sprites/search-button-blue.png"></button>
+                        </form>
+                    </div>
+                    <div class="search-results-box" id="results">
+                        <div class="search-scope">
+                            <ul>
+                                <li class=""><a class="checked" search="microsoft" role="search">搜索 Microsoft.com</a></li>
+                                <li class=""><a search="internet" role="search">搜索互联网</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End header-->
+        <br />
+        <!--Begin Content-->
+        <div class="content">
+            <div class="wrapper">
+                <div class="wrapper-header">
+                    <div>
+                        <a href="index.html">
+                            <img src="./assets/image/banner_1.jpg"></a>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="nav">
+                        <div class="block article-nav-block">
+                            <h2>移动应用开发生命周期</h2>
+                            <div class="menu">
+                                <h3><a href="idea.html">计划<span>Idea/Planning</span></a></h3>
+                                <ul>
+                                    <li><a href="idea_01.html">平台总览</a></li>
+                                    <li><a href="idea_02.html">开发工具、开发环境和模拟器</a></li>
+                                    <li><a href="idea_03.html">应用结构和生命周期</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="design.html">设计<span>Design</span></a></h3>
+                                <ul>
+                                    <li><a href="design_01.html">UI Layout的设计</a></li>
+                                    <li><a href="design_02.html">UI的控件</a></li>
+                                    <li><a href="design_03.html">UI页面的控制和导航</a></li>
+                                    <li><a href="design_04.html">不同屏幕尺寸和分辨率的适配</a></li>
+                                    <li><a href="design_05.html">第三方SDK</a></li>
+                                    <li><a href="design_06.html">游戏开发</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu active">
+                                <h3><a href="developing.html">开发<span>Developing</span></a></h3>
+                                <ul>
+                                    <li><a href="developing_01.html">开发语言</a></li>
+                                    <li><a href="developing_02.html">Audio、Video Player应用的开发</a></li>
+                                    <li><a href="developing_03.html">General APIs Mapping</a></li>
+                                    <li><a href="developing_04.html">IAP应用内支付</a></li>
+                                    <li><a href="developing_05.html">LBS应用</a></li>
+                                    <li><a href="developing_06.html">LBS、镜头和传感器应用接口使用</a></li>
+                                    <li><a href="developing_07.html">Native Code（C和C++）支持</a></li>
+                                    <li><a href="developing_08.html">Push Notification</a></li>
+                                    <li><a href="developing_09.html">Sharing in Social Network</a></li>
+                                    <li><a href="developing_10.html">Source Code Control</a></li>
+                                    <li><a href="developing_11.html">UI上的Data Binding</a></li>
+                                    <li><a href="developing_12.html">Windows 8.1和WP 8 Sharing应用分享功能实现</a></li>
+                                    <li><a href="developing_13.html">多媒体</a></li>
+                                    <li><a href="developing_14.html">后台任务和多任务处理</a></li>
+                                    <li><a href="developing_15.html">获取后台服务器数据</a></li>
+                                    <li><a href="developing_16.html">浏览器控件WebView</a></li>
+                                    <li><a href="developing_17.html">数据库（SQLite）</a></li>
+                                    <li><a href="developing_18.html">数据网络和数据通讯</a></li>
+                                    <li><a href="developing_19.html">通话和短信功能</a></li>
+                                    <li><a href="developing_20.html">图形处理(Drawing & Animation)</a></li>
+                                    <li><a href="developing_21.html">文件系统和应用设置</a></li>
+                                    <li><a href="developing_22.html">应用间通信</a></li>
+                                    <li><a href="developing_23.html">支付方式</a></li>
+                                    <li><a href="developing_24.html">Windows 8.1应用外设开发</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="testing.html">测试<span>Testing</span></a></h3>
+                                <ul>
+                                    <li><a href="testing_01.html">Windows 8 and WP 8开发FAQ</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu last">
+                                <h3><a href="distribute.html">发布<span>Distribute</span></a></h3>
+                                <ul>
+                                    <li><a href="distribute_01.html">应用商店(发布和更新应用)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="block success-story-nav-block">
+                            <h2>成功案例</h2>
+                        </div>
+                        <div class="block others">
+                            <a href="sample_code.html" class="left">示例代码</a>
+                            <a href="http://msdn.microsoft.com/zh-cn/dn473954" class="right">教学视频</a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3 class="title">In App Purchase<span><a href="index.html">返回首页&gt;</a></span></h3>
+                        <div class="article-content">
+                            <div class="WordSection1">
+                                <p class="MsoToc1"><a href="#_Toc372534153">一、概述</a></p>
+                                <p class="MsoToc1"><a href="#_Toc372534154">二、产品类型</a></p>
+                                <p class="MsoToc1"><a href="#_Toc372534155">三、应用程序内购买所涉及的各方之间的关系</a></p>
+                                <p class="MsoToc1"><a href="#_Toc372534156">四、从应用商店获取付款</a></p>
+                                <p class="MsoToc1"><a href="#_Toc372534157">五、API 6</a></p>
+                                <p class="MsoToc1"><a href="#_Toc372534158">六、为应用添加应用内购买</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372534159">开发人员必须提供的内容</a></p>
+                                <p class="MsoToc2"><a href="#_Toc372534160">实现应用内购买</a></p>
+                                <p class="MsoToc1"><a href="#_Toc372534161">七、另请参见</a></p>
+                                <br />
+                            </div>
+                            <div class="WordSection2">
+                                <h1><a name="_Toc371170862"></a><a name="_Toc372534153">一、概述</a></h1>
+                                <p>应用程序内购买即在应用程序内部给用户提供购买产品的入口，可购买的产品可以是数字内容或服务，这些产品由开发者在自己的服务器上维护。应用程序内购买提供了一种让您利用您的应用获得收益的新方法。很多开发平台都提供了为应用程序添加应用程序内购买功能的接口，如Windows&nbsp;Phone&nbsp;8、Windows&nbsp;8、IOS和Android。在Windows&nbsp;Phone&nbsp;8和Windows&nbsp;8平台上的应用程序可使用Microsoft 提供的商业基础结构，包括用户可在全世界受支持的国家和区域使用的支付方式，确保程序拥有可靠的付款模式，并且提供一致的手机购物体验、安全地处理个人信息，所有这些将有助于为消费者达到有信心的购物体验。作为应用开发人员，您将使用熟悉的 API，并且拥有应用内产品管理工具和地理位置分散的服务，所有这些让您能够在应用中实现有意义的商务方案。</p>
+                                <p>对于在中国内地销售的Windows Phone 8 手机，已经可以使用人民币进行结算，同时也支持使用支付宝付款，并可以通过支付宝来支持更多付款渠道，极大地方便了用户。比如我们购买商店中的某个游戏，点击购买，我们会发现支付方式已经支持支付宝了，支付过程是单独弹出一个没有地址栏的内嵌浏览器窗口，消费者需要按照手机版支付宝的提示进行操作，付款成功后浏览器窗口关闭，微软也会发来电子邮件作为购买回单</p>
+                                <h1><a name="_Toc372534154"></a><a name="_Toc371170863"></a><a
+                                    name="_Toc369714609"></a><a name="_Toc369714448">二、产品类型</a></h1>
+                                <p>各平台应用内购买支持的产品类型基本相同，可分为两大类：消耗型和非消耗型。对两种类型产品的详解如下表所示：</p>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                <b>应用内产品类型</b>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                <b>说明</b>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                <b>示例</b>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                消耗型
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                是指一种可以购买、使用（消耗）和再度购买的产品。
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                1,000
+  单位金币
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                非消耗型
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                用户购买后由用户永远所有的产品。它没有被消耗。
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                游戏级别
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <h1><a name="_Toc372534155"></a><a name="_Toc371170864"></a><a
+                                    name="_Toc369714610"></a><a name="_Toc369714449">三、应用程序内购买所涉及的各方之间的关系</a></h1>
+                                <p>对于Windows&nbsp;Phone&nbsp;8和Windows&nbsp;8应用程序，开发者可以使用熟悉的API与Microsoft进行通信，Microsoft 将提供商业基础结构，包括用户可在全世界受支持的国家和区域使用的支付方式、应用内产品管理工具和地理位置分散的服务，利用这些服务，开发者可以轻松确保应用程序安全、可信，并且使用户具有一致的购买体验。下图展示了Windows&nbsp;Phone&nbsp;8和Windows&nbsp;8应用程序完成应用内购买的过程：</p>
+                                <p class="imgp">
+                                    <img
+                                        width="554" height="384" id="图片 3" src="images/developing_04/image001.png">
+                                </p>
+                                <p>对于Android应用程序，通过已安装在设备上的Google Play App与Google Play server进行通信。Android应用程序不直接和Google Play server进行通信，而是通过Google Play App传递请求和回复，下图展示了添加了应用内购买的应用利用Google Play App公布的API与Google Play App进行通信完成应用内购买的过程。</p>
+                                <p class="imgp">
+                                    <img
+                                        width="425" height="517" id="图片 1" src="images/developing_04/image002.png">
+                                </p>
+                                <p style='text-align: center'>&nbsp;</p>
+                                <p>
+                                    IOS应用程序利用Store
+Kit在App和App Store之间进行通信，下图展示了当应用内产品维护在服务器上时应用内购买的实现过程，当应用内产品已内置于应用程序内时将不需要步骤2和10-14。
+                                </p>
+                                <p class="imgp">
+                                    <img
+                                        width="519" height="662" id="图片 2" src="images/developing_04/image003.png">
+                                </p>
+                                <br />
+                                <h1><a name="_Toc372534156">四、从应用商店获取付款</a></h1>
+                                <p>
+                                    要利用电子资金转账收取通过 Windows Phone 商店 销售的应用程序的付款，您需要提供您的银行信息。您可以通过 开发人员中心 上的个人资料管理您的银行信息。请记住，您必须在其中一个支持付款的国家或地区拥有一个银行帐户。有关所支持的国家或地区的详细信息，请参见<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/help/jj215599(v=vs.105).aspx">地区信息</a>。
+                                </p>
+                                <p>
+                                    在大多数情况下，在您注册 Windows Phone 开发人员中心 时，您需要在线完成请求的税收表格。详细情况请参见<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/help/jj206722(v=vs.105).aspx">获取 Windows Phone 的付款</a>中关于“美国开发人员的税收要求”、“非美国开发人员的税收要求”和“对俄罗斯开发人员的特殊要求”。
+                                </p>
+                                <p>
+                                    对于付费应用所获得的收益，开发者需要与微软进行分成，具体分成比例视国家与地区不同略有差异，同时对于所获得的收益履行纳税义务主体也视国家地区不同而不同，对于绝大多数国家，由开发者履行纳税义务，也有一些国家由微软进行纳税。具体情况，请参见<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/help/jj206727(v=vs.105).aspx">付费应用的详细税收信息</a>。
+                                </p>
+                                <p>
+                                    在一些国家，Windows Phone 商店提供移动运营商结算作为支付方式。如果用户的移动运营商支持商店的此功能，则用户可以使用其移动帐户进行商店购买。详细信息，请参见<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/help/jj215902(v=vs.105).aspx">移动运营商结算</a>。
+                                </p>
+                                <h1><a name="_Toc372534157"></a><a name="_Toc371170865"></a><a
+                                    name="_Toc369714611"></a><a name="_Toc369714450">五、API</a></h1>
+                                <p>
+                                    对于Windows 8应用程序，<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/windows.applicationmodel.store.aspx">Windows.ApplicationModel.Store</a>&nbsp;命名空间包含可以用来实现应用中的应用内购买体验的类。您可以使用这些类对您的应用及其应用内产品的许可证状态进行检查和启用应用内购买，下表格列出了&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/windows.applicationmodel.store.aspx">Windows.ApplicationModel.Store</a>&nbsp;中的类：
+                                </p>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                <b>类</b>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                <b>说明</b>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                <a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/windows.applicationmodel.store.currentapp.aspx">CurrentApp</a>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                定义您可以用来获取有关当前应用的许可和列表信息并执行应用内购买的方法和属性。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                <a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/windows.applicationmodel.store.licenseinformation.aspx">LicenseInformation</a>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                列出用户所拥有的产品的所有许可证。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                <a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/windows.applicationmodel.store.listinginformation.aspx">ListingInformation</a>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                列出用户在其所在国家/地区可以从应用中购买的 商店 产品。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                <a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/windows.applicationmodel.store.productlicense.aspx">ProductLicense</a>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                表明用户是否拥有某种具体的应用内产品。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                <a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/windows.applicationmodel.store.productlisting.aspx">ProductListing</a>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p style='margin-top: 0cm; margin-right: 7.5pt; margin-bottom: 0cm; margin-left: 7.5pt; margin-bottom: .0001pt;'>
+                                                描述信息，包括用户可以在应用中购买的应用内产品的本地化定价、图标、标题和说明。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <p style='margin: 0cm; margin-bottom: .0001pt'>需要特别说明的是，该 API 的 Windows&nbsp;Phone&nbsp;8 版本在原来基础上为一些类型添加了其他方法和属性，如下表所示：</p>
+                                <div align="center">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <p>类</p>
+                                            </td>
+                                            <td>
+                                                <p>成员</p>
+                                            </td>
+                                            <td>
+                                                <p>说明</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>
+                                                    <a
+                                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/windows.applicationmodel.store.currentapp.aspx">CurrentApp</a>
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    LoadListingInformationByProductIdsAsync(ListingInformation
+  productIds)
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>为匹配任一指定的产品 ID 的应用内产品异步加载产品列表信息。指定一个空 ID 列表返回所有应用内产品的产品列表信息。</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>
+                                                    <a
+                                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/windows.applicationmodel.store.currentapp.aspx">CurrentApp</a>
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    LoadListingInformationByKeywordsAsync(ListingInformation
+  keywords)
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>为匹配所有指定的关键字的应用内产品异步加载产品列表信息。指定一个空关键字列表返回所有应用内产品的列表信息。</p>
+                                                <p>若为每一个关键字单独调用此 API，则可以为匹配一个或多个关键字的所有应用内产品加载列表信息。</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>
+                                                    <a
+                                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/windows.applicationmodel.store.currentapp.aspx">CurrentApp</a>
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    void
+  ReportProductFulfillment(string productId)
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>通知 商店，应用已经将所购产品交付给用户。在您使用此方法确认产品交付前，用户不能再次购买相同的产品。这仅仅适用于可消耗型产品。</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>
+                                                    <a
+                                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/windows.applicationmodel.store.productlicense.aspx">ProductLicense</a>
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    bool
+  IsConsumable { get; }
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>获取关于具有此许可证的产品是否为可消耗型产品的信息。</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>
+                                                    <a
+                                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/windows.applicationmodel.store.productlisting.aspx">ProductListing</a>
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    string
+  Description { get; }
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>获取应用内产品的说明。</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>
+                                                    <a
+                                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/windows.applicationmodel.store.productlisting.aspx">ProductListing</a>
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    IEnumerable&lt;string&gt;
+  Keywords {get;}
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>获取该应用内产品的关键字列表。这些关键字可用于过滤产品列表。</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>
+                                                    <a
+                                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/windows.applicationmodel.store.productlisting.aspx">ProductListing</a>
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    ProductType
+  ProductType {get;}
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>获取应用内产品的类型。它可能是ProductType.Consumable或ProductType.Durable。</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>
+                                                    <a
+                                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/windows.applicationmodel.store.productlisting.aspx">ProductListing</a>
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    string
+  Tag {get;}
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>获取包含有关此应用内产品的自定义信息的标记字符串。</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>
+                                                    <a
+                                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/windows.applicationmodel.store.productlisting.aspx">ProductListing</a>
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    Uri
+  ImageUri { get; }
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>获取与此应用内产品关联的图像的 URI。</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <br />
+                                <p>
+                                    Android应用程序利用Google
+Play App暴露的API完成应用内购买功能，API列表如下：
+                                </p>
+                                <p>
+                                    <a
+                                        href="http://developer.android.com/google/play/billing/billing_reference.html#billing-codes">Server
+Response Codes</a>
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 11.25pt; margin-bottom: 3.75pt; margin-left: 0cm; background: #F9F9F9'>
+                                    <a
+                                        href="http://developer.android.com/google/play/billing/billing_reference.html#billing-interface">API
+Reference</a>
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 11.25pt; margin-bottom: 3.75pt; margin-left: 22.5pt; background: #F9F9F9'>
+                                    1.
+                            <a
+                                href="http://developer.android.com/google/play/billing/billing_reference.html#getSkuDetails">getSkuDetails()</a>
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 11.25pt; margin-bottom: 3.75pt; margin-left: 22.5pt; background: #F9F9F9'>
+                                    2.
+                            <a
+                                href="http://developer.android.com/google/play/billing/billing_reference.html#getBuyIntent">getBuyIntent()</a>
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 11.25pt; margin-bottom: 3.75pt; margin-left: 22.5pt; background: #F9F9F9'>
+                                    3.
+                            <a
+                                href="http://developer.android.com/google/play/billing/billing_reference.html#getPurchases">getPurchases()</a>
+                                </p>
+                                <p>在IOS平台上，Store Kit代表App和App Store之间进行通信。开发者可以使用Store Kit类库提供的如下API：</p>
+                                <p>Class References</p>
+                                <p style='margin-left: 30.0pt;'>
+                                    1.
+                            <a
+                                href="https://developer.apple.com/library/ios/documentation/StoreKit/Reference/SKDownload_Ref/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011851">SKDownload </a>
+                                </p>
+                                <p style='margin-left: 30.0pt;'>
+                                    2.
+                            <a
+                                href="https://developer.apple.com/library/ios/documentation/StoreKit/Reference/SKMutablePaymentRequest_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40008273">SKMutablePayment
+                            </a>
+                                </p>
+                                <p style='margin-left: 30.0pt;'>
+                                    3.
+                            <a
+                                href="https://developer.apple.com/library/ios/documentation/StoreKit/Reference/SKPaymentRequest_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40008255">SKPayment </a>
+                                </p>
+                                <p style='margin-left: 30.0pt;'>
+                                    4.
+                            <a
+                                href="https://developer.apple.com/library/ios/documentation/StoreKit/Reference/SKPaymentQueue_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40008257">SKPaymentQueue
+                            </a>
+                                </p>
+                                <p style='margin-left: 30.0pt;'>
+                                    5.
+                            <a
+                                href="https://developer.apple.com/library/ios/documentation/StoreKit/Reference/SKPaymentTransaction_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40008256">SKPaymentTransaction
+                            </a>
+                                </p>
+                                <p style='margin-left: 30.0pt;'>
+                                    6.
+                            <a
+                                href="https://developer.apple.com/library/ios/documentation/StoreKit/Reference/SKProduct_Reference/Reference/Reference.html#//apple_ref/doc/uid/TP40008414">SKProduct </a>
+                                </p>
+                                <p style='margin-left: 30.0pt;'>
+                                    7.
+                            <a
+                                href="https://developer.apple.com/library/ios/documentation/StoreKit/Reference/SKProductsRequest/Reference/Reference.html#//apple_ref/doc/uid/TP40008417">SKProductsRequest
+                            </a>
+                                </p>
+                                <p style='margin-left: 30.0pt;'>
+                                    8.
+                            <a
+                                href="https://developer.apple.com/library/ios/documentation/StoreKit/Reference/SKProductsResponse/Reference/Reference.html#//apple_ref/doc/uid/TP40008425">SKProductsResponse
+                            </a>
+                                </p>
+                                <p style='margin-left: 30.0pt;'>
+                                    9.
+                            <a
+                                href="https://developer.apple.com/library/ios/documentation/StoreKit/Reference/SKReceiptRefreshRequest_ClassRef/SKReceiptRefreshRequest.html#//apple_ref/doc/uid/TP40013355">SKReceiptRefreshRequest
+                            </a>
+                                </p>
+                                <p style='margin-left: 30.0pt;'>
+                                    10.&nbsp;
+                            <a
+                                href="https://developer.apple.com/library/ios/documentation/StoreKit/Reference/SKRequest/Reference/Reference.html#//apple_ref/doc/uid/TP40008415">SKRequest </a>
+                                </p>
+                                <p style='margin-left: 30.0pt;'>
+                                    11.&nbsp;
+                            <a
+                                href="https://developer.apple.com/library/ios/documentation/StoreKit/Reference/SKITunesProductViewController_Ref/SKStoreProductViewController.html#//apple_ref/doc/uid/TP40011852">SKStoreProductViewController
+                            </a>
+                                </p>
+                                <p>Protocol References</p>
+                                <p style='margin-left: 30.0pt;'>
+                                    12.&nbsp;
+                            <a
+                                href="https://developer.apple.com/library/ios/documentation/StoreKit/Reference/SKPaymentTransactionObserver_Protocol/Reference/Reference.html#//apple_ref/doc/uid/TP40008262">SKPaymentTransactionObserver
+                            </a>
+                                </p>
+                                <p style='margin-left: 30.0pt;'>
+                                    13.&nbsp;
+                            <a
+                                href="https://developer.apple.com/library/ios/documentation/StoreKit/Reference/SKProductsRequestDelegate/Reference/Reference.html#//apple_ref/doc/uid/TP40008418">SKProductsRequestDelegate
+                            </a>
+                                </p>
+                                <p style='margin-left: 30.0pt;'>
+                                    14.&nbsp;
+                            <a
+                                href="https://developer.apple.com/library/ios/documentation/StoreKit/Reference/SKRequestDelegate/Reference/Reference.html#//apple_ref/doc/uid/TP40008416">SKRequestDelegate
+                            </a>
+                                </p>
+                                <p style='margin-left: 30.0pt;'>
+                                    15.&nbsp;
+                            <a
+                                href="https://developer.apple.com/library/ios/documentation/StoreKit/Reference/SKITunesProductViewControllerDelegate_ProtocolRef/Reference/Reference.html#//apple_ref/doc/uid/TP40011952">SKStoreProductViewControllerDelegate
+                            </a>
+                                </p>
+                                <p>
+                                    Other
+References
+                                </p>
+                                <p style='margin-left: 30.0pt;'>
+                                    16.&nbsp;
+                            <a
+                                href="https://developer.apple.com/library/ios/documentation/StoreKit/Reference/StoreKitTypes/Reference/reference.html#//apple_ref/doc/uid/TP40008588">Store Kit
+Constants </a>
+                                </p>
+                                <p style='margin-left: 30.0pt;'>
+                                    17.&nbsp; <a
+                                        href="https://developer.apple.com/library/ios/documentation/StoreKit/Reference/StoreKit_Collection/RevisionHistory.html#//apple_ref/doc/uid/TP40008300-CH99-SW1">Revision&nbsp;History
+                                    </a>
+                                </p>
+                                <p>&nbsp;</p>
+                                <h1><a name="_Toc372534158"></a><a name="_Toc371170866"></a><a
+                                    name="_Toc369714614"></a><a name="_Toc369714453">六、为应用添加应用内购买</a></h1>
+                                <h2><a name="_Toc372534159"></a><a name="_Toc371170867"></a><a
+                                    name="_Toc369714615"></a><a name="_Toc369714454">开发人员必须提供的内容</a></h2>
+                                <p>在各平台为应用程序添加应用内购买功能，您都必须提供以下内容：</p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 21.0pt; margin-bottom: .0001pt;'>
+                                    ●&nbsp;
+可以在您的应用中出售的产品
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 21.0pt; margin-bottom: .0001pt;'>
+                                    ●&nbsp;
+清楚准确的产品信息
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 21.0pt; margin-bottom: .0001pt;'>
+                                    ●&nbsp;
+从您的应用内发起购买的能力，即“购买按钮”
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 21.0pt; margin-bottom: .0001pt;'>
+                                    ●&nbsp;
+产品交付和/或支持，又称为实现
+                                </p>
+                                <h2><a name="_Toc372534160"></a><a name="_Toc371170868"></a><a
+                                    name="_Toc369714616"></a><a name="_Toc369714455">实现应用内购买</a></h2>
+                                <p>使用微软提供的API，您可以为您的应用程序启用应用内购买功能，启用步骤如下：</p>
+                                <p>1: 为你的应用初始化许可证信息</p>
+                                <p>
+                                    当应用在执行初始化时，请通过初始化&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.applicationmodel.store.currentapp.aspx">CurrentApp</a>&nbsp;或&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.applicationmodel.store.currentappsimulator.aspx">CurrentAppSimulator</a>&nbsp;获取应用的&nbsp;<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.applicationmodel.store.licenseinformation.aspx">LicenseInformation</a>&nbsp;对象，以启用该应用的应用内购买
+                                </p>
+                                <p>2: 向应用中添加应用内付费内容</p>
+                                <p>针对你希望通过应用内购买提供的每项功能，创建一个应用内付费内容并将它添加到你的应用中。值得注意的是，向 Windows 应用商店提交你的应用之前，必须将你希望呈现给客户的所有应用内付费内容添加到应用中。如果你稍后需要添加新的应用内付费内容，则必须更新你的应用并向 Windows 应用商店提交新版本</p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 21.0pt; margin-bottom: .0001pt;'>
+                                    <strong>`</strong><strong>创建应用内付费内容标记，</strong>此标记是一个字符串，在你的应用和 Windows 应用商店中定义和使用它来标识特定的应用内付费内容
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 21.0pt; margin-bottom: .0001pt;'>
+                                    ●你必须将与应用内付费内容关联的每个功能的代码放在条件块中，从而测试以查看客户是否有使用该功能的许可证
+                                </p>
+                                <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 21.0pt; margin-bottom: .0001pt;'>
+                                    ●你的应用还必需为客户提供一种方式来购买应用内付费内容提供的产品或功能。客户无法以购买完整应用的方式通过 Windows 应用商店来购买上述内容
+                                </p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>3: 更改测试代码以达到最后要求</p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>
+                                    在应用的代码中将对&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.applicationmodel.store.currentappsimulator.aspx">CurrentAppSimulator</a>&nbsp;的每个引用更改为&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.applicationmodel.store.currentapp.aspx">CurrentApp</a>
+                                </p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>4: 在 Windows 应用商店中配置应用内付费内容</p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>将你的应用提交到应用商店之前，将每个应用内付费内容添加到“提交应用”工作流中的“服务”页面。这是你指定应用内付费内容的标记、价格和功能生存时间的位置</p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt;'>&nbsp;5: 在 Windows 应用商店中描述应用内付费内容</p>
+                                <p>
+                                    当你将应用包上载到应用商店后，可以在<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/br230835.aspx">提交你的应用</a>时，在“描述”页上输入每个应用内付费内容的描述。如果你的应用支持多种语言，则必须以你的应用支持的每种语言描述每个应用内付费内容
+                                </p>
+                                <p>
+                                    Android和IOS应用内购买实现的详细步骤参见<a
+                                        href="http://developer.android.com/google/play/billing/billing_integrate.html">Android</a>和<a
+                                            href="https://developer.apple.com/library/ios/technotes/tn2259/_index.html">IOS</a>
+                                </p>
+                                <h1><a name="_Toc372534161"></a><a name="_Toc371170869"></a><a
+                                    name="_Toc369714617"></a><a name="_Toc369714456">七、另请参见</a></h1>
+                                <p>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh924350.aspx"
+                                        title="客户的应用内购买体验">客户的应用内购买体验</a>
+                                </p>
+                                <p>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh967783.aspx"
+                                        title="查看应用内购买">查看应用内购买</a>
+                                </p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt'>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.applicationmodel.store.aspx">Windows.ApplicationModel.Store</a>
+                                </p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt'>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/jj206949(v=vs.105).aspx"
+                                        title="Windows Phone 8 的应用内购买">Windows Phone 8 的应用内购买</a>
+                                </p>
+                                <p style='margin: 0cm; margin-bottom: .0001pt'>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/jj206950(v=vs.105).aspx"
+                                        title="Windows Phone 8 的应用内购买 API 概述">Windows Phone 8 的应用内购买 API 概述</a>
+                                </p>
+                                <p>
+                                    <a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/jj681689(v=vs.105).aspx"
+                                        title="Windows Phone 8 的应用内购买测试">Windows Phone 8 的应用内购买测试</a>
+                                </p>
+                                <p>
+                                    <a
+                                        href="http://developer.android.com/google/play/billing/index.html">Google Play In-app
+Billing</a>
+                                </p>
+                                <p>
+                                    <a
+                                        href="https://developer.apple.com/in-app-purchase/">IOS
+In-App Purchase for Developers</a>
+                                </p>
+                                <p>&nbsp;</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <!--End Content-->
+        <div style="text-align: right" class="gotoTop"><a href="javascript:scroll(0,0)"></a></div>
+        <!--Begin ProudctLinks-->
+        <div class="ms-pro-links">
+            <div class="grid-container clearfix">
+                <div class="cam-links">
+                    其它微软站点
+		<a href="http://www.microsoft.com/zh-cn/default.aspx">微软中国官方网站</a>
+                    <a href="http://www.microsoft.com/zh-cn/download/default.aspx?WT.mc_id=MSCOM_zh-cn_HP_Footer_downloads" target="_blank">微软中国下载中心</a>
+                    <a href="http://www.microsoftstore.com.cn?WT.mc_id=MSCOM_003" target="_blank">微软中国官方商城</a>
+                    <a href="http://www.microsoft.com/china/newsletter/" target="_blank">订阅电子期刊</a>
+                    <a href="https://sales.liveperson.net/hc/21661174/?cmd=file&file=visitorWantsToChat&site=21661174&byhref=1&SESSIONVAR!skill=APGC.PRC.ZH.CS.CON.PRESLS.GENERAL" target="_blank">联系微软销售代表</a>
+                    <a href="http://www.microsoft.com/zh-cn/sitemap.aspx" target="_blank">网站地图</a>
+                </div>
+            </div>
+        </div>
+        <!--End ProudctLinks-->
+        <!--Begin footer-->
+        <div class="footer">
+            <div class="grid-container">
+                <img src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-type-1x.png" alt="microsoft" class="logo">
+                <ul>
+                    <li><a href="http://www.miibeian.gov.cn/" title="">京ICP备09042378号-6</a></li>
+                    <li><a href="https://profile.microsoft.com/RegSysProfileCenter/default.aspx?lcid=2052" title="">个人信息中心</a></li>
+                    <li><a href="http://support.microsoft.com/contactus/?ws=support" title="">与我们联系</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkId=248681" title="">隐私权声明</a></li>
+                    <li><a href="http://go.microsoft.com/?linkid=4412892" title="">使用条款</a></li>
+                    <li><a href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Trademarks/EN-US.aspx" title="">商标</a></li>
+                    <li>&copy; 2013 Microsoft</li>
+                </ul>
+            </div>
+        </div>
+        <!--End footer-->
+        <!-- Begin MDA WEDCS -->
+        <script type="text/JavaScript">
+            var varSegmentation = 0;
+            var varClickTracking = 1;
+            var varCustomerTracking = 1;
+            var varAutoFirePV = 1;
+            var Route = "#";
+            var Ctrl = "#"
+            //document.write("<script type='text/javascript' src='" + window.location.protocol + "//c.microsoft.com/ms.js'><"+"/script>");
+        </script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="./assets/js/script.js"></script>
+        <script type="text/javascript" src="./js/siteSearch.js"></script>
+        <noscript>
+            <img alt="" width="1" height="1" src="http://c.microsoft.com/trans_pixel.aspx/" /></noscript>
+        <!-- Begin MDA WEDCS -->
+    </div>
+</body>
+</html>

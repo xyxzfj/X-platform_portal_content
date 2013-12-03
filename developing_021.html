@@ -1,0 +1,888 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Audio、Video Player应用的开发: Audio、Video Player（Typical app migration ）</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="css/templete.css" type="text/css" media="all" />
+    <meta charset="UTF-8">
+</head>
+<body class="level-2">
+    <div class="wrapper">
+        <!--Begin header-->
+        <div class="header">
+            <div class="grid-container clearfix">
+                <div class="header-left">
+                    <img alt="Microsoft" src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-lg-1x.png" width="94" height="20">
+                    <h1>X-Platform</h1>
+                </div>
+                <div id="mscom-search" class="mscom-search" style="margin-top: 37px;">
+                    <div class="search-form">
+                        <form action="" id="search-form">
+                            <div class="input-wrapper">
+                                <label class="screen-reader-text" for="search-input">搜索 Microsoft.com</label>
+                                <input id="search-input" type="text" class="input-area" autocomplete="off">
+                            </div>
+                            <button class="search-submit" id="search-btn" type="submit">
+                                <img width="16" height="16" alt="Submit" src="http://i.s-microsoft.com/global/imagestore/PublishingImages/sprites/search-button-blue.png"></button>
+                        </form>
+                    </div>
+                    <div class="search-results-box" id="results">
+                        <div class="search-scope">
+                            <ul>
+                                <li class=""><a class="checked" search="microsoft" role="search">搜索 Microsoft.com</a></li>
+                                <li class=""><a search="internet" role="search">搜索互联网</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End header-->
+        <br />
+        <!--Begin Content-->
+        <div class="content">
+            <div class="wrapper">
+                <div class="wrapper-header">
+                    <div>
+                        <a href="index.html">
+                            <img src="./assets/image/banner_1.jpg"></a>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="nav">
+                        <div class="block article-nav-block">
+                            <h2>移动应用开发生命周期</h2>
+                            <div class="menu">
+                                <h3><a href="idea.html">计划<span>Idea/Planning</span></a></h3>
+                                <ul>
+                                    <li><a href="idea_01.html">平台总览</a></li>
+                                    <li><a href="idea_02.html">开发工具、开发环境和模拟器</a></li>
+                                    <li><a href="idea_03.html">应用结构和生命周期</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="design.html">设计<span>Design</span></a></h3>
+                                <ul>
+                                    <li><a href="design_01.html">UI Layout的设计</a></li>
+                                    <li><a href="design_02.html">UI的控件</a></li>
+                                    <li><a href="design_03.html">UI页面的控制和导航</a></li>
+                                    <li><a href="design_04.html">不同屏幕尺寸和分辨率的适配</a></li>
+                                    <li><a href="design_05.html">第三方SDK</a></li>
+                                    <li><a href="design_06.html">游戏开发</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu active">
+                                <h3><a href="developing.html">开发<span>Developing</span></a></h3>
+                                <ul>
+                                    <li><a href="developing_01.html">开发语言</a></li>
+                                    <li><a href="developing_02.html">Audio、Video Player应用的开发</a></li>
+                                    <li><a href="developing_03.html">General APIs Mapping</a></li>
+                                    <li><a href="developing_04.html">IAP应用内支付</a></li>
+                                    <li><a href="developing_05.html">LBS应用</a></li>
+                                    <li><a href="developing_06.html">LBS、镜头和传感器应用接口使用</a></li>
+                                    <li><a href="developing_07.html">Native Code（C和C++）支持</a></li>
+                                    <li><a href="developing_08.html">Push Notification</a></li>
+                                    <li><a href="developing_09.html">Sharing in Social Network</a></li>
+                                    <li><a href="developing_10.html">Source Code Control</a></li>
+                                    <li><a href="developing_11.html">UI上的Data Binding</a></li>
+                                    <li><a href="developing_12.html">Windows 8.1和WP 8 Sharing应用分享功能实现</a></li>
+                                    <li><a href="developing_13.html">多媒体</a></li>
+                                    <li><a href="developing_14.html">后台任务和多任务处理</a></li>
+                                    <li><a href="developing_15.html">获取后台服务器数据</a></li>
+                                    <li><a href="developing_16.html">浏览器控件WebView</a></li>
+                                    <li><a href="developing_17.html">数据库（SQLite）</a></li>
+                                    <li><a href="developing_18.html">数据网络和数据通讯</a></li>
+                                    <li><a href="developing_19.html">通话和短信功能</a></li>
+                                    <li><a href="developing_20.html">图形处理(Drawing & Animation)</a></li>
+                                    <li><a href="developing_21.html">文件系统和应用设置</a></li>
+                                    <li><a href="developing_22.html">应用间通信</a></li>
+                                    <li><a href="developing_23.html">支付方式</a></li>
+                                    <li><a href="developing_24.html">Windows 8.1应用外设开发</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h3><a href="testing.html">测试<span>Testing</span></a></h3>
+                                <ul>
+                                    <li><a href="testing_01.html">Windows 8 and WP 8开发FAQ</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu last">
+                                <h3><a href="distribute.html">发布<span>Distribute</span></a></h3>
+                                <ul>
+                                    <li><a href="distribute_01.html">应用商店(发布和更新应用)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="block success-story-nav-block">
+                            <h2>成功案例</h2>
+                        </div>
+                        <div class="block others">
+                            <a href="sample_code.html" class="left">示例代码</a>
+                            <a href="http://msdn.microsoft.com/zh-cn/dn473954" class="right">教学视频</a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="textlist">
+                            Audio、Video Player应用的开发<br />
+                            <ul>
+                                <li><a href="developing_02.html">Audio、Video Player（App design）</a>
+                                <li><a href="developing_021.html">●Audio、Video Player（Typical app migration ）</a>
+                            </ul>
+                        </div>
+                        <h3 class="title">Audio、Video Player（Typical app migration ）<span><a href="index.html">返回首页&gt;</a></span></h3>
+                        <div class="article-content">
+                            <p class="MsoToc1"><a href="#_Toc372096437">概述</a></p>
+                            <p class="MsoToc1"><a href="#_Toc372096438">实现音视频播放</a></p>
+                            <p class="MsoToc2"><a href="#_Toc372096439">Android中实现音视频播放</a></p>
+                            <p class="MsoToc2"><a href="#_Toc372096440">IOS中实现音视频播放</a></p>
+                            <p class="MsoToc2"><a href="#_Toc372096441">Windows phone 和windows应用商店应用中实现音频和视频播放</a></p>
+                            <p class="MsoToc1"><a href="#_Toc372096442">后台播放音频文件的实现</a></p>
+                            <p class="MsoToc2"><a href="#_Toc372096443">Android中的后台音频播放</a></p>
+                            <p class="MsoToc2"><a href="#_Toc372096444">IOS中的后台音频播放</a></p>
+                            <p class="MsoToc2"><a href="#_Toc372096445">Windows phone中实现后台播放</a></p>
+                            <p class="MsoToc2"><a href="#_Toc372096446">Windows应用商店应用中实现后台播放</a></p>
+                            <p class="MsoToc1"><a href="#_Toc372096447">另请参见</a></p>
+                            <p><b>&nbsp;</b></p>
+                            <h1><a name="_Toc372096437">概述</a></h1>
+                            <p>微软为Windows phone应用和windows应用商店应用开发人员提供了音视频文件播放的支持，通过以下内容您能够充分的了解如何为Windows phone应用和windows应用商店应用添加音视频播放功能。我们首先简单介绍android 和ios中音视频播放功能的实现，然后详细介绍了如何在windows phone和Windows平台上实现音视频播放。</p>
+                            <p>另外，后台播放音频文件是音视频播放应用中一项必不可少的功能，本文中同样介绍了windows phone和Windows平台上后台音频文件播放的实现。</p>
+                            <h1><a name="_Toc372096438">实现音视频播放</a></h1>
+                            <h2><a name="_Toc372096439">Android中实现音视频播放</a></h2>
+                            <p>由于播放文件的来源可能为网络，首先确保应用开启网络访问功能：</p>
+                            <textarea><uses-permission android:name="android.permission.INTERNET" /></textarea>
+                            <p>以下为播放存在应用程序的res/raw/目录下的文件的示例：</p>
+                            <pre><code>MediaPlayer mediaPlayer = MediaPlayer.create(context, R.raw.sound_file_1);
+
+mediaPlayer.start();</code></pre>
+                            <h2><a name="_Toc372096440">IOS中实现音视频播放</a></h2>
+                            <p>Ios开发中常用AVAudioPlayer播放音频文件，AVAudioPlayer使用方法如下：</p>
+                            <p class="MsoListParagraph" align="left" style='margin-left: 21.0pt; text-align: left; text-indent: -21.0pt; word-break: break-all'>
+                                <b>AVFoundation.framework</b><b>的添加</b>
+                            </p>
+                            <pre><code>#import <AVFoundation/AVFoundation.h></code></pre>
+                            <p class="MsoListParagraph" style='margin-left: 21.0pt; text-indent: -21.0pt'>
+                                <b>h</b><b>文件中AVAudioPlayer声明</b>
+                            </p>
+                            <pre><code>#import <AVFoundation/AVFoundation.h>
+
+@interface ViewController : UIViewController<UITableViewDataSource>{
+
+    AVAudioPlayer *audioPlayer;
+
+}</code></pre>
+                            <p class="MsoListParagraph" style='margin-left: 21.0pt; text-indent: -21.0pt'>
+                                <b>m</b><b>文件中AVAudioPlayer实现</b>
+                            </p>
+                            <pre><code>NSURL *url =  [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/Numb.mp3",[[NSBundle mainBundle]resourcePath]]];
+
+    NSError *error;
+
+    audioPlayer = [[AVAudioPlayer alloc]initWithContentsOfURL:url error:&error];
+
+    audioPlayer.numberOfLoops=-1;
+
+　　audioPlayer.currentTime =0;
+
+    audioPlayer.volume=0.5;
+
+    if(audioPlayer == nil){
+
+        NSLog(@"%@",[error description]);
+
+    }
+
+    else{
+
+[audioPlayer prepareToPlay];
+
+    }
+
+　　[audioPlayer play];
+
+　　//[audioPlayer pause];
+
+//[audioPlayer stop];</code></pre>
+                            <p>Ios开发中常用MPMoviePlayerController播放视频文件，MPMoviePlayerController使用方法如下：</p>
+                            <p class="MsoListParagraph" align="left" style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 12.0pt; margin-left: 21.0pt; text-align: left; text-indent: -21.0pt; word-break: break-all'>
+                                <b>MediaPlayer.framework</b><b>的添加</b>
+                            </p>
+                            <pre><code>#import <MediaPlayer/MediaPlayer.h></code></pre>
+                            <p class="MsoListParagraph" align="left" style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 12.0pt; margin-left: 21.0pt; text-align: left; text-indent: -21.0pt; word-break: break-all'>
+                                <b>h</b><b>文件中MPMoviePlayerController声明</b>
+                            </p>
+                            <pre><code>#import <MediaPlayer/MediaPlayer.h>
+
+@interface MPAVControllerTest : UIViewController{
+
+    MPMoviePlayerController *moviePlayer;
+
+}</code></pre>
+                            <p class="MsoListParagraph" align="left" style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 12.0pt; margin-left: 21.0pt; text-align: left; text-indent: -21.0pt; word-break: break-all'>
+                                <b>m</b><b>文件中MPMoviePlayerController实现</b>
+                            </p>
+                            <pre><code>NSString* path=[NSString stringWithFormat:@"%@/kenanhd491.mp4",[[NSBundle mainBundle]resourcePath]];
+
+    moviePlayer = [ [ MPMoviePlayerController alloc]initWithContentURL:[NSURL fileURLWithPath:path]];
+
+    moviePlayer.controlStyle = MPMovieControlStyleFullscreen;
+
+    moviePlayer.scalingMode = MPMovieScalingModeAspectFit;
+
+    [[moviePlayer view] setBounds:CGRectMake(0, 0, 320, 480)];
+
+    [[moviePlayer view] setCenter:CGPointMake([UIScreen mainScreen].bounds.size.width/2 , [UIScreen mainScreen].bounds.size.height/2)];
+
+    [[moviePlayer view] setTransform:CGAffineTransformMakeRotation(0)];
+
+    [self.view addSubview:moviePlayer.view];
+
+    [moviePlayer setFullscreen:YES animated:YES];
+
+    [ moviePlayer play ];
+
+    //[ moviePlayer stop ];
+
+    //[moviePlayer release];</code></pre>
+                            <h2><a name="_Toc372096441">Windows phone 和windows应用商店应用中实现音频和视频播放</a></h2>
+                            <p>Windows phone和windows应用商店应用都通过MediaElement实现音频和视频播放，虽然在两个平台上对MediaElement接口的支持少有不同，但使用方法大部分相同，此处介绍利用MediaElement实现播放的方法，并指出两平台不同之处。</p>
+                            <p>●步骤一：确保应用已开启网络访问功能</p>
+                            <p>由于要播放的音视频文件可能来自网络，所以首先确保应用具有访问网络的功能。在Windows phone中通过修改WMAppManifest.xml文件为应用程序添加访问网络功能。windows应用商店应用中开启网络访问功能，需要修改 Package.appmanifest 文件。</p>
+                            <p>●步骤二：创建一个 MediaElement 对象，并设置属性。</p>
+
+                            <p style='margin: 0cm; margin-bottom: .0001pt; text-align: justify; text-justify: inter-ideograph; line-height: 15.0pt'>
+                                首先，通过使用 XAML 创建一个&nbsp;<a
+                                    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.mediaelement.aspx">MediaElement</a>&nbsp;对象并将&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.mediaelement.source.aspx">Source</a>&nbsp;设置为指向某个音频或视频文件的统一资源标识符 (URI) 将媒体添加到你的应用。以下代码创建一个&nbsp;<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.mediaelement.aspx">MediaElement</a>，并将其&nbsp;<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.mediaelement.source.aspx">Source</a>&nbsp;属性设置为应用程序中附加的某个视频文件的 URI。当加载页面时，MediaElement开始播放。 要防止媒体立即启动，可以将&nbsp;<a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.mediaelement.autoplay.aspx">AutoPlay</a>&nbsp;属性设置为&nbsp;false：
+                            </p>
+                            <textarea><MediaElement x:Name="mediaSimple" 
+              Source="Videos/video1.mp4"
+              Width="400" AutoPlay="False"/></textarea>
+                            <pre style='text-align: justify; text-justify: inter-ideograph; line-height: 15.0pt'><b>注意：</b>在windows 8.1中提供了对内置传输控件的支持，可以通过将 AreTransportControlsEnabled属性设置为true来其用内置传输控件，代码如下：</pre>
+                            <textarea><MediaElement x:Name="mediaPlayer" 
+              Source="Videos/video1.mp4" 
+              Width="400" 
+              AutoPlay="False"
+              AreTransportControlsEnabled="True" /></textarea>
+                            <pre style='margin-left: 21.0pt; text-indent: -21.0pt; line-height: 15.0pt'>●<b>步骤三：为</b><a
+href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.mediaelement.aspx"><b>MediaElement</b></a><b>&nbsp;</b><b>对象添加监听事件，并添加控制播放的按钮</b></pre>
+                            <p>
+                                在创建MediaElement之后，添加多个&nbsp;<a
+                                    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.button.aspx"><strong>Button</strong></a>&nbsp;对象来控制媒体播放。<strong>MediaElement</strong>&nbsp;侦听<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.mediaelement.mediaopened.aspx"><strong>MediaOpened</strong></a>、<a
+                                            href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.mediaelement.mediaended.aspx"><strong>MediaEnded</strong></a>&nbsp;和&nbsp;<a
+                                                href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.mediaelement.mediafailed.aspx"><strong>MediaFailed</strong></a>&nbsp;事件。并且它将创建 UI 来处理&nbsp;<a
+                                                    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.mediaelement.play.aspx"><strong>Play</strong></a>、<a
+                                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.mediaelement.stop.aspx"><strong>Stop</strong></a>&nbsp;和&nbsp;<a
+                                                            href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.mediaelement.pause.aspx"><strong>Pause</strong></a>，xaml代码如下：
+                            </p>
+                            <textarea><StackPanel HorizontalAlignment="Center">
+    <MediaElement x:Name="media" 
+                  Source="Videos/Video1.mp4" 
+                  Width="300"
+                  AreTransportControlsEnabled="False"
+                  MediaFailed="Media_MediaFailed"
+                  MediaOpened="Media_MediaOpened"
+                  MediaEnded="Media_MediaEnded" />
+    
+    <StackPanel Orientation="Horizontal"
+                HorizontalAlignment="Center">
+        
+        <Button Content="Play" Click="Play_Click"/>
+        <Button Content="Pause" Click="Pause_Click"/>
+        <Button Content="Stop" Click="Stop_Click" />
+        
+    </StackPanel>
+</StackPanel></textarea>
+                            <p class="MsoListParagraph" align="left" style='margin-left: 21.0pt; text-align: left; text-indent: -21.0pt; line-height: 15.0pt'>
+                                <b>步骤四：定义</b><a
+                                    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.mediaelement.aspx"><b>MediaElement</b></a><b>&nbsp;</b><b>事件以及控制按钮的处理程序</b>
+                            </p>
+                            <p>在对应的.cs文件中定义以上各事件的处理函数，代码如下所示：</p>
+                            <pre><code>void Play_Click(object sender, RoutedEventArgs e)
+{
+    media.Play();
+}
+
+void Pause_Click(object sender, RoutedEventArgs e)
+{
+    if (media.CanPause)
+    {
+        media.Pause();
+    }
+}
+
+void Stop_Click(object sender, RoutedEventArgs e)
+{
+    media.Stop();
+}
+
+void Media_MediaFailed(object sender, ExceptionRoutedEventArgs e)
+{
+    // Handle failed media event
+}
+
+void Media_MediaOpened(object sender, RoutedEventArgs e)
+{
+    // Handle open media event
+}
+
+void Media_MediaEnded(object sender, RoutedEventArgs e)
+{
+    // Handle media ended event
+}</code></pre>
+                            <h1><a name="_Toc372096442">后台播放音频文件的实现</a></h1>
+                            <p>后台播放音频文件是应用中常见的功能，我们首先介绍了在android和ios中的实现，然后详细介绍如何在windows phone和windlws平台上实现该功能。</p>
+                            <h2><a name="_Toc372096443">Android中的后台音频播放</a></h2>
+                            <p>Android通过Service实现后台音频播放，与其他Service不同的是用户能够意识到该后台执行的Service存在，并有可能与其交互。Android通过将执行后台播放的Service转换为“前台任务”实现后台音频播放。如下展示了一个简单的示例：</p>
+                            <pre><code>String songName;
+// assign the song name to songName
+PendingIntent pi = PendingIntent.getActivity(getApplicationContext(), 0,
+                new Intent(getApplicationContext(), MainActivity.class),
+                PendingIntent.FLAG_UPDATE_CURRENT);
+Notification notification = new Notification();
+notification.tickerText = text;
+notification.icon = R.drawable.play0;
+notification.flags |= Notification.FLAG_ONGOING_EVENT;
+notification.setLatestEventInfo(getApplicationContext(), "MusicPlayerSample",
+                "Playing: " + songName, pi);
+startForeground(NOTIFICATION_ID, notification);</code></pre>
+                            <p>
+                                你应该保持后台音频播放服务为“前台服务”。当不再需要时刻通过设置<a
+                                    href="http://developer.android.com/reference/android/app/Service.html#stopForeground(boolean)">stopForeground()</a>方法并传入true参数来进行释放。
+                            </p>
+                            <h2><a name="_Toc372096444">IOS中的后台音频播放</a></h2>
+                            <p>如下简单介绍了在IOS中实现后台音频播放的方法：</p>
+                            <p>
+                                1. 在Info.plist中，添加&quot;Required
+background modes&quot;键，其值设置是“App plays
+audio&quot;&nbsp;&nbsp;
+                            </p>
+                            <p>&nbsp;2. 在播放器播放音乐的代码所在处，添加如下两段代码&nbsp; </p>
+                            <pre><code>//添加后台播放代码：  
+AVAudioSession *session = [AVAudioSession sharedInstance];     
+[session setActive:YES error:nil];     
+[session setCategory:AVAudioSessionCategoryPlayback error:nil];    
+
+//以及设置app支持接受远程控制事件代码
+[[UIApplication sharedApplication] beginReceivingRemoteControlEvents];  
+   
+//用下列代码播放音乐，测试后台播放  
+AVAudioPlayer *player = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];   
+[url release];   
+[player prepareToPlay];   
+[player setVolume:1];   
+player.numberOfLoops = -1; //设置音乐播放次数  -1为一直循环   
+[player play]; //播放</code></pre>
+                            <h2><a name="_Toc372096445">Windows phone中实现后台播放</a></h2>
+                            <p>若要播放后台音频，请在 Visual Studio 中使用 Windows&nbsp;Phone 的 Silverlight 项目模板创建一个<b>“Windows Phone 音频播放代理”</b>。然后，从您的应用程序中引用该后台代理。</p>
+                            <p class="MsoListParagraph" style='margin-left: 21.0pt; text-indent: -21.0pt'>
+                                <b>创建 Windows Phone 后台音频应用程序</b>
+                            </p>
+                            <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 36.0pt; margin-bottom: .0001pt; text-indent: -18.0pt; line-height: 13.5pt'>
+                                1.&nbsp;&nbsp;&nbsp;&nbsp;
+通过选择<b>“文件|新项目...”</b>菜单命令创建一个新项目。
+                            </p>
+                            <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 36.0pt; margin-bottom: .0001pt; text-indent: -18.0pt; line-height: 13.5pt'>
+                                2.&nbsp;&nbsp;&nbsp;&nbsp;
+将显示<b>“新建项目”</b>对话框。展开<b>“Visual C#”</b>模板，然后选择<b>“Silverlight for Windows Phone”</b>模板。
+                            </p>
+                            <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 36.0pt; margin-bottom: .0001pt; text-indent: -18.0pt; line-height: 13.5pt'>
+                                3.&nbsp;&nbsp;&nbsp;&nbsp;
+选择<b>“Windows Phone 应用程序”</b>模板。根据需要填写<b>“名称”</b>，然后单击<b>“确定”</b>。
+                            </p>
+                            <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 36.0pt; margin-bottom: .0001pt; text-indent: -18.0pt; line-height: 13.5pt'>
+                                4.&nbsp;&nbsp;&nbsp;&nbsp;
+选择&nbsp;<b>Windows Phone 8.0</b>&nbsp;作为目标版本，然后单击<b>“确定”</b>。
+                            </p>
+                            <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 36.0pt; margin-bottom: .0001pt; text-indent: -18.0pt; line-height: 13.5pt'>
+                                5.&nbsp;&nbsp;&nbsp;&nbsp;
+在<b>“解决方案资源管理器”</b>中，右键单击<b>“解决方案”</b>节点，然后选择<b>“添加 | 新项目...”</b>。
+                            </p>
+                            <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 36.0pt; margin-bottom: .0001pt; text-indent: -18.0pt; line-height: 13.5pt'>
+                                6.&nbsp;&nbsp;&nbsp;&nbsp;
+在<b>“添加新项目”</b>对话框中，单击<b>“Windows Phone 音频播放代理”</b>。
+                            </p>
+                            <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 36.0pt; margin-bottom: .0001pt; text-indent: -18.0pt; line-height: 13.5pt'>
+                                7.&nbsp;&nbsp;&nbsp;&nbsp;
+根据需要填写<b>“名称”</b>，然后单击<b>“确定”</b>。
+                            </p>
+                            <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 36.0pt; margin-bottom: .0001pt; text-indent: -18.0pt; line-height: 13.5pt'>
+                                8.&nbsp;&nbsp;&nbsp;&nbsp;
+现在，您的解决方案应该具有两个项目，即应用程序项目和后台代理项目。
+                            </p>
+                            <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 36.0pt; margin-bottom: .0001pt; text-indent: -18.0pt; line-height: 13.5pt'>
+                                9.&nbsp;&nbsp;&nbsp;&nbsp;
+在<b>“添加引用”</b>对话框中，单击<b>“项目”</b>标签。选择我们之前创建的后台代理，然后单击<b>“确定”</b>。
+                            </p>
+                            <p class="MsoListParagraph" style='margin-left: 21.0pt; text-indent: -21.0pt'>
+                                <b>添加音频文件</b>
+                            </p>
+                            <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 36.0pt; margin-bottom: .0001pt; text-indent: -18.0pt; line-height: 13.5pt'>
+                                1.&nbsp;&nbsp;&nbsp;&nbsp;
+在<b>“解决方案资源管理器”</b>中，右键单击应用程序项目，然后选择<b>“添加 | 新文件夹”</b>。将该文件夹命名为&nbsp;<b>Audio</b>。
+                            </p>
+                            <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 36.0pt; margin-bottom: .0001pt; text-indent: -18.0pt; line-height: 13.5pt'>
+                                2.&nbsp;&nbsp;&nbsp;&nbsp;
+右键单击您刚刚创建的 Audio 文件夹，然后从上下文菜单中选择<b>“添加 | 现有项...”</b>。
+                            </p>
+                            <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 36.0pt; margin-bottom: .0001pt; text-indent: -18.0pt; line-height: 13.5pt'>
+                                3.&nbsp;&nbsp;&nbsp;&nbsp;
+在<b>“添加现有项”</b>对话框中，导航到“%PUBLIC%\Music\Sample Music”（通常为
+C:\Users\Public\Music\Sample Music）并选择若干个音频文件。有关后台音频播放器支持的文件格式信息，请参阅<a
+    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/ff462087(v=vs.105).aspx">支持的 Windows Phone 媒体编解码器</a>。
+                            </p>
+                            <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 36.0pt; margin-bottom: .0001pt; text-indent: -18.0pt; line-height: 13.5pt'>
+                                4.&nbsp;&nbsp;&nbsp;&nbsp;
+单击<b>“添加”</b>按钮。
+                            </p>
+                            <p style='margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; margin-left: 36.0pt; margin-bottom: .0001pt; text-indent: -18.0pt; line-height: 13.5pt'>
+                                5.&nbsp;&nbsp;&nbsp;&nbsp;
+在<b>“解决方案资源管理器”</b>中，选择您刚刚在 Audio 目录中添加的所有音频文件。在<b>“属性”</b>窗格中，将<b>“复制到输出目录”</b>字段从“Do not copy”更改为“Copy if newer”。
+                            </p>
+                            <p class="MsoListParagraph" style='margin-left: 21.0pt; text-indent: -21.0pt'>
+                                <b>创建 UI</b>
+                            </p>
+                            <p>界面xaml代码如下所示：</p>
+                            <textarea><!--TitlePanel contains the name of the application and page title-->
+<StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+    <TextBlock x:Name="ApplicationTitle" Text="BACKGROUND AUDIO PLAYER" Style="{StaticResource PhoneTextNormalStyle}"/>
+    <TextBlock x:Name="PageTitle" Text="play a song" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+</StackPanel>
+
+<!--ContentPanel - place additional content here-->
+<Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+    <StackPanel Orientation="Horizontal" Width="420" Margin="18,40,18,0" VerticalAlignment="Top">
+        <Button Content="prev" x:Name="prevButton" Height="140" Width="140" Click="prevButton_Click"/>
+        <Button Content="play" x:Name="playButton" Height="140" Width="140" Click="playButton_Click"/>
+        <Button Content="next" x:Name="nextButton" Height="140" Width="140" Click="nextButton_Click"/>
+    </StackPanel>
+    <TextBlock x:Name="txtCurrentTrack" Height="75" HorizontalAlignment="Left" Margin="12,193,0,0" VerticalAlignment="Top" Width="438" TextWrapping="Wrap" />
+</Grid></textarea>
+                            <p>此xaml实现的界面如下图所示：</p>
+                            <p>
+                                <b>
+                                    <img border="0" width="224" height="378"
+                                        id="图片 3" src="images/developing_021/image001.png"></b>
+                            </p>
+                            <p class="MsoListParagraph" style='margin-left: 21.0pt; text-indent: -21.0pt'>
+                                <b>修改 UI 后面的代码</b>
+                            </p>
+                            <pre><code>using System.Windows.Navigation;
+using Microsoft.Phone.BackgroundAudio;</code></pre>
+                            <p>2.然后添加以下按钮单击事件处理程序代码：</p>
+                            <pre><code>private void prevButton_Click(object sender, RoutedEventArgs e)
+{
+    BackgroundAudioPlayer.Instance.SkipPrevious();
+}
+
+private void playButton_Click(object sender, RoutedEventArgs e)
+{
+    if (PlayState.Playing == BackgroundAudioPlayer.Instance.PlayerState)
+    {
+        BackgroundAudioPlayer.Instance.Pause();
+    }
+    else
+    {
+        BackgroundAudioPlayer.Instance.Play();
+    }
+}
+
+private void nextButton_Click(object sender, RoutedEventArgs e)
+{
+    BackgroundAudioPlayer.Instance.SkipNext();
+}</code></pre>
+                            <p>
+                                3.在&nbsp;<b>MainPage</b>&nbsp;类的构造函数中，添加&nbsp;<a
+                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.backgroundaudio.backgroundaudioplayer.playstatechanged(v=vs.105).aspx">PlayStateChanged</a>&nbsp;事件的事件处理程序：
+                            </p>
+                            <pre><code>BackgroundAudioPlayer.Instance.PlayStateChanged += new EventHandler(Instance_PlayStateChanged);</code></pre>
+                            <p>按照如下方式实现&nbsp;<b>Instance_PlayStateChanged</b>&nbsp;方法：</p>
+                            <pre><code>void Instance_PlayStateChanged(object sender, EventArgs e)
+{
+    switch (BackgroundAudioPlayer.Instance.PlayerState)
+    {
+      case PlayState.Playing:
+        playButton.Content = "pause";
+        break;
+
+      case PlayState.Paused:
+      case PlayState.Stopped:
+        playButton.Content = "play";
+        break;
+    }
+
+    if (null != BackgroundAudioPlayer.Instance.Track)
+    {
+      txtCurrentTrack.Text = BackgroundAudioPlayer.Instance.Track.Title +
+                             " by " +
+                             BackgroundAudioPlayer.Instance.Track.Artist;
+    }
+}</code></pre>
+                            <p>4.由于该应用设计为在后台播放音频，因此在播放音频时用户可能会返回到该应用。用户界面应该通过进行相应地更新以反映播放的当前状态以及当前正在播放的曲目来显示此内容。若要在加载应用时更新 UI，请通过向 MainPage.xaml.cs 的 MainPage 类中添加以下代码来重写&nbsp;<b>OnNavigatedTo</b>&nbsp;虚拟方法：</p>
+                            <pre><code>protected override void OnNavigatedTo(NavigationEventArgs e)
+{
+    if (PlayState.Playing == BackgroundAudioPlayer.Instance.PlayerState)
+    {
+        playButton.Content = "pause";
+        txtCurrentTrack.Text = BackgroundAudioPlayer.Instance.Track.Title +
+                         " by " +
+                         BackgroundAudioPlayer.Instance.Track.Artist;
+
+    }
+    else
+    {
+        playButton.Content = "play";
+        txtCurrentTrack.Text = "";
+    }
+}</code></pre>
+                            <p>
+                                5.由于<a
+                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.backgroundaudio.backgroundaudioplayer(v=vs.105).aspx">BackgroundAudioPlayer</a>&nbsp;只能播放独立存储或远程
+URI 中的文件。所以在&nbsp;<b>App</b>&nbsp;类中添加<b>CopyToIsolatedStorage</b>&nbsp;方法，确保<b>files</b>&nbsp;数组包含您添加到项目的音频文件的实际名称，并在&nbsp;<b>App</b>&nbsp;类的构造函数中添加对&nbsp;<b>CopyToIsolatedStorage</b>&nbsp;方法进行调用：
+                            </p>
+                            <pre><code>using System.IO.IsolatedStorage;
+using System.Windows.Resources;
+
+private void CopyToIsolatedStorage()
+{
+    using (IsolatedStorageFile storage = IsolatedStorageFile.GetUserStoreForApplication())
+    {
+        string[] files = new string[] { "Kalimba.mp3", "Maid with the Flaxen Hair.mp3", "Sleep Away.mp3" };
+
+        foreach (var _fileName in files)
+        {
+            if (!storage.FileExists(_fileName))
+            {
+                string _filePath = "Audio/" + _fileName;
+                StreamResourceInfo resource = Application.GetResourceStream(new Uri(_filePath, UriKind.Relative));
+
+                using (IsolatedStorageFileStream file = storage.CreateFile(_fileName))
+                {
+                    int chunkSize = 4096;
+                    byte[] bytes = new byte[chunkSize];
+                    int byteCount;
+
+                    while ((byteCount = resource.Stream.Read(bytes, 0, chunkSize)) > 0)
+                    {
+                        file.Write(bytes, 0, byteCount);
+                    }
+                }
+            }
+        }
+    }
+}</code></pre>
+                            <p class="MsoListParagraph" style='margin-left: 21.0pt; text-indent: -21.0pt'>
+                                <b>实现音频播放器代理</b>
+                            </p>
+                            <p>
+                                <a
+                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.backgroundaudio.audioplayeragent(v=vs.105).aspx">AudioPlayerAgent</a>&nbsp;是当用户切换到其他前台应用时继续在后台运行的应用的一部分，为实现后台播放，还必须实现音频播放代理。
+                            </p>
+                            <p>1.在&nbsp;<b>AudioPlayer.cs</b>&nbsp;文件的&nbsp;<b>AudioPlayer</b>&nbsp;类中，在类作用域级别声明一个静态整数。该变量保留当前曲目编号：</p>
+                            <pre><code>static int currentTrackNumber = 0;</code></pre>
+                            <p>2.向 AudioPlayer.cs 的&nbsp;<b>AudioPlayer</b>&nbsp;类中添加以下代码创建曲目的静态列表：</p>
+                            <pre><code>private static List<AudioTrack> _playList = new List<AudioTrack>
+{
+    new AudioTrack(new Uri("Kalimba.mp3", UriKind.Relative), 
+                    "Kalimba", 
+                    "Mr. Scruff", 
+                    "Ninja Tuna", 
+                    null),
+
+    new AudioTrack(new Uri("Maid with the Flaxen Hair.mp3", UriKind.Relative), 
+                    "Maid with the Flaxen Hair", 
+                    "Richard Stoltzman", 
+                    "Fine Music, Vol. 1", 
+                    null),
+
+    new AudioTrack(new Uri("Sleep Away.mp3", UriKind.Relative), 
+                    "Sleep Away", 
+                    "Bob Acri", 
+                    "Bob Acri", 
+                    null),
+
+    // A remote URI
+    new AudioTrack(new Uri("http://traffic.libsyn.com/wpradio/WPRadio_29.mp3", UriKind.Absolute), 
+                    "Episode 29", 
+                    "Windows Phone Radio", 
+                    "Windows Phone Radio Podcast", 
+                    null)
+};</code></pre>
+                            <p>3.若要处理诸如单击<b>“播放”</b>、<b>“下一个”</b>和<b>“上一个”</b>按钮之类的用户操作，请向 AudioPlayer.cs 的<b>AudioPlayer</b>&nbsp;类中添加以下三个方法：</p>
+                            <pre><code>private void PlayNextTrack(BackgroundAudioPlayer player)
+{
+    if (++currentTrackNumber >= _playList.Count)
+    {
+        currentTrackNumber = 0;
+    }
+
+    PlayTrack(player);
+}
+
+private void PlayPreviousTrack(BackgroundAudioPlayer player)
+{
+    if (--currentTrackNumber < 0)
+    {
+        currentTrackNumber = _playList.Count - 1;
+    }
+
+    PlayTrack(player);
+}
+
+private void PlayTrack(BackgroundAudioPlayer player)
+{
+    // Sets the track to play. When the TrackReady state is received, 
+    // playback begins from the OnPlayStateChanged handler.
+    player.Track = _playList[currentTrackNumber];
+}</code></pre>
+                            <p>4.若要处理播放状态更改，请向&nbsp;<b>OnPlayStateChanged</b>&nbsp;方法中添加以下&nbsp;<b>switch</b>&nbsp;语句，放在对<b>NotifyComplete</b>&nbsp;的调用之前：</p>
+                            <pre><code>switch (playState)
+{
+  case PlayState.TrackReady:
+    // The track to play is set in the PlayTrack method.
+    player.Play();
+    break;
+
+  case PlayState.TrackEnded:
+    PlayNextTrack(player);
+    break;
+}</code></pre>
+                            <p>5.若要处理用户操作，请向&nbsp;<b>OnUserAction</b>&nbsp;方法中添加以下&nbsp;<b>switch</b>&nbsp;语句，放在对&nbsp;<b>NotifyComplete</b>&nbsp;的调用之前：</p>
+                            <pre><code>switch (action)
+{
+  case UserAction.Play:
+    PlayTrack(player);
+    break;
+
+  case UserAction.Pause:
+    player.Pause();
+    break;
+
+  case UserAction.SkipPrevious:
+    PlayPreviousTrack(player);
+    break;
+
+  case UserAction.SkipNext:
+    PlayNextTrack(player);
+    break;
+}</code></pre>
+                            <h2><a name="_Toc372096446">Windows应用商店应用中实现后台播放</a></h2>
+                            <p>在windows应用商店应用开发中要实现后台播放功能，您需要完成以下步骤：</p>
+                            <p class="MsoListParagraph" align="left" style='margin-left: 21.0pt; text-align: left; text-indent: -21.0pt; line-height: 15.0pt'>
+                                <b>必须显式声明你的应用将执行后台任务</b>
+                            </p>
+                            <p class="MsoListParagraph" align="left" style='margin-left: 42.0pt; text-align: left; text-indent: -21.0pt; line-height: 15.0pt'>
+                                1、&nbsp;
+在 Microsoft Visual Studio 中打开应用的项目文件。
+                            </p>
+                            <p class="MsoListParagraph" align="left" style='margin-left: 42.0pt; text-align: left; text-indent: -21.0pt; line-height: 15.0pt'>
+                                2、&nbsp;
+在解决方案资源管理器中双击 Package.appmanifest 文件以打开&nbsp;<b>Package.appmanifest</b>&nbsp;对话框。
+                            </p>
+                            <p class="MsoListParagraph" align="left" style='margin-left: 42.0pt; text-align: left; text-indent: -21.0pt; line-height: 15.0pt'>
+                                3、&nbsp;
+单击“声明”&nbsp;选项卡，然后从“可用声明”&nbsp;下拉框中选择“后台任务”。
+                            </p>
+                            <p class="MsoListParagraph" align="left" style='margin-left: 42.0pt; text-align: left; text-indent: -21.0pt; line-height: 15.0pt'>
+                                4、&nbsp;
+单击“添加”，然后选中“音频”复选框。
+                            </p>
+                            <p class="MsoListParagraph" align="left" style='margin-left: 42.0pt; text-align: left; text-indent: -21.0pt; line-height: 15.0pt'>
+                                <strong>5、&nbsp; </strong>指定入口点。在大多数情况下，如果你的项目被命名为&nbsp;<strong>Foo</strong>，则你将指定&nbsp;<strong>Foo.App</strong>
+                            </p>
+                            <p class="MsoListParagraph" align="left" style='margin-left: 21.0pt; text-align: left; text-indent: -21.0pt; line-height: 15.0pt'>
+                                <b>创建MediaElement</b>
+                            </p>
+                            <p>
+                                创建一个&nbsp;<a
+                                    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.mediaelement.aspx"><strong>MediaElement</strong></a>&nbsp;并将&nbsp;<a
+                                        href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.mediaelement.audiocategory.aspx"><strong>AudioCategory</strong></a>&nbsp;设置为&nbsp;<em>BackgroundCapableMedia</em><textarea><MediaElement Name="media" 
+              AudioCategory="BackgroundCapableMedia" 
+              Source="Somesong.mp3" /></textarea>
+                            <p class="MsoListParagraph" align="left" style='margin-left: 21.0pt; text-align: left; text-indent: -21.0pt; line-height: 15.0pt'>
+                                <b>设置<a
+                                    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.media.systemmediatransportcontrols.aspx">SystemMediaTransportControls</a></b>
+                            </p>
+                            <p>1.为MediaElement添加CurrentStateChanged事件</p>
+                            <textarea><MediaElement x:Name="musicPlayer" 
+          Source="Music/music1.mp3"
+          AudioCategory="BackgroundCapableMedia"
+          CurrentStateChanged="MusicPlayer_CurrentStateChanged" /></textarea>
+                            <p>2.在后台代码中设置SystemMediaTransportControls，并添加MusicPlayer_CurrentStateChanged方法：</p>
+                            <pre><code>SystemMediaTransportControls systemControls;
+
+void InitializeTransportControls()
+{
+    // Hook up app to system transport controls.
+    systemControls = SystemMediaTransportControls.GetForCurrentView();
+    systemControls.ButtonPressed += SystemControls_ButtonPressed;
+
+    // Register to handle the following system transpot control buttons.
+    systemControls.IsPlayEnabled = true;
+    systemControls.IsPauseEnabled = true;
+}
+
+void MusicPlayer_CurrentStateChanged(object sender, RoutedEventArgs e)
+{
+    switch (musicPlayer.CurrentState)
+    {
+        case MediaElementState.Playing:
+            systemControls.PlaybackStatus = MediaPlaybackStatus.Playing;
+            break;
+        case MediaElementState.Paused:
+            systemControls.PlaybackStatus = MediaPlaybackStatus.Paused;
+            break;
+        case MediaElementState.Stopped:
+            systemControls.PlaybackStatus = MediaPlaybackStatus.Stopped;
+            break;
+        case MediaElementState.Closed:
+            systemControls.PlaybackStatus = MediaPlaybackStatus.Closed;
+            break;
+        default:
+            break;
+    }
+}</code></pre>
+                            <p>
+                                3.处理&nbsp;<a
+                                    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.media.systemmediatransportcontrols.buttonpressed.aspx"><b>SystemMediaTransportControls.ButtonPressed</b></a>&nbsp;事件
+                            </p>
+                            <pre><code>void SystemControls_ButtonPressed(SystemMediaTransportControls sender,
+    SystemMediaTransportControlsButtonPressedEventArgs args)
+{
+    switch (args.Button)
+    {
+        case SystemMediaTransportControlsButton.Play:
+            PlayMedia();
+            break;
+        case SystemMediaTransportControlsButton.Pause:
+            PauseMedia();
+            break;
+        default:
+            break;
+    }
+}</code></pre>
+                            <p>
+                                4.创建两个帮助程序方法来播放和暂停&nbsp;<a
+                                    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.ui.xaml.controls.mediaelement.aspx"><b>MediaElement</b></a>
+                            </p>
+                            <pre><code>async void PlayMedia()
+{
+    await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+    {
+        musicPlayer.Play();
+    });
+}
+
+async void PauseMedia()
+{
+    await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+    {
+        musicPlayer.Pause();
+    });
+}</code></pre>
+                            <h1><a name="_Toc372096447">另请参见</a></h1>
+                            <p>
+                                <a
+                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/jj207066(v=vs.105).aspx"
+                                    title="快速入门：Windows Phone 的音频和视频">快速入门：Windows Phone 的音频和视频</a>
+                            </p>
+                            <p>
+                                <a
+                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/hh202978(v=vs.105).aspx"
+                                    title="如何播放 Windows Phone 的后台音频">如何播放 Windows Phone 的后台音频</a>
+                            </p>
+                            <p>
+                                Windows应用商店应用开发<a
+                                    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/hh465160.aspx"
+                                    title="快速入门：视频和音频">快速入门：视频和音频</a>
+                            </p>
+                            <p>
+                                Windows应用商店应用<a
+                                    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/jj841209.aspx"
+                                    title="如何在后台播放音频">如何在后台播放音频</a>
+                            </p>
+                            <p>
+                                <a
+                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.backgroundaudio.audioplayeragent(v=vs.105).aspx">AudioPlayerAgent</a>
+                            </p>
+                            <p>
+                                <a
+                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.backgroundaudio.audiostreamingagent(v=vs.105).aspx">AudioStreamingAgent</a>
+                            </p>
+                            <p>
+                                <a
+                                    href="http://msdn.microsoft.com/zh-cn/library/windowsphone/develop/microsoft.phone.backgroundaudio.backgroundaudioplayer(v=vs.105).aspx">BackgroundAudioPlayer</a>
+                            </p>
+                            <p>
+                                &nbsp;<a
+                                    href="http://msdn.microsoft.com/zh-cn/library/windows/apps/windows.media.systemmediatransportcontrols.aspx">SystemMediaTransportControl</a>
+                            </p>
+                        </div>
+                        <div class="textlist">
+                            另一篇文章：<br />
+                            <ul>
+                                <li><a href="developing_02.html">Audio、Video Player（App design）</a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <!--End Content-->
+        <div style="text-align: right" class="gotoTop"><a href="javascript:scroll(0,0)"></a></div>
+        <!--Begin ProudctLinks-->
+        <div class="ms-pro-links">
+            <div class="grid-container clearfix">
+                <div class="cam-links">
+                    其它微软站点
+		<a href="http://www.microsoft.com/zh-cn/default.aspx">微软中国官方网站</a>
+                    <a href="http://www.microsoft.com/zh-cn/download/default.aspx?WT.mc_id=MSCOM_zh-cn_HP_Footer_downloads" target="_blank">微软中国下载中心</a>
+                    <a href="http://www.microsoftstore.com.cn?WT.mc_id=MSCOM_003" target="_blank">微软中国官方商城</a>
+                    <a href="http://www.microsoft.com/china/newsletter/" target="_blank">订阅电子期刊</a>
+                    <a href="https://sales.liveperson.net/hc/21661174/?cmd=file&file=visitorWantsToChat&site=21661174&byhref=1&SESSIONVAR!skill=APGC.PRC.ZH.CS.CON.PRESLS.GENERAL" target="_blank">联系微软销售代表</a>
+                    <a href="http://www.microsoft.com/zh-cn/sitemap.aspx" target="_blank">网站地图</a>
+                </div>
+            </div>
+        </div>
+        <!--End ProudctLinks-->
+        <!--Begin footer-->
+        <div class="footer">
+            <div class="grid-container">
+                <img src="http://i.s-microsoft.com/global/ImageStore/PublishingImages/logos/hp/logo-type-1x.png" alt="microsoft" class="logo">
+                <ul>
+                    <li><a href="http://www.miibeian.gov.cn/" title="">京ICP备09042378号-6</a></li>
+                    <li><a href="https://profile.microsoft.com/RegSysProfileCenter/default.aspx?lcid=2052" title="">个人信息中心</a></li>
+                    <li><a href="http://support.microsoft.com/contactus/?ws=support" title="">与我们联系</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkId=248681" title="">隐私权声明</a></li>
+                    <li><a href="http://go.microsoft.com/?linkid=4412892" title="">使用条款</a></li>
+                    <li><a href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Trademarks/EN-US.aspx" title="">商标</a></li>
+                    <li>&copy; 2013 Microsoft</li>
+                </ul>
+            </div>
+        </div>
+        <!--End footer-->
+        <!-- Begin MDA WEDCS -->
+        <script type="text/JavaScript">
+            var varSegmentation = 0;
+            var varClickTracking = 1;
+            var varCustomerTracking = 1;
+            var varAutoFirePV = 1;
+            var Route = "#";
+            var Ctrl = "#"
+            //document.write("<script type='text/javascript' src='" + window.location.protocol + "//c.microsoft.com/ms.js'><"+"/script>");
+        </script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="./assets/js/script.js"></script>
+        <script type="text/javascript" src="./js/siteSearch.js"></script>
+        <noscript>
+            <img alt="" width="1" height="1" src="http://c.microsoft.com/trans_pixel.aspx/" />
+        </noscript>
+        <!-- Begin MDA WEDCS -->
+    </div>
+</body>
+</html>
